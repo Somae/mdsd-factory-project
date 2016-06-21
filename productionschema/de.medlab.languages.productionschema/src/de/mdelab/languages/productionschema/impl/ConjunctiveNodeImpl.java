@@ -15,23 +15,23 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ConjunctiveNodeImpl extends LinkableNodeImpl implements ConjunctiveNode {
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected ConjunctiveNodeImpl() {
-        super();
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ConjunctiveNodeImpl() {
+		super();
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    protected EClass eStaticClass() {
-        return ProductionschemaPackage.Literals.CONJUNCTIVE_NODE;
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ProductionschemaPackage.Literals.CONJUNCTIVE_NODE;
+	}
 
 } //ConjunctiveNodeImpl

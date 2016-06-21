@@ -33,263 +33,263 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
  * @generated
  */
 public class ProductionschemaItemProviderAdapterFactory extends ProductionschemaAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
-    /**
-     * This keeps track of the root adapter factory that delegates to this adapter factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected ComposedAdapterFactory parentAdapterFactory;
+	/**
+	 * This keeps track of the root adapter factory that delegates to this adapter factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ComposedAdapterFactory parentAdapterFactory;
 
-    /**
-     * This is used to implement {@link org.eclipse.emf.edit.provider.IChangeNotifier}.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected IChangeNotifier changeNotifier = new ChangeNotifier();
+	/**
+	 * This is used to implement {@link org.eclipse.emf.edit.provider.IChangeNotifier}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected IChangeNotifier changeNotifier = new ChangeNotifier();
 
-    /**
-     * This keeps track of all the supported types checked by {@link #isFactoryForType isFactoryForType}.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected Collection<Object> supportedTypes = new ArrayList<Object>();
+	/**
+	 * This keeps track of all the supported types checked by {@link #isFactoryForType isFactoryForType}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Collection<Object> supportedTypes = new ArrayList<Object>();
 
-    /**
-     * This constructs an instance.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProductionschemaItemProviderAdapterFactory() {
-        supportedTypes.add(IEditingDomainItemProvider.class);
-        supportedTypes.add(IStructuredItemContentProvider.class);
-        supportedTypes.add(ITreeItemContentProvider.class);
-        supportedTypes.add(IItemLabelProvider.class);
-        supportedTypes.add(IItemPropertySource.class);
-    }
+	/**
+	 * This constructs an instance.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProductionschemaItemProviderAdapterFactory() {
+		supportedTypes.add(IEditingDomainItemProvider.class);
+		supportedTypes.add(IStructuredItemContentProvider.class);
+		supportedTypes.add(ITreeItemContentProvider.class);
+		supportedTypes.add(IItemLabelProvider.class);
+		supportedTypes.add(IItemPropertySource.class);
+	}
 
-    /**
-     * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.ProductionSchema} instances.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected ProductionSchemaItemProvider productionSchemaItemProvider;
+	/**
+	 * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.ProductionSchema} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ProductionSchemaItemProvider productionSchemaItemProvider;
 
-    /**
-     * This creates an adapter for a {@link de.mdelab.languages.productionschema.ProductionSchema}.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public Adapter createProductionSchemaAdapter() {
-        if (productionSchemaItemProvider == null) {
-            productionSchemaItemProvider = new ProductionSchemaItemProvider(this);
-        }
+	/**
+	 * This creates an adapter for a {@link de.mdelab.languages.productionschema.ProductionSchema}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createProductionSchemaAdapter() {
+		if (productionSchemaItemProvider == null) {
+			productionSchemaItemProvider = new ProductionSchemaItemProvider(this);
+		}
 
-        return productionSchemaItemProvider;
-    }
+		return productionSchemaItemProvider;
+	}
 
-    /**
-     * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.ConjunctiveNode} instances.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected ConjunctiveNodeItemProvider conjunctiveNodeItemProvider;
+	/**
+	 * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.ConjunctiveNode} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ConjunctiveNodeItemProvider conjunctiveNodeItemProvider;
 
-    /**
-     * This creates an adapter for a {@link de.mdelab.languages.productionschema.ConjunctiveNode}.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public Adapter createConjunctiveNodeAdapter() {
-        if (conjunctiveNodeItemProvider == null) {
-            conjunctiveNodeItemProvider = new ConjunctiveNodeItemProvider(this);
-        }
+	/**
+	 * This creates an adapter for a {@link de.mdelab.languages.productionschema.ConjunctiveNode}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createConjunctiveNodeAdapter() {
+		if (conjunctiveNodeItemProvider == null) {
+			conjunctiveNodeItemProvider = new ConjunctiveNodeItemProvider(this);
+		}
 
-        return conjunctiveNodeItemProvider;
-    }
+		return conjunctiveNodeItemProvider;
+	}
 
-    /**
-     * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.DisjunctiveNode} instances.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected DisjunctiveNodeItemProvider disjunctiveNodeItemProvider;
+	/**
+	 * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.DisjunctiveNode} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DisjunctiveNodeItemProvider disjunctiveNodeItemProvider;
 
-    /**
-     * This creates an adapter for a {@link de.mdelab.languages.productionschema.DisjunctiveNode}.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public Adapter createDisjunctiveNodeAdapter() {
-        if (disjunctiveNodeItemProvider == null) {
-            disjunctiveNodeItemProvider = new DisjunctiveNodeItemProvider(this);
-        }
+	/**
+	 * This creates an adapter for a {@link de.mdelab.languages.productionschema.DisjunctiveNode}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDisjunctiveNodeAdapter() {
+		if (disjunctiveNodeItemProvider == null) {
+			disjunctiveNodeItemProvider = new DisjunctiveNodeItemProvider(this);
+		}
 
-        return disjunctiveNodeItemProvider;
-    }
+		return disjunctiveNodeItemProvider;
+	}
 
-    /**
-     * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.MaterialLink} instances.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected MaterialLinkItemProvider materialLinkItemProvider;
+	/**
+	 * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.MaterialLink} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MaterialLinkItemProvider materialLinkItemProvider;
 
-    /**
-     * This creates an adapter for a {@link de.mdelab.languages.productionschema.MaterialLink}.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public Adapter createMaterialLinkAdapter() {
-        if (materialLinkItemProvider == null) {
-            materialLinkItemProvider = new MaterialLinkItemProvider(this);
-        }
+	/**
+	 * This creates an adapter for a {@link de.mdelab.languages.productionschema.MaterialLink}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMaterialLinkAdapter() {
+		if (materialLinkItemProvider == null) {
+			materialLinkItemProvider = new MaterialLinkItemProvider(this);
+		}
 
-        return materialLinkItemProvider;
-    }
+		return materialLinkItemProvider;
+	}
 
-    /**
-     * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.Material} instances.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected MaterialItemProvider materialItemProvider;
+	/**
+	 * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.Material} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MaterialItemProvider materialItemProvider;
 
-    /**
-     * This creates an adapter for a {@link de.mdelab.languages.productionschema.Material}.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public Adapter createMaterialAdapter() {
-        if (materialItemProvider == null) {
-            materialItemProvider = new MaterialItemProvider(this);
-        }
+	/**
+	 * This creates an adapter for a {@link de.mdelab.languages.productionschema.Material}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMaterialAdapter() {
+		if (materialItemProvider == null) {
+			materialItemProvider = new MaterialItemProvider(this);
+		}
 
-        return materialItemProvider;
-    }
+		return materialItemProvider;
+	}
 
-    /**
-     * This returns the root adapter factory that contains this factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ComposeableAdapterFactory getRootAdapterFactory() {
-        return parentAdapterFactory == null ? this : parentAdapterFactory.getRootAdapterFactory();
-    }
+	/**
+	 * This returns the root adapter factory that contains this factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComposeableAdapterFactory getRootAdapterFactory() {
+		return parentAdapterFactory == null ? this : parentAdapterFactory.getRootAdapterFactory();
+	}
 
-    /**
-     * This sets the composed adapter factory that contains this factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public void setParentAdapterFactory(ComposedAdapterFactory parentAdapterFactory) {
-        this.parentAdapterFactory = parentAdapterFactory;
-    }
+	/**
+	 * This sets the composed adapter factory that contains this factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setParentAdapterFactory(ComposedAdapterFactory parentAdapterFactory) {
+		this.parentAdapterFactory = parentAdapterFactory;
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public boolean isFactoryForType(Object type) {
-        return supportedTypes.contains(type) || super.isFactoryForType(type);
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isFactoryForType(Object type) {
+		return supportedTypes.contains(type) || super.isFactoryForType(type);
+	}
 
-    /**
-     * This implementation substitutes the factory itself as the key for the adapter.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public Adapter adapt(Notifier notifier, Object type) {
-        return super.adapt(notifier, this);
-    }
+	/**
+	 * This implementation substitutes the factory itself as the key for the adapter.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter adapt(Notifier notifier, Object type) {
+		return super.adapt(notifier, this);
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public Object adapt(Object object, Object type) {
-        if (isFactoryForType(type)) {
-            Object adapter = super.adapt(object, type);
-            if (!(type instanceof Class<?>) || (((Class<?>)type).isInstance(adapter))) {
-                return adapter;
-            }
-        }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object adapt(Object object, Object type) {
+		if (isFactoryForType(type)) {
+			Object adapter = super.adapt(object, type);
+			if (!(type instanceof Class<?>) || (((Class<?>)type).isInstance(adapter))) {
+				return adapter;
+			}
+		}
 
-        return null;
-    }
+		return null;
+	}
 
-    /**
-     * This adds a listener.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public void addListener(INotifyChangedListener notifyChangedListener) {
-        changeNotifier.addListener(notifyChangedListener);
-    }
+	/**
+	 * This adds a listener.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void addListener(INotifyChangedListener notifyChangedListener) {
+		changeNotifier.addListener(notifyChangedListener);
+	}
 
-    /**
-     * This removes a listener.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public void removeListener(INotifyChangedListener notifyChangedListener) {
-        changeNotifier.removeListener(notifyChangedListener);
-    }
+	/**
+	 * This removes a listener.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void removeListener(INotifyChangedListener notifyChangedListener) {
+		changeNotifier.removeListener(notifyChangedListener);
+	}
 
-    /**
-     * This delegates to {@link #changeNotifier} and to {@link #parentAdapterFactory}.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public void fireNotifyChanged(Notification notification) {
-        changeNotifier.fireNotifyChanged(notification);
+	/**
+	 * This delegates to {@link #changeNotifier} and to {@link #parentAdapterFactory}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void fireNotifyChanged(Notification notification) {
+		changeNotifier.fireNotifyChanged(notification);
 
-        if (parentAdapterFactory != null) {
-            parentAdapterFactory.fireNotifyChanged(notification);
-        }
-    }
+		if (parentAdapterFactory != null) {
+			parentAdapterFactory.fireNotifyChanged(notification);
+		}
+	}
 
-    /**
-     * This disposes all of the item providers created by this factory. 
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public void dispose() {
-        if (productionSchemaItemProvider != null) productionSchemaItemProvider.dispose();
-        if (conjunctiveNodeItemProvider != null) conjunctiveNodeItemProvider.dispose();
-        if (disjunctiveNodeItemProvider != null) disjunctiveNodeItemProvider.dispose();
-        if (materialLinkItemProvider != null) materialLinkItemProvider.dispose();
-        if (materialItemProvider != null) materialItemProvider.dispose();
-    }
+	/**
+	 * This disposes all of the item providers created by this factory. 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void dispose() {
+		if (productionSchemaItemProvider != null) productionSchemaItemProvider.dispose();
+		if (conjunctiveNodeItemProvider != null) conjunctiveNodeItemProvider.dispose();
+		if (disjunctiveNodeItemProvider != null) disjunctiveNodeItemProvider.dispose();
+		if (materialLinkItemProvider != null) materialLinkItemProvider.dispose();
+		if (materialItemProvider != null) materialItemProvider.dispose();
+	}
 
 }

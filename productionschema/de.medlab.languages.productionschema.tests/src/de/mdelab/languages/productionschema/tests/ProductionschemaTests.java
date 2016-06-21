@@ -15,32 +15,32 @@ import junit.textui.TestRunner;
  */
 public class ProductionschemaTests extends TestSuite {
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public static void main(String[] args) {
-        TestRunner.run(suite());
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static void main(String[] args) {
+		TestRunner.run(suite());
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public static Test suite() {
-        TestSuite suite = new ProductionschemaTests("productionschema Tests");
-        return suite;
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static Test suite() {
+		TestSuite suite = new ProductionschemaTests("productionschema Tests");
+		return suite;
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProductionschemaTests(String name) {
-        super(name);
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProductionschemaTests(String name) {
+		super(name);
+	}
 
 } //ProductionschemaTests

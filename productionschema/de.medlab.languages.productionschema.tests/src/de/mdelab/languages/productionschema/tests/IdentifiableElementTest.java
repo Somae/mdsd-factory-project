@@ -14,42 +14,42 @@ import junit.framework.TestCase;
  */
 public abstract class IdentifiableElementTest extends TestCase {
 
-    /**
-     * The fixture for this Identifiable Element test case.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected IdentifiableElement fixture = null;
+	/**
+	 * The fixture for this Identifiable Element test case.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected IdentifiableElement fixture = null;
 
-    /**
-     * Constructs a new Identifiable Element test case with the given name.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public IdentifiableElementTest(String name) {
-        super(name);
-    }
+	/**
+	 * Constructs a new Identifiable Element test case with the given name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IdentifiableElementTest(String name) {
+		super(name);
+	}
 
-    /**
-     * Sets the fixture for this Identifiable Element test case.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected void setFixture(IdentifiableElement fixture) {
-        this.fixture = fixture;
-    }
+	/**
+	 * Sets the fixture for this Identifiable Element test case.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void setFixture(IdentifiableElement fixture) {
+		this.fixture = fixture;
+	}
 
-    /**
-     * Returns the fixture for this Identifiable Element test case.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected IdentifiableElement getFixture() {
-        return fixture;
-    }
+	/**
+	 * Returns the fixture for this Identifiable Element test case.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected IdentifiableElement getFixture() {
+		return fixture;
+	}
 
 } //IdentifiableElementTest
