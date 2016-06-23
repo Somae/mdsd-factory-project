@@ -20,6 +20,10 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="associatedMaterial" eType="#//Material"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LinkableNode" abstract="true" eSuperTypes="#//IdentifiableElement">
+    <eOperations name="degree" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eParameters name="isInDegree" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      <eParameters name="isOutDegree" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="incomingLinks" upperBound="-1"
         eType="#//MaterialLink" eOpposite="#//MaterialLink/destinationNode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="outgoingLinks" upperBound="-1"
