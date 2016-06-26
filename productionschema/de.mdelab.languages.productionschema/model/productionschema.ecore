@@ -5,14 +5,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProductionSchema">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedLinkableNodes" upperBound="-1"
         eType="#//LinkableNode" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMaterialLinks" upperBound="-1"
-        eType="#//MaterialLink" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedLinks" upperBound="-1"
+        eType="#//Link" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMaterials" upperBound="-1"
         eType="#//Material" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ConjunctiveNode" eSuperTypes="#//LinkableNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="DisjunctiveNode" eSuperTypes="#//LinkableNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MaterialLink" eSuperTypes="#//IdentifiableElement">
+  <eClassifiers xsi:type="ecore:EClass" name="Link" eSuperTypes="#//IdentifiableElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceNode" lowerBound="1"
         eType="#//LinkableNode" eOpposite="#//LinkableNode/outgoingLinks"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="destinationNode" lowerBound="1"
@@ -25,9 +25,9 @@
       <eParameters name="isOutDegree" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="incomingLinks" upperBound="-1"
-        eType="#//MaterialLink" eOpposite="#//MaterialLink/destinationNode"/>
+        eType="#//Link" eOpposite="#//Link/destinationNode"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="outgoingLinks" upperBound="-1"
-        eType="#//MaterialLink" eOpposite="#//MaterialLink/sourceNode"/>
+        eType="#//Link" eOpposite="#//Link/sourceNode"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IdentifiableElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"

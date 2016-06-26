@@ -4,6 +4,7 @@ package de.mdelab.languages.productionschema;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -76,13 +77,13 @@ public interface ProductionschemaPackage extends EPackage {
 	int PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES = 0;
 
 	/**
-	 * The feature id for the '<em><b>Owned Material Links</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Owned Links</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS = 1;
+	int PRODUCTION_SCHEMA__OWNED_LINKS = 1;
 
 	/**
 	 * The feature id for the '<em><b>Owned Materials</b></em>' containment reference list.
@@ -213,13 +214,22 @@ public interface ProductionschemaPackage extends EPackage {
 	int LINKABLE_NODE_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
+	 * The operation id for the '<em>Degree</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINKABLE_NODE___DEGREE__BOOLEAN_BOOLEAN = IDENTIFIABLE_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
 	 * The number of operations of the '<em>Linkable Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LINKABLE_NODE_OPERATION_COUNT = IDENTIFIABLE_ELEMENT_OPERATION_COUNT + 0;
+	int LINKABLE_NODE_OPERATION_COUNT = IDENTIFIABLE_ELEMENT_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link de.mdelab.languages.productionschema.impl.ConjunctiveNodeImpl <em>Conjunctive Node</em>}' class.
@@ -275,6 +285,15 @@ public interface ProductionschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONJUNCTIVE_NODE_FEATURE_COUNT = LINKABLE_NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Degree</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONJUNCTIVE_NODE___DEGREE__BOOLEAN_BOOLEAN = LINKABLE_NODE___DEGREE__BOOLEAN_BOOLEAN;
 
 	/**
 	 * The number of operations of the '<em>Conjunctive Node</em>' class.
@@ -341,6 +360,15 @@ public interface ProductionschemaPackage extends EPackage {
 	int DISJUNCTIVE_NODE_FEATURE_COUNT = LINKABLE_NODE_FEATURE_COUNT + 0;
 
 	/**
+	 * The operation id for the '<em>Degree</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISJUNCTIVE_NODE___DEGREE__BOOLEAN_BOOLEAN = LINKABLE_NODE___DEGREE__BOOLEAN_BOOLEAN;
+
+	/**
 	 * The number of operations of the '<em>Disjunctive Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -350,14 +378,14 @@ public interface ProductionschemaPackage extends EPackage {
 	int DISJUNCTIVE_NODE_OPERATION_COUNT = LINKABLE_NODE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link de.mdelab.languages.productionschema.impl.MaterialLinkImpl <em>Material Link</em>}' class.
+	 * The meta object id for the '{@link de.mdelab.languages.productionschema.impl.LinkImpl <em>Link</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.mdelab.languages.productionschema.impl.MaterialLinkImpl
-	 * @see de.mdelab.languages.productionschema.impl.ProductionschemaPackageImpl#getMaterialLink()
+	 * @see de.mdelab.languages.productionschema.impl.LinkImpl
+	 * @see de.mdelab.languages.productionschema.impl.ProductionschemaPackageImpl#getLink()
 	 * @generated
 	 */
-	int MATERIAL_LINK = 3;
+	int LINK = 3;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -366,7 +394,7 @@ public interface ProductionschemaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERIAL_LINK__ID = IDENTIFIABLE_ELEMENT__ID;
+	int LINK__ID = IDENTIFIABLE_ELEMENT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
@@ -375,7 +403,7 @@ public interface ProductionschemaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERIAL_LINK__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
+	int LINK__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
 
 	/**
 	 * The feature id for the '<em><b>Source Node</b></em>' reference.
@@ -384,7 +412,7 @@ public interface ProductionschemaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERIAL_LINK__SOURCE_NODE = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+	int LINK__SOURCE_NODE = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Destination Node</b></em>' reference.
@@ -393,7 +421,7 @@ public interface ProductionschemaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERIAL_LINK__DESTINATION_NODE = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+	int LINK__DESTINATION_NODE = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Associated Material</b></em>' reference.
@@ -402,25 +430,25 @@ public interface ProductionschemaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERIAL_LINK__ASSOCIATED_MATERIAL = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+	int LINK__ASSOCIATED_MATERIAL = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of structural features of the '<em>Material Link</em>' class.
+	 * The number of structural features of the '<em>Link</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MATERIAL_LINK_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
+	int LINK_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
-	 * The number of operations of the '<em>Material Link</em>' class.
+	 * The number of operations of the '<em>Link</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MATERIAL_LINK_OPERATION_COUNT = IDENTIFIABLE_ELEMENT_OPERATION_COUNT + 0;
+	int LINK_OPERATION_COUNT = IDENTIFIABLE_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.mdelab.languages.productionschema.impl.MaterialImpl <em>Material</em>}' class.
@@ -491,15 +519,15 @@ public interface ProductionschemaPackage extends EPackage {
 	EReference getProductionSchema_OwnedLinkableNodes();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link de.mdelab.languages.productionschema.ProductionSchema#getOwnedMaterialLinks <em>Owned Material Links</em>}'.
+	 * Returns the meta object for the containment reference list '{@link de.mdelab.languages.productionschema.ProductionSchema#getOwnedLinks <em>Owned Links</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Owned Material Links</em>'.
-	 * @see de.mdelab.languages.productionschema.ProductionSchema#getOwnedMaterialLinks()
+	 * @return the meta object for the containment reference list '<em>Owned Links</em>'.
+	 * @see de.mdelab.languages.productionschema.ProductionSchema#getOwnedLinks()
 	 * @see #getProductionSchema()
 	 * @generated
 	 */
-	EReference getProductionSchema_OwnedMaterialLinks();
+	EReference getProductionSchema_OwnedLinks();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link de.mdelab.languages.productionschema.ProductionSchema#getOwnedMaterials <em>Owned Materials</em>}'.
@@ -533,47 +561,47 @@ public interface ProductionschemaPackage extends EPackage {
 	EClass getDisjunctiveNode();
 
 	/**
-	 * Returns the meta object for class '{@link de.mdelab.languages.productionschema.MaterialLink <em>Material Link</em>}'.
+	 * Returns the meta object for class '{@link de.mdelab.languages.productionschema.Link <em>Link</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Material Link</em>'.
-	 * @see de.mdelab.languages.productionschema.MaterialLink
+	 * @return the meta object for class '<em>Link</em>'.
+	 * @see de.mdelab.languages.productionschema.Link
 	 * @generated
 	 */
-	EClass getMaterialLink();
+	EClass getLink();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.languages.productionschema.MaterialLink#getSourceNode <em>Source Node</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.languages.productionschema.Link#getSourceNode <em>Source Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Source Node</em>'.
-	 * @see de.mdelab.languages.productionschema.MaterialLink#getSourceNode()
-	 * @see #getMaterialLink()
+	 * @see de.mdelab.languages.productionschema.Link#getSourceNode()
+	 * @see #getLink()
 	 * @generated
 	 */
-	EReference getMaterialLink_SourceNode();
+	EReference getLink_SourceNode();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.languages.productionschema.MaterialLink#getDestinationNode <em>Destination Node</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.languages.productionschema.Link#getDestinationNode <em>Destination Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Destination Node</em>'.
-	 * @see de.mdelab.languages.productionschema.MaterialLink#getDestinationNode()
-	 * @see #getMaterialLink()
+	 * @see de.mdelab.languages.productionschema.Link#getDestinationNode()
+	 * @see #getLink()
 	 * @generated
 	 */
-	EReference getMaterialLink_DestinationNode();
+	EReference getLink_DestinationNode();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.languages.productionschema.MaterialLink#getAssociatedMaterial <em>Associated Material</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.languages.productionschema.Link#getAssociatedMaterial <em>Associated Material</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Associated Material</em>'.
-	 * @see de.mdelab.languages.productionschema.MaterialLink#getAssociatedMaterial()
-	 * @see #getMaterialLink()
+	 * @see de.mdelab.languages.productionschema.Link#getAssociatedMaterial()
+	 * @see #getLink()
 	 * @generated
 	 */
-	EReference getMaterialLink_AssociatedMaterial();
+	EReference getLink_AssociatedMaterial();
 
 	/**
 	 * Returns the meta object for class '{@link de.mdelab.languages.productionschema.LinkableNode <em>Linkable Node</em>}'.
@@ -606,6 +634,16 @@ public interface ProductionschemaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getLinkableNode_OutgoingLinks();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.languages.productionschema.LinkableNode#degree(boolean, boolean) <em>Degree</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Degree</em>' operation.
+	 * @see de.mdelab.languages.productionschema.LinkableNode#degree(boolean, boolean)
+	 * @generated
+	 */
+	EOperation getLinkableNode__Degree__boolean_boolean();
 
 	/**
 	 * Returns the meta object for class '{@link de.mdelab.languages.productionschema.IdentifiableElement <em>Identifiable Element</em>}'.
@@ -691,12 +729,12 @@ public interface ProductionschemaPackage extends EPackage {
 		EReference PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES = eINSTANCE.getProductionSchema_OwnedLinkableNodes();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned Material Links</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Owned Links</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS = eINSTANCE.getProductionSchema_OwnedMaterialLinks();
+		EReference PRODUCTION_SCHEMA__OWNED_LINKS = eINSTANCE.getProductionSchema_OwnedLinks();
 
 		/**
 		 * The meta object literal for the '<em><b>Owned Materials</b></em>' containment reference list feature.
@@ -727,14 +765,14 @@ public interface ProductionschemaPackage extends EPackage {
 		EClass DISJUNCTIVE_NODE = eINSTANCE.getDisjunctiveNode();
 
 		/**
-		 * The meta object literal for the '{@link de.mdelab.languages.productionschema.impl.MaterialLinkImpl <em>Material Link</em>}' class.
+		 * The meta object literal for the '{@link de.mdelab.languages.productionschema.impl.LinkImpl <em>Link</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see de.mdelab.languages.productionschema.impl.MaterialLinkImpl
-		 * @see de.mdelab.languages.productionschema.impl.ProductionschemaPackageImpl#getMaterialLink()
+		 * @see de.mdelab.languages.productionschema.impl.LinkImpl
+		 * @see de.mdelab.languages.productionschema.impl.ProductionschemaPackageImpl#getLink()
 		 * @generated
 		 */
-		EClass MATERIAL_LINK = eINSTANCE.getMaterialLink();
+		EClass LINK = eINSTANCE.getLink();
 
 		/**
 		 * The meta object literal for the '<em><b>Source Node</b></em>' reference feature.
@@ -742,7 +780,7 @@ public interface ProductionschemaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MATERIAL_LINK__SOURCE_NODE = eINSTANCE.getMaterialLink_SourceNode();
+		EReference LINK__SOURCE_NODE = eINSTANCE.getLink_SourceNode();
 
 		/**
 		 * The meta object literal for the '<em><b>Destination Node</b></em>' reference feature.
@@ -750,7 +788,7 @@ public interface ProductionschemaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MATERIAL_LINK__DESTINATION_NODE = eINSTANCE.getMaterialLink_DestinationNode();
+		EReference LINK__DESTINATION_NODE = eINSTANCE.getLink_DestinationNode();
 
 		/**
 		 * The meta object literal for the '<em><b>Associated Material</b></em>' reference feature.
@@ -758,7 +796,7 @@ public interface ProductionschemaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MATERIAL_LINK__ASSOCIATED_MATERIAL = eINSTANCE.getMaterialLink_AssociatedMaterial();
+		EReference LINK__ASSOCIATED_MATERIAL = eINSTANCE.getLink_AssociatedMaterial();
 
 		/**
 		 * The meta object literal for the '{@link de.mdelab.languages.productionschema.impl.LinkableNodeImpl <em>Linkable Node</em>}' class.
@@ -785,6 +823,14 @@ public interface ProductionschemaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference LINKABLE_NODE__OUTGOING_LINKS = eINSTANCE.getLinkableNode_OutgoingLinks();
+
+		/**
+		 * The meta object literal for the '<em><b>Degree</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation LINKABLE_NODE___DEGREE__BOOLEAN_BOOLEAN = eINSTANCE.getLinkableNode__Degree__boolean_boolean();
 
 		/**
 		 * The meta object literal for the '{@link de.mdelab.languages.productionschema.impl.IdentifiableElementImpl <em>Identifiable Element</em>}' class.

@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link de.mdelab.languages.productionschema.ProductionSchema#getOwnedLinkableNodes <em>Owned Linkable Nodes</em>}</li>
- *   <li>{@link de.mdelab.languages.productionschema.ProductionSchema#getOwnedMaterialLinks <em>Owned Material Links</em>}</li>
+ *   <li>{@link de.mdelab.languages.productionschema.ProductionSchema#getOwnedLinks <em>Owned Links</em>}</li>
  *   <li>{@link de.mdelab.languages.productionschema.ProductionSchema#getOwnedMaterials <em>Owned Materials</em>}</li>
  * </ul>
  *
@@ -42,20 +42,20 @@ public interface ProductionSchema extends EObject {
 	EList<LinkableNode> getOwnedLinkableNodes();
 
 	/**
-	 * Returns the value of the '<em><b>Owned Material Links</b></em>' containment reference list.
-	 * The list contents are of type {@link de.mdelab.languages.productionschema.MaterialLink}.
+	 * Returns the value of the '<em><b>Owned Links</b></em>' containment reference list.
+	 * The list contents are of type {@link de.mdelab.languages.productionschema.Link}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned Material Links</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Owned Links</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owned Material Links</em>' containment reference list.
-	 * @see de.mdelab.languages.productionschema.ProductionschemaPackage#getProductionSchema_OwnedMaterialLinks()
+	 * @return the value of the '<em>Owned Links</em>' containment reference list.
+	 * @see de.mdelab.languages.productionschema.ProductionschemaPackage#getProductionSchema_OwnedLinks()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<MaterialLink> getOwnedMaterialLinks();
+	EList<Link> getOwnedLinks();
 
 	/**
 	 * Returns the value of the '<em><b>Owned Materials</b></em>' containment reference list.

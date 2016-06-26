@@ -78,7 +78,7 @@ public class ProductionSchemaItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(ProductionschemaPackage.Literals.PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES);
-			childrenFeatures.add(ProductionschemaPackage.Literals.PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS);
+			childrenFeatures.add(ProductionschemaPackage.Literals.PRODUCTION_SCHEMA__OWNED_LINKS);
 			childrenFeatures.add(ProductionschemaPackage.Literals.PRODUCTION_SCHEMA__OWNED_MATERIALS);
 		}
 		return childrenFeatures;
@@ -133,7 +133,7 @@ public class ProductionSchemaItemProvider
 
 		switch (notification.getFeatureID(ProductionSchema.class)) {
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES:
-			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS:
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKS:
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIALS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -164,8 +164,8 @@ public class ProductionSchemaItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ProductionschemaPackage.Literals.PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS,
-				 ProductionschemaFactory.eINSTANCE.createMaterialLink()));
+				(ProductionschemaPackage.Literals.PRODUCTION_SCHEMA__OWNED_LINKS,
+				 ProductionschemaFactory.eINSTANCE.createLink()));
 
 		newChildDescriptors.add
 			(createChildParameter

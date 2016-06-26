@@ -141,26 +141,26 @@ public class ProductionschemaItemProviderAdapterFactory extends Productionschema
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.MaterialLink} instances.
+	 * This keeps track of the one adapter used for all {@link de.mdelab.languages.productionschema.Link} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MaterialLinkItemProvider materialLinkItemProvider;
+	protected LinkItemProvider linkItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link de.mdelab.languages.productionschema.MaterialLink}.
+	 * This creates an adapter for a {@link de.mdelab.languages.productionschema.Link}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createMaterialLinkAdapter() {
-		if (materialLinkItemProvider == null) {
-			materialLinkItemProvider = new MaterialLinkItemProvider(this);
+	public Adapter createLinkAdapter() {
+		if (linkItemProvider == null) {
+			linkItemProvider = new LinkItemProvider(this);
 		}
 
-		return materialLinkItemProvider;
+		return linkItemProvider;
 	}
 
 	/**
@@ -288,7 +288,7 @@ public class ProductionschemaItemProviderAdapterFactory extends Productionschema
 		if (productionSchemaItemProvider != null) productionSchemaItemProvider.dispose();
 		if (conjunctiveNodeItemProvider != null) conjunctiveNodeItemProvider.dispose();
 		if (disjunctiveNodeItemProvider != null) disjunctiveNodeItemProvider.dispose();
-		if (materialLinkItemProvider != null) materialLinkItemProvider.dispose();
+		if (linkItemProvider != null) linkItemProvider.dispose();
 		if (materialItemProvider != null) materialItemProvider.dispose();
 	}
 

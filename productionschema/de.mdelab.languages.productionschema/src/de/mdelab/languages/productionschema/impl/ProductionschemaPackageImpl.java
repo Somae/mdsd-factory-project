@@ -5,15 +5,16 @@ package de.mdelab.languages.productionschema.impl;
 import de.mdelab.languages.productionschema.ConjunctiveNode;
 import de.mdelab.languages.productionschema.DisjunctiveNode;
 import de.mdelab.languages.productionschema.IdentifiableElement;
+import de.mdelab.languages.productionschema.Link;
 import de.mdelab.languages.productionschema.LinkableNode;
 import de.mdelab.languages.productionschema.Material;
-import de.mdelab.languages.productionschema.MaterialLink;
 import de.mdelab.languages.productionschema.ProductionSchema;
 import de.mdelab.languages.productionschema.ProductionschemaFactory;
 import de.mdelab.languages.productionschema.ProductionschemaPackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -52,7 +53,7 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass materialLinkEClass = null;
+	private EClass linkEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,7 +160,7 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getProductionSchema_OwnedMaterialLinks() {
+	public EReference getProductionSchema_OwnedLinks() {
 		return (EReference)productionSchemaEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -195,8 +196,8 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getMaterialLink() {
-		return materialLinkEClass;
+	public EClass getLink() {
+		return linkEClass;
 	}
 
 	/**
@@ -204,8 +205,8 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMaterialLink_SourceNode() {
-		return (EReference)materialLinkEClass.getEStructuralFeatures().get(0);
+	public EReference getLink_SourceNode() {
+		return (EReference)linkEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -213,8 +214,8 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMaterialLink_DestinationNode() {
-		return (EReference)materialLinkEClass.getEStructuralFeatures().get(1);
+	public EReference getLink_DestinationNode() {
+		return (EReference)linkEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -222,8 +223,8 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMaterialLink_AssociatedMaterial() {
-		return (EReference)materialLinkEClass.getEStructuralFeatures().get(2);
+	public EReference getLink_AssociatedMaterial() {
+		return (EReference)linkEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -251,6 +252,15 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 	 */
 	public EReference getLinkableNode_OutgoingLinks() {
 		return (EReference)linkableNodeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getLinkableNode__Degree__boolean_boolean() {
+		return linkableNodeEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -319,21 +329,22 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 		// Create classes and their features
 		productionSchemaEClass = createEClass(PRODUCTION_SCHEMA);
 		createEReference(productionSchemaEClass, PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES);
-		createEReference(productionSchemaEClass, PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS);
+		createEReference(productionSchemaEClass, PRODUCTION_SCHEMA__OWNED_LINKS);
 		createEReference(productionSchemaEClass, PRODUCTION_SCHEMA__OWNED_MATERIALS);
 
 		conjunctiveNodeEClass = createEClass(CONJUNCTIVE_NODE);
 
 		disjunctiveNodeEClass = createEClass(DISJUNCTIVE_NODE);
 
-		materialLinkEClass = createEClass(MATERIAL_LINK);
-		createEReference(materialLinkEClass, MATERIAL_LINK__SOURCE_NODE);
-		createEReference(materialLinkEClass, MATERIAL_LINK__DESTINATION_NODE);
-		createEReference(materialLinkEClass, MATERIAL_LINK__ASSOCIATED_MATERIAL);
+		linkEClass = createEClass(LINK);
+		createEReference(linkEClass, LINK__SOURCE_NODE);
+		createEReference(linkEClass, LINK__DESTINATION_NODE);
+		createEReference(linkEClass, LINK__ASSOCIATED_MATERIAL);
 
 		linkableNodeEClass = createEClass(LINKABLE_NODE);
 		createEReference(linkableNodeEClass, LINKABLE_NODE__INCOMING_LINKS);
 		createEReference(linkableNodeEClass, LINKABLE_NODE__OUTGOING_LINKS);
+		createEOperation(linkableNodeEClass, LINKABLE_NODE___DEGREE__BOOLEAN_BOOLEAN);
 
 		identifiableElementEClass = createEClass(IDENTIFIABLE_ELEMENT);
 		createEAttribute(identifiableElementEClass, IDENTIFIABLE_ELEMENT__ID);
@@ -372,28 +383,32 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 		// Add supertypes to classes
 		conjunctiveNodeEClass.getESuperTypes().add(this.getLinkableNode());
 		disjunctiveNodeEClass.getESuperTypes().add(this.getLinkableNode());
-		materialLinkEClass.getESuperTypes().add(this.getIdentifiableElement());
+		linkEClass.getESuperTypes().add(this.getIdentifiableElement());
 		linkableNodeEClass.getESuperTypes().add(this.getIdentifiableElement());
 		materialEClass.getESuperTypes().add(this.getIdentifiableElement());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(productionSchemaEClass, ProductionSchema.class, "ProductionSchema", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductionSchema_OwnedLinkableNodes(), this.getLinkableNode(), null, "ownedLinkableNodes", null, 0, -1, ProductionSchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProductionSchema_OwnedMaterialLinks(), this.getMaterialLink(), null, "ownedMaterialLinks", null, 0, -1, ProductionSchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductionSchema_OwnedLinks(), this.getLink(), null, "ownedLinks", null, 0, -1, ProductionSchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductionSchema_OwnedMaterials(), this.getMaterial(), null, "ownedMaterials", null, 0, -1, ProductionSchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(conjunctiveNodeEClass, ConjunctiveNode.class, "ConjunctiveNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(disjunctiveNodeEClass, DisjunctiveNode.class, "DisjunctiveNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(materialLinkEClass, MaterialLink.class, "MaterialLink", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getMaterialLink_SourceNode(), this.getLinkableNode(), this.getLinkableNode_OutgoingLinks(), "sourceNode", null, 1, 1, MaterialLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMaterialLink_DestinationNode(), this.getLinkableNode(), this.getLinkableNode_IncomingLinks(), "destinationNode", null, 1, 1, MaterialLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMaterialLink_AssociatedMaterial(), this.getMaterial(), null, "associatedMaterial", null, 0, 1, MaterialLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(linkEClass, Link.class, "Link", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getLink_SourceNode(), this.getLinkableNode(), this.getLinkableNode_OutgoingLinks(), "sourceNode", null, 1, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLink_DestinationNode(), this.getLinkableNode(), this.getLinkableNode_IncomingLinks(), "destinationNode", null, 1, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLink_AssociatedMaterial(), this.getMaterial(), null, "associatedMaterial", null, 0, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(linkableNodeEClass, LinkableNode.class, "LinkableNode", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getLinkableNode_IncomingLinks(), this.getMaterialLink(), this.getMaterialLink_DestinationNode(), "incomingLinks", null, 0, -1, LinkableNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getLinkableNode_OutgoingLinks(), this.getMaterialLink(), this.getMaterialLink_SourceNode(), "outgoingLinks", null, 0, -1, LinkableNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLinkableNode_IncomingLinks(), this.getLink(), this.getLink_DestinationNode(), "incomingLinks", null, 0, -1, LinkableNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLinkableNode_OutgoingLinks(), this.getLink(), this.getLink_SourceNode(), "outgoingLinks", null, 0, -1, LinkableNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		EOperation op = initEOperation(getLinkableNode__Degree__boolean_boolean(), ecorePackage.getEInt(), "degree", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "isInDegree", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "isOutDegree", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(identifiableElementEClass, IdentifiableElement.class, "IdentifiableElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIdentifiableElement_Id(), ecorePackage.getELong(), "id", null, 1, 1, IdentifiableElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

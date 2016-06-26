@@ -49,13 +49,13 @@ public interface ProductionschemaFactory extends EFactory {
 	DisjunctiveNode createDisjunctiveNode();
 
 	/**
-	 * Returns a new object of class '<em>Material Link</em>'.
+	 * Returns a new object of class '<em>Link</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Material Link</em>'.
+	 * @return a new object of class '<em>Link</em>'.
 	 * @generated
 	 */
-	MaterialLink createMaterialLink();
+	Link createLink();
 
 	/**
 	 * Returns a new object of class '<em>Material</em>'.
