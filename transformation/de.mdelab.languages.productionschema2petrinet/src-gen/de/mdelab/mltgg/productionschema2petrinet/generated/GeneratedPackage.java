@@ -253,138 +253,6 @@ public interface GeneratedPackage extends EPackage {
 			+ 0;
 
 	/**
-	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionSchema2petrinetDisjunctiveNodeImpl <em>production Schema2petrinet Disjunctive Node</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionSchema2petrinetDisjunctiveNodeImpl
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionSchema2petrinetDisjunctiveNode()
-	 * @generated
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE = 2;
-
-	/**
-	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
-
-	/**
-	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
-
-	/**
-	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
-
-	/**
-	 * The number of structural features of the '<em>production Schema2petrinet Disjunctive Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT
-			+ 0;
-
-	/**
-	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
-
-	/**
-	 * The number of operations of the '<em>production Schema2petrinet Disjunctive Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT
-			+ 0;
-
-	/**
-	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeInImpl <em>productionschema2petrinet Disjunctive Node In</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeInImpl
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetDisjunctiveNodeIn()
-	 * @generated
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN = 3;
-
-	/**
-	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
-
-	/**
-	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
-
-	/**
-	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
-
-	/**
-	 * The number of structural features of the '<em>productionschema2petrinet Disjunctive Node In</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT
-			+ 0;
-
-	/**
-	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
-
-	/**
-	 * The number of operations of the '<em>productionschema2petrinet Disjunctive Node In</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT
-			+ 0;
-
-	/**
 	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNodeImpl <em>productionschema2petrinet Conjunctive Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -392,7 +260,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetConjunctiveNode()
 	 * @generated
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE = 4;
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -458,7 +326,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetLink()
 	 * @generated
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_LINK = 5;
+	int PRODUCTIONSCHEMA2PETRINET_LINK = 3;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -516,6 +384,72 @@ public interface GeneratedPackage extends EPackage {
 			+ 0;
 
 	/**
+	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeInImpl <em>productionschema2petrinet Disjunctive Node In</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeInImpl
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetDisjunctiveNodeIn()
+	 * @generated
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN = 4;
+
+	/**
+	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
+
+	/**
+	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
+
+	/**
+	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
+
+	/**
+	 * The number of structural features of the '<em>productionschema2petrinet Disjunctive Node In</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
+
+	/**
+	 * The number of operations of the '<em>productionschema2petrinet Disjunctive Node In</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT
+			+ 0;
+
+	/**
 	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNodeInImpl <em>productionschema2petrinet Conjunctive Node In</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -523,7 +457,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetConjunctiveNodeIn()
 	 * @generated
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN = 6;
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN = 5;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -582,14 +516,14 @@ public interface GeneratedPackage extends EPackage {
 			+ 0;
 
 	/**
-	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeOutImpl <em>productionschema2petrinet Disjunctive Node Out</em>}' class.
+	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionSchema2petrinetDisjunctiveNodeImpl <em>production Schema2petrinet Disjunctive Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeOutImpl
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetDisjunctiveNodeOut()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionSchema2petrinetDisjunctiveNodeImpl
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionSchema2petrinetDisjunctiveNode()
 	 * @generated
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT = 7;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE = 6;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -598,7 +532,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
 
 	/**
 	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
@@ -607,7 +541,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
 
 	/**
 	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
@@ -616,16 +550,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
 
 	/**
-	 * The number of structural features of the '<em>productionschema2petrinet Disjunctive Node Out</em>' class.
+	 * The number of structural features of the '<em>production Schema2petrinet Disjunctive Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT
 			+ 0;
 
 	/**
@@ -635,16 +569,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
 
 	/**
-	 * The number of operations of the '<em>productionschema2petrinet Disjunctive Node Out</em>' class.
+	 * The number of operations of the '<em>production Schema2petrinet Disjunctive Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT
 			+ 0;
 
 	/**
@@ -655,7 +589,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetConjunctiveNodeOut()
 	 * @generated
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT = 8;
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT = 7;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -711,6 +645,72 @@ public interface GeneratedPackage extends EPackage {
 	 * @ordered
 	 */
 	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT
+			+ 0;
+
+	/**
+	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeOutImpl <em>productionschema2petrinet Disjunctive Node Out</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeOutImpl
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetDisjunctiveNodeOut()
+	 * @generated
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT = 8;
+
+	/**
+	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
+
+	/**
+	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
+
+	/**
+	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
+
+	/**
+	 * The number of structural features of the '<em>productionschema2petrinet Disjunctive Node Out</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
+
+	/**
+	 * The number of operations of the '<em>productionschema2petrinet Disjunctive Node Out</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT
 			+ 0;
 
 	/**
@@ -929,694 +929,6 @@ public interface GeneratedPackage extends EPackage {
 			+ 7;
 
 	/**
-	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeIn_r7Impl <em>productionschema2petrinet Disjunctive Node In r7</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeIn_r7Impl
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7 = 10;
-
-	/**
-	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
-
-	/**
-	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
-
-	/**
-	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 0;
-
-	/**
-	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 1;
-
-	/**
-	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 2;
-
-	/**
-	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 3;
-
-	/**
-	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 4;
-
-	/**
-	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 5;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 6;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 7;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 8;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 9;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 10;
-
-	/**
-	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 11;
-
-	/**
-	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 12;
-
-	/**
-	 * The number of structural features of the '<em>productionschema2petrinet Disjunctive Node In r7</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 13;
-
-	/**
-	 * The operation id for the '<em>Delete Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
-
-	/**
-	 * The operation id for the '<em>Add Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 0;
-
-	/**
-	 * The operation id for the '<em>Change Attribute Values</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 1;
-
-	/**
-	 * The operation id for the '<em>Move Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 2;
-
-	/**
-	 * The operation id for the '<em>Transform Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 3;
-
-	/**
-	 * The operation id for the '<em>Transform Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 4;
-
-	/**
-	 * The operation id for the '<em>Transform Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 5;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 6;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 7;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 8;
-
-	/**
-	 * The operation id for the '<em>Synchronize Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 9;
-
-	/**
-	 * The operation id for the '<em>Synchronize Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 10;
-
-	/**
-	 * The operation id for the '<em>Repair Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 11;
-
-	/**
-	 * The operation id for the '<em>Repair Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 12;
-
-	/**
-	 * The number of operations of the '<em>productionschema2petrinet Disjunctive Node In r7</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 13;
-
-	/**
-	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionSchema2petrinetDisjunctiveNode_r3Impl <em>production Schema2petrinet Disjunctive Node r3</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionSchema2petrinetDisjunctiveNode_r3Impl
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3 = 11;
-
-	/**
-	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
-
-	/**
-	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
-
-	/**
-	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 0;
-
-	/**
-	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 1;
-
-	/**
-	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 2;
-
-	/**
-	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 3;
-
-	/**
-	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 4;
-
-	/**
-	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 5;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 6;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 7;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 8;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 9;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 10;
-
-	/**
-	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 11;
-
-	/**
-	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 12;
-
-	/**
-	 * The number of structural features of the '<em>production Schema2petrinet Disjunctive Node r3</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 13;
-
-	/**
-	 * The operation id for the '<em>Delete Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
-
-	/**
-	 * The operation id for the '<em>Add Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 0;
-
-	/**
-	 * The operation id for the '<em>Change Attribute Values</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 1;
-
-	/**
-	 * The operation id for the '<em>Move Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 2;
-
-	/**
-	 * The operation id for the '<em>Transform Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 3;
-
-	/**
-	 * The operation id for the '<em>Transform Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 4;
-
-	/**
-	 * The operation id for the '<em>Transform Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 5;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 6;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 7;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 8;
-
-	/**
-	 * The operation id for the '<em>Synchronize Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 9;
-
-	/**
-	 * The operation id for the '<em>Synchronize Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 10;
-
-	/**
-	 * The operation id for the '<em>Repair Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 11;
-
-	/**
-	 * The operation id for the '<em>Repair Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 12;
-
-	/**
-	 * The number of operations of the '<em>production Schema2petrinet Disjunctive Node r3</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 13;
-
-	/**
 	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNodeOut_r6Impl <em>productionschema2petrinet Conjunctive Node Out r6</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1624,7 +936,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetConjunctiveNodeOut_r6()
 	 * @generated
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT_R6 = 12;
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT_R6 = 10;
 
 	/**
 	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
@@ -1961,6 +1273,350 @@ public interface GeneratedPackage extends EPackage {
 			+ 13;
 
 	/**
+	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNode_r2Impl <em>productionschema2petrinet Conjunctive Node r2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNode_r2Impl
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2 = 11;
+
+	/**
+	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
+
+	/**
+	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 1;
+
+	/**
+	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 2;
+
+	/**
+	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 3;
+
+	/**
+	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 4;
+
+	/**
+	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 5;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 6;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 7;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 8;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 9;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 10;
+
+	/**
+	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 11;
+
+	/**
+	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 12;
+
+	/**
+	 * The number of structural features of the '<em>productionschema2petrinet Conjunctive Node r2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 13;
+
+	/**
+	 * The operation id for the '<em>Delete Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
+
+	/**
+	 * The operation id for the '<em>Add Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 0;
+
+	/**
+	 * The operation id for the '<em>Change Attribute Values</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 1;
+
+	/**
+	 * The operation id for the '<em>Move Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 2;
+
+	/**
+	 * The operation id for the '<em>Transform Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 3;
+
+	/**
+	 * The operation id for the '<em>Transform Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 4;
+
+	/**
+	 * The operation id for the '<em>Transform Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 5;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 6;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 7;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 8;
+
+	/**
+	 * The operation id for the '<em>Synchronize Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 9;
+
+	/**
+	 * The operation id for the '<em>Synchronize Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 10;
+
+	/**
+	 * The operation id for the '<em>Repair Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 11;
+
+	/**
+	 * The operation id for the '<em>Repair Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 12;
+
+	/**
+	 * The number of operations of the '<em>productionschema2petrinet Conjunctive Node r2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 13;
+
+	/**
 	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetLink_r4Impl <em>productionschema2petrinet Link r4</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1968,7 +1624,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetLink_r4()
 	 * @generated
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_LINK_R4 = 13;
+	int PRODUCTIONSCHEMA2PETRINET_LINK_R4 = 12;
 
 	/**
 	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
@@ -2301,6 +1957,350 @@ public interface GeneratedPackage extends EPackage {
 	 * @ordered
 	 */
 	int PRODUCTIONSCHEMA2PETRINET_LINK_R4_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
+
+	/**
+	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNodeIn_r5Impl <em>productionschema2petrinet Conjunctive Node In r5</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNodeIn_r5Impl
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetConjunctiveNodeIn_r5()
+	 * @generated
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5 = 13;
+
+	/**
+	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
+
+	/**
+	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 1;
+
+	/**
+	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 2;
+
+	/**
+	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 3;
+
+	/**
+	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 4;
+
+	/**
+	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 5;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 6;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 7;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 8;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 9;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 10;
+
+	/**
+	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 11;
+
+	/**
+	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 12;
+
+	/**
+	 * The number of structural features of the '<em>productionschema2petrinet Conjunctive Node In r5</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 13;
+
+	/**
+	 * The operation id for the '<em>Delete Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
+
+	/**
+	 * The operation id for the '<em>Add Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 0;
+
+	/**
+	 * The operation id for the '<em>Change Attribute Values</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 1;
+
+	/**
+	 * The operation id for the '<em>Move Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 2;
+
+	/**
+	 * The operation id for the '<em>Transform Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 3;
+
+	/**
+	 * The operation id for the '<em>Transform Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 4;
+
+	/**
+	 * The operation id for the '<em>Transform Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 5;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 6;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 7;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 8;
+
+	/**
+	 * The operation id for the '<em>Synchronize Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 9;
+
+	/**
+	 * The operation id for the '<em>Synchronize Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 10;
+
+	/**
+	 * The operation id for the '<em>Repair Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 11;
+
+	/**
+	 * The operation id for the '<em>Repair Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 12;
+
+	/**
+	 * The number of operations of the '<em>productionschema2petrinet Conjunctive Node In r5</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 13;
 
 	/**
 	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeOut_r8Impl <em>productionschema2petrinet Disjunctive Node Out r8</em>}' class.
@@ -2647,14 +2647,14 @@ public interface GeneratedPackage extends EPackage {
 			+ 13;
 
 	/**
-	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNodeIn_r5Impl <em>productionschema2petrinet Conjunctive Node In r5</em>}' class.
+	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionSchema2petrinetDisjunctiveNode_r3Impl <em>production Schema2petrinet Disjunctive Node r3</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNodeIn_r5Impl
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetConjunctiveNodeIn_r5()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionSchema2petrinetDisjunctiveNode_r3Impl
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionSchema2petrinetDisjunctiveNode_r3()
 	 * @generated
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5 = 15;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3 = 15;
 
 	/**
 	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
@@ -2663,7 +2663,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
 
 	/**
 	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
@@ -2672,7 +2672,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
@@ -2681,7 +2681,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
 
 	/**
 	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
@@ -2690,7 +2690,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
 
 	/**
 	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
@@ -2699,7 +2699,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
 
 	/**
 	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
@@ -2708,7 +2708,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 0;
 
 	/**
@@ -2718,7 +2718,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 1;
 
 	/**
@@ -2728,7 +2728,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 2;
 
 	/**
@@ -2738,7 +2738,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 3;
 
 	/**
@@ -2748,7 +2748,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 4;
 
 	/**
@@ -2758,7 +2758,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 5;
 
 	/**
@@ -2768,7 +2768,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 6;
 
 	/**
@@ -2778,7 +2778,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 7;
 
 	/**
@@ -2788,7 +2788,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 8;
 
 	/**
@@ -2798,7 +2798,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 9;
 
 	/**
@@ -2808,7 +2808,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 10;
 
 	/**
@@ -2818,7 +2818,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 11;
 
 	/**
@@ -2828,17 +2828,17 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 12;
 
 	/**
-	 * The number of structural features of the '<em>productionschema2petrinet Conjunctive Node In r5</em>' class.
+	 * The number of structural features of the '<em>production Schema2petrinet Disjunctive Node r3</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 13;
 
 	/**
@@ -2848,7 +2848,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
 
 	/**
 	 * The operation id for the '<em>Add Element</em>' operation.
@@ -2857,7 +2857,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 0;
 
 	/**
@@ -2867,7 +2867,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 1;
 
 	/**
@@ -2877,7 +2877,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 2;
 
 	/**
@@ -2887,7 +2887,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 3;
 
 	/**
@@ -2897,7 +2897,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 4;
 
 	/**
@@ -2907,7 +2907,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 5;
 
 	/**
@@ -2917,7 +2917,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 6;
 
 	/**
@@ -2927,7 +2927,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 7;
 
 	/**
@@ -2937,7 +2937,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 8;
 
 	/**
@@ -2947,7 +2947,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 9;
 
 	/**
@@ -2957,7 +2957,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 10;
 
 	/**
@@ -2967,7 +2967,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 11;
 
 	/**
@@ -2977,28 +2977,28 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 12;
 
 	/**
-	 * The number of operations of the '<em>productionschema2petrinet Conjunctive Node In r5</em>' class.
+	 * The number of operations of the '<em>production Schema2petrinet Disjunctive Node r3</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 13;
 
 	/**
-	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNode_r2Impl <em>productionschema2petrinet Conjunctive Node r2</em>}' class.
+	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeIn_r7Impl <em>productionschema2petrinet Disjunctive Node In r7</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetConjunctiveNode_r2Impl
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.productionschema2petrinetDisjunctiveNodeIn_r7Impl
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.impl.GeneratedPackageImpl#getproductionschema2petrinetDisjunctiveNodeIn_r7()
 	 * @generated
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2 = 16;
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7 = 16;
 
 	/**
 	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
@@ -3007,7 +3007,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
 
 	/**
 	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
@@ -3016,7 +3016,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
@@ -3025,7 +3025,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
 
 	/**
 	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
@@ -3034,7 +3034,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
 
 	/**
 	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
@@ -3043,7 +3043,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
 
 	/**
 	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
@@ -3052,7 +3052,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 0;
 
 	/**
@@ -3062,7 +3062,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 1;
 
 	/**
@@ -3072,7 +3072,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 2;
 
 	/**
@@ -3082,7 +3082,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 3;
 
 	/**
@@ -3092,7 +3092,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 4;
 
 	/**
@@ -3102,7 +3102,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 5;
 
 	/**
@@ -3112,7 +3112,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 6;
 
 	/**
@@ -3122,7 +3122,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 7;
 
 	/**
@@ -3132,7 +3132,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 8;
 
 	/**
@@ -3142,7 +3142,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 9;
 
 	/**
@@ -3152,7 +3152,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 10;
 
 	/**
@@ -3162,7 +3162,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 11;
 
 	/**
@@ -3172,17 +3172,17 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 12;
 
 	/**
-	 * The number of structural features of the '<em>productionschema2petrinet Conjunctive Node r2</em>' class.
+	 * The number of structural features of the '<em>productionschema2petrinet Disjunctive Node In r7</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
 			+ 13;
 
 	/**
@@ -3192,7 +3192,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
 
 	/**
 	 * The operation id for the '<em>Add Element</em>' operation.
@@ -3201,7 +3201,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 0;
 
 	/**
@@ -3211,7 +3211,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 1;
 
 	/**
@@ -3221,7 +3221,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 2;
 
 	/**
@@ -3231,7 +3231,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 3;
 
 	/**
@@ -3241,7 +3241,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 4;
 
 	/**
@@ -3251,7 +3251,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 5;
 
 	/**
@@ -3261,7 +3261,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 6;
 
 	/**
@@ -3271,7 +3271,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 7;
 
 	/**
@@ -3281,7 +3281,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 8;
 
 	/**
@@ -3291,7 +3291,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 9;
 
 	/**
@@ -3301,7 +3301,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 10;
 
 	/**
@@ -3311,7 +3311,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 11;
 
 	/**
@@ -3321,17 +3321,17 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 12;
 
 	/**
-	 * The number of operations of the '<em>productionschema2petrinet Conjunctive Node r2</em>' class.
+	 * The number of operations of the '<em>productionschema2petrinet Disjunctive Node In r7</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+	int PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
 			+ 13;
 
 	/**
@@ -3355,26 +3355,6 @@ public interface GeneratedPackage extends EPackage {
 	EClass getproductionschema2petrinetAxiom();
 
 	/**
-	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode <em>production Schema2petrinet Disjunctive Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>production Schema2petrinet Disjunctive Node</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode
-	 * @generated
-	 */
-	EClass getproductionSchema2petrinetDisjunctiveNode();
-
-	/**
-	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn <em>productionschema2petrinet Disjunctive Node In</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>productionschema2petrinet Disjunctive Node In</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn
-	 * @generated
-	 */
-	EClass getproductionschema2petrinetDisjunctiveNodeIn();
-
-	/**
 	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode <em>productionschema2petrinet Conjunctive Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3395,6 +3375,16 @@ public interface GeneratedPackage extends EPackage {
 	EClass getproductionschema2petrinetLink();
 
 	/**
+	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn <em>productionschema2petrinet Disjunctive Node In</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>productionschema2petrinet Disjunctive Node In</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn
+	 * @generated
+	 */
+	EClass getproductionschema2petrinetDisjunctiveNodeIn();
+
+	/**
 	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNodeIn <em>productionschema2petrinet Conjunctive Node In</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3405,14 +3395,14 @@ public interface GeneratedPackage extends EPackage {
 	EClass getproductionschema2petrinetConjunctiveNodeIn();
 
 	/**
-	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut <em>productionschema2petrinet Disjunctive Node Out</em>}'.
+	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode <em>production Schema2petrinet Disjunctive Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>productionschema2petrinet Disjunctive Node Out</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut
+	 * @return the meta object for class '<em>production Schema2petrinet Disjunctive Node</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode
 	 * @generated
 	 */
-	EClass getproductionschema2petrinetDisjunctiveNodeOut();
+	EClass getproductionSchema2petrinetDisjunctiveNode();
 
 	/**
 	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNodeOut <em>productionschema2petrinet Conjunctive Node Out</em>}'.
@@ -3423,6 +3413,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getproductionschema2petrinetConjunctiveNodeOut();
+
+	/**
+	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut <em>productionschema2petrinet Disjunctive Node Out</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>productionschema2petrinet Disjunctive Node Out</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut
+	 * @generated
+	 */
+	EClass getproductionschema2petrinetDisjunctiveNodeOut();
 
 	/**
 	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetAxiom_r1 <em>productionschema2petrinet Axiom r1</em>}'.
@@ -3591,572 +3591,6 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getproductionschema2petrinetAxiom_r1__SynchronizeBackward__EList_EList_TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7 <em>productionschema2petrinet Disjunctive Node In r7</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>productionschema2petrinet Disjunctive Node In r7</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7
-	 * @generated
-	 */
-	EClass getproductionschema2petrinetDisjunctiveNodeIn_r7();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getAddElementActivity <em>Add Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getAddElementActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_AddElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getMoveElementActivity <em>Move Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getMoveElementActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_MoveElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getChangeAttributeActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ChangeAttributeActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformForwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformMappingActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformBackwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckForwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckMappingActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckBackwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getSynchronizeForwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_SynchronizeForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getSynchronizeBackwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_SynchronizeBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getRepairForwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_RepairForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getRepairBackwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_RepairBackwardActivity();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Element</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#addElement(org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__AddElement__EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ChangeAttributeValues__TGGNode_EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Move Element</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__MoveElement__TGGNode_TGGNode_TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformForward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformMapping__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformBackward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckForward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckMapping__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckBackward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__SynchronizeForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__SynchronizeBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__RepairForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__RepairBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3 <em>production Schema2petrinet Disjunctive Node r3</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>production Schema2petrinet Disjunctive Node r3</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3
-	 * @generated
-	 */
-	EClass getproductionSchema2petrinetDisjunctiveNode_r3();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getAddElementActivity <em>Add Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getAddElementActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_AddElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getMoveElementActivity <em>Move Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getMoveElementActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_MoveElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getChangeAttributeActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_ChangeAttributeActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformForwardActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformMappingActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformBackwardActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckForwardActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckMappingActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckBackwardActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getSynchronizeForwardActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_SynchronizeForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getSynchronizeBackwardActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_SynchronizeBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getRepairForwardActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_RepairForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getRepairBackwardActivity()
-	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
-	 * @generated
-	 */
-	EReference getproductionSchema2petrinetDisjunctiveNode_r3_RepairBackwardActivity();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Element</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#addElement(org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__AddElement__EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ChangeAttributeValues__TGGNode_EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Move Element</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__MoveElement__TGGNode_TGGNode_TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformForward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformMapping__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformBackward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckForward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckMapping__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckBackward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__SynchronizeForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__SynchronizeBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__RepairForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__RepairBackward__TGGNode_boolean();
 
 	/**
 	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNodeOut_r6 <em>productionschema2petrinet Conjunctive Node Out r6</em>}'.
@@ -4442,6 +3876,289 @@ public interface GeneratedPackage extends EPackage {
 	EOperation getproductionschema2petrinetConjunctiveNodeOut_r6__RepairBackward__TGGNode_boolean();
 
 	/**
+	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2 <em>productionschema2petrinet Conjunctive Node r2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>productionschema2petrinet Conjunctive Node r2</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2
+	 * @generated
+	 */
+	EClass getproductionschema2petrinetConjunctiveNode_r2();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getAddElementActivity <em>Add Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getAddElementActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_AddElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getMoveElementActivity <em>Move Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getMoveElementActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_MoveElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getChangeAttributeActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_ChangeAttributeActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformForwardActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_TransformForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformMappingActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_TransformMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformBackwardActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_TransformBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckForwardActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckMappingActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckBackwardActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getSynchronizeForwardActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_SynchronizeForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getSynchronizeBackwardActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_SynchronizeBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getRepairForwardActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_RepairForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getRepairBackwardActivity()
+	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetConjunctiveNode_r2_RepairBackwardActivity();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Element</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#addElement(org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__AddElement__EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__ChangeAttributeValues__TGGNode_EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Move Element</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__MoveElement__TGGNode_TGGNode_TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformForward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformMapping__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformBackward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckForward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckMapping__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckBackward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__SynchronizeForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__SynchronizeBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__RepairForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetConjunctiveNode_r2__RepairBackward__TGGNode_boolean();
+
+	/**
 	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetLink_r4 <em>productionschema2petrinet Link r4</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4723,289 +4440,6 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getproductionschema2petrinetLink_r4__RepairBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8 <em>productionschema2petrinet Disjunctive Node Out r8</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>productionschema2petrinet Disjunctive Node Out r8</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8
-	 * @generated
-	 */
-	EClass getproductionschema2petrinetDisjunctiveNodeOut_r8();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getAddElementActivity <em>Add Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getAddElementActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_AddElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getMoveElementActivity <em>Move Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getMoveElementActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_MoveElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getChangeAttributeActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_ChangeAttributeActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformForwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_TransformForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformMappingActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_TransformMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformBackwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_TransformBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckForwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_ConflictCheckForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckMappingActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_ConflictCheckMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckBackwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_ConflictCheckBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getSynchronizeForwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_SynchronizeForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getSynchronizeBackwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_SynchronizeBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getRepairForwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_RepairForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getRepairBackwardActivity()
-	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
-	 * @generated
-	 */
-	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_RepairBackwardActivity();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Element</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#addElement(org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__AddElement__EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__ChangeAttributeValues__TGGNode_EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Move Element</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__MoveElement__TGGNode_TGGNode_TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__TransformForward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__TransformMapping__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__TransformBackward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__ConflictCheckForward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__ConflictCheckMapping__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__ConflictCheckBackward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__SynchronizeForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__SynchronizeBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__RepairForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__RepairBackward__TGGNode_boolean();
 
 	/**
 	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNodeIn_r5 <em>productionschema2petrinet Conjunctive Node In r5</em>}'.
@@ -5291,287 +4725,853 @@ public interface GeneratedPackage extends EPackage {
 	EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__RepairBackward__TGGNode_boolean();
 
 	/**
-	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2 <em>productionschema2petrinet Conjunctive Node r2</em>}'.
+	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8 <em>productionschema2petrinet Disjunctive Node Out r8</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>productionschema2petrinet Conjunctive Node r2</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2
+	 * @return the meta object for class '<em>productionschema2petrinet Disjunctive Node Out r8</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8
 	 * @generated
 	 */
-	EClass getproductionschema2petrinetConjunctiveNode_r2();
+	EClass getproductionschema2petrinetDisjunctiveNodeOut_r8();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getAddElementActivity <em>Add Element Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getAddElementActivity <em>Add Element Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getAddElementActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getAddElementActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_AddElementActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_AddElementActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getMoveElementActivity <em>Move Element Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getMoveElementActivity <em>Move Element Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getMoveElementActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getMoveElementActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_MoveElementActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_MoveElementActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getChangeAttributeActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getChangeAttributeActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_ChangeAttributeActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_ChangeAttributeActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformForwardActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformForwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_TransformForwardActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_TransformForwardActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformMappingActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformMappingActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_TransformMappingActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_TransformMappingActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getTransformBackwardActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getTransformBackwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_TransformBackwardActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_TransformBackwardActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckForwardActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckForwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckForwardActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_ConflictCheckForwardActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckMappingActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckMappingActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckMappingActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_ConflictCheckMappingActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getConflictCheckBackwardActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getConflictCheckBackwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckBackwardActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_ConflictCheckBackwardActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getSynchronizeForwardActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getSynchronizeForwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_SynchronizeForwardActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_SynchronizeForwardActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getSynchronizeBackwardActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getSynchronizeBackwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_SynchronizeBackwardActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_SynchronizeBackwardActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getRepairForwardActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getRepairForwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_RepairForwardActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_RepairForwardActivity();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#getRepairBackwardActivity()
-	 * @see #getproductionschema2petrinetConjunctiveNode_r2()
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#getRepairBackwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeOut_r8()
 	 * @generated
 	 */
-	EReference getproductionschema2petrinetConjunctiveNode_r2_RepairBackwardActivity();
+	EReference getproductionschema2petrinetDisjunctiveNodeOut_r8_RepairBackwardActivity();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Add Element</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#addElement(org.eclipse.emf.common.util.EMap)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#addElement(org.eclipse.emf.common.util.EMap)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__AddElement__EMap();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__AddElement__EMap();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__ChangeAttributeValues__TGGNode_EMap();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__ChangeAttributeValues__TGGNode_EMap();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Move Element</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__MoveElement__TGGNode_TGGNode_TGGNode();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__MoveElement__TGGNode_TGGNode_TGGNode();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Transform Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformForward__TGGNode_boolean_boolean();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__TransformForward__TGGNode_boolean_boolean();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformMapping__TGGNode_boolean_boolean();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__TransformMapping__TGGNode_boolean_boolean();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Transform Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformBackward__TGGNode_boolean_boolean();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__TransformBackward__TGGNode_boolean_boolean();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckForward__TGGNode();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__ConflictCheckForward__TGGNode();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckMapping__TGGNode();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__ConflictCheckMapping__TGGNode();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckBackward__TGGNode();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__ConflictCheckBackward__TGGNode();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__SynchronizeForward__TGGNode_boolean();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__SynchronizeForward__TGGNode_boolean();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__SynchronizeBackward__TGGNode_boolean();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__SynchronizeBackward__TGGNode_boolean();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Repair Forward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__RepairForward__TGGNode_boolean();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__RepairForward__TGGNode_boolean();
 
 	/**
-	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Repair Backward</em>' operation.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
 	 * @generated
 	 */
-	EOperation getproductionschema2petrinetConjunctiveNode_r2__RepairBackward__TGGNode_boolean();
+	EOperation getproductionschema2petrinetDisjunctiveNodeOut_r8__RepairBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3 <em>production Schema2petrinet Disjunctive Node r3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>production Schema2petrinet Disjunctive Node r3</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3
+	 * @generated
+	 */
+	EClass getproductionSchema2petrinetDisjunctiveNode_r3();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getAddElementActivity <em>Add Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getAddElementActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_AddElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getMoveElementActivity <em>Move Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getMoveElementActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_MoveElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getChangeAttributeActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_ChangeAttributeActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformForwardActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformMappingActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getTransformBackwardActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckForwardActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckMappingActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getConflictCheckBackwardActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getSynchronizeForwardActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_SynchronizeForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getSynchronizeBackwardActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_SynchronizeBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getRepairForwardActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_RepairForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#getRepairBackwardActivity()
+	 * @see #getproductionSchema2petrinetDisjunctiveNode_r3()
+	 * @generated
+	 */
+	EReference getproductionSchema2petrinetDisjunctiveNode_r3_RepairBackwardActivity();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Element</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#addElement(org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__AddElement__EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ChangeAttributeValues__TGGNode_EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Move Element</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__MoveElement__TGGNode_TGGNode_TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformForward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformMapping__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformBackward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckForward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckMapping__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckBackward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__SynchronizeForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__SynchronizeBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__RepairForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionSchema2petrinetDisjunctiveNode_r3__RepairBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7 <em>productionschema2petrinet Disjunctive Node In r7</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>productionschema2petrinet Disjunctive Node In r7</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7
+	 * @generated
+	 */
+	EClass getproductionschema2petrinetDisjunctiveNodeIn_r7();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getAddElementActivity <em>Add Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getAddElementActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_AddElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getMoveElementActivity <em>Move Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getMoveElementActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_MoveElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getChangeAttributeActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ChangeAttributeActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformForwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformMappingActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getTransformBackwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckForwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckMappingActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getConflictCheckBackwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getSynchronizeForwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_SynchronizeForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getSynchronizeBackwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_SynchronizeBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getRepairForwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_RepairForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#getRepairBackwardActivity()
+	 * @see #getproductionschema2petrinetDisjunctiveNodeIn_r7()
+	 * @generated
+	 */
+	EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_RepairBackwardActivity();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Element</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#addElement(org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__AddElement__EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ChangeAttributeValues__TGGNode_EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Move Element</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__MoveElement__TGGNode_TGGNode_TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformForward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformMapping__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformBackward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckForward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckMapping__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckBackward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__SynchronizeForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__SynchronizeBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Forward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__RepairForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Backward</em>' operation.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__RepairBackward__TGGNode_boolean();
 
 	/**
 	 * Returns the factory that creates the instances of the model.

@@ -40,24 +40,6 @@ public interface GeneratedFactory extends EFactory {
 	productionschema2petrinetAxiom createproductionschema2petrinetAxiom();
 
 	/**
-	 * Returns a new object of class '<em>production Schema2petrinet Disjunctive Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>production Schema2petrinet Disjunctive Node</em>'.
-	 * @generated
-	 */
-	productionSchema2petrinetDisjunctiveNode createproductionSchema2petrinetDisjunctiveNode();
-
-	/**
-	 * Returns a new object of class '<em>productionschema2petrinet Disjunctive Node In</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>productionschema2petrinet Disjunctive Node In</em>'.
-	 * @generated
-	 */
-	productionschema2petrinetDisjunctiveNodeIn createproductionschema2petrinetDisjunctiveNodeIn();
-
-	/**
 	 * Returns a new object of class '<em>productionschema2petrinet Conjunctive Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,6 +58,15 @@ public interface GeneratedFactory extends EFactory {
 	productionschema2petrinetLink createproductionschema2petrinetLink();
 
 	/**
+	 * Returns a new object of class '<em>productionschema2petrinet Disjunctive Node In</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>productionschema2petrinet Disjunctive Node In</em>'.
+	 * @generated
+	 */
+	productionschema2petrinetDisjunctiveNodeIn createproductionschema2petrinetDisjunctiveNodeIn();
+
+	/**
 	 * Returns a new object of class '<em>productionschema2petrinet Conjunctive Node In</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -85,13 +76,13 @@ public interface GeneratedFactory extends EFactory {
 	productionschema2petrinetConjunctiveNodeIn createproductionschema2petrinetConjunctiveNodeIn();
 
 	/**
-	 * Returns a new object of class '<em>productionschema2petrinet Disjunctive Node Out</em>'.
+	 * Returns a new object of class '<em>production Schema2petrinet Disjunctive Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>productionschema2petrinet Disjunctive Node Out</em>'.
+	 * @return a new object of class '<em>production Schema2petrinet Disjunctive Node</em>'.
 	 * @generated
 	 */
-	productionschema2petrinetDisjunctiveNodeOut createproductionschema2petrinetDisjunctiveNodeOut();
+	productionSchema2petrinetDisjunctiveNode createproductionSchema2petrinetDisjunctiveNode();
 
 	/**
 	 * Returns a new object of class '<em>productionschema2petrinet Conjunctive Node Out</em>'.
@@ -103,6 +94,15 @@ public interface GeneratedFactory extends EFactory {
 	productionschema2petrinetConjunctiveNodeOut createproductionschema2petrinetConjunctiveNodeOut();
 
 	/**
+	 * Returns a new object of class '<em>productionschema2petrinet Disjunctive Node Out</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>productionschema2petrinet Disjunctive Node Out</em>'.
+	 * @generated
+	 */
+	productionschema2petrinetDisjunctiveNodeOut createproductionschema2petrinetDisjunctiveNodeOut();
+
+	/**
 	 * Returns a new object of class '<em>productionschema2petrinet Axiom r1</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -110,24 +110,6 @@ public interface GeneratedFactory extends EFactory {
 	 * @generated
 	 */
 	productionschema2petrinetAxiom_r1 createproductionschema2petrinetAxiom_r1();
-
-	/**
-	 * Returns a new object of class '<em>productionschema2petrinet Disjunctive Node In r7</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>productionschema2petrinet Disjunctive Node In r7</em>'.
-	 * @generated
-	 */
-	productionschema2petrinetDisjunctiveNodeIn_r7 createproductionschema2petrinetDisjunctiveNodeIn_r7();
-
-	/**
-	 * Returns a new object of class '<em>production Schema2petrinet Disjunctive Node r3</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>production Schema2petrinet Disjunctive Node r3</em>'.
-	 * @generated
-	 */
-	productionSchema2petrinetDisjunctiveNode_r3 createproductionSchema2petrinetDisjunctiveNode_r3();
 
 	/**
 	 * Returns a new object of class '<em>productionschema2petrinet Conjunctive Node Out r6</em>'.
@@ -139,6 +121,15 @@ public interface GeneratedFactory extends EFactory {
 	productionschema2petrinetConjunctiveNodeOut_r6 createproductionschema2petrinetConjunctiveNodeOut_r6();
 
 	/**
+	 * Returns a new object of class '<em>productionschema2petrinet Conjunctive Node r2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>productionschema2petrinet Conjunctive Node r2</em>'.
+	 * @generated
+	 */
+	productionschema2petrinetConjunctiveNode_r2 createproductionschema2petrinetConjunctiveNode_r2();
+
+	/**
 	 * Returns a new object of class '<em>productionschema2petrinet Link r4</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -146,15 +137,6 @@ public interface GeneratedFactory extends EFactory {
 	 * @generated
 	 */
 	productionschema2petrinetLink_r4 createproductionschema2petrinetLink_r4();
-
-	/**
-	 * Returns a new object of class '<em>productionschema2petrinet Disjunctive Node Out r8</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>productionschema2petrinet Disjunctive Node Out r8</em>'.
-	 * @generated
-	 */
-	productionschema2petrinetDisjunctiveNodeOut_r8 createproductionschema2petrinetDisjunctiveNodeOut_r8();
 
 	/**
 	 * Returns a new object of class '<em>productionschema2petrinet Conjunctive Node In r5</em>'.
@@ -166,13 +148,31 @@ public interface GeneratedFactory extends EFactory {
 	productionschema2petrinetConjunctiveNodeIn_r5 createproductionschema2petrinetConjunctiveNodeIn_r5();
 
 	/**
-	 * Returns a new object of class '<em>productionschema2petrinet Conjunctive Node r2</em>'.
+	 * Returns a new object of class '<em>productionschema2petrinet Disjunctive Node Out r8</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>productionschema2petrinet Conjunctive Node r2</em>'.
+	 * @return a new object of class '<em>productionschema2petrinet Disjunctive Node Out r8</em>'.
 	 * @generated
 	 */
-	productionschema2petrinetConjunctiveNode_r2 createproductionschema2petrinetConjunctiveNode_r2();
+	productionschema2petrinetDisjunctiveNodeOut_r8 createproductionschema2petrinetDisjunctiveNodeOut_r8();
+
+	/**
+	 * Returns a new object of class '<em>production Schema2petrinet Disjunctive Node r3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>production Schema2petrinet Disjunctive Node r3</em>'.
+	 * @generated
+	 */
+	productionSchema2petrinetDisjunctiveNode_r3 createproductionSchema2petrinetDisjunctiveNode_r3();
+
+	/**
+	 * Returns a new object of class '<em>productionschema2petrinet Disjunctive Node In r7</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>productionschema2petrinet Disjunctive Node In r7</em>'.
+	 * @generated
+	 */
+	productionschema2petrinetDisjunctiveNodeIn_r7 createproductionschema2petrinetDisjunctiveNodeIn_r7();
 
 	/**
 	 * Returns the package supported by this factory.

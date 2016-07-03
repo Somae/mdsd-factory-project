@@ -214,28 +214,42 @@
           <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
         </modelObjects>
         <modelObjects uuid="_SpQZQEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_2Ieq8EDvEeahS4UZF2YDOg" name="link" incomingLinks="_WTeoQEDvEeahS4UZF2YDOg">
-          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//Link"/>
+          <attributeAssignments uuid="_cFdTUEECEeahS4UZF2YDOg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_kdn4IUECEeahS4UZF2YDOg" expressionString="nameVariable" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.mdelab.de/languages/productionschema#//IdentifiableElement/label"/>
+          </attributeAssignments>
         </modelObjects>
         <modelLinks uuid="_WTeoQEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_4Dg0QEDvEeahS4UZF2YDOg" source="_Glr5sEDvEeahS4UZF2YDOg" target="_SpQZQEDvEeahS4UZF2YDOg">
-          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinks"/>
         </modelLinks>
       </leftModelDomain>
       <rightModelDomain uuid="_DBzjQEDvEeahS4UZF2YDOg">
         <modelObjects uuid="_LQNvIEDvEeahS4UZF2YDOg" incomingCorrespondenceLink="_PZdccEDvEeahS4UZF2YDOg" name="page" outgoingLinks="_yqikcEDvEeahS4UZF2YDOg">
           <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
         </modelObjects>
-        <modelObjects uuid="_vs-nIEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_1N55EEDvEeahS4UZF2YDOg" name="place" incomingLinks="_yqikcEDvEeahS4UZF2YDOg">
+        <modelObjects uuid="_vs-nIEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_1N55EEDvEeahS4UZF2YDOg" name="place" outgoingLinks="_TaNacEECEeahS4UZF2YDOg" incomingLinks="_yqikcEDvEeahS4UZF2YDOg">
           <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelObjects uuid="_Q-tBUEECEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_V3CCMEECEeahS4UZF2YDOg" name="name" incomingLinks="_TaNacEECEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name"/>
+          <attributeAssignments uuid="_Ymi8cEECEeahS4UZF2YDOg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_nnnu8UECEeahS4UZF2YDOg" expressionString="nameVariable" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name/text"/>
+          </attributeAssignments>
         </modelObjects>
         <modelLinks uuid="_yqikcEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_3DdsgEDvEeahS4UZF2YDOg" source="_LQNvIEDvEeahS4UZF2YDOg" target="_vs-nIEDvEeahS4UZF2YDOg">
           <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_TaNacEECEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_VelF8EECEeahS4UZF2YDOg" source="_vs-nIEDvEeahS4UZF2YDOg" target="_Q-tBUEECEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Object/name"/>
         </modelLinks>
       </rightModelDomain>
       <correspondenceDomain uuid="_An8I4EDvEeahS4UZF2YDOg">
         <correspondenceNodes uuid="_I0Pb8EDvEeahS4UZF2YDOg" name="axiom" outgoingLinks="_Od-EkEDvEeahS4UZF2YDOg _PZdccEDvEeahS4UZF2YDOg">
           <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrAxiom"/>
         </correspondenceNodes>
-        <correspondenceNodes uuid="_nze7UEDvEeahS4UZF2YDOg" modifier="CREATE" name="corrMaterialLink" outgoingLinks="_1N55EEDvEeahS4UZF2YDOg _2Ieq8EDvEeahS4UZF2YDOg _3DdsgEDvEeahS4UZF2YDOg _4Dg0QEDvEeahS4UZF2YDOg">
+        <correspondenceNodes uuid="_nze7UEDvEeahS4UZF2YDOg" modifier="CREATE" name="corrMaterialLink" outgoingLinks="_1N55EEDvEeahS4UZF2YDOg _2Ieq8EDvEeahS4UZF2YDOg _3DdsgEDvEeahS4UZF2YDOg _4Dg0QEDvEeahS4UZF2YDOg _VelF8EECEeahS4UZF2YDOg _V3CCMEECEeahS4UZF2YDOg">
           <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrMaterialLink"/>
         </correspondenceNodes>
         <correspondenceLinks uuid="_Od-EkEDvEeahS4UZF2YDOg" source="_I0Pb8EDvEeahS4UZF2YDOg" target="_Glr5sEDvEeahS4UZF2YDOg"/>
@@ -244,7 +258,14 @@
         <correspondenceLinks uuid="_2Ieq8EDvEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_SpQZQEDvEeahS4UZF2YDOg"/>
         <correspondenceLinks uuid="_3DdsgEDvEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_yqikcEDvEeahS4UZF2YDOg"/>
         <correspondenceLinks uuid="_4Dg0QEDvEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_WTeoQEDvEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_VelF8EECEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_TaNacEECEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_V3CCMEECEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_Q-tBUEECEeahS4UZF2YDOg"/>
       </correspondenceDomain>
+      <ruleParameters uuid="_r7k3dUECEeahS4UZF2YDOg" name="nameVariable">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_tlKEYUECEeahS4UZF2YDOg" expressionString="link.label" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_41YJgkEEEeahS4UZF2YDOg" expressionString="name.text" expressionLanguageID="OCL"/>
+      </ruleParameters>
     </rules>
   </ruleGroups>
   <ruleGroups uuid="_87MU4UDvEeahS4UZF2YDOg" name="productionschema2petrinetConjunctiveNodeIn" ruleGroupID="productionschema2petrinetConjunctiveNodeIn">
@@ -257,13 +278,13 @@
           <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ConjunctiveNode"/>
         </modelObjects>
         <modelObjects uuid="_l-47wEDwEeahS4UZF2YDOg" incomingCorrespondenceLink="_j-c4kEDxEeahS4UZF2YDOg" name="materialLink" outgoingLinks="_rdfScEDwEeahS4UZF2YDOg" incomingLinks="_qNDlUEDwEeahS4UZF2YDOg">
-          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//Link"/>
         </modelObjects>
         <modelLinks uuid="_qNDlUEDwEeahS4UZF2YDOg" incomingCorrespondenceLink="_kuzXcEDxEeahS4UZF2YDOg" source="_fY8igEDwEeahS4UZF2YDOg" target="_l-47wEDwEeahS4UZF2YDOg">
-          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinks"/>
         </modelLinks>
         <modelLinks uuid="_rdfScEDwEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_yHgd8EDxEeahS4UZF2YDOg" source="_l-47wEDwEeahS4UZF2YDOg" target="_huSpQEDwEeahS4UZF2YDOg">
-          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//MaterialLink/destinationNode"/>
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//Link/destinationNode"/>
         </modelLinks>
         <modelLinks uuid="_tF5asEDwEeahS4UZF2YDOg" incomingCorrespondenceLink="_pMSPYEDxEeahS4UZF2YDOg" source="_fY8igEDwEeahS4UZF2YDOg" target="_huSpQEDwEeahS4UZF2YDOg">
           <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinkableNodes"/>
@@ -339,13 +360,13 @@
           <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ConjunctiveNode"/>
         </modelObjects>
         <modelObjects uuid="_5mY04EDyEeahS4UZF2YDOg" incomingCorrespondenceLink="_n82V4EDzEeahS4UZF2YDOg" name="materialLink" incomingLinks="_dCoEAEDzEeahS4UZF2YDOg _fQfpwEDzEeahS4UZF2YDOg">
-          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//Link"/>
         </modelObjects>
         <modelLinks uuid="_ak3BEEDzEeahS4UZF2YDOg" incomingCorrespondenceLink="_l7YNYEDzEeahS4UZF2YDOg" source="_1PqsQEDyEeahS4UZF2YDOg" target="_3dZIEEDyEeahS4UZF2YDOg">
           <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinkableNodes"/>
         </modelLinks>
         <modelLinks uuid="_dCoEAEDzEeahS4UZF2YDOg" incomingCorrespondenceLink="_ocGdsEDzEeahS4UZF2YDOg" source="_1PqsQEDyEeahS4UZF2YDOg" target="_5mY04EDyEeahS4UZF2YDOg">
-          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinks"/>
         </modelLinks>
         <modelLinks uuid="_fQfpwEDzEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_ugwu0EDzEeahS4UZF2YDOg" source="_3dZIEEDyEeahS4UZF2YDOg" target="_5mY04EDyEeahS4UZF2YDOg">
           <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//LinkableNode/outgoingLinks"/>
@@ -421,16 +442,16 @@
           <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//DisjunctiveNode"/>
         </modelObjects>
         <modelObjects uuid="_UZnfcED2EeahS4UZF2YDOg" incomingCorrespondenceLink="_dqm3wED4EeahS4UZF2YDOg" name="materialLink" outgoingLinks="_d3XMQED2EeahS4UZF2YDOg" incomingLinks="_X9ICcED2EeahS4UZF2YDOg">
-          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//Link"/>
         </modelObjects>
         <modelLinks uuid="_X9ICcED2EeahS4UZF2YDOg" incomingCorrespondenceLink="_eN6ZIED4EeahS4UZF2YDOg" source="_0mhhQED1EeahS4UZF2YDOg" target="_UZnfcED2EeahS4UZF2YDOg">
-          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinks"/>
         </modelLinks>
         <modelLinks uuid="_bqlysED2EeahS4UZF2YDOg" incomingCorrespondenceLink="_gQqUAED4EeahS4UZF2YDOg" source="_0mhhQED1EeahS4UZF2YDOg" target="_7KVMgED1EeahS4UZF2YDOg">
           <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinkableNodes"/>
         </modelLinks>
         <modelLinks uuid="_d3XMQED2EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_xejjYED4EeahS4UZF2YDOg" source="_UZnfcED2EeahS4UZF2YDOg" target="_7KVMgED1EeahS4UZF2YDOg">
-          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//MaterialLink/destinationNode"/>
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//Link/destinationNode"/>
         </modelLinks>
       </leftModelDomain>
       <rightModelDomain uuid="_jWN3EkD1EeahS4UZF2YDOg">
@@ -551,13 +572,13 @@
           <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//DisjunctiveNode"/>
         </modelObjects>
         <modelObjects uuid="_npYRMED8EeahS4UZF2YDOg" incomingCorrespondenceLink="_AxgWwED-EeahS4UZF2YDOg" name="materialLink" incomingLinks="_tgi44ED8EeahS4UZF2YDOg _vRLwEED8EeahS4UZF2YDOg">
-          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//Link"/>
         </modelObjects>
         <modelLinks uuid="_qufA8ED8EeahS4UZF2YDOg" incomingCorrespondenceLink="_ogcmoED9EeahS4UZF2YDOg" source="_iu1p0ED8EeahS4UZF2YDOg" target="_k-G9wED8EeahS4UZF2YDOg">
           <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinkableNodes"/>
         </modelLinks>
         <modelLinks uuid="_tgi44ED8EeahS4UZF2YDOg" incomingCorrespondenceLink="_AZqegED-EeahS4UZF2YDOg" source="_iu1p0ED8EeahS4UZF2YDOg" target="_npYRMED8EeahS4UZF2YDOg">
-          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinks"/>
         </modelLinks>
         <modelLinks uuid="_vRLwEED8EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_EVPjQED-EeahS4UZF2YDOg" source="_k-G9wED8EeahS4UZF2YDOg" target="_npYRMED8EeahS4UZF2YDOg">
           <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//LinkableNode/outgoingLinks"/>

@@ -87,17 +87,6 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseproductionSchema2petrinetDisjunctiveNode(productionSchema2petrinetDisjunctiveNode object) {
-			return createproductionSchema2petrinetDisjunctiveNodeAdapter();
-		}
-
-		@Override
-		public Adapter caseproductionschema2petrinetDisjunctiveNodeIn(
-				productionschema2petrinetDisjunctiveNodeIn object) {
-			return createproductionschema2petrinetDisjunctiveNodeInAdapter();
-		}
-
-		@Override
 		public Adapter caseproductionschema2petrinetConjunctiveNode(productionschema2petrinetConjunctiveNode object) {
 			return createproductionschema2petrinetConjunctiveNodeAdapter();
 		}
@@ -108,15 +97,20 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseproductionschema2petrinetDisjunctiveNodeIn(
+				productionschema2petrinetDisjunctiveNodeIn object) {
+			return createproductionschema2petrinetDisjunctiveNodeInAdapter();
+		}
+
+		@Override
 		public Adapter caseproductionschema2petrinetConjunctiveNodeIn(
 				productionschema2petrinetConjunctiveNodeIn object) {
 			return createproductionschema2petrinetConjunctiveNodeInAdapter();
 		}
 
 		@Override
-		public Adapter caseproductionschema2petrinetDisjunctiveNodeOut(
-				productionschema2petrinetDisjunctiveNodeOut object) {
-			return createproductionschema2petrinetDisjunctiveNodeOutAdapter();
+		public Adapter caseproductionSchema2petrinetDisjunctiveNode(productionSchema2petrinetDisjunctiveNode object) {
+			return createproductionSchema2petrinetDisjunctiveNodeAdapter();
 		}
 
 		@Override
@@ -126,20 +120,14 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseproductionschema2petrinetDisjunctiveNodeOut(
+				productionschema2petrinetDisjunctiveNodeOut object) {
+			return createproductionschema2petrinetDisjunctiveNodeOutAdapter();
+		}
+
+		@Override
 		public Adapter caseproductionschema2petrinetAxiom_r1(productionschema2petrinetAxiom_r1 object) {
 			return createproductionschema2petrinetAxiom_r1Adapter();
-		}
-
-		@Override
-		public Adapter caseproductionschema2petrinetDisjunctiveNodeIn_r7(
-				productionschema2petrinetDisjunctiveNodeIn_r7 object) {
-			return createproductionschema2petrinetDisjunctiveNodeIn_r7Adapter();
-		}
-
-		@Override
-		public Adapter caseproductionSchema2petrinetDisjunctiveNode_r3(
-				productionSchema2petrinetDisjunctiveNode_r3 object) {
-			return createproductionSchema2petrinetDisjunctiveNode_r3Adapter();
 		}
 
 		@Override
@@ -149,14 +137,14 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseproductionschema2petrinetLink_r4(productionschema2petrinetLink_r4 object) {
-			return createproductionschema2petrinetLink_r4Adapter();
+		public Adapter caseproductionschema2petrinetConjunctiveNode_r2(
+				productionschema2petrinetConjunctiveNode_r2 object) {
+			return createproductionschema2petrinetConjunctiveNode_r2Adapter();
 		}
 
 		@Override
-		public Adapter caseproductionschema2petrinetDisjunctiveNodeOut_r8(
-				productionschema2petrinetDisjunctiveNodeOut_r8 object) {
-			return createproductionschema2petrinetDisjunctiveNodeOut_r8Adapter();
+		public Adapter caseproductionschema2petrinetLink_r4(productionschema2petrinetLink_r4 object) {
+			return createproductionschema2petrinetLink_r4Adapter();
 		}
 
 		@Override
@@ -166,9 +154,21 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseproductionschema2petrinetConjunctiveNode_r2(
-				productionschema2petrinetConjunctiveNode_r2 object) {
-			return createproductionschema2petrinetConjunctiveNode_r2Adapter();
+		public Adapter caseproductionschema2petrinetDisjunctiveNodeOut_r8(
+				productionschema2petrinetDisjunctiveNodeOut_r8 object) {
+			return createproductionschema2petrinetDisjunctiveNodeOut_r8Adapter();
+		}
+
+		@Override
+		public Adapter caseproductionSchema2petrinetDisjunctiveNode_r3(
+				productionSchema2petrinetDisjunctiveNode_r3 object) {
+			return createproductionSchema2petrinetDisjunctiveNode_r3Adapter();
+		}
+
+		@Override
+		public Adapter caseproductionschema2petrinetDisjunctiveNodeIn_r7(
+				productionschema2petrinetDisjunctiveNodeIn_r7 object) {
+			return createproductionschema2petrinetDisjunctiveNodeIn_r7Adapter();
 		}
 
 		@Override
@@ -259,34 +259,6 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode <em>production Schema2petrinet Disjunctive Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode
-	 * @generated
-	 */
-	public Adapter createproductionSchema2petrinetDisjunctiveNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn <em>productionschema2petrinet Disjunctive Node In</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn
-	 * @generated
-	 */
-	public Adapter createproductionschema2petrinetDisjunctiveNodeInAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode <em>productionschema2petrinet Conjunctive Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -315,6 +287,20 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn <em>productionschema2petrinet Disjunctive Node In</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn
+	 * @generated
+	 */
+	public Adapter createproductionschema2petrinetDisjunctiveNodeInAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNodeIn <em>productionschema2petrinet Conjunctive Node In</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -329,16 +315,16 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut <em>productionschema2petrinet Disjunctive Node Out</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode <em>production Schema2petrinet Disjunctive Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode
 	 * @generated
 	 */
-	public Adapter createproductionschema2petrinetDisjunctiveNodeOutAdapter() {
+	public Adapter createproductionSchema2petrinetDisjunctiveNodeAdapter() {
 		return null;
 	}
 
@@ -357,6 +343,20 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut <em>productionschema2petrinet Disjunctive Node Out</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut
+	 * @generated
+	 */
+	public Adapter createproductionschema2petrinetDisjunctiveNodeOutAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetAxiom_r1 <em>productionschema2petrinet Axiom r1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -367,34 +367,6 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createproductionschema2petrinetAxiom_r1Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7 <em>productionschema2petrinet Disjunctive Node In r7</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7
-	 * @generated
-	 */
-	public Adapter createproductionschema2petrinetDisjunctiveNodeIn_r7Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3 <em>production Schema2petrinet Disjunctive Node r3</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3
-	 * @generated
-	 */
-	public Adapter createproductionSchema2petrinetDisjunctiveNode_r3Adapter() {
 		return null;
 	}
 
@@ -413,6 +385,20 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2 <em>productionschema2petrinet Conjunctive Node r2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2
+	 * @generated
+	 */
+	public Adapter createproductionschema2petrinetConjunctiveNode_r2Adapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetLink_r4 <em>productionschema2petrinet Link r4</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -423,20 +409,6 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createproductionschema2petrinetLink_r4Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8 <em>productionschema2petrinet Disjunctive Node Out r8</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8
-	 * @generated
-	 */
-	public Adapter createproductionschema2petrinetDisjunctiveNodeOut_r8Adapter() {
 		return null;
 	}
 
@@ -455,16 +427,44 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2 <em>productionschema2petrinet Conjunctive Node r2</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8 <em>productionschema2petrinet Disjunctive Node Out r8</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetConjunctiveNode_r2
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeOut_r8
 	 * @generated
 	 */
-	public Adapter createproductionschema2petrinetConjunctiveNode_r2Adapter() {
+	public Adapter createproductionschema2petrinetDisjunctiveNodeOut_r8Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3 <em>production Schema2petrinet Disjunctive Node r3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionSchema2petrinetDisjunctiveNode_r3
+	 * @generated
+	 */
+	public Adapter createproductionSchema2petrinetDisjunctiveNode_r3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7 <em>productionschema2petrinet Disjunctive Node In r7</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.generated.productionschema2petrinetDisjunctiveNodeIn_r7
+	 * @generated
+	 */
+	public Adapter createproductionschema2petrinetDisjunctiveNodeIn_r7Adapter() {
 		return null;
 	}
 

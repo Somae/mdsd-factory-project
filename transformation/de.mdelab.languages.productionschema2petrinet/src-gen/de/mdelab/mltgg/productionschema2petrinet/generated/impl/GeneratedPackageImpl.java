@@ -45,20 +45,6 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass productionSchema2petrinetDisjunctiveNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass productionschema2petrinetDisjunctiveNodeInEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass productionschema2petrinetConjunctiveNodeEClass = null;
 
 	/**
@@ -73,6 +59,13 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass productionschema2petrinetDisjunctiveNodeInEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass productionschema2petrinetConjunctiveNodeInEClass = null;
 
 	/**
@@ -80,7 +73,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass productionschema2petrinetDisjunctiveNodeOutEClass = null;
+	private EClass productionSchema2petrinetDisjunctiveNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,21 +87,14 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass productionschema2petrinetDisjunctiveNodeOutEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass productionschema2petrinetAxiom_r1EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass productionschema2petrinetDisjunctiveNodeIn_r7EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass productionSchema2petrinetDisjunctiveNode_r3EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -122,14 +108,14 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass productionschema2petrinetLink_r4EClass = null;
+	private EClass productionschema2petrinetConjunctiveNode_r2EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass productionschema2petrinetDisjunctiveNodeOut_r8EClass = null;
+	private EClass productionschema2petrinetLink_r4EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,7 +129,21 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass productionschema2petrinetConjunctiveNode_r2EClass = null;
+	private EClass productionschema2petrinetDisjunctiveNodeOut_r8EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass productionSchema2petrinetDisjunctiveNode_r3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass productionschema2petrinetDisjunctiveNodeIn_r7EClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -247,36 +247,10 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getproductionSchema2petrinetDisjunctiveNode() {
-		if (productionSchema2petrinetDisjunctiveNodeEClass == null) {
-			productionSchema2petrinetDisjunctiveNodeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(2);
-		}
-		return productionSchema2petrinetDisjunctiveNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getproductionschema2petrinetDisjunctiveNodeIn() {
-		if (productionschema2petrinetDisjunctiveNodeInEClass == null) {
-			productionschema2petrinetDisjunctiveNodeInEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(3);
-		}
-		return productionschema2petrinetDisjunctiveNodeInEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getproductionschema2petrinetConjunctiveNode() {
 		if (productionschema2petrinetConjunctiveNodeEClass == null) {
 			productionschema2petrinetConjunctiveNodeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(4);
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(2);
 		}
 		return productionschema2petrinetConjunctiveNodeEClass;
 	}
@@ -289,9 +263,22 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getproductionschema2petrinetLink() {
 		if (productionschema2petrinetLinkEClass == null) {
 			productionschema2petrinetLinkEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(5);
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(3);
 		}
 		return productionschema2petrinetLinkEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getproductionschema2petrinetDisjunctiveNodeIn() {
+		if (productionschema2petrinetDisjunctiveNodeInEClass == null) {
+			productionschema2petrinetDisjunctiveNodeInEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(4);
+		}
+		return productionschema2petrinetDisjunctiveNodeInEClass;
 	}
 
 	/**
@@ -302,7 +289,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getproductionschema2petrinetConjunctiveNodeIn() {
 		if (productionschema2petrinetConjunctiveNodeInEClass == null) {
 			productionschema2petrinetConjunctiveNodeInEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(6);
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(5);
 		}
 		return productionschema2petrinetConjunctiveNodeInEClass;
 	}
@@ -312,12 +299,12 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getproductionschema2petrinetDisjunctiveNodeOut() {
-		if (productionschema2petrinetDisjunctiveNodeOutEClass == null) {
-			productionschema2petrinetDisjunctiveNodeOutEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(7);
+	public EClass getproductionSchema2petrinetDisjunctiveNode() {
+		if (productionSchema2petrinetDisjunctiveNodeEClass == null) {
+			productionSchema2petrinetDisjunctiveNodeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(6);
 		}
-		return productionschema2petrinetDisjunctiveNodeOutEClass;
+		return productionSchema2petrinetDisjunctiveNodeEClass;
 	}
 
 	/**
@@ -328,9 +315,22 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getproductionschema2petrinetConjunctiveNodeOut() {
 		if (productionschema2petrinetConjunctiveNodeOutEClass == null) {
 			productionschema2petrinetConjunctiveNodeOutEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(8);
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(7);
 		}
 		return productionschema2petrinetConjunctiveNodeOutEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getproductionschema2petrinetDisjunctiveNodeOut() {
+		if (productionschema2petrinetDisjunctiveNodeOutEClass == null) {
+			productionschema2petrinetDisjunctiveNodeOutEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(8);
+		}
+		return productionschema2petrinetDisjunctiveNodeOutEClass;
 	}
 
 	/**
@@ -486,504 +486,10 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getproductionschema2petrinetDisjunctiveNodeIn_r7() {
-		if (productionschema2petrinetDisjunctiveNodeIn_r7EClass == null) {
-			productionschema2petrinetDisjunctiveNodeIn_r7EClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(10);
-		}
-		return productionschema2petrinetDisjunctiveNodeIn_r7EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_AddElementActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_MoveElementActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ChangeAttributeActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformForwardActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformMappingActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformBackwardActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckForwardActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckMappingActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckBackwardActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_SynchronizeForwardActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_SynchronizeBackwardActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_RepairForwardActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_RepairBackwardActivity() {
-		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__AddElement__EMap() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ChangeAttributeValues__TGGNode_EMap() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformForward__TGGNode_boolean_boolean() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformMapping__TGGNode_boolean_boolean() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformBackward__TGGNode_boolean_boolean() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckForward__TGGNode() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckMapping__TGGNode() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckBackward__TGGNode() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__SynchronizeForward__TGGNode_boolean() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__SynchronizeBackward__TGGNode_boolean() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__RepairForward__TGGNode_boolean() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__RepairBackward__TGGNode_boolean() {
-		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getproductionSchema2petrinetDisjunctiveNode_r3() {
-		if (productionSchema2petrinetDisjunctiveNode_r3EClass == null) {
-			productionSchema2petrinetDisjunctiveNode_r3EClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(11);
-		}
-		return productionSchema2petrinetDisjunctiveNode_r3EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_AddElementActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_MoveElementActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_ChangeAttributeActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformForwardActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformMappingActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformBackwardActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckForwardActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckMappingActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckBackwardActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_SynchronizeForwardActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_SynchronizeBackwardActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_RepairForwardActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_RepairBackwardActivity() {
-		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__AddElement__EMap() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ChangeAttributeValues__TGGNode_EMap() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformForward__TGGNode_boolean_boolean() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformMapping__TGGNode_boolean_boolean() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformBackward__TGGNode_boolean_boolean() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckForward__TGGNode() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckMapping__TGGNode() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckBackward__TGGNode() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__SynchronizeForward__TGGNode_boolean() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__SynchronizeBackward__TGGNode_boolean() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__RepairForward__TGGNode_boolean() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__RepairBackward__TGGNode_boolean() {
-		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getproductionschema2petrinetConjunctiveNodeOut_r6() {
 		if (productionschema2petrinetConjunctiveNodeOut_r6EClass == null) {
 			productionschema2petrinetConjunctiveNodeOut_r6EClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(12);
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(10);
 		}
 		return productionschema2petrinetConjunctiveNodeOut_r6EClass;
 	}
@@ -1227,10 +733,257 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getproductionschema2petrinetConjunctiveNode_r2() {
+		if (productionschema2petrinetConjunctiveNode_r2EClass == null) {
+			productionschema2petrinetConjunctiveNode_r2EClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(11);
+		}
+		return productionschema2petrinetConjunctiveNode_r2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_AddElementActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_MoveElementActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_ChangeAttributeActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_TransformForwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_TransformMappingActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_TransformBackwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckForwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckMappingActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckBackwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_SynchronizeForwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_SynchronizeBackwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_RepairForwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNode_r2_RepairBackwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__AddElement__EMap() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__ChangeAttributeValues__TGGNode_EMap() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformForward__TGGNode_boolean_boolean() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformMapping__TGGNode_boolean_boolean() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformBackward__TGGNode_boolean_boolean() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckForward__TGGNode() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckMapping__TGGNode() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckBackward__TGGNode() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__SynchronizeForward__TGGNode_boolean() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__SynchronizeBackward__TGGNode_boolean() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__RepairForward__TGGNode_boolean() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNode_r2__RepairBackward__TGGNode_boolean() {
+		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getproductionschema2petrinetLink_r4() {
 		if (productionschema2petrinetLink_r4EClass == null) {
 			productionschema2petrinetLink_r4EClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(13);
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(12);
 		}
 		return productionschema2petrinetLink_r4EClass;
 	}
@@ -1467,6 +1220,253 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 */
 	public EOperation getproductionschema2petrinetLink_r4__RepairBackward__TGGNode_boolean() {
 		return getproductionschema2petrinetLink_r4().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getproductionschema2petrinetConjunctiveNodeIn_r5() {
+		if (productionschema2petrinetConjunctiveNodeIn_r5EClass == null) {
+			productionschema2petrinetConjunctiveNodeIn_r5EClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(13);
+		}
+		return productionschema2petrinetConjunctiveNodeIn_r5EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_AddElementActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_MoveElementActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_ChangeAttributeActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_TransformForwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_TransformMappingActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_TransformBackwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_ConflictCheckForwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_ConflictCheckMappingActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_ConflictCheckBackwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_SynchronizeForwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_SynchronizeBackwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_RepairForwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_RepairBackwardActivity() {
+		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__AddElement__EMap() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__ChangeAttributeValues__TGGNode_EMap() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__TransformForward__TGGNode_boolean_boolean() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__TransformMapping__TGGNode_boolean_boolean() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__TransformBackward__TGGNode_boolean_boolean() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__ConflictCheckForward__TGGNode() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__ConflictCheckMapping__TGGNode() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__ConflictCheckBackward__TGGNode() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__SynchronizeForward__TGGNode_boolean() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__SynchronizeBackward__TGGNode_boolean() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__RepairForward__TGGNode_boolean() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__RepairBackward__TGGNode_boolean() {
+		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(12);
 	}
 
 	/**
@@ -1721,12 +1721,12 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getproductionschema2petrinetConjunctiveNodeIn_r5() {
-		if (productionschema2petrinetConjunctiveNodeIn_r5EClass == null) {
-			productionschema2petrinetConjunctiveNodeIn_r5EClass = (EClass) EPackage.Registry.INSTANCE
+	public EClass getproductionSchema2petrinetDisjunctiveNode_r3() {
+		if (productionSchema2petrinetDisjunctiveNode_r3EClass == null) {
+			productionSchema2petrinetDisjunctiveNode_r3EClass = (EClass) EPackage.Registry.INSTANCE
 					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(15);
 		}
-		return productionschema2petrinetConjunctiveNodeIn_r5EClass;
+		return productionSchema2petrinetDisjunctiveNode_r3EClass;
 	}
 
 	/**
@@ -1734,8 +1734,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_AddElementActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(0);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_AddElementActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1743,8 +1743,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_MoveElementActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(1);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_MoveElementActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1752,8 +1752,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_ChangeAttributeActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(2);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_ChangeAttributeActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1761,8 +1761,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_TransformForwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(3);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformForwardActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -1770,8 +1770,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_TransformMappingActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(4);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformMappingActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1779,8 +1779,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_TransformBackwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(5);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_TransformBackwardActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -1788,8 +1788,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_ConflictCheckForwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(6);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckForwardActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -1797,8 +1797,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_ConflictCheckMappingActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(7);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckMappingActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -1806,8 +1806,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_ConflictCheckBackwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(8);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_ConflictCheckBackwardActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -1815,8 +1815,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_SynchronizeForwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(9);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_SynchronizeForwardActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -1824,8 +1824,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_SynchronizeBackwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(10);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_SynchronizeBackwardActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -1833,8 +1833,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_RepairForwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(11);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_RepairForwardActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -1842,8 +1842,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNodeIn_r5_RepairBackwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNodeIn_r5().getEStructuralFeatures().get(12);
+	public EReference getproductionSchema2petrinetDisjunctiveNode_r3_RepairBackwardActivity() {
+		return (EReference) getproductionSchema2petrinetDisjunctiveNode_r3().getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -1851,8 +1851,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__AddElement__EMap() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(0);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__AddElement__EMap() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(0);
 	}
 
 	/**
@@ -1860,8 +1860,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__ChangeAttributeValues__TGGNode_EMap() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(1);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ChangeAttributeValues__TGGNode_EMap() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(1);
 	}
 
 	/**
@@ -1869,8 +1869,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(2);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(2);
 	}
 
 	/**
@@ -1878,8 +1878,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__TransformForward__TGGNode_boolean_boolean() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(3);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformForward__TGGNode_boolean_boolean() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(3);
 	}
 
 	/**
@@ -1887,8 +1887,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__TransformMapping__TGGNode_boolean_boolean() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(4);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformMapping__TGGNode_boolean_boolean() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(4);
 	}
 
 	/**
@@ -1896,8 +1896,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__TransformBackward__TGGNode_boolean_boolean() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(5);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__TransformBackward__TGGNode_boolean_boolean() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(5);
 	}
 
 	/**
@@ -1905,8 +1905,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__ConflictCheckForward__TGGNode() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(6);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckForward__TGGNode() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(6);
 	}
 
 	/**
@@ -1914,8 +1914,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__ConflictCheckMapping__TGGNode() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(7);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckMapping__TGGNode() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(7);
 	}
 
 	/**
@@ -1923,8 +1923,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__ConflictCheckBackward__TGGNode() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(8);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__ConflictCheckBackward__TGGNode() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(8);
 	}
 
 	/**
@@ -1932,8 +1932,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__SynchronizeForward__TGGNode_boolean() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(9);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__SynchronizeForward__TGGNode_boolean() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(9);
 	}
 
 	/**
@@ -1941,8 +1941,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__SynchronizeBackward__TGGNode_boolean() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(10);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__SynchronizeBackward__TGGNode_boolean() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(10);
 	}
 
 	/**
@@ -1950,8 +1950,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__RepairForward__TGGNode_boolean() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(11);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__RepairForward__TGGNode_boolean() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(11);
 	}
 
 	/**
@@ -1959,8 +1959,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNodeIn_r5__RepairBackward__TGGNode_boolean() {
-		return getproductionschema2petrinetConjunctiveNodeIn_r5().getEOperations().get(12);
+	public EOperation getproductionSchema2petrinetDisjunctiveNode_r3__RepairBackward__TGGNode_boolean() {
+		return getproductionSchema2petrinetDisjunctiveNode_r3().getEOperations().get(12);
 	}
 
 	/**
@@ -1968,12 +1968,12 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getproductionschema2petrinetConjunctiveNode_r2() {
-		if (productionschema2petrinetConjunctiveNode_r2EClass == null) {
-			productionschema2petrinetConjunctiveNode_r2EClass = (EClass) EPackage.Registry.INSTANCE
+	public EClass getproductionschema2petrinetDisjunctiveNodeIn_r7() {
+		if (productionschema2petrinetDisjunctiveNodeIn_r7EClass == null) {
+			productionschema2petrinetDisjunctiveNodeIn_r7EClass = (EClass) EPackage.Registry.INSTANCE
 					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(16);
 		}
-		return productionschema2petrinetConjunctiveNode_r2EClass;
+		return productionschema2petrinetDisjunctiveNodeIn_r7EClass;
 	}
 
 	/**
@@ -1981,8 +1981,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_AddElementActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(0);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_AddElementActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1990,8 +1990,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_MoveElementActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(1);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_MoveElementActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1999,8 +1999,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_ChangeAttributeActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(2);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ChangeAttributeActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2008,8 +2008,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_TransformForwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(3);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformForwardActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -2017,8 +2017,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_TransformMappingActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(4);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformMappingActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -2026,8 +2026,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_TransformBackwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(5);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_TransformBackwardActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -2035,8 +2035,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckForwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(6);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckForwardActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -2044,8 +2044,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckMappingActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(7);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckMappingActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -2053,8 +2053,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_ConflictCheckBackwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(8);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_ConflictCheckBackwardActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -2062,8 +2062,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_SynchronizeForwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(9);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_SynchronizeForwardActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -2071,8 +2071,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_SynchronizeBackwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(10);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_SynchronizeBackwardActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -2080,8 +2080,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_RepairForwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(11);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_RepairForwardActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -2089,8 +2089,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getproductionschema2petrinetConjunctiveNode_r2_RepairBackwardActivity() {
-		return (EReference) getproductionschema2petrinetConjunctiveNode_r2().getEStructuralFeatures().get(12);
+	public EReference getproductionschema2petrinetDisjunctiveNodeIn_r7_RepairBackwardActivity() {
+		return (EReference) getproductionschema2petrinetDisjunctiveNodeIn_r7().getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -2098,8 +2098,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__AddElement__EMap() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(0);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__AddElement__EMap() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(0);
 	}
 
 	/**
@@ -2107,8 +2107,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__ChangeAttributeValues__TGGNode_EMap() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(1);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ChangeAttributeValues__TGGNode_EMap() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(1);
 	}
 
 	/**
@@ -2116,8 +2116,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(2);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(2);
 	}
 
 	/**
@@ -2125,8 +2125,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformForward__TGGNode_boolean_boolean() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(3);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformForward__TGGNode_boolean_boolean() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(3);
 	}
 
 	/**
@@ -2134,8 +2134,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformMapping__TGGNode_boolean_boolean() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(4);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformMapping__TGGNode_boolean_boolean() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(4);
 	}
 
 	/**
@@ -2143,8 +2143,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__TransformBackward__TGGNode_boolean_boolean() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(5);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__TransformBackward__TGGNode_boolean_boolean() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(5);
 	}
 
 	/**
@@ -2152,8 +2152,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckForward__TGGNode() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(6);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckForward__TGGNode() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(6);
 	}
 
 	/**
@@ -2161,8 +2161,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckMapping__TGGNode() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(7);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckMapping__TGGNode() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(7);
 	}
 
 	/**
@@ -2170,8 +2170,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__ConflictCheckBackward__TGGNode() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(8);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__ConflictCheckBackward__TGGNode() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(8);
 	}
 
 	/**
@@ -2179,8 +2179,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__SynchronizeForward__TGGNode_boolean() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(9);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__SynchronizeForward__TGGNode_boolean() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(9);
 	}
 
 	/**
@@ -2188,8 +2188,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__SynchronizeBackward__TGGNode_boolean() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(10);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__SynchronizeBackward__TGGNode_boolean() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(10);
 	}
 
 	/**
@@ -2197,8 +2197,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__RepairForward__TGGNode_boolean() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(11);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__RepairForward__TGGNode_boolean() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(11);
 	}
 
 	/**
@@ -2206,8 +2206,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getproductionschema2petrinetConjunctiveNode_r2__RepairBackward__TGGNode_boolean() {
-		return getproductionschema2petrinetConjunctiveNode_r2().getEOperations().get(12);
+	public EOperation getproductionschema2petrinetDisjunctiveNodeIn_r7__RepairBackward__TGGNode_boolean() {
+		return getproductionschema2petrinetDisjunctiveNodeIn_r7().getEOperations().get(12);
 	}
 
 	/**
