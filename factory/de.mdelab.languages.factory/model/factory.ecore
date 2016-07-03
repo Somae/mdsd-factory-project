@@ -3,16 +3,15 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="factory" nsURI="http://www.example.org/factory" nsPrefix="factory">
   <eClassifiers xsi:type="ecore:EClass" name="FactorySpecification" eSuperTypes="#//IdentifiableElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedFactories" upperBound="-1"
-        eType="#//Factory"/>
+        eType="#//Factory" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedEmployees" upperBound="-1"
-        eType="#//Employee"/>
+        eType="#//Employee" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMachines" upperBound="-1"
-        eType="#//Machine"/>
+        eType="#//Machine" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedProducts" upperBound="-1"
-        eType="#//Product"/>
+        eType="#//Product" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Factory" eSuperTypes="#//IdentifiableElement">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="address" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -36,5 +35,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="IdentifiableElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
         iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>
