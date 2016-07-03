@@ -60,36 +60,36 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 			return createproductionschema2petrinetOperationalTGG();
 		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_AXIOM:
 			return createproductionschema2petrinetAxiom();
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE:
-			return createproductionschema2petrinetConjunctiveNode();
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_LINK:
-			return createproductionschema2petrinetLink();
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN:
-			return createproductionschema2petrinetDisjunctiveNodeIn();
 		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN:
 			return createproductionschema2petrinetConjunctiveNodeIn();
-		case GeneratedPackage.PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE:
-			return createproductionSchema2petrinetDisjunctiveNode();
 		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT:
 			return createproductionschema2petrinetConjunctiveNodeOut();
+		case GeneratedPackage.PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE:
+			return createproductionSchema2petrinetDisjunctiveNode();
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_LINK:
+			return createproductionschema2petrinetLink();
 		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT:
 			return createproductionschema2petrinetDisjunctiveNodeOut();
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE:
+			return createproductionschema2petrinetConjunctiveNode();
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN:
+			return createproductionschema2petrinetDisjunctiveNodeIn();
 		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_AXIOM_R1:
 			return createproductionschema2petrinetAxiom_r1();
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT_R6:
-			return createproductionschema2petrinetConjunctiveNodeOut_r6();
 		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_R2:
 			return createproductionschema2petrinetConjunctiveNode_r2();
 		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_LINK_R4:
 			return createproductionschema2petrinetLink_r4();
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5:
-			return createproductionschema2petrinetConjunctiveNodeIn_r5();
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT_R8:
-			return createproductionschema2petrinetDisjunctiveNodeOut_r8();
 		case GeneratedPackage.PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3:
 			return createproductionSchema2petrinetDisjunctiveNode_r3();
 		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7:
 			return createproductionschema2petrinetDisjunctiveNodeIn_r7();
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT_R6:
+			return createproductionschema2petrinetConjunctiveNodeOut_r6();
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5:
+			return createproductionschema2petrinetConjunctiveNodeIn_r5();
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT_R8:
+			return createproductionschema2petrinetDisjunctiveNodeOut_r8();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -120,49 +120,9 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public productionschema2petrinetConjunctiveNode createproductionschema2petrinetConjunctiveNode() {
-		productionschema2petrinetConjunctiveNodeImpl productionschema2petrinetConjunctiveNode = new productionschema2petrinetConjunctiveNodeImpl();
-		return productionschema2petrinetConjunctiveNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public productionschema2petrinetLink createproductionschema2petrinetLink() {
-		productionschema2petrinetLinkImpl productionschema2petrinetLink = new productionschema2petrinetLinkImpl();
-		return productionschema2petrinetLink;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public productionschema2petrinetDisjunctiveNodeIn createproductionschema2petrinetDisjunctiveNodeIn() {
-		productionschema2petrinetDisjunctiveNodeInImpl productionschema2petrinetDisjunctiveNodeIn = new productionschema2petrinetDisjunctiveNodeInImpl();
-		return productionschema2petrinetDisjunctiveNodeIn;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public productionschema2petrinetConjunctiveNodeIn createproductionschema2petrinetConjunctiveNodeIn() {
 		productionschema2petrinetConjunctiveNodeInImpl productionschema2petrinetConjunctiveNodeIn = new productionschema2petrinetConjunctiveNodeInImpl();
 		return productionschema2petrinetConjunctiveNodeIn;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public productionSchema2petrinetDisjunctiveNode createproductionSchema2petrinetDisjunctiveNode() {
-		productionSchema2petrinetDisjunctiveNodeImpl productionSchema2petrinetDisjunctiveNode = new productionSchema2petrinetDisjunctiveNodeImpl();
-		return productionSchema2petrinetDisjunctiveNode;
 	}
 
 	/**
@@ -180,6 +140,26 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public productionSchema2petrinetDisjunctiveNode createproductionSchema2petrinetDisjunctiveNode() {
+		productionSchema2petrinetDisjunctiveNodeImpl productionSchema2petrinetDisjunctiveNode = new productionSchema2petrinetDisjunctiveNodeImpl();
+		return productionSchema2petrinetDisjunctiveNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public productionschema2petrinetLink createproductionschema2petrinetLink() {
+		productionschema2petrinetLinkImpl productionschema2petrinetLink = new productionschema2petrinetLinkImpl();
+		return productionschema2petrinetLink;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public productionschema2petrinetDisjunctiveNodeOut createproductionschema2petrinetDisjunctiveNodeOut() {
 		productionschema2petrinetDisjunctiveNodeOutImpl productionschema2petrinetDisjunctiveNodeOut = new productionschema2petrinetDisjunctiveNodeOutImpl();
 		return productionschema2petrinetDisjunctiveNodeOut;
@@ -190,9 +170,9 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public productionschema2petrinetAxiom_r1 createproductionschema2petrinetAxiom_r1() {
-		productionschema2petrinetAxiom_r1Impl productionschema2petrinetAxiom_r1 = new productionschema2petrinetAxiom_r1Impl();
-		return productionschema2petrinetAxiom_r1;
+	public productionschema2petrinetConjunctiveNode createproductionschema2petrinetConjunctiveNode() {
+		productionschema2petrinetConjunctiveNodeImpl productionschema2petrinetConjunctiveNode = new productionschema2petrinetConjunctiveNodeImpl();
+		return productionschema2petrinetConjunctiveNode;
 	}
 
 	/**
@@ -200,9 +180,19 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public productionschema2petrinetConjunctiveNodeOut_r6 createproductionschema2petrinetConjunctiveNodeOut_r6() {
-		productionschema2petrinetConjunctiveNodeOut_r6Impl productionschema2petrinetConjunctiveNodeOut_r6 = new productionschema2petrinetConjunctiveNodeOut_r6Impl();
-		return productionschema2petrinetConjunctiveNodeOut_r6;
+	public productionschema2petrinetDisjunctiveNodeIn createproductionschema2petrinetDisjunctiveNodeIn() {
+		productionschema2petrinetDisjunctiveNodeInImpl productionschema2petrinetDisjunctiveNodeIn = new productionschema2petrinetDisjunctiveNodeInImpl();
+		return productionschema2petrinetDisjunctiveNodeIn;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public productionschema2petrinetAxiom_r1 createproductionschema2petrinetAxiom_r1() {
+		productionschema2petrinetAxiom_r1Impl productionschema2petrinetAxiom_r1 = new productionschema2petrinetAxiom_r1Impl();
+		return productionschema2petrinetAxiom_r1;
 	}
 
 	/**
@@ -230,26 +220,6 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public productionschema2petrinetConjunctiveNodeIn_r5 createproductionschema2petrinetConjunctiveNodeIn_r5() {
-		productionschema2petrinetConjunctiveNodeIn_r5Impl productionschema2petrinetConjunctiveNodeIn_r5 = new productionschema2petrinetConjunctiveNodeIn_r5Impl();
-		return productionschema2petrinetConjunctiveNodeIn_r5;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public productionschema2petrinetDisjunctiveNodeOut_r8 createproductionschema2petrinetDisjunctiveNodeOut_r8() {
-		productionschema2petrinetDisjunctiveNodeOut_r8Impl productionschema2petrinetDisjunctiveNodeOut_r8 = new productionschema2petrinetDisjunctiveNodeOut_r8Impl();
-		return productionschema2petrinetDisjunctiveNodeOut_r8;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public productionSchema2petrinetDisjunctiveNode_r3 createproductionSchema2petrinetDisjunctiveNode_r3() {
 		productionSchema2petrinetDisjunctiveNode_r3Impl productionSchema2petrinetDisjunctiveNode_r3 = new productionSchema2petrinetDisjunctiveNode_r3Impl();
 		return productionSchema2petrinetDisjunctiveNode_r3;
@@ -263,6 +233,36 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	public productionschema2petrinetDisjunctiveNodeIn_r7 createproductionschema2petrinetDisjunctiveNodeIn_r7() {
 		productionschema2petrinetDisjunctiveNodeIn_r7Impl productionschema2petrinetDisjunctiveNodeIn_r7 = new productionschema2petrinetDisjunctiveNodeIn_r7Impl();
 		return productionschema2petrinetDisjunctiveNodeIn_r7;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public productionschema2petrinetConjunctiveNodeOut_r6 createproductionschema2petrinetConjunctiveNodeOut_r6() {
+		productionschema2petrinetConjunctiveNodeOut_r6Impl productionschema2petrinetConjunctiveNodeOut_r6 = new productionschema2petrinetConjunctiveNodeOut_r6Impl();
+		return productionschema2petrinetConjunctiveNodeOut_r6;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public productionschema2petrinetConjunctiveNodeIn_r5 createproductionschema2petrinetConjunctiveNodeIn_r5() {
+		productionschema2petrinetConjunctiveNodeIn_r5Impl productionschema2petrinetConjunctiveNodeIn_r5 = new productionschema2petrinetConjunctiveNodeIn_r5Impl();
+		return productionschema2petrinetConjunctiveNodeIn_r5;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public productionschema2petrinetDisjunctiveNodeOut_r8 createproductionschema2petrinetDisjunctiveNodeOut_r8() {
+		productionschema2petrinetDisjunctiveNodeOut_r8Impl productionschema2petrinetDisjunctiveNodeOut_r8 = new productionschema2petrinetDisjunctiveNodeOut_r8Impl();
+		return productionschema2petrinetDisjunctiveNodeOut_r8;
 	}
 
 	/**

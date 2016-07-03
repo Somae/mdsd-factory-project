@@ -215,10 +215,6 @@
         </modelObjects>
         <modelObjects uuid="_SpQZQEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_2Ieq8EDvEeahS4UZF2YDOg" name="link" incomingLinks="_WTeoQEDvEeahS4UZF2YDOg">
           <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//Link"/>
-          <attributeAssignments uuid="_cFdTUEECEeahS4UZF2YDOg">
-            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_kdn4IUECEeahS4UZF2YDOg" expressionString="nameVariable" expressionLanguageID="OCL"/>
-            <feature xsi:type="ecore:EAttribute" href="http://www.mdelab.de/languages/productionschema#//IdentifiableElement/label"/>
-          </attributeAssignments>
         </modelObjects>
         <modelLinks uuid="_WTeoQEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_4Dg0QEDvEeahS4UZF2YDOg" source="_Glr5sEDvEeahS4UZF2YDOg" target="_SpQZQEDvEeahS4UZF2YDOg">
           <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinks"/>
@@ -233,10 +229,6 @@
         </modelObjects>
         <modelObjects uuid="_Q-tBUEECEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_V3CCMEECEeahS4UZF2YDOg" name="name" incomingLinks="_TaNacEECEeahS4UZF2YDOg">
           <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name"/>
-          <attributeAssignments uuid="_Ymi8cEECEeahS4UZF2YDOg">
-            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_nnnu8UECEeahS4UZF2YDOg" expressionString="nameVariable" expressionLanguageID="OCL"/>
-            <feature xsi:type="ecore:EAttribute" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name/text"/>
-          </attributeAssignments>
         </modelObjects>
         <modelLinks uuid="_yqikcEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_3DdsgEDvEeahS4UZF2YDOg" source="_LQNvIEDvEeahS4UZF2YDOg" target="_vs-nIEDvEeahS4UZF2YDOg">
           <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
@@ -261,11 +253,6 @@
         <correspondenceLinks uuid="_VelF8EECEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_TaNacEECEeahS4UZF2YDOg"/>
         <correspondenceLinks uuid="_V3CCMEECEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_Q-tBUEECEeahS4UZF2YDOg"/>
       </correspondenceDomain>
-      <ruleParameters uuid="_r7k3dUECEeahS4UZF2YDOg" name="nameVariable">
-        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_tlKEYUECEeahS4UZF2YDOg" expressionString="link.label" expressionLanguageID="OCL"/>
-        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_41YJgkEEEeahS4UZF2YDOg" expressionString="name.text" expressionLanguageID="OCL"/>
-      </ruleParameters>
     </rules>
   </ruleGroups>
   <ruleGroups uuid="_87MU4UDvEeahS4UZF2YDOg" name="productionschema2petrinetConjunctiveNodeIn" ruleGroupID="productionschema2petrinetConjunctiveNodeIn">
