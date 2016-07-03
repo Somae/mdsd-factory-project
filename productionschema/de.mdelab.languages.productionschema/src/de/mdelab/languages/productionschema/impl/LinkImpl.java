@@ -2,9 +2,9 @@
  */
 package de.mdelab.languages.productionschema.impl;
 
+import de.mdelab.languages.productionschema.Link;
 import de.mdelab.languages.productionschema.LinkableNode;
 import de.mdelab.languages.productionschema.Material;
-import de.mdelab.languages.productionschema.MaterialLink;
 import de.mdelab.languages.productionschema.ProductionschemaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -17,20 +17,20 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Material Link</b></em>'.
+ * An implementation of the model object '<em><b>Link</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.mdelab.languages.productionschema.impl.MaterialLinkImpl#getSourceNode <em>Source Node</em>}</li>
- *   <li>{@link de.mdelab.languages.productionschema.impl.MaterialLinkImpl#getDestinationNode <em>Destination Node</em>}</li>
- *   <li>{@link de.mdelab.languages.productionschema.impl.MaterialLinkImpl#getAssociatedMaterial <em>Associated Material</em>}</li>
+ *   <li>{@link de.mdelab.languages.productionschema.impl.LinkImpl#getSourceNode <em>Source Node</em>}</li>
+ *   <li>{@link de.mdelab.languages.productionschema.impl.LinkImpl#getDestinationNode <em>Destination Node</em>}</li>
+ *   <li>{@link de.mdelab.languages.productionschema.impl.LinkImpl#getAssociatedMaterial <em>Associated Material</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class MaterialLinkImpl extends IdentifiableElementImpl implements MaterialLink {
+public class LinkImpl extends IdentifiableElementImpl implements Link {
 	/**
 	 * The cached value of the '{@link #getSourceNode() <em>Source Node</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -66,7 +66,7 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MaterialLinkImpl() {
+	protected LinkImpl() {
 		super();
 	}
 
@@ -77,7 +77,7 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ProductionschemaPackage.Literals.MATERIAL_LINK;
+		return ProductionschemaPackage.Literals.LINK;
 	}
 
 	/**
@@ -91,7 +91,7 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 			sourceNode = (LinkableNode)eResolveProxy(oldSourceNode);
 			if (sourceNode != oldSourceNode) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ProductionschemaPackage.MATERIAL_LINK__SOURCE_NODE, oldSourceNode, sourceNode));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ProductionschemaPackage.LINK__SOURCE_NODE, oldSourceNode, sourceNode));
 			}
 		}
 		return sourceNode;
@@ -115,7 +115,7 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 		LinkableNode oldSourceNode = sourceNode;
 		sourceNode = newSourceNode;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.MATERIAL_LINK__SOURCE_NODE, oldSourceNode, newSourceNode);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.LINK__SOURCE_NODE, oldSourceNode, newSourceNode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -137,7 +137,7 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.MATERIAL_LINK__SOURCE_NODE, newSourceNode, newSourceNode));
+			eNotify(new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.LINK__SOURCE_NODE, newSourceNode, newSourceNode));
 	}
 
 	/**
@@ -151,7 +151,7 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 			destinationNode = (LinkableNode)eResolveProxy(oldDestinationNode);
 			if (destinationNode != oldDestinationNode) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ProductionschemaPackage.MATERIAL_LINK__DESTINATION_NODE, oldDestinationNode, destinationNode));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ProductionschemaPackage.LINK__DESTINATION_NODE, oldDestinationNode, destinationNode));
 			}
 		}
 		return destinationNode;
@@ -175,7 +175,7 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 		LinkableNode oldDestinationNode = destinationNode;
 		destinationNode = newDestinationNode;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.MATERIAL_LINK__DESTINATION_NODE, oldDestinationNode, newDestinationNode);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.LINK__DESTINATION_NODE, oldDestinationNode, newDestinationNode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -197,7 +197,7 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.MATERIAL_LINK__DESTINATION_NODE, newDestinationNode, newDestinationNode));
+			eNotify(new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.LINK__DESTINATION_NODE, newDestinationNode, newDestinationNode));
 	}
 
 	/**
@@ -211,7 +211,7 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 			associatedMaterial = (Material)eResolveProxy(oldAssociatedMaterial);
 			if (associatedMaterial != oldAssociatedMaterial) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ProductionschemaPackage.MATERIAL_LINK__ASSOCIATED_MATERIAL, oldAssociatedMaterial, associatedMaterial));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ProductionschemaPackage.LINK__ASSOCIATED_MATERIAL, oldAssociatedMaterial, associatedMaterial));
 			}
 		}
 		return associatedMaterial;
@@ -235,7 +235,7 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 		Material oldAssociatedMaterial = associatedMaterial;
 		associatedMaterial = newAssociatedMaterial;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.MATERIAL_LINK__ASSOCIATED_MATERIAL, oldAssociatedMaterial, associatedMaterial));
+			eNotify(new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.LINK__ASSOCIATED_MATERIAL, oldAssociatedMaterial, associatedMaterial));
 	}
 
 	/**
@@ -246,11 +246,11 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case ProductionschemaPackage.MATERIAL_LINK__SOURCE_NODE:
+			case ProductionschemaPackage.LINK__SOURCE_NODE:
 				if (sourceNode != null)
 					msgs = ((InternalEObject)sourceNode).eInverseRemove(this, ProductionschemaPackage.LINKABLE_NODE__OUTGOING_LINKS, LinkableNode.class, msgs);
 				return basicSetSourceNode((LinkableNode)otherEnd, msgs);
-			case ProductionschemaPackage.MATERIAL_LINK__DESTINATION_NODE:
+			case ProductionschemaPackage.LINK__DESTINATION_NODE:
 				if (destinationNode != null)
 					msgs = ((InternalEObject)destinationNode).eInverseRemove(this, ProductionschemaPackage.LINKABLE_NODE__INCOMING_LINKS, LinkableNode.class, msgs);
 				return basicSetDestinationNode((LinkableNode)otherEnd, msgs);
@@ -266,9 +266,9 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case ProductionschemaPackage.MATERIAL_LINK__SOURCE_NODE:
+			case ProductionschemaPackage.LINK__SOURCE_NODE:
 				return basicSetSourceNode(null, msgs);
-			case ProductionschemaPackage.MATERIAL_LINK__DESTINATION_NODE:
+			case ProductionschemaPackage.LINK__DESTINATION_NODE:
 				return basicSetDestinationNode(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -282,13 +282,13 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ProductionschemaPackage.MATERIAL_LINK__SOURCE_NODE:
+			case ProductionschemaPackage.LINK__SOURCE_NODE:
 				if (resolve) return getSourceNode();
 				return basicGetSourceNode();
-			case ProductionschemaPackage.MATERIAL_LINK__DESTINATION_NODE:
+			case ProductionschemaPackage.LINK__DESTINATION_NODE:
 				if (resolve) return getDestinationNode();
 				return basicGetDestinationNode();
-			case ProductionschemaPackage.MATERIAL_LINK__ASSOCIATED_MATERIAL:
+			case ProductionschemaPackage.LINK__ASSOCIATED_MATERIAL:
 				if (resolve) return getAssociatedMaterial();
 				return basicGetAssociatedMaterial();
 		}
@@ -303,13 +303,13 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ProductionschemaPackage.MATERIAL_LINK__SOURCE_NODE:
+			case ProductionschemaPackage.LINK__SOURCE_NODE:
 				setSourceNode((LinkableNode)newValue);
 				return;
-			case ProductionschemaPackage.MATERIAL_LINK__DESTINATION_NODE:
+			case ProductionschemaPackage.LINK__DESTINATION_NODE:
 				setDestinationNode((LinkableNode)newValue);
 				return;
-			case ProductionschemaPackage.MATERIAL_LINK__ASSOCIATED_MATERIAL:
+			case ProductionschemaPackage.LINK__ASSOCIATED_MATERIAL:
 				setAssociatedMaterial((Material)newValue);
 				return;
 		}
@@ -324,13 +324,13 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ProductionschemaPackage.MATERIAL_LINK__SOURCE_NODE:
+			case ProductionschemaPackage.LINK__SOURCE_NODE:
 				setSourceNode((LinkableNode)null);
 				return;
-			case ProductionschemaPackage.MATERIAL_LINK__DESTINATION_NODE:
+			case ProductionschemaPackage.LINK__DESTINATION_NODE:
 				setDestinationNode((LinkableNode)null);
 				return;
-			case ProductionschemaPackage.MATERIAL_LINK__ASSOCIATED_MATERIAL:
+			case ProductionschemaPackage.LINK__ASSOCIATED_MATERIAL:
 				setAssociatedMaterial((Material)null);
 				return;
 		}
@@ -345,14 +345,14 @@ public class MaterialLinkImpl extends IdentifiableElementImpl implements Materia
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ProductionschemaPackage.MATERIAL_LINK__SOURCE_NODE:
+			case ProductionschemaPackage.LINK__SOURCE_NODE:
 				return sourceNode != null;
-			case ProductionschemaPackage.MATERIAL_LINK__DESTINATION_NODE:
+			case ProductionschemaPackage.LINK__DESTINATION_NODE:
 				return destinationNode != null;
-			case ProductionschemaPackage.MATERIAL_LINK__ASSOCIATED_MATERIAL:
+			case ProductionschemaPackage.LINK__ASSOCIATED_MATERIAL:
 				return associatedMaterial != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //MaterialLinkImpl
+} //LinkImpl

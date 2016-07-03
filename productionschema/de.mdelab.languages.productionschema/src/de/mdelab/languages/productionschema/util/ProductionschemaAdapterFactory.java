@@ -80,8 +80,8 @@ public class ProductionschemaAdapterFactory extends AdapterFactoryImpl {
 				return createDisjunctiveNodeAdapter();
 			}
 			@Override
-			public Adapter caseMaterialLink(MaterialLink object) {
-				return createMaterialLinkAdapter();
+			public Adapter caseLink(Link object) {
+				return createLinkAdapter();
 			}
 			@Override
 			public Adapter caseLinkableNode(LinkableNode object) {
@@ -158,16 +158,16 @@ public class ProductionschemaAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.mdelab.languages.productionschema.MaterialLink <em>Material Link</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.mdelab.languages.productionschema.Link <em>Link</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.mdelab.languages.productionschema.MaterialLink
+	 * @see de.mdelab.languages.productionschema.Link
 	 * @generated
 	 */
-	public Adapter createMaterialLinkAdapter() {
+	public Adapter createLinkAdapter() {
 		return null;
 	}
 

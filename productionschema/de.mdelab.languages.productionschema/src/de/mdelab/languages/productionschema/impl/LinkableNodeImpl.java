@@ -2,10 +2,11 @@
  */
 package de.mdelab.languages.productionschema.impl;
 
+import de.mdelab.languages.productionschema.Link;
 import de.mdelab.languages.productionschema.LinkableNode;
-import de.mdelab.languages.productionschema.MaterialLink;
 import de.mdelab.languages.productionschema.ProductionschemaPackage;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -41,7 +42,7 @@ public abstract class LinkableNodeImpl extends IdentifiableElementImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<MaterialLink> incomingLinks;
+	protected EList<Link> incomingLinks;
 
 	/**
 	 * The cached value of the '{@link #getOutgoingLinks() <em>Outgoing Links</em>}' reference list.
@@ -51,7 +52,7 @@ public abstract class LinkableNodeImpl extends IdentifiableElementImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<MaterialLink> outgoingLinks;
+	protected EList<Link> outgoingLinks;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -77,9 +78,9 @@ public abstract class LinkableNodeImpl extends IdentifiableElementImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MaterialLink> getIncomingLinks() {
+	public EList<Link> getIncomingLinks() {
 		if (incomingLinks == null) {
-			incomingLinks = new EObjectWithInverseResolvingEList<MaterialLink>(MaterialLink.class, this, ProductionschemaPackage.LINKABLE_NODE__INCOMING_LINKS, ProductionschemaPackage.MATERIAL_LINK__DESTINATION_NODE);
+			incomingLinks = new EObjectWithInverseResolvingEList<Link>(Link.class, this, ProductionschemaPackage.LINKABLE_NODE__INCOMING_LINKS, ProductionschemaPackage.LINK__DESTINATION_NODE);
 		}
 		return incomingLinks;
 	}
@@ -89,11 +90,22 @@ public abstract class LinkableNodeImpl extends IdentifiableElementImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MaterialLink> getOutgoingLinks() {
+	public EList<Link> getOutgoingLinks() {
 		if (outgoingLinks == null) {
-			outgoingLinks = new EObjectWithInverseResolvingEList<MaterialLink>(MaterialLink.class, this, ProductionschemaPackage.LINKABLE_NODE__OUTGOING_LINKS, ProductionschemaPackage.MATERIAL_LINK__SOURCE_NODE);
+			outgoingLinks = new EObjectWithInverseResolvingEList<Link>(Link.class, this, ProductionschemaPackage.LINKABLE_NODE__OUTGOING_LINKS, ProductionschemaPackage.LINK__SOURCE_NODE);
 		}
 		return outgoingLinks;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int degree(boolean isInDegree, boolean isOutDegree) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -156,11 +168,11 @@ public abstract class LinkableNodeImpl extends IdentifiableElementImpl implement
 		switch (featureID) {
 			case ProductionschemaPackage.LINKABLE_NODE__INCOMING_LINKS:
 				getIncomingLinks().clear();
-				getIncomingLinks().addAll((Collection<? extends MaterialLink>)newValue);
+				getIncomingLinks().addAll((Collection<? extends Link>)newValue);
 				return;
 			case ProductionschemaPackage.LINKABLE_NODE__OUTGOING_LINKS:
 				getOutgoingLinks().clear();
-				getOutgoingLinks().addAll((Collection<? extends MaterialLink>)newValue);
+				getOutgoingLinks().addAll((Collection<? extends Link>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -198,6 +210,20 @@ public abstract class LinkableNodeImpl extends IdentifiableElementImpl implement
 				return outgoingLinks != null && !outgoingLinks.isEmpty();
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case ProductionschemaPackage.LINKABLE_NODE___DEGREE__BOOLEAN_BOOLEAN:
+				return degree((Boolean)arguments.get(0), (Boolean)arguments.get(1));
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 } //LinkableNodeImpl

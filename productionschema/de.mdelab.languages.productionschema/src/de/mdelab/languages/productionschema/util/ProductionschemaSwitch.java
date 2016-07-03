@@ -88,10 +88,10 @@ public class ProductionschemaSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ProductionschemaPackage.MATERIAL_LINK: {
-				MaterialLink materialLink = (MaterialLink)theEObject;
-				T result = caseMaterialLink(materialLink);
-				if (result == null) result = caseIdentifiableElement(materialLink);
+			case ProductionschemaPackage.LINK: {
+				Link link = (Link)theEObject;
+				T result = caseLink(link);
+				if (result == null) result = caseIdentifiableElement(link);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -165,17 +165,17 @@ public class ProductionschemaSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Material Link</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Link</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Material Link</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Link</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMaterialLink(MaterialLink object) {
+	public T caseLink(Link object) {
 		return null;
 	}
 

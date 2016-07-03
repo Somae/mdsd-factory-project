@@ -3,7 +3,7 @@
 package de.mdelab.languages.productionschema.provider;
 
 
-import de.mdelab.languages.productionschema.MaterialLink;
+import de.mdelab.languages.productionschema.Link;
 import de.mdelab.languages.productionschema.ProductionschemaPackage;
 
 import java.util.Collection;
@@ -16,19 +16,19 @@ import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
 /**
- * This is the item provider adapter for a {@link de.mdelab.languages.productionschema.MaterialLink} object.
+ * This is the item provider adapter for a {@link de.mdelab.languages.productionschema.Link} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class MaterialLinkItemProvider extends IdentifiableElementItemProvider {
+public class LinkItemProvider extends IdentifiableElementItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MaterialLinkItemProvider(AdapterFactory adapterFactory) {
+	public LinkItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -61,9 +61,9 @@ public class MaterialLinkItemProvider extends IdentifiableElementItemProvider {
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_MaterialLink_sourceNode_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_MaterialLink_sourceNode_feature", "_UI_MaterialLink_type"),
-				 ProductionschemaPackage.Literals.MATERIAL_LINK__SOURCE_NODE,
+				 getString("_UI_Link_sourceNode_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Link_sourceNode_feature", "_UI_Link_type"),
+				 ProductionschemaPackage.Literals.LINK__SOURCE_NODE,
 				 true,
 				 false,
 				 true,
@@ -83,9 +83,9 @@ public class MaterialLinkItemProvider extends IdentifiableElementItemProvider {
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_MaterialLink_destinationNode_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_MaterialLink_destinationNode_feature", "_UI_MaterialLink_type"),
-				 ProductionschemaPackage.Literals.MATERIAL_LINK__DESTINATION_NODE,
+				 getString("_UI_Link_destinationNode_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Link_destinationNode_feature", "_UI_Link_type"),
+				 ProductionschemaPackage.Literals.LINK__DESTINATION_NODE,
 				 true,
 				 false,
 				 true,
@@ -105,9 +105,9 @@ public class MaterialLinkItemProvider extends IdentifiableElementItemProvider {
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_MaterialLink_associatedMaterial_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_MaterialLink_associatedMaterial_feature", "_UI_MaterialLink_type"),
-				 ProductionschemaPackage.Literals.MATERIAL_LINK__ASSOCIATED_MATERIAL,
+				 getString("_UI_Link_associatedMaterial_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Link_associatedMaterial_feature", "_UI_Link_type"),
+				 ProductionschemaPackage.Literals.LINK__ASSOCIATED_MATERIAL,
 				 true,
 				 false,
 				 true,
@@ -117,14 +117,14 @@ public class MaterialLinkItemProvider extends IdentifiableElementItemProvider {
 	}
 
 	/**
-	 * This returns MaterialLink.gif.
+	 * This returns Link.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/MaterialLink"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Link"));
 	}
 
 	/**
@@ -135,8 +135,8 @@ public class MaterialLinkItemProvider extends IdentifiableElementItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		MaterialLink materialLink = (MaterialLink)object;
-		return getString("_UI_MaterialLink_type") + " " + materialLink.getId();
+		Link link = (Link)object;
+		return getString("_UI_Link_type") + " " + link.getId();
 	}
 	
 

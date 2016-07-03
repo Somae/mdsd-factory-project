@@ -59,7 +59,7 @@ public class ProductionschemaFactoryImpl extends EFactoryImpl implements Product
 			case ProductionschemaPackage.PRODUCTION_SCHEMA: return createProductionSchema();
 			case ProductionschemaPackage.CONJUNCTIVE_NODE: return createConjunctiveNode();
 			case ProductionschemaPackage.DISJUNCTIVE_NODE: return createDisjunctiveNode();
-			case ProductionschemaPackage.MATERIAL_LINK: return createMaterialLink();
+			case ProductionschemaPackage.LINK: return createLink();
 			case ProductionschemaPackage.MATERIAL: return createMaterial();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -101,9 +101,9 @@ public class ProductionschemaFactoryImpl extends EFactoryImpl implements Product
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MaterialLink createMaterialLink() {
-		MaterialLinkImpl materialLink = new MaterialLinkImpl();
-		return materialLink;
+	public Link createLink() {
+		LinkImpl link = new LinkImpl();
+		return link;
 	}
 
 	/**

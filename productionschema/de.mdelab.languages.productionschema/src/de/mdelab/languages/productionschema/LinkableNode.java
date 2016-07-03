@@ -24,8 +24,8 @@ import org.eclipse.emf.common.util.EList;
 public interface LinkableNode extends IdentifiableElement {
 	/**
 	 * Returns the value of the '<em><b>Incoming Links</b></em>' reference list.
-	 * The list contents are of type {@link de.mdelab.languages.productionschema.MaterialLink}.
-	 * It is bidirectional and its opposite is '{@link de.mdelab.languages.productionschema.MaterialLink#getDestinationNode <em>Destination Node</em>}'.
+	 * The list contents are of type {@link de.mdelab.languages.productionschema.Link}.
+	 * It is bidirectional and its opposite is '{@link de.mdelab.languages.productionschema.Link#getDestinationNode <em>Destination Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Incoming Links</em>' reference list isn't clear,
@@ -34,16 +34,16 @@ public interface LinkableNode extends IdentifiableElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Incoming Links</em>' reference list.
 	 * @see de.mdelab.languages.productionschema.ProductionschemaPackage#getLinkableNode_IncomingLinks()
-	 * @see de.mdelab.languages.productionschema.MaterialLink#getDestinationNode
+	 * @see de.mdelab.languages.productionschema.Link#getDestinationNode
 	 * @model opposite="destinationNode"
 	 * @generated
 	 */
-	EList<MaterialLink> getIncomingLinks();
+	EList<Link> getIncomingLinks();
 
 	/**
 	 * Returns the value of the '<em><b>Outgoing Links</b></em>' reference list.
-	 * The list contents are of type {@link de.mdelab.languages.productionschema.MaterialLink}.
-	 * It is bidirectional and its opposite is '{@link de.mdelab.languages.productionschema.MaterialLink#getSourceNode <em>Source Node</em>}'.
+	 * The list contents are of type {@link de.mdelab.languages.productionschema.Link}.
+	 * It is bidirectional and its opposite is '{@link de.mdelab.languages.productionschema.Link#getSourceNode <em>Source Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Outgoing Links</em>' reference list isn't clear,
@@ -52,10 +52,18 @@ public interface LinkableNode extends IdentifiableElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Outgoing Links</em>' reference list.
 	 * @see de.mdelab.languages.productionschema.ProductionschemaPackage#getLinkableNode_OutgoingLinks()
-	 * @see de.mdelab.languages.productionschema.MaterialLink#getSourceNode
+	 * @see de.mdelab.languages.productionschema.Link#getSourceNode
 	 * @model opposite="sourceNode"
 	 * @generated
 	 */
-	EList<MaterialLink> getOutgoingLinks();
+	EList<Link> getOutgoingLinks();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	int degree(boolean isInDegree, boolean isOutDegree);
 
 } // LinkableNode

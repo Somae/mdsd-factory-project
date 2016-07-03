@@ -2,9 +2,9 @@
  */
 package de.mdelab.languages.productionschema.impl;
 
+import de.mdelab.languages.productionschema.Link;
 import de.mdelab.languages.productionschema.LinkableNode;
 import de.mdelab.languages.productionschema.Material;
-import de.mdelab.languages.productionschema.MaterialLink;
 import de.mdelab.languages.productionschema.ProductionSchema;
 import de.mdelab.languages.productionschema.ProductionschemaPackage;
 
@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link de.mdelab.languages.productionschema.impl.ProductionSchemaImpl#getOwnedLinkableNodes <em>Owned Linkable Nodes</em>}</li>
- *   <li>{@link de.mdelab.languages.productionschema.impl.ProductionSchemaImpl#getOwnedMaterialLinks <em>Owned Material Links</em>}</li>
+ *   <li>{@link de.mdelab.languages.productionschema.impl.ProductionSchemaImpl#getOwnedLinks <em>Owned Links</em>}</li>
  *   <li>{@link de.mdelab.languages.productionschema.impl.ProductionSchemaImpl#getOwnedMaterials <em>Owned Materials</em>}</li>
  * </ul>
  *
@@ -49,14 +49,14 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 	protected EList<LinkableNode> ownedLinkableNodes;
 
 	/**
-	 * The cached value of the '{@link #getOwnedMaterialLinks() <em>Owned Material Links</em>}' containment reference list.
+	 * The cached value of the '{@link #getOwnedLinks() <em>Owned Links</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOwnedMaterialLinks()
+	 * @see #getOwnedLinks()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<MaterialLink> ownedMaterialLinks;
+	protected EList<Link> ownedLinks;
 
 	/**
 	 * The cached value of the '{@link #getOwnedMaterials() <em>Owned Materials</em>}' containment reference list.
@@ -104,11 +104,11 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MaterialLink> getOwnedMaterialLinks() {
-		if (ownedMaterialLinks == null) {
-			ownedMaterialLinks = new EObjectContainmentEList<MaterialLink>(MaterialLink.class, this, ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS);
+	public EList<Link> getOwnedLinks() {
+		if (ownedLinks == null) {
+			ownedLinks = new EObjectContainmentEList<Link>(Link.class, this, ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKS);
 		}
-		return ownedMaterialLinks;
+		return ownedLinks;
 	}
 
 	/**
@@ -133,8 +133,8 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 		switch (featureID) {
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES:
 				return ((InternalEList<?>)getOwnedLinkableNodes()).basicRemove(otherEnd, msgs);
-			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS:
-				return ((InternalEList<?>)getOwnedMaterialLinks()).basicRemove(otherEnd, msgs);
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKS:
+				return ((InternalEList<?>)getOwnedLinks()).basicRemove(otherEnd, msgs);
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIALS:
 				return ((InternalEList<?>)getOwnedMaterials()).basicRemove(otherEnd, msgs);
 		}
@@ -151,8 +151,8 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 		switch (featureID) {
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES:
 				return getOwnedLinkableNodes();
-			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS:
-				return getOwnedMaterialLinks();
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKS:
+				return getOwnedLinks();
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIALS:
 				return getOwnedMaterials();
 		}
@@ -172,9 +172,9 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 				getOwnedLinkableNodes().clear();
 				getOwnedLinkableNodes().addAll((Collection<? extends LinkableNode>)newValue);
 				return;
-			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS:
-				getOwnedMaterialLinks().clear();
-				getOwnedMaterialLinks().addAll((Collection<? extends MaterialLink>)newValue);
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKS:
+				getOwnedLinks().clear();
+				getOwnedLinks().addAll((Collection<? extends Link>)newValue);
 				return;
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIALS:
 				getOwnedMaterials().clear();
@@ -195,8 +195,8 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES:
 				getOwnedLinkableNodes().clear();
 				return;
-			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS:
-				getOwnedMaterialLinks().clear();
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKS:
+				getOwnedLinks().clear();
 				return;
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIALS:
 				getOwnedMaterials().clear();
@@ -215,8 +215,8 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 		switch (featureID) {
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES:
 				return ownedLinkableNodes != null && !ownedLinkableNodes.isEmpty();
-			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIAL_LINKS:
-				return ownedMaterialLinks != null && !ownedMaterialLinks.isEmpty();
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKS:
+				return ownedLinks != null && !ownedLinks.isEmpty();
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIALS:
 				return ownedMaterials != null && !ownedMaterials.isEmpty();
 		}
