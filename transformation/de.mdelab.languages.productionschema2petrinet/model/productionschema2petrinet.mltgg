@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mltgg:TGG xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mltgg="http://www.mdelab.de/mltgg/1.0" uuid="_An6LwD8fEeKTTbcgLXf6Gw" name="productionschema2petrinet" tggID="productionschema2petrinet">
+  <ruleGroups uuid="_BBH9AD8fEeKTTbcgLXf6Gw" name="productionschema2petrinetAxiom" ruleGroupID="productionschema2petrinetAxiom" isAxiom="true">
+    <rules uuid="_EWn5MT8fEeKTTbcgLXf6Gw" name="r1" leftInputElements="_HmOBsT8fEeKTTbcgLXf6Gw" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r1">
+      <leftModelDomain uuid="_F4J9YT8fEeKTTbcgLXf6Gw">
+        <modelObjects uuid="_HmOBsT8fEeKTTbcgLXf6Gw" modifier="CREATE" incomingCorrespondenceLink="_Z6WgYj8fEeKTTbcgLXf6Gw" name="productionSchema">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+        </modelObjects>
+      </leftModelDomain>
+      <rightModelDomain uuid="_GUAy8j8fEeKTTbcgLXf6Gw">
+        <modelObjects uuid="_WyPf8T8fEeKTTbcgLXf6Gw" modifier="CREATE" incomingCorrespondenceLink="_bI1Fsj8fEeKTTbcgLXf6Gw" name="petrinetdoc" outgoingLinks="_xqcdADuXEeaFv70xSAP0wg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNetDoc"/>
+        </modelObjects>
+        <modelObjects uuid="_tBet0DuXEeaFv70xSAP0wg" modifier="CREATE" incomingCorrespondenceLink="_zbQ6YDuXEeaFv70xSAP0wg" name="net" outgoingLinks="_yOMqUDuXEeaFv70xSAP0wg" incomingLinks="_xqcdADuXEeaFv70xSAP0wg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNet"/>
+        </modelObjects>
+        <modelObjects uuid="_vwWH0DuXEeaFv70xSAP0wg" modifier="CREATE" incomingCorrespondenceLink="_0nv7oDuXEeaFv70xSAP0wg" name="page" incomingLinks="_yOMqUDuXEeaFv70xSAP0wg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+        </modelObjects>
+        <modelLinks uuid="_xqcdADuXEeaFv70xSAP0wg" modifier="CREATE" incomingCorrespondenceLink="_y8QDIDuXEeaFv70xSAP0wg" source="_WyPf8T8fEeKTTbcgLXf6Gw" target="_tBet0DuXEeaFv70xSAP0wg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNetDoc/net"/>
+        </modelLinks>
+        <modelLinks uuid="_yOMqUDuXEeaFv70xSAP0wg" modifier="CREATE" incomingCorrespondenceLink="_0DR8oDuXEeaFv70xSAP0wg" source="_tBet0DuXEeaFv70xSAP0wg" target="_vwWH0DuXEeaFv70xSAP0wg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNet/page"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_GqCGQz8fEeKTTbcgLXf6Gw">
+        <correspondenceNodes uuid="_YbWLwT8fEeKTTbcgLXf6Gw" modifier="CREATE" name="corrAxiom" outgoingLinks="_Z6WgYj8fEeKTTbcgLXf6Gw _bI1Fsj8fEeKTTbcgLXf6Gw _y8QDIDuXEeaFv70xSAP0wg _zbQ6YDuXEeaFv70xSAP0wg _0DR8oDuXEeaFv70xSAP0wg _0nv7oDuXEeaFv70xSAP0wg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_Z6WgYj8fEeKTTbcgLXf6Gw" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_HmOBsT8fEeKTTbcgLXf6Gw"/>
+        <correspondenceLinks uuid="_bI1Fsj8fEeKTTbcgLXf6Gw" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_WyPf8T8fEeKTTbcgLXf6Gw"/>
+        <correspondenceLinks uuid="_y8QDIDuXEeaFv70xSAP0wg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_xqcdADuXEeaFv70xSAP0wg"/>
+        <correspondenceLinks uuid="_zbQ6YDuXEeaFv70xSAP0wg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_tBet0DuXEeaFv70xSAP0wg"/>
+        <correspondenceLinks uuid="_0DR8oDuXEeaFv70xSAP0wg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_yOMqUDuXEeaFv70xSAP0wg"/>
+        <correspondenceLinks uuid="_0nv7oDuXEeaFv70xSAP0wg" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_vwWH0DuXEeaFv70xSAP0wg"/>
+      </correspondenceDomain>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_1P1H8TuaEeaFv70xSAP0wg" name="productionschema2petrinetConjunctiveNode" ruleGroupID="productionschema2petrinetConjunctiveNode">
+    <rules uuid="_5GBWYTuaEeaFv70xSAP0wg" name="r2" leftInputElements="_KeuuoDubEeaFv70xSAP0wg" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r2">
+      <leftModelDomain uuid="_5eQQMTuaEeaFv70xSAP0wg">
+        <modelObjects uuid="_KeuuoDubEeaFv70xSAP0wg" incomingCorrespondenceLink="_A03qgEBTEeaBmvjsBUDcHA" name="productionschema" outgoingLinks="_P1jz8DucEeaFv70xSAP0wg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+        </modelObjects>
+        <modelObjects uuid="_AdI4cDucEeaFv70xSAP0wg" modifier="CREATE" incomingCorrespondenceLink="_BQOw0EBTEeaBmvjsBUDcHA" name="conjunctiveNode" incomingLinks="_P1jz8DucEeaFv70xSAP0wg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ConjunctiveNode"/>
+          <attributeAssignments uuid="_sD1AgDucEeaFv70xSAP0wg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_5NKOQTucEeaFv70xSAP0wg" expressionString="nameVariable" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.mdelab.de/languages/productionschema#//IdentifiableElement/label"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_P1jz8DucEeaFv70xSAP0wg" modifier="CREATE" incomingCorrespondenceLink="_CTT-cEBTEeaBmvjsBUDcHA" source="_KeuuoDubEeaFv70xSAP0wg" target="_AdI4cDucEeaFv70xSAP0wg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinkableNodes"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_8XfuMjuaEeaFv70xSAP0wg">
+        <modelObjects uuid="_w2QDIDubEeaFv70xSAP0wg" incomingCorrespondenceLink="_AUVwUEBTEeaBmvjsBUDcHA" name="page" outgoingLinks="_PGQd8DucEeaFv70xSAP0wg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+        </modelObjects>
+        <modelObjects uuid="_GhSzQDucEeaFv70xSAP0wg" modifier="CREATE" incomingCorrespondenceLink="__MzggEBSEeaBmvjsBUDcHA" name="transition" outgoingLinks="_ol8LEDuhEeaFv70xSAP0wg" incomingLinks="_PGQd8DucEeaFv70xSAP0wg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Transition"/>
+        </modelObjects>
+        <modelObjects uuid="_g6XmgDuhEeaFv70xSAP0wg" modifier="CREATE" incomingCorrespondenceLink="_EsmxEEBTEeaBmvjsBUDcHA" name="name" incomingLinks="_ol8LEDuhEeaFv70xSAP0wg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name"/>
+          <attributeAssignments uuid="_mGBMADuhEeaFv70xSAP0wg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_viEPsTuhEeaFv70xSAP0wg" expressionString="nameVariable" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name/text"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_PGQd8DucEeaFv70xSAP0wg" modifier="CREATE" incomingCorrespondenceLink="_DICnAEBTEeaBmvjsBUDcHA" source="_w2QDIDubEeaFv70xSAP0wg" target="_GhSzQDucEeaFv70xSAP0wg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_ol8LEDuhEeaFv70xSAP0wg" modifier="CREATE" incomingCorrespondenceLink="_D7Je8EBTEeaBmvjsBUDcHA" source="_GhSzQDucEeaFv70xSAP0wg" target="_g6XmgDuhEeaFv70xSAP0wg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Object/name"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_7r-E8zuaEeaFv70xSAP0wg">
+        <correspondenceNodes uuid="__zAy0DuaEeaFv70xSAP0wg" name="corrAxiom" outgoingLinks="_AUVwUEBTEeaBmvjsBUDcHA _A03qgEBTEeaBmvjsBUDcHA">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_MJr_IDucEeaFv70xSAP0wg" modifier="CREATE" name="corrNode" outgoingLinks="__MzggEBSEeaBmvjsBUDcHA _BQOw0EBTEeaBmvjsBUDcHA _CTT-cEBTEeaBmvjsBUDcHA _DICnAEBTEeaBmvjsBUDcHA _D7Je8EBTEeaBmvjsBUDcHA _EsmxEEBTEeaBmvjsBUDcHA">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrConjunctiveNode"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="__MzggEBSEeaBmvjsBUDcHA" modifier="CREATE" source="_MJr_IDucEeaFv70xSAP0wg" target="_GhSzQDucEeaFv70xSAP0wg"/>
+        <correspondenceLinks uuid="_AUVwUEBTEeaBmvjsBUDcHA" source="__zAy0DuaEeaFv70xSAP0wg" target="_w2QDIDubEeaFv70xSAP0wg"/>
+        <correspondenceLinks uuid="_A03qgEBTEeaBmvjsBUDcHA" source="__zAy0DuaEeaFv70xSAP0wg" target="_KeuuoDubEeaFv70xSAP0wg"/>
+        <correspondenceLinks uuid="_BQOw0EBTEeaBmvjsBUDcHA" modifier="CREATE" source="_MJr_IDucEeaFv70xSAP0wg" target="_AdI4cDucEeaFv70xSAP0wg"/>
+        <correspondenceLinks uuid="_CTT-cEBTEeaBmvjsBUDcHA" modifier="CREATE" source="_MJr_IDucEeaFv70xSAP0wg" target="_P1jz8DucEeaFv70xSAP0wg"/>
+        <correspondenceLinks uuid="_DICnAEBTEeaBmvjsBUDcHA" modifier="CREATE" source="_MJr_IDucEeaFv70xSAP0wg" target="_PGQd8DucEeaFv70xSAP0wg"/>
+        <correspondenceLinks uuid="_D7Je8EBTEeaBmvjsBUDcHA" modifier="CREATE" source="_MJr_IDucEeaFv70xSAP0wg" target="_ol8LEDuhEeaFv70xSAP0wg"/>
+        <correspondenceLinks uuid="_EsmxEEBTEeaBmvjsBUDcHA" modifier="CREATE" source="_MJr_IDucEeaFv70xSAP0wg" target="_g6XmgDuhEeaFv70xSAP0wg"/>
+      </correspondenceDomain>
+      <ruleParameters uuid="_JST3dTueEeaFv70xSAP0wg" name="nameVariable">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_O3c7ATueEeaFv70xSAP0wg" expressionString="conjunctiveNode.label" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_Uy5lwjueEeaFv70xSAP0wg" expressionString="transition.name.text" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_Qwp_sUB9EeaTZpWmoDMHgQ" name="productionSchema2petrinetDisjunctiveNode" ruleGroupID="productionSchema2petrinetDisjunctiveNode">
+    <rules uuid="_UKJEAUB9EeaTZpWmoDMHgQ" name="r3" leftInputElements="_KeuuoDubEeaFv70xSAP0wg" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r3">
+      <leftModelDomain uuid="_nkMo8EB9EeaTZpWmoDMHgQ">
+        <modelObjects uuid="_rqcFkEB9EeaTZpWmoDMHgQ" incomingCorrespondenceLink="_zrLB0EB9EeaTZpWmoDMHgQ" name="productionSchema" outgoingLinks="_34G8UEB9EeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+        </modelObjects>
+        <modelObjects uuid="_06iX8EB9EeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_8zPnUECCEeaTZpWmoDMHgQ" name="disjunctiveNode" incomingLinks="_34G8UEB9EeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//DisjunctiveNode"/>
+          <attributeAssignments uuid="_nCNZYECBEeaTZpWmoDMHgQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_ZXs7wUCCEeaTZpWmoDMHgQ" expressionString="nameVariable" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.mdelab.de/languages/productionschema#//IdentifiableElement/label"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_34G8UEB9EeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_8ABaoECCEeaTZpWmoDMHgQ" source="_rqcFkEB9EeaTZpWmoDMHgQ" target="_06iX8EB9EeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinkableNodes"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_pm7VsEB9EeaTZpWmoDMHgQ">
+        <modelObjects uuid="_wWMDAEB9EeaTZpWmoDMHgQ" incomingCorrespondenceLink="_yRCmIEB9EeaTZpWmoDMHgQ" name="page" outgoingLinks="_geM50ECBEeaTZpWmoDMHgQ _e8UTgECFEeaTZpWmoDMHgQ _hF4BAECFEeaTZpWmoDMHgQ _iwzRwECFEeaTZpWmoDMHgQ _kgZAEECFEeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+        </modelObjects>
+        <modelObjects uuid="_PG4BoECBEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_CcPQIECDEeaTZpWmoDMHgQ" name="transition" outgoingLinks="_YvzDsECBEeaTZpWmoDMHgQ _Aj0ycECCEeaTZpWmoDMHgQ" incomingLinks="_geM50ECBEeaTZpWmoDMHgQ _3xpyMECBEeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Transition"/>
+        </modelObjects>
+        <modelObjects uuid="_VOZZgECBEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_FRPHUECDEeaTZpWmoDMHgQ" name="name" incomingLinks="_YvzDsECBEeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name"/>
+          <attributeAssignments uuid="_cy_MUECBEeaTZpWmoDMHgQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_eGwE0UCCEeaTZpWmoDMHgQ" expressionString="nameVariable" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name/text"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_rOoWgECBEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_-EfMwECCEeaTZpWmoDMHgQ" name="inPlace" outgoingLinks="_x1eHoECBEeaTZpWmoDMHgQ" incomingLinks="_hF4BAECFEeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelObjects uuid="_ugqvAECBEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_BdE5MECDEeaTZpWmoDMHgQ" name="inArc" outgoingLinks="_3xpyMECBEeaTZpWmoDMHgQ" incomingLinks="_x1eHoECBEeaTZpWmoDMHgQ _e8UTgECFEeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc"/>
+        </modelObjects>
+        <modelObjects uuid="_9csCYECBEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_DgmQIECDEeaTZpWmoDMHgQ" name="outArc" outgoingLinks="_N4jX4ECCEeaTZpWmoDMHgQ" incomingLinks="_Aj0ycECCEeaTZpWmoDMHgQ _iwzRwECFEeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc"/>
+        </modelObjects>
+        <modelObjects uuid="_KYa5AECCEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_STfcsECDEeaTZpWmoDMHgQ" name="outPlace" incomingLinks="_N4jX4ECCEeaTZpWmoDMHgQ _kgZAEECFEeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelLinks uuid="_YvzDsECBEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_J8sJ0ECDEeaTZpWmoDMHgQ" source="_PG4BoECBEeaTZpWmoDMHgQ" target="_VOZZgECBEeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Object/name"/>
+        </modelLinks>
+        <modelLinks uuid="_geM50ECBEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_flooMECDEeaTZpWmoDMHgQ" source="_wWMDAEB9EeaTZpWmoDMHgQ" target="_PG4BoECBEeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_x1eHoECBEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_Iuw-IECDEeaTZpWmoDMHgQ" source="_rOoWgECBEeaTZpWmoDMHgQ" target="_ugqvAECBEeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Node/out"/>
+        </modelLinks>
+        <modelLinks uuid="_3xpyMECBEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_LoVMQECDEeaTZpWmoDMHgQ" source="_ugqvAECBEeaTZpWmoDMHgQ" target="_PG4BoECBEeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc/target"/>
+        </modelLinks>
+        <modelLinks uuid="_Aj0ycECCEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_Nbl5oECDEeaTZpWmoDMHgQ" source="_PG4BoECBEeaTZpWmoDMHgQ" target="_9csCYECBEeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Node/out"/>
+        </modelLinks>
+        <modelLinks uuid="_N4jX4ECCEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_UcphkECDEeaTZpWmoDMHgQ" source="_9csCYECBEeaTZpWmoDMHgQ" target="_KYa5AECCEeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc/target"/>
+        </modelLinks>
+        <modelLinks uuid="_e8UTgECFEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_ofjkUECFEeaTZpWmoDMHgQ" source="_wWMDAEB9EeaTZpWmoDMHgQ" target="_ugqvAECBEeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_hF4BAECFEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_ncx4sECFEeaTZpWmoDMHgQ" source="_wWMDAEB9EeaTZpWmoDMHgQ" target="_rOoWgECBEeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_iwzRwECFEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_pvSt4ECFEeaTZpWmoDMHgQ" source="_wWMDAEB9EeaTZpWmoDMHgQ" target="_9csCYECBEeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_kgZAEECFEeaTZpWmoDMHgQ" modifier="CREATE" incomingCorrespondenceLink="_qnEDYECFEeaTZpWmoDMHgQ" source="_wWMDAEB9EeaTZpWmoDMHgQ" target="_KYa5AECCEeaTZpWmoDMHgQ">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_ot-7gEB9EeaTZpWmoDMHgQ">
+        <correspondenceNodes uuid="_ub-ZEEB9EeaTZpWmoDMHgQ" name="corrAxiom" outgoingLinks="_yRCmIEB9EeaTZpWmoDMHgQ _zrLB0EB9EeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_6ojqsEB9EeaTZpWmoDMHgQ" modifier="CREATE" name="corrDisjunctiveNode" outgoingLinks="_8ABaoECCEeaTZpWmoDMHgQ _8zPnUECCEeaTZpWmoDMHgQ _-EfMwECCEeaTZpWmoDMHgQ _BdE5MECDEeaTZpWmoDMHgQ _CcPQIECDEeaTZpWmoDMHgQ _DgmQIECDEeaTZpWmoDMHgQ _FRPHUECDEeaTZpWmoDMHgQ _Iuw-IECDEeaTZpWmoDMHgQ _J8sJ0ECDEeaTZpWmoDMHgQ _LoVMQECDEeaTZpWmoDMHgQ _Nbl5oECDEeaTZpWmoDMHgQ _STfcsECDEeaTZpWmoDMHgQ _UcphkECDEeaTZpWmoDMHgQ _flooMECDEeaTZpWmoDMHgQ _ncx4sECFEeaTZpWmoDMHgQ _ofjkUECFEeaTZpWmoDMHgQ _pvSt4ECFEeaTZpWmoDMHgQ _qnEDYECFEeaTZpWmoDMHgQ">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrDisjunctiveNode"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_yRCmIEB9EeaTZpWmoDMHgQ" source="_ub-ZEEB9EeaTZpWmoDMHgQ" target="_wWMDAEB9EeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_zrLB0EB9EeaTZpWmoDMHgQ" source="_ub-ZEEB9EeaTZpWmoDMHgQ" target="_rqcFkEB9EeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_8ABaoECCEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_34G8UEB9EeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_8zPnUECCEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_06iX8EB9EeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_-EfMwECCEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_rOoWgECBEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_BdE5MECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_ugqvAECBEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_CcPQIECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_PG4BoECBEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_DgmQIECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_9csCYECBEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_FRPHUECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_VOZZgECBEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_Iuw-IECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_x1eHoECBEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_J8sJ0ECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_YvzDsECBEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_LoVMQECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_3xpyMECBEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_Nbl5oECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_Aj0ycECCEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_STfcsECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_KYa5AECCEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_UcphkECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_N4jX4ECCEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_flooMECDEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_geM50ECBEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_ncx4sECFEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_hF4BAECFEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_ofjkUECFEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_e8UTgECFEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_pvSt4ECFEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_iwzRwECFEeaTZpWmoDMHgQ"/>
+        <correspondenceLinks uuid="_qnEDYECFEeaTZpWmoDMHgQ" modifier="CREATE" source="_6ojqsEB9EeaTZpWmoDMHgQ" target="_kgZAEECFEeaTZpWmoDMHgQ"/>
+      </correspondenceDomain>
+      <ruleParameters uuid="_hji71UCCEeaTZpWmoDMHgQ" name="nameVariable">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_mYTrUUCCEeaTZpWmoDMHgQ" expressionString="disjunctiveNode.label" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_yobZIkCCEeaTZpWmoDMHgQ" expressionString="name.text" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_qOUbgUDuEeahS4UZF2YDOg" name="productionschema2petrinetLink" ruleGroupID="productionschema2petrinetLink">
+    <rules uuid="_zpvNEUDuEeahS4UZF2YDOg" name="r4" leftInputElements="_KeuuoDubEeaFv70xSAP0wg" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r4">
+      <leftModelDomain uuid="_9IoJYEDuEeahS4UZF2YDOg">
+        <modelObjects uuid="_Glr5sEDvEeahS4UZF2YDOg" incomingCorrespondenceLink="_Od-EkEDvEeahS4UZF2YDOg" name="productionschema" outgoingLinks="_WTeoQEDvEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+        </modelObjects>
+        <modelObjects uuid="_SpQZQEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_2Ieq8EDvEeahS4UZF2YDOg" name="link" incomingLinks="_WTeoQEDvEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+        </modelObjects>
+        <modelLinks uuid="_WTeoQEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_4Dg0QEDvEeahS4UZF2YDOg" source="_Glr5sEDvEeahS4UZF2YDOg" target="_SpQZQEDvEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_DBzjQEDvEeahS4UZF2YDOg">
+        <modelObjects uuid="_LQNvIEDvEeahS4UZF2YDOg" incomingCorrespondenceLink="_PZdccEDvEeahS4UZF2YDOg" name="page" outgoingLinks="_yqikcEDvEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+        </modelObjects>
+        <modelObjects uuid="_vs-nIEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_1N55EEDvEeahS4UZF2YDOg" name="place" incomingLinks="_yqikcEDvEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelLinks uuid="_yqikcEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_3DdsgEDvEeahS4UZF2YDOg" source="_LQNvIEDvEeahS4UZF2YDOg" target="_vs-nIEDvEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_An8I4EDvEeahS4UZF2YDOg">
+        <correspondenceNodes uuid="_I0Pb8EDvEeahS4UZF2YDOg" name="axiom" outgoingLinks="_Od-EkEDvEeahS4UZF2YDOg _PZdccEDvEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_nze7UEDvEeahS4UZF2YDOg" modifier="CREATE" name="corrMaterialLink" outgoingLinks="_1N55EEDvEeahS4UZF2YDOg _2Ieq8EDvEeahS4UZF2YDOg _3DdsgEDvEeahS4UZF2YDOg _4Dg0QEDvEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrMaterialLink"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_Od-EkEDvEeahS4UZF2YDOg" source="_I0Pb8EDvEeahS4UZF2YDOg" target="_Glr5sEDvEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_PZdccEDvEeahS4UZF2YDOg" source="_I0Pb8EDvEeahS4UZF2YDOg" target="_LQNvIEDvEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_1N55EEDvEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_vs-nIEDvEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_2Ieq8EDvEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_SpQZQEDvEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_3DdsgEDvEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_yqikcEDvEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_4Dg0QEDvEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_WTeoQEDvEeahS4UZF2YDOg"/>
+      </correspondenceDomain>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_87MU4UDvEeahS4UZF2YDOg" name="productionschema2petrinetConjunctiveNodeIn" ruleGroupID="productionschema2petrinetConjunctiveNodeIn">
+    <rules uuid="_A5hysUDwEeahS4UZF2YDOg" name="r5" leftInputElements="_KeuuoDubEeaFv70xSAP0wg" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r5">
+      <leftModelDomain uuid="_JzDYIEDwEeahS4UZF2YDOg">
+        <modelObjects uuid="_fY8igEDwEeahS4UZF2YDOg" incomingCorrespondenceLink="_fHyEkEDxEeahS4UZF2YDOg" name="productionschema" outgoingLinks="_qNDlUEDwEeahS4UZF2YDOg _tF5asEDwEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+        </modelObjects>
+        <modelObjects uuid="_huSpQEDwEeahS4UZF2YDOg" incomingCorrespondenceLink="_oSfgoEDxEeahS4UZF2YDOg" name="conjunctiveNode" incomingLinks="_rdfScEDwEeahS4UZF2YDOg _tF5asEDwEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ConjunctiveNode"/>
+        </modelObjects>
+        <modelObjects uuid="_l-47wEDwEeahS4UZF2YDOg" incomingCorrespondenceLink="_j-c4kEDxEeahS4UZF2YDOg" name="materialLink" outgoingLinks="_rdfScEDwEeahS4UZF2YDOg" incomingLinks="_qNDlUEDwEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+        </modelObjects>
+        <modelLinks uuid="_qNDlUEDwEeahS4UZF2YDOg" incomingCorrespondenceLink="_kuzXcEDxEeahS4UZF2YDOg" source="_fY8igEDwEeahS4UZF2YDOg" target="_l-47wEDwEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+        </modelLinks>
+        <modelLinks uuid="_rdfScEDwEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_yHgd8EDxEeahS4UZF2YDOg" source="_l-47wEDwEeahS4UZF2YDOg" target="_huSpQEDwEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//MaterialLink/destinationNode"/>
+        </modelLinks>
+        <modelLinks uuid="_tF5asEDwEeahS4UZF2YDOg" incomingCorrespondenceLink="_pMSPYEDxEeahS4UZF2YDOg" source="_fY8igEDwEeahS4UZF2YDOg" target="_huSpQEDwEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinkableNodes"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_NUSqQEDwEeahS4UZF2YDOg">
+        <modelObjects uuid="_0LDfgEDwEeahS4UZF2YDOg" incomingCorrespondenceLink="_eTRecEDxEeahS4UZF2YDOg" name="page" outgoingLinks="_GvPMYEDxEeahS4UZF2YDOg _LD9w8EDxEeahS4UZF2YDOg _bsaJ4EDxEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+        </modelObjects>
+        <modelObjects uuid="_1RI90EDwEeahS4UZF2YDOg" incomingCorrespondenceLink="_qRnfwEDxEeahS4UZF2YDOg" name="nodeTransition" incomingLinks="_LD9w8EDxEeahS4UZF2YDOg _WEISwEDxEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Transition"/>
+        </modelObjects>
+        <modelObjects uuid="_CAiooEDxEeahS4UZF2YDOg" incomingCorrespondenceLink="_m1jokEDxEeahS4UZF2YDOg" name="linkPlace" outgoingLinks="_UAXrQEDxEeahS4UZF2YDOg" incomingLinks="_GvPMYEDxEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelObjects uuid="_Qq0rwEDxEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_0l6aEEDxEeahS4UZF2YDOg" name="arc" outgoingLinks="_WEISwEDxEeahS4UZF2YDOg" incomingLinks="_UAXrQEDxEeahS4UZF2YDOg _bsaJ4EDxEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc"/>
+        </modelObjects>
+        <modelLinks uuid="_GvPMYEDxEeahS4UZF2YDOg" incomingCorrespondenceLink="_mXvrMEDxEeahS4UZF2YDOg" source="_0LDfgEDwEeahS4UZF2YDOg" target="_CAiooEDxEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_LD9w8EDxEeahS4UZF2YDOg" incomingCorrespondenceLink="_q1We8EDxEeahS4UZF2YDOg" source="_0LDfgEDwEeahS4UZF2YDOg" target="_1RI90EDwEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_UAXrQEDxEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_zTtLUEDxEeahS4UZF2YDOg" source="_CAiooEDxEeahS4UZF2YDOg" target="_Qq0rwEDxEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Node/out"/>
+        </modelLinks>
+        <modelLinks uuid="_WEISwEDxEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_2lKVAEDxEeahS4UZF2YDOg" source="_Qq0rwEDxEeahS4UZF2YDOg" target="_1RI90EDwEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc/target"/>
+        </modelLinks>
+        <modelLinks uuid="_bsaJ4EDxEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_1qbLEEDxEeahS4UZF2YDOg" source="_0LDfgEDwEeahS4UZF2YDOg" target="_Qq0rwEDxEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_LN7asEDwEeahS4UZF2YDOg">
+        <correspondenceNodes uuid="_VpVpoEDwEeahS4UZF2YDOg" name="corrAxiom" outgoingLinks="_eTRecEDxEeahS4UZF2YDOg _fHyEkEDxEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_ZFoxYEDwEeahS4UZF2YDOg" name="corrConjunctiveNode" outgoingLinks="_oSfgoEDxEeahS4UZF2YDOg _pMSPYEDxEeahS4UZF2YDOg _qRnfwEDxEeahS4UZF2YDOg _q1We8EDxEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrConjunctiveNode"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_b0Rh4EDwEeahS4UZF2YDOg" name="corrMaterialLink" outgoingLinks="_j-c4kEDxEeahS4UZF2YDOg _kuzXcEDxEeahS4UZF2YDOg _mXvrMEDxEeahS4UZF2YDOg _m1jokEDxEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrMaterialLink"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_vI0fQEDxEeahS4UZF2YDOg" modifier="CREATE" name="corrEdge" outgoingLinks="_yHgd8EDxEeahS4UZF2YDOg _zTtLUEDxEeahS4UZF2YDOg _0l6aEEDxEeahS4UZF2YDOg _1qbLEEDxEeahS4UZF2YDOg _2lKVAEDxEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrEdge"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_eTRecEDxEeahS4UZF2YDOg" source="_VpVpoEDwEeahS4UZF2YDOg" target="_0LDfgEDwEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_fHyEkEDxEeahS4UZF2YDOg" source="_VpVpoEDwEeahS4UZF2YDOg" target="_fY8igEDwEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_j-c4kEDxEeahS4UZF2YDOg" source="_b0Rh4EDwEeahS4UZF2YDOg" target="_l-47wEDwEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_kuzXcEDxEeahS4UZF2YDOg" source="_b0Rh4EDwEeahS4UZF2YDOg" target="_qNDlUEDwEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_mXvrMEDxEeahS4UZF2YDOg" source="_b0Rh4EDwEeahS4UZF2YDOg" target="_GvPMYEDxEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_m1jokEDxEeahS4UZF2YDOg" source="_b0Rh4EDwEeahS4UZF2YDOg" target="_CAiooEDxEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_oSfgoEDxEeahS4UZF2YDOg" source="_ZFoxYEDwEeahS4UZF2YDOg" target="_huSpQEDwEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_pMSPYEDxEeahS4UZF2YDOg" source="_ZFoxYEDwEeahS4UZF2YDOg" target="_tF5asEDwEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_qRnfwEDxEeahS4UZF2YDOg" source="_ZFoxYEDwEeahS4UZF2YDOg" target="_1RI90EDwEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_q1We8EDxEeahS4UZF2YDOg" source="_ZFoxYEDwEeahS4UZF2YDOg" target="_LD9w8EDxEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_yHgd8EDxEeahS4UZF2YDOg" modifier="CREATE" source="_vI0fQEDxEeahS4UZF2YDOg" target="_rdfScEDwEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_zTtLUEDxEeahS4UZF2YDOg" modifier="CREATE" source="_vI0fQEDxEeahS4UZF2YDOg" target="_UAXrQEDxEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_0l6aEEDxEeahS4UZF2YDOg" modifier="CREATE" source="_vI0fQEDxEeahS4UZF2YDOg" target="_Qq0rwEDxEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_1qbLEEDxEeahS4UZF2YDOg" modifier="CREATE" source="_vI0fQEDxEeahS4UZF2YDOg" target="_bsaJ4EDxEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_2lKVAEDxEeahS4UZF2YDOg" modifier="CREATE" source="_vI0fQEDxEeahS4UZF2YDOg" target="_WEISwEDxEeahS4UZF2YDOg"/>
+      </correspondenceDomain>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_orEjQUDyEeahS4UZF2YDOg" name="productionschema2petrinetConjunctiveNodeOut" ruleGroupID="productionschema2petrinetConjunctiveNodeOut">
+    <rules uuid="_sl2WwUDyEeahS4UZF2YDOg" name="r6" leftInputElements="_KeuuoDubEeaFv70xSAP0wg" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r6">
+      <leftModelDomain uuid="_s3JiIUDyEeahS4UZF2YDOg">
+        <modelObjects uuid="_1PqsQEDyEeahS4UZF2YDOg" incomingCorrespondenceLink="_kPQp0EDzEeahS4UZF2YDOg" name="productionschema" outgoingLinks="_ak3BEEDzEeahS4UZF2YDOg _dCoEAEDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+        </modelObjects>
+        <modelObjects uuid="_3dZIEEDyEeahS4UZF2YDOg" incomingCorrespondenceLink="_ldMckEDzEeahS4UZF2YDOg" name="conjunctiveNode" outgoingLinks="_fQfpwEDzEeahS4UZF2YDOg" incomingLinks="_ak3BEEDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ConjunctiveNode"/>
+        </modelObjects>
+        <modelObjects uuid="_5mY04EDyEeahS4UZF2YDOg" incomingCorrespondenceLink="_n82V4EDzEeahS4UZF2YDOg" name="materialLink" incomingLinks="_dCoEAEDzEeahS4UZF2YDOg _fQfpwEDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+        </modelObjects>
+        <modelLinks uuid="_ak3BEEDzEeahS4UZF2YDOg" incomingCorrespondenceLink="_l7YNYEDzEeahS4UZF2YDOg" source="_1PqsQEDyEeahS4UZF2YDOg" target="_3dZIEEDyEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinkableNodes"/>
+        </modelLinks>
+        <modelLinks uuid="_dCoEAEDzEeahS4UZF2YDOg" incomingCorrespondenceLink="_ocGdsEDzEeahS4UZF2YDOg" source="_1PqsQEDyEeahS4UZF2YDOg" target="_5mY04EDyEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+        </modelLinks>
+        <modelLinks uuid="_fQfpwEDzEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_ugwu0EDzEeahS4UZF2YDOg" source="_3dZIEEDyEeahS4UZF2YDOg" target="_5mY04EDyEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//LinkableNode/outgoingLinks"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_t8k5IkDyEeahS4UZF2YDOg">
+        <modelObjects uuid="_D2vDUEDzEeahS4UZF2YDOg" incomingCorrespondenceLink="_lCbMIEDzEeahS4UZF2YDOg" name="page" outgoingLinks="_PiSrgEDzEeahS4UZF2YDOg _Rwkg8EDzEeahS4UZF2YDOg _TPjAYEDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+        </modelObjects>
+        <modelObjects uuid="_FO3T4EDzEeahS4UZF2YDOg" incomingCorrespondenceLink="_mgKVcEDzEeahS4UZF2YDOg" name="nodeTransition" outgoingLinks="_VQAcQEDzEeahS4UZF2YDOg" incomingLinks="_PiSrgEDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Transition"/>
+        </modelObjects>
+        <modelObjects uuid="_LEit0EDzEeahS4UZF2YDOg" incomingCorrespondenceLink="_qJDHsEDzEeahS4UZF2YDOg" name="linkPlace" incomingLinks="_TPjAYEDzEeahS4UZF2YDOg _XohLwEDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelObjects uuid="_Nd2ukEDzEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_xP_VMEDzEeahS4UZF2YDOg" name="arc" outgoingLinks="_XohLwEDzEeahS4UZF2YDOg" incomingLinks="_Rwkg8EDzEeahS4UZF2YDOg _VQAcQEDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc"/>
+        </modelObjects>
+        <modelLinks uuid="_PiSrgEDzEeahS4UZF2YDOg" incomingCorrespondenceLink="_m7-HsEDzEeahS4UZF2YDOg" source="_D2vDUEDzEeahS4UZF2YDOg" target="_FO3T4EDzEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_Rwkg8EDzEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_yBY88EDzEeahS4UZF2YDOg" source="_D2vDUEDzEeahS4UZF2YDOg" target="_Nd2ukEDzEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_TPjAYEDzEeahS4UZF2YDOg" incomingCorrespondenceLink="_pjqisEDzEeahS4UZF2YDOg" source="_D2vDUEDzEeahS4UZF2YDOg" target="_LEit0EDzEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_VQAcQEDzEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_wJdK8EDzEeahS4UZF2YDOg" source="_FO3T4EDzEeahS4UZF2YDOg" target="_Nd2ukEDzEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Node/out"/>
+        </modelLinks>
+        <modelLinks uuid="_XohLwEDzEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_ytd_0EDzEeahS4UZF2YDOg" source="_Nd2ukEDzEeahS4UZF2YDOg" target="_LEit0EDzEeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc/target"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_ti5040DyEeahS4UZF2YDOg">
+        <correspondenceNodes uuid="_8oq6IEDyEeahS4UZF2YDOg" name="corrAxiom" outgoingLinks="_kPQp0EDzEeahS4UZF2YDOg _lCbMIEDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_-bF6AEDyEeahS4UZF2YDOg" name="corrConjunctiveNode" outgoingLinks="_ldMckEDzEeahS4UZF2YDOg _l7YNYEDzEeahS4UZF2YDOg _mgKVcEDzEeahS4UZF2YDOg _m7-HsEDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrConjunctiveNode"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_AMipgEDzEeahS4UZF2YDOg" name="corrMaterialLink" outgoingLinks="_n82V4EDzEeahS4UZF2YDOg _ocGdsEDzEeahS4UZF2YDOg _pjqisEDzEeahS4UZF2YDOg _qJDHsEDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrMaterialLink"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_rMWXwEDzEeahS4UZF2YDOg" modifier="CREATE" name="corrEdge" outgoingLinks="_ugwu0EDzEeahS4UZF2YDOg _wJdK8EDzEeahS4UZF2YDOg _xP_VMEDzEeahS4UZF2YDOg _yBY88EDzEeahS4UZF2YDOg _ytd_0EDzEeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrEdge"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_kPQp0EDzEeahS4UZF2YDOg" source="_8oq6IEDyEeahS4UZF2YDOg" target="_1PqsQEDyEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_lCbMIEDzEeahS4UZF2YDOg" source="_8oq6IEDyEeahS4UZF2YDOg" target="_D2vDUEDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_ldMckEDzEeahS4UZF2YDOg" source="_-bF6AEDyEeahS4UZF2YDOg" target="_3dZIEEDyEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_l7YNYEDzEeahS4UZF2YDOg" source="_-bF6AEDyEeahS4UZF2YDOg" target="_ak3BEEDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_mgKVcEDzEeahS4UZF2YDOg" source="_-bF6AEDyEeahS4UZF2YDOg" target="_FO3T4EDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_m7-HsEDzEeahS4UZF2YDOg" source="_-bF6AEDyEeahS4UZF2YDOg" target="_PiSrgEDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_n82V4EDzEeahS4UZF2YDOg" source="_AMipgEDzEeahS4UZF2YDOg" target="_5mY04EDyEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_ocGdsEDzEeahS4UZF2YDOg" source="_AMipgEDzEeahS4UZF2YDOg" target="_dCoEAEDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_pjqisEDzEeahS4UZF2YDOg" source="_AMipgEDzEeahS4UZF2YDOg" target="_TPjAYEDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_qJDHsEDzEeahS4UZF2YDOg" source="_AMipgEDzEeahS4UZF2YDOg" target="_LEit0EDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_ugwu0EDzEeahS4UZF2YDOg" modifier="CREATE" source="_rMWXwEDzEeahS4UZF2YDOg" target="_fQfpwEDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_wJdK8EDzEeahS4UZF2YDOg" modifier="CREATE" source="_rMWXwEDzEeahS4UZF2YDOg" target="_VQAcQEDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_xP_VMEDzEeahS4UZF2YDOg" modifier="CREATE" source="_rMWXwEDzEeahS4UZF2YDOg" target="_Nd2ukEDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_yBY88EDzEeahS4UZF2YDOg" modifier="CREATE" source="_rMWXwEDzEeahS4UZF2YDOg" target="_Rwkg8EDzEeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_ytd_0EDzEeahS4UZF2YDOg" modifier="CREATE" source="_rMWXwEDzEeahS4UZF2YDOg" target="_XohLwEDzEeahS4UZF2YDOg"/>
+      </correspondenceDomain>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_PXiiIUD1EeahS4UZF2YDOg" name="productionschema2petrinetDisjunctiveNodeIn" ruleGroupID="productionschema2petrinetDisjunctiveNodeIn">
+    <rules uuid="_deUPkUD1EeahS4UZF2YDOg" name="r7" leftInputElements="_KeuuoDubEeaFv70xSAP0wg" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r7">
+      <leftModelDomain uuid="_iIxzkUD1EeahS4UZF2YDOg">
+        <modelObjects uuid="_0mhhQED1EeahS4UZF2YDOg" incomingCorrespondenceLink="_dNjIUED4EeahS4UZF2YDOg" name="productionschema" outgoingLinks="_X9ICcED2EeahS4UZF2YDOg _bqlysED2EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+        </modelObjects>
+        <modelObjects uuid="_7KVMgED1EeahS4UZF2YDOg" incomingCorrespondenceLink="_hBGScED4EeahS4UZF2YDOg" name="disjunctiveNode" incomingLinks="_bqlysED2EeahS4UZF2YDOg _d3XMQED2EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//DisjunctiveNode"/>
+        </modelObjects>
+        <modelObjects uuid="_UZnfcED2EeahS4UZF2YDOg" incomingCorrespondenceLink="_dqm3wED4EeahS4UZF2YDOg" name="materialLink" outgoingLinks="_d3XMQED2EeahS4UZF2YDOg" incomingLinks="_X9ICcED2EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+        </modelObjects>
+        <modelLinks uuid="_X9ICcED2EeahS4UZF2YDOg" incomingCorrespondenceLink="_eN6ZIED4EeahS4UZF2YDOg" source="_0mhhQED1EeahS4UZF2YDOg" target="_UZnfcED2EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+        </modelLinks>
+        <modelLinks uuid="_bqlysED2EeahS4UZF2YDOg" incomingCorrespondenceLink="_gQqUAED4EeahS4UZF2YDOg" source="_0mhhQED1EeahS4UZF2YDOg" target="_7KVMgED1EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinkableNodes"/>
+        </modelLinks>
+        <modelLinks uuid="_d3XMQED2EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_xejjYED4EeahS4UZF2YDOg" source="_UZnfcED2EeahS4UZF2YDOg" target="_7KVMgED1EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//MaterialLink/destinationNode"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_jWN3EkD1EeahS4UZF2YDOg">
+        <modelObjects uuid="_0c6c0ED2EeahS4UZF2YDOg" incomingCorrespondenceLink="_cl-K8ED4EeahS4UZF2YDOg" name="page" outgoingLinks="_4bQFMED3EeahS4UZF2YDOg _7ZLO4ED3EeahS4UZF2YDOg _9U4GkED3EeahS4UZF2YDOg _-wvnoED3EeahS4UZF2YDOg _DGXkEED4EeahS4UZF2YDOg _EHqpAED4EeahS4UZF2YDOg _FI1yIED4EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+        </modelObjects>
+        <modelObjects uuid="_2DxF4ED2EeahS4UZF2YDOg" incomingCorrespondenceLink="_fdRvQED4EeahS4UZF2YDOg" name="linkPlace" outgoingLinks="_1glq4ED3EeahS4UZF2YDOg" incomingLinks="_4bQFMED3EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelObjects uuid="_AqKc0ED3EeahS4UZF2YDOg" incomingCorrespondenceLink="_rICGMED4EeahS4UZF2YDOg" name="nodeTransition" incomingLinks="_UiMXMED3EeahS4UZF2YDOg _FI1yIED4EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Transition"/>
+        </modelObjects>
+        <modelObjects uuid="_Fn0poED3EeahS4UZF2YDOg" incomingCorrespondenceLink="_mNHrYED4EeahS4UZF2YDOg" name="nodePlace" outgoingLinks="_TjQCsED3EeahS4UZF2YDOg" incomingLinks="_wMabgED3EeahS4UZF2YDOg _DGXkEED4EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelObjects uuid="_RTPH4ED3EeahS4UZF2YDOg" incomingCorrespondenceLink="_o3GlYED4EeahS4UZF2YDOg" name="nodeArc" outgoingLinks="_UiMXMED3EeahS4UZF2YDOg" incomingLinks="_TjQCsED3EeahS4UZF2YDOg _EHqpAED4EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc"/>
+        </modelObjects>
+        <modelObjects uuid="_cDZe0ED3EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_1FemwED4EeahS4UZF2YDOg" name="arc1" outgoingLinks="_pxdKQED3EeahS4UZF2YDOg" incomingLinks="_1glq4ED3EeahS4UZF2YDOg _7ZLO4ED3EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc"/>
+        </modelObjects>
+        <modelObjects uuid="_gL3JAED3EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_4PsgAED4EeahS4UZF2YDOg" name="transition" outgoingLinks="_sBR30ED3EeahS4UZF2YDOg" incomingLinks="_pxdKQED3EeahS4UZF2YDOg _9U4GkED3EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Transition"/>
+        </modelObjects>
+        <modelObjects uuid="_ldYF8ED3EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_6_egAED4EeahS4UZF2YDOg" name="arc2" outgoingLinks="_wMabgED3EeahS4UZF2YDOg" incomingLinks="_sBR30ED3EeahS4UZF2YDOg _-wvnoED3EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc"/>
+        </modelObjects>
+        <modelLinks uuid="_TjQCsED3EeahS4UZF2YDOg" incomingCorrespondenceLink="_ngKnoED4EeahS4UZF2YDOg" source="_Fn0poED3EeahS4UZF2YDOg" target="_RTPH4ED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Node/out"/>
+        </modelLinks>
+        <modelLinks uuid="_UiMXMED3EeahS4UZF2YDOg" incomingCorrespondenceLink="_qB3IUED4EeahS4UZF2YDOg" source="_RTPH4ED3EeahS4UZF2YDOg" target="_AqKc0ED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc/target"/>
+        </modelLinks>
+        <modelLinks uuid="_pxdKQED3EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_157igED4EeahS4UZF2YDOg" source="_cDZe0ED3EeahS4UZF2YDOg" target="_gL3JAED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc/target"/>
+        </modelLinks>
+        <modelLinks uuid="_sBR30ED3EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_6PplkED4EeahS4UZF2YDOg" source="_gL3JAED3EeahS4UZF2YDOg" target="_ldYF8ED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Node/out"/>
+        </modelLinks>
+        <modelLinks uuid="_wMabgED3EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_8gHzYED4EeahS4UZF2YDOg" source="_ldYF8ED3EeahS4UZF2YDOg" target="_Fn0poED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc/target"/>
+        </modelLinks>
+        <modelLinks uuid="_1glq4ED3EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_0SxXcED4EeahS4UZF2YDOg" source="_2DxF4ED2EeahS4UZF2YDOg" target="_cDZe0ED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Node/out"/>
+        </modelLinks>
+        <modelLinks uuid="_4bQFMED3EeahS4UZF2YDOg" incomingCorrespondenceLink="_fA7KcED4EeahS4UZF2YDOg" source="_0c6c0ED2EeahS4UZF2YDOg" target="_2DxF4ED2EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_7ZLO4ED3EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_zCkT0ED4EeahS4UZF2YDOg" source="_0c6c0ED2EeahS4UZF2YDOg" target="_cDZe0ED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_9U4GkED3EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_3SxkwED4EeahS4UZF2YDOg" source="_0c6c0ED2EeahS4UZF2YDOg" target="_gL3JAED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_-wvnoED3EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_5FdqYED4EeahS4UZF2YDOg" source="_0c6c0ED2EeahS4UZF2YDOg" target="_ldYF8ED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_DGXkEED4EeahS4UZF2YDOg" incomingCorrespondenceLink="_jG1P4ED4EeahS4UZF2YDOg" source="_0c6c0ED2EeahS4UZF2YDOg" target="_Fn0poED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_EHqpAED4EeahS4UZF2YDOg" incomingCorrespondenceLink="_juJukED4EeahS4UZF2YDOg" source="_0c6c0ED2EeahS4UZF2YDOg" target="_RTPH4ED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_FI1yIED4EeahS4UZF2YDOg" incomingCorrespondenceLink="_kcHAwED4EeahS4UZF2YDOg" source="_0c6c0ED2EeahS4UZF2YDOg" target="_AqKc0ED3EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_i1Uwg0D1EeahS4UZF2YDOg">
+        <correspondenceNodes uuid="_jhO-0ED2EeahS4UZF2YDOg" name="corrAxiom" outgoingLinks="_cl-K8ED4EeahS4UZF2YDOg _dNjIUED4EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_rQo6gED2EeahS4UZF2YDOg" name="corrMaterialLink" outgoingLinks="_dqm3wED4EeahS4UZF2YDOg _eN6ZIED4EeahS4UZF2YDOg _fA7KcED4EeahS4UZF2YDOg _fdRvQED4EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrMaterialLink"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_tr4N4ED2EeahS4UZF2YDOg" name="corrDisjunctiveNode" outgoingLinks="_gQqUAED4EeahS4UZF2YDOg _hBGScED4EeahS4UZF2YDOg _jG1P4ED4EeahS4UZF2YDOg _juJukED4EeahS4UZF2YDOg _kcHAwED4EeahS4UZF2YDOg _mNHrYED4EeahS4UZF2YDOg _ngKnoED4EeahS4UZF2YDOg _o3GlYED4EeahS4UZF2YDOg _qB3IUED4EeahS4UZF2YDOg _rICGMED4EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrDisjunctiveNode"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_wlffUED2EeahS4UZF2YDOg" modifier="CREATE" name="corrEdge" outgoingLinks="_xejjYED4EeahS4UZF2YDOg _zCkT0ED4EeahS4UZF2YDOg _0SxXcED4EeahS4UZF2YDOg _1FemwED4EeahS4UZF2YDOg _157igED4EeahS4UZF2YDOg _3SxkwED4EeahS4UZF2YDOg _4PsgAED4EeahS4UZF2YDOg _5FdqYED4EeahS4UZF2YDOg _6PplkED4EeahS4UZF2YDOg _6_egAED4EeahS4UZF2YDOg _8gHzYED4EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrEdge"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_cl-K8ED4EeahS4UZF2YDOg" source="_jhO-0ED2EeahS4UZF2YDOg" target="_0c6c0ED2EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_dNjIUED4EeahS4UZF2YDOg" source="_jhO-0ED2EeahS4UZF2YDOg" target="_0mhhQED1EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_dqm3wED4EeahS4UZF2YDOg" source="_rQo6gED2EeahS4UZF2YDOg" target="_UZnfcED2EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_eN6ZIED4EeahS4UZF2YDOg" source="_rQo6gED2EeahS4UZF2YDOg" target="_X9ICcED2EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_fA7KcED4EeahS4UZF2YDOg" source="_rQo6gED2EeahS4UZF2YDOg" target="_4bQFMED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_fdRvQED4EeahS4UZF2YDOg" source="_rQo6gED2EeahS4UZF2YDOg" target="_2DxF4ED2EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_gQqUAED4EeahS4UZF2YDOg" source="_tr4N4ED2EeahS4UZF2YDOg" target="_bqlysED2EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_hBGScED4EeahS4UZF2YDOg" source="_tr4N4ED2EeahS4UZF2YDOg" target="_7KVMgED1EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_jG1P4ED4EeahS4UZF2YDOg" source="_tr4N4ED2EeahS4UZF2YDOg" target="_DGXkEED4EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_juJukED4EeahS4UZF2YDOg" source="_tr4N4ED2EeahS4UZF2YDOg" target="_EHqpAED4EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_kcHAwED4EeahS4UZF2YDOg" source="_tr4N4ED2EeahS4UZF2YDOg" target="_FI1yIED4EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_mNHrYED4EeahS4UZF2YDOg" source="_tr4N4ED2EeahS4UZF2YDOg" target="_Fn0poED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_ngKnoED4EeahS4UZF2YDOg" source="_tr4N4ED2EeahS4UZF2YDOg" target="_TjQCsED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_o3GlYED4EeahS4UZF2YDOg" source="_tr4N4ED2EeahS4UZF2YDOg" target="_RTPH4ED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_qB3IUED4EeahS4UZF2YDOg" source="_tr4N4ED2EeahS4UZF2YDOg" target="_UiMXMED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_rICGMED4EeahS4UZF2YDOg" source="_tr4N4ED2EeahS4UZF2YDOg" target="_AqKc0ED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_xejjYED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_d3XMQED2EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_zCkT0ED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_7ZLO4ED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_0SxXcED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_1glq4ED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_1FemwED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_cDZe0ED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_157igED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_pxdKQED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_3SxkwED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_9U4GkED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_4PsgAED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_gL3JAED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_5FdqYED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_-wvnoED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_6PplkED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_sBR30ED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_6_egAED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_ldYF8ED3EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_8gHzYED4EeahS4UZF2YDOg" modifier="CREATE" source="_wlffUED2EeahS4UZF2YDOg" target="_wMabgED3EeahS4UZF2YDOg"/>
+      </correspondenceDomain>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_IeIWIUD8EeahS4UZF2YDOg" name="productionschema2petrinetDisjunctiveNodeOut" ruleGroupID="productionschema2petrinetDisjunctiveNodeOut">
+    <rules uuid="_JCfAYUD8EeahS4UZF2YDOg" name="r8" leftInputElements="_KeuuoDubEeaFv70xSAP0wg" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r8">
+      <leftModelDomain uuid="_MWdSkUD8EeahS4UZF2YDOg">
+        <modelObjects uuid="_iu1p0ED8EeahS4UZF2YDOg" incomingCorrespondenceLink="_nEe-8ED9EeahS4UZF2YDOg" name="productionschema" outgoingLinks="_qufA8ED8EeahS4UZF2YDOg _tgi44ED8EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+        </modelObjects>
+        <modelObjects uuid="_k-G9wED8EeahS4UZF2YDOg" incomingCorrespondenceLink="_pLpfwED9EeahS4UZF2YDOg" name="disjunctiveNode" outgoingLinks="_vRLwEED8EeahS4UZF2YDOg" incomingLinks="_qufA8ED8EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//DisjunctiveNode"/>
+        </modelObjects>
+        <modelObjects uuid="_npYRMED8EeahS4UZF2YDOg" incomingCorrespondenceLink="_AxgWwED-EeahS4UZF2YDOg" name="materialLink" incomingLinks="_tgi44ED8EeahS4UZF2YDOg _vRLwEED8EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+        </modelObjects>
+        <modelLinks uuid="_qufA8ED8EeahS4UZF2YDOg" incomingCorrespondenceLink="_ogcmoED9EeahS4UZF2YDOg" source="_iu1p0ED8EeahS4UZF2YDOg" target="_k-G9wED8EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinkableNodes"/>
+        </modelLinks>
+        <modelLinks uuid="_tgi44ED8EeahS4UZF2YDOg" incomingCorrespondenceLink="_AZqegED-EeahS4UZF2YDOg" source="_iu1p0ED8EeahS4UZF2YDOg" target="_npYRMED8EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+        </modelLinks>
+        <modelLinks uuid="_vRLwEED8EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_EVPjQED-EeahS4UZF2YDOg" source="_k-G9wED8EeahS4UZF2YDOg" target="_npYRMED8EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//LinkableNode/outgoingLinks"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_NkjdYkD8EeahS4UZF2YDOg">
+        <modelObjects uuid="_B5rVMED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_nkeGkED9EeahS4UZF2YDOg" name="page" outgoingLinks="_bypeUED9EeahS4UZF2YDOg _dcSVoED9EeahS4UZF2YDOg _eVrbwED9EeahS4UZF2YDOg _fXp2IED9EeahS4UZF2YDOg _g2cvYED9EeahS4UZF2YDOg _iJpcoED9EeahS4UZF2YDOg _lHGsQED9EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+        </modelObjects>
+        <modelObjects uuid="_D5vIcED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_qR3g8ED9EeahS4UZF2YDOg" name="nodeTransition" outgoingLinks="_tQRy0ED9EeahS4UZF2YDOg" incomingLinks="_bypeUED9EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Transition"/>
+        </modelObjects>
+        <modelObjects uuid="_HQnksED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_rRB34ED9EeahS4UZF2YDOg" name="nodeArc" outgoingLinks="_uWRKgED9EeahS4UZF2YDOg" incomingLinks="_dcSVoED9EeahS4UZF2YDOg _tQRy0ED9EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc"/>
+        </modelObjects>
+        <modelObjects uuid="_KM7k0ED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_sI8-YED9EeahS4UZF2YDOg" name="nodePlace" outgoingLinks="_xhbe8ED9EeahS4UZF2YDOg" incomingLinks="_eVrbwED9EeahS4UZF2YDOg _uWRKgED9EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelObjects uuid="_MrzbAED9EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_JkWFYED-EeahS4UZF2YDOg" name="arc1" outgoingLinks="_zeIcMED9EeahS4UZF2YDOg" incomingLinks="_fXp2IED9EeahS4UZF2YDOg _xhbe8ED9EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc"/>
+        </modelObjects>
+        <modelObjects uuid="_OeDbwED9EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_K2FaEED-EeahS4UZF2YDOg" name="transition" outgoingLinks="_1NQQcED9EeahS4UZF2YDOg" incomingLinks="_g2cvYED9EeahS4UZF2YDOg _zeIcMED9EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Transition"/>
+        </modelObjects>
+        <modelObjects uuid="_Wg0YUED9EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_MZYY0ED-EeahS4UZF2YDOg" name="arc2" outgoingLinks="_4geUsED9EeahS4UZF2YDOg" incomingLinks="_iJpcoED9EeahS4UZF2YDOg _1NQQcED9EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc"/>
+        </modelObjects>
+        <modelObjects uuid="_Y8QgAED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_Cw40kED-EeahS4UZF2YDOg" name="linkPlace" incomingLinks="_lHGsQED9EeahS4UZF2YDOg _4geUsED9EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelLinks uuid="_bypeUED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_puegAED9EeahS4UZF2YDOg" source="_B5rVMED9EeahS4UZF2YDOg" target="_D5vIcED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_dcSVoED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_q0r6IED9EeahS4UZF2YDOg" source="_B5rVMED9EeahS4UZF2YDOg" target="_HQnksED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_eVrbwED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_rv160ED9EeahS4UZF2YDOg" source="_B5rVMED9EeahS4UZF2YDOg" target="_KM7k0ED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_fXp2IED9EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_Fm6mgED-EeahS4UZF2YDOg" source="_B5rVMED9EeahS4UZF2YDOg" target="_MrzbAED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_g2cvYED9EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_GfsBkED-EeahS4UZF2YDOg" source="_B5rVMED9EeahS4UZF2YDOg" target="_OeDbwED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_iJpcoED9EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_IBcvQED-EeahS4UZF2YDOg" source="_B5rVMED9EeahS4UZF2YDOg" target="_Wg0YUED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_lHGsQED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_Bsaf0ED-EeahS4UZF2YDOg" source="_B5rVMED9EeahS4UZF2YDOg" target="_Y8QgAED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+        </modelLinks>
+        <modelLinks uuid="_tQRy0ED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_v6XagED9EeahS4UZF2YDOg" source="_D5vIcED9EeahS4UZF2YDOg" target="_HQnksED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Node/out"/>
+        </modelLinks>
+        <modelLinks uuid="_uWRKgED9EeahS4UZF2YDOg" incomingCorrespondenceLink="_wrtX4ED9EeahS4UZF2YDOg" source="_HQnksED9EeahS4UZF2YDOg" target="_KM7k0ED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc/target"/>
+        </modelLinks>
+        <modelLinks uuid="_xhbe8ED9EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_NaFn4ED-EeahS4UZF2YDOg" source="_KM7k0ED9EeahS4UZF2YDOg" target="_MrzbAED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Node/out"/>
+        </modelLinks>
+        <modelLinks uuid="_zeIcMED9EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_OXHQ0ED-EeahS4UZF2YDOg" source="_MrzbAED9EeahS4UZF2YDOg" target="_OeDbwED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc/target"/>
+        </modelLinks>
+        <modelLinks uuid="_1NQQcED9EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_P_2wQED-EeahS4UZF2YDOg" source="_OeDbwED9EeahS4UZF2YDOg" target="_Wg0YUED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Node/out"/>
+        </modelLinks>
+        <modelLinks uuid="_4geUsED9EeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_RfYCQED-EeahS4UZF2YDOg" source="_Wg0YUED9EeahS4UZF2YDOg" target="_Y8QgAED9EeahS4UZF2YDOg">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Arc/target"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_M6cJY0D8EeahS4UZF2YDOg">
+        <correspondenceNodes uuid="_0FGyEED8EeahS4UZF2YDOg" name="corrAxiom" outgoingLinks="_nEe-8ED9EeahS4UZF2YDOg _nkeGkED9EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_1nl4gED8EeahS4UZF2YDOg" name="corrDisjunctiveNode" outgoingLinks="_ogcmoED9EeahS4UZF2YDOg _pLpfwED9EeahS4UZF2YDOg _puegAED9EeahS4UZF2YDOg _qR3g8ED9EeahS4UZF2YDOg _q0r6IED9EeahS4UZF2YDOg _rRB34ED9EeahS4UZF2YDOg _rv160ED9EeahS4UZF2YDOg _sI8-YED9EeahS4UZF2YDOg _v6XagED9EeahS4UZF2YDOg _wrtX4ED9EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrDisjunctiveNode"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_5YW0YED8EeahS4UZF2YDOg" name="corrMaterialLink" outgoingLinks="_AZqegED-EeahS4UZF2YDOg _AxgWwED-EeahS4UZF2YDOg _Bsaf0ED-EeahS4UZF2YDOg _Cw40kED-EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrMaterialLink"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_8P6QUED8EeahS4UZF2YDOg" modifier="CREATE" name="corrEdge" outgoingLinks="_EVPjQED-EeahS4UZF2YDOg _Fm6mgED-EeahS4UZF2YDOg _GfsBkED-EeahS4UZF2YDOg _IBcvQED-EeahS4UZF2YDOg _JkWFYED-EeahS4UZF2YDOg _K2FaEED-EeahS4UZF2YDOg _MZYY0ED-EeahS4UZF2YDOg _NaFn4ED-EeahS4UZF2YDOg _OXHQ0ED-EeahS4UZF2YDOg _P_2wQED-EeahS4UZF2YDOg _RfYCQED-EeahS4UZF2YDOg">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrEdge"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_nEe-8ED9EeahS4UZF2YDOg" source="_0FGyEED8EeahS4UZF2YDOg" target="_iu1p0ED8EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_nkeGkED9EeahS4UZF2YDOg" source="_0FGyEED8EeahS4UZF2YDOg" target="_B5rVMED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_ogcmoED9EeahS4UZF2YDOg" source="_1nl4gED8EeahS4UZF2YDOg" target="_qufA8ED8EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_pLpfwED9EeahS4UZF2YDOg" source="_1nl4gED8EeahS4UZF2YDOg" target="_k-G9wED8EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_puegAED9EeahS4UZF2YDOg" source="_1nl4gED8EeahS4UZF2YDOg" target="_bypeUED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_qR3g8ED9EeahS4UZF2YDOg" source="_1nl4gED8EeahS4UZF2YDOg" target="_D5vIcED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_q0r6IED9EeahS4UZF2YDOg" source="_1nl4gED8EeahS4UZF2YDOg" target="_dcSVoED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_rRB34ED9EeahS4UZF2YDOg" source="_1nl4gED8EeahS4UZF2YDOg" target="_HQnksED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_rv160ED9EeahS4UZF2YDOg" source="_1nl4gED8EeahS4UZF2YDOg" target="_eVrbwED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_sI8-YED9EeahS4UZF2YDOg" source="_1nl4gED8EeahS4UZF2YDOg" target="_KM7k0ED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_v6XagED9EeahS4UZF2YDOg" source="_1nl4gED8EeahS4UZF2YDOg" target="_tQRy0ED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_wrtX4ED9EeahS4UZF2YDOg" source="_1nl4gED8EeahS4UZF2YDOg" target="_uWRKgED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_AZqegED-EeahS4UZF2YDOg" source="_5YW0YED8EeahS4UZF2YDOg" target="_tgi44ED8EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_AxgWwED-EeahS4UZF2YDOg" source="_5YW0YED8EeahS4UZF2YDOg" target="_npYRMED8EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_Bsaf0ED-EeahS4UZF2YDOg" source="_5YW0YED8EeahS4UZF2YDOg" target="_lHGsQED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_Cw40kED-EeahS4UZF2YDOg" source="_5YW0YED8EeahS4UZF2YDOg" target="_Y8QgAED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_EVPjQED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_vRLwEED8EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_Fm6mgED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_fXp2IED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_GfsBkED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_g2cvYED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_IBcvQED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_iJpcoED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_JkWFYED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_MrzbAED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_K2FaEED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_OeDbwED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_MZYY0ED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_Wg0YUED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_NaFn4ED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_xhbe8ED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_OXHQ0ED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_zeIcMED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_P_2wQED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_1NQQcED9EeahS4UZF2YDOg"/>
+        <correspondenceLinks uuid="_RfYCQED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_4geUsED9EeahS4UZF2YDOg"/>
+      </correspondenceDomain>
+    </rules>
+  </ruleGroups>
+</mltgg:TGG>

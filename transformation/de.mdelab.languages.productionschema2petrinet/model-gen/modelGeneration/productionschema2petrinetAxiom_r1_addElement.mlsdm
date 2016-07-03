@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mlsdm:Activity xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mlsdm="http://www.mdelab.de/mlsdm/1.0" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" uuid="_WNleVkD-EeahS4UZF2YDOg" name="productionschema2petrinetAxiom_r1_addElement">
+  <edges uuid="_WNleV0D-EeahS4UZF2YDOg" source="_WNleXUD-EeahS4UZF2YDOg" target="_WNlecED-EeahS4UZF2YDOg" guardType="FAILURE"/>
+  <edges uuid="_WNleWED-EeahS4UZF2YDOg" source="_WNleakD-EeahS4UZF2YDOg" target="_WNlefkD-EeahS4UZF2YDOg" guardType="FAILURE"/>
+  <edges uuid="_WNleWUD-EeahS4UZF2YDOg" source="_WNlehUD-EeahS4UZF2YDOg" target="_WNleXUD-EeahS4UZF2YDOg"/>
+  <edges uuid="_WNleWkD-EeahS4UZF2YDOg" source="_WNleakD-EeahS4UZF2YDOg" target="_WNled0D-EeahS4UZF2YDOg" guardType="SUCCESS"/>
+  <edges uuid="_WNleW0D-EeahS4UZF2YDOg" source="_WNleXUD-EeahS4UZF2YDOg" target="_WNleakD-EeahS4UZF2YDOg" guardType="SUCCESS"/>
+  <edges uuid="_WNleXED-EeahS4UZF2YDOg" source="_WNlefkD-EeahS4UZF2YDOg" target="_WNlecED-EeahS4UZF2YDOg"/>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WNleXUD-EeahS4UZF2YDOg" outgoingEdges="_WNleW0D-EeahS4UZF2YDOg _WNleV0D-EeahS4UZF2YDOg" incomingEdges="_WNleWUD-EeahS4UZF2YDOg" name="create elements">
+    <storyPattern uuid="_WNleXkD-EeahS4UZF2YDOg" name="create elements">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WNleX0D-EeahS4UZF2YDOg" modifier="CREATE" source="_WNleaED-EeahS4UZF2YDOg" target="_WNleZkD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNetDoc/net"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WNleYED-EeahS4UZF2YDOg" modifier="CREATE" source="_WNleZkD-EeahS4UZF2YDOg" target="_WNleZ0D-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNet/page"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WNleYUD-EeahS4UZF2YDOg" modifier="CREATE" source="_WNleaUD-EeahS4UZF2YDOg" target="_WNleZUD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/leftNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WNleYkD-EeahS4UZF2YDOg" modifier="CREATE" source="_WNleaUD-EeahS4UZF2YDOg" target="_WNleaED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/rightNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WNleY0D-EeahS4UZF2YDOg" modifier="CREATE" source="_WNleaUD-EeahS4UZF2YDOg" target="_WNleZkD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/rightNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WNleZED-EeahS4UZF2YDOg" modifier="CREATE" source="_WNleaUD-EeahS4UZF2YDOg" target="_WNleZ0D-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/rightNodes"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNleZUD-EeahS4UZF2YDOg" modifier="CREATE" name="productionSchema" incomingLinks="_WNleYUD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNleZkD-EeahS4UZF2YDOg" modifier="CREATE" name="net" outgoingLinks="_WNleYED-EeahS4UZF2YDOg" incomingLinks="_WNleX0D-EeahS4UZF2YDOg _WNleY0D-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNet"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNleZ0D-EeahS4UZF2YDOg" modifier="CREATE" name="page" incomingLinks="_WNleYED-EeahS4UZF2YDOg _WNleZED-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNleaED-EeahS4UZF2YDOg" modifier="CREATE" name="petrinetdoc" outgoingLinks="_WNleX0D-EeahS4UZF2YDOg" incomingLinks="_WNleYkD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNetDoc"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNleaUD-EeahS4UZF2YDOg" modifier="CREATE" name="corrAxiom" outgoingLinks="_WNleYUD-EeahS4UZF2YDOg _WNleY0D-EeahS4UZF2YDOg _WNleYkD-EeahS4UZF2YDOg _WNleZED-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema2petrinet/1.0#//CorrAxiom"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WNleakD-EeahS4UZF2YDOg" outgoingEdges="_WNleWkD-EeahS4UZF2YDOg _WNleWED-EeahS4UZF2YDOg" incomingEdges="_WNleW0D-EeahS4UZF2YDOg" name="check attribute formulae">
+    <storyPattern uuid="_WNlea0D-EeahS4UZF2YDOg" name="check attribute formulae">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNlebED-EeahS4UZF2YDOg" name="productionSchema" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNlebUD-EeahS4UZF2YDOg" name="page" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNlebkD-EeahS4UZF2YDOg" name="petrinetdoc" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNetDoc"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNleb0D-EeahS4UZF2YDOg" name="net" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNet"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WNlecED-EeahS4UZF2YDOg" incomingEdges="_WNleV0D-EeahS4UZF2YDOg _WNleXED-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WNlecUD-EeahS4UZF2YDOg" parameter="_WNlehkD-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WNleckD-EeahS4UZF2YDOg" expressionString="null" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+    <outputParameterValues uuid="_WNlec0D-EeahS4UZF2YDOg" parameter="_WNleh0D-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WNledED-EeahS4UZF2YDOg" expressionString="null" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+    <outputParameterValues uuid="_WNledUD-EeahS4UZF2YDOg" parameter="_WNleiED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WNledkD-EeahS4UZF2YDOg" expressionString="null" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WNled0D-EeahS4UZF2YDOg" incomingEdges="_WNleWkD-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WNleeED-EeahS4UZF2YDOg" parameter="_WNlehkD-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WNleeUD-EeahS4UZF2YDOg" expressionString="corrAxiom" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+    <outputParameterValues uuid="_WNleekD-EeahS4UZF2YDOg" parameter="_WNleh0D-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WNlee0D-EeahS4UZF2YDOg" expressionString="productionSchema" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+    <outputParameterValues uuid="_WNlefED-EeahS4UZF2YDOg" parameter="_WNleiED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WNlefUD-EeahS4UZF2YDOg" expressionString="petrinetdoc" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WNlefkD-EeahS4UZF2YDOg" outgoingEdges="_WNleXED-EeahS4UZF2YDOg" incomingEdges="_WNleWED-EeahS4UZF2YDOg" name="delete elements">
+    <storyPattern uuid="_WNlef0D-EeahS4UZF2YDOg" name="delete elements">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNlegED-EeahS4UZF2YDOg" modifier="DESTROY" name="productionSchema" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNlegUD-EeahS4UZF2YDOg" modifier="DESTROY" name="petrinetdoc" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNetDoc"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNlegkD-EeahS4UZF2YDOg" modifier="DESTROY" name="page" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNleg0D-EeahS4UZF2YDOg" modifier="DESTROY" name="net" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNet"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WNlehED-EeahS4UZF2YDOg" modifier="DESTROY" name="corrAxiom" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema2petrinet/1.0#//CorrAxiom"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:InitialNode" uuid="_WNlehUD-EeahS4UZF2YDOg" outgoingEdges="_WNleWUD-EeahS4UZF2YDOg"/>
+  <parameters uuid="_WNlehkD-EeahS4UZF2YDOg" name="corrAxiom" direction="OUT">
+    <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema2petrinet/1.0#//CorrAxiom"/>
+  </parameters>
+  <parameters uuid="_WNleh0D-EeahS4UZF2YDOg" name="productionSchema" direction="OUT">
+    <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+  </parameters>
+  <parameters uuid="_WNleiED-EeahS4UZF2YDOg" name="petrinetdoc" direction="OUT">
+    <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//PetriNetDoc"/>
+  </parameters>
+</mlsdm:Activity>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mlsdm:Activity xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mlexpressions.mlcallactions="http://www.mdelab.de/mlexpressions/mlcallactions/1.0" xmlns:mlsdm="http://www.mdelab.de/mlsdm/1.0" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" uuid="_WPF5sED-EeahS4UZF2YDOg" name="productionschema2petrinetLink_r4_synchronize_backward">
+  <edges uuid="_WPF5sUD-EeahS4UZF2YDOg" source="_WPF6EED-EeahS4UZF2YDOg" target="_WPF6FkD-EeahS4UZF2YDOg" guardType="ELSE"/>
+  <edges uuid="_WPF5skD-EeahS4UZF2YDOg" source="_WPF6FkD-EeahS4UZF2YDOg" target="_WPF6GkD-EeahS4UZF2YDOg"/>
+  <edges uuid="_WPF5s0D-EeahS4UZF2YDOg" source="_WPF6GkD-EeahS4UZF2YDOg" target="_WPF6DUD-EeahS4UZF2YDOg" guardType="BOOLEAN">
+    <guardExpression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF5tED-EeahS4UZF2YDOg" expressionString="__repairResult = mote2::operationalTGG::ErrorCodeEnum::OK or &#xA;__repairResult = mote2::operationalTGG::ErrorCodeEnum::REPAIR_POSTPONED" expressionLanguageID="OCL"/>
+  </edges>
+  <edges uuid="_WPF5tUD-EeahS4UZF2YDOg" source="_WPF6GkD-EeahS4UZF2YDOg" target="_WPF6G0D-EeahS4UZF2YDOg" guardType="ELSE"/>
+  <edges uuid="_WPF5tkD-EeahS4UZF2YDOg" source="_WPF6GkD-EeahS4UZF2YDOg" target="_WPF6H0D-EeahS4UZF2YDOg" guardType="BOOLEAN">
+    <guardExpression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF5t0D-EeahS4UZF2YDOg" expressionString="__repairResult = mote2::operationalTGG::ErrorCodeEnum::CANNOT_REPAIR" expressionLanguageID="OCL"/>
+  </edges>
+  <edges uuid="_WPF5uED-EeahS4UZF2YDOg" source="_WPF6H0D-EeahS4UZF2YDOg" target="_WPF6I0D-EeahS4UZF2YDOg"/>
+  <edges uuid="_WPF5uUD-EeahS4UZF2YDOg" source="_WPF6I0D-EeahS4UZF2YDOg" target="_WPF6DUD-EeahS4UZF2YDOg" guardType="BOOLEAN">
+    <guardExpression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF5ukD-EeahS4UZF2YDOg" expressionString="__repairResult = mote2::operationalTGG::ErrorCodeEnum::OK or &#xA;__repairResult = mote2::operationalTGG::ErrorCodeEnum::REPAIR_POSTPONED" expressionLanguageID="OCL"/>
+  </edges>
+  <edges uuid="_WPF5u0D-EeahS4UZF2YDOg" source="_WPF6I0D-EeahS4UZF2YDOg" target="_WPF6JED-EeahS4UZF2YDOg" guardType="ELSE"/>
+  <edges uuid="_WPF5vED-EeahS4UZF2YDOg" source="_WPF52UD-EeahS4UZF2YDOg" target="_WPF52kD-EeahS4UZF2YDOg"/>
+  <edges uuid="_WPF5vUD-EeahS4UZF2YDOg" source="_WPF52kD-EeahS4UZF2YDOg" target="_WPF540D-EeahS4UZF2YDOg" guardType="SUCCESS"/>
+  <edges uuid="_WPF5vkD-EeahS4UZF2YDOg" source="_WPF52kD-EeahS4UZF2YDOg" target="_WPF6PkD-EeahS4UZF2YDOg" guardType="FAILURE"/>
+  <edges uuid="_WPF5v0D-EeahS4UZF2YDOg" source="_WPF540D-EeahS4UZF2YDOg" target="_WPF5_UD-EeahS4UZF2YDOg" guardType="SUCCESS"/>
+  <edges uuid="_WPF5wED-EeahS4UZF2YDOg" source="_WPF540D-EeahS4UZF2YDOg" target="_WPF6EED-EeahS4UZF2YDOg" guardType="FAILURE"/>
+  <edges uuid="_WPF5wUD-EeahS4UZF2YDOg" source="_WPF5_UD-EeahS4UZF2YDOg" target="_WPF6AED-EeahS4UZF2YDOg"/>
+  <edges uuid="_WPF5wkD-EeahS4UZF2YDOg" source="_WPF6AED-EeahS4UZF2YDOg" target="_WPF6QUD-EeahS4UZF2YDOg" guardType="SUCCESS"/>
+  <edges uuid="_WPF5w0D-EeahS4UZF2YDOg" source="_WPF6AED-EeahS4UZF2YDOg" target="_WPF6A0D-EeahS4UZF2YDOg" guardType="FAILURE"/>
+  <edges uuid="_WPF5xED-EeahS4UZF2YDOg" source="_WPF6A0D-EeahS4UZF2YDOg" target="_WPF6BkD-EeahS4UZF2YDOg" guardType="SUCCESS"/>
+  <edges uuid="_WPF5xUD-EeahS4UZF2YDOg" source="_WPF6A0D-EeahS4UZF2YDOg" target="_WPF6RED-EeahS4UZF2YDOg" guardType="FAILURE"/>
+  <edges uuid="_WPF5xkD-EeahS4UZF2YDOg" source="_WPF6BkD-EeahS4UZF2YDOg" target="_WPF6B0D-EeahS4UZF2YDOg" guardType="BOOLEAN">
+    <guardExpression xsi:type="mlexpressions.mlcallactions:CallActionExpression" uuid="_WPF5x0D-EeahS4UZF2YDOg">
+      <callActions xsi:type="mlexpressions.mlcallactions:VariableReferenceAction" uuid="_WPF5yED-EeahS4UZF2YDOg" name="__checkAttributeFormulae">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </callActions>
+    </guardExpression>
+  </edges>
+  <edges uuid="_WPF5yUD-EeahS4UZF2YDOg" source="_WPF6BkD-EeahS4UZF2YDOg" target="_WPF6DUD-EeahS4UZF2YDOg" guardType="ELSE"/>
+  <edges uuid="_WPF5ykD-EeahS4UZF2YDOg" source="_WPF6B0D-EeahS4UZF2YDOg" target="_WPF6CkD-EeahS4UZF2YDOg"/>
+  <edges uuid="_WPF5y0D-EeahS4UZF2YDOg" source="_WPF6CkD-EeahS4UZF2YDOg" target="_WPF6DUD-EeahS4UZF2YDOg" guardType="SUCCESS"/>
+  <edges uuid="_WPF5zED-EeahS4UZF2YDOg" source="_WPF6CkD-EeahS4UZF2YDOg" target="_WPF6R0D-EeahS4UZF2YDOg" guardType="FAILURE"/>
+  <edges uuid="_WPF5zUD-EeahS4UZF2YDOg" source="_WPF6DUD-EeahS4UZF2YDOg" target="_WPF6DkD-EeahS4UZF2YDOg"/>
+  <edges uuid="_WPF5zkD-EeahS4UZF2YDOg" source="_WPF6DkD-EeahS4UZF2YDOg" target="_WPF6SkD-EeahS4UZF2YDOg"/>
+  <edges uuid="_WPF5z0D-EeahS4UZF2YDOg" source="_WPF6EED-EeahS4UZF2YDOg" target="_WPF6EUD-EeahS4UZF2YDOg" guardType="BOOLEAN">
+    <guardExpression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF50ED-EeahS4UZF2YDOg" expressionString="__inputTggNode.rightNodes->forAll(e|e.oclAsType(ecore::EObject).eContainer() = null)" expressionLanguageID="OCL"/>
+  </edges>
+  <edges uuid="_WPF50UD-EeahS4UZF2YDOg" source="_WPF6EUD-EeahS4UZF2YDOg" target="_WPF6TUD-EeahS4UZF2YDOg" guardType="SUCCESS"/>
+  <edges uuid="_WPF50kD-EeahS4UZF2YDOg" source="_WPF6EUD-EeahS4UZF2YDOg" target="_WPF6UED-EeahS4UZF2YDOg" guardType="FAILURE"/>
+  <edges uuid="_WPF500D-EeahS4UZF2YDOg" source="_WPF6I0D-EeahS4UZF2YDOg" target="_WPF6KED-EeahS4UZF2YDOg" guardType="BOOLEAN">
+    <guardExpression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF51ED-EeahS4UZF2YDOg" expressionString="__repairResult = mote2::operationalTGG::ErrorCodeEnum::CANNOT_REPAIR" expressionLanguageID="OCL"/>
+  </edges>
+  <edges uuid="_WPF51UD-EeahS4UZF2YDOg" source="_WPF6KED-EeahS4UZF2YDOg" target="_WPF6MUD-EeahS4UZF2YDOg" guardType="END"/>
+  <edges uuid="_WPF51kD-EeahS4UZF2YDOg" source="_WPF6MUD-EeahS4UZF2YDOg" target="_WPF6OUD-EeahS4UZF2YDOg" guardType="END"/>
+  <edges uuid="_WPF510D-EeahS4UZF2YDOg" source="_WPF6OUD-EeahS4UZF2YDOg" target="_WPF6U0D-EeahS4UZF2YDOg" guardType="SUCCESS"/>
+  <edges uuid="_WPF52ED-EeahS4UZF2YDOg" source="_WPF6OUD-EeahS4UZF2YDOg" target="_WPF6VkD-EeahS4UZF2YDOg" guardType="FAILURE"/>
+  <nodes xsi:type="mlsdm:InitialNode" uuid="_WPF52UD-EeahS4UZF2YDOg" outgoingEdges="_WPF5vED-EeahS4UZF2YDOg"/>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WPF52kD-EeahS4UZF2YDOg" outgoingEdges="_WPF5vUD-EeahS4UZF2YDOg _WPF5vkD-EeahS4UZF2YDOg" incomingEdges="_WPF5vED-EeahS4UZF2YDOg" name="match TGG engine">
+    <storyPattern uuid="_WPF520D-EeahS4UZF2YDOg" name="match TGG engine">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF53ED-EeahS4UZF2YDOg" source="_WPF54ED-EeahS4UZF2YDOg" target="_WPF530D-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/OperationalRuleGroup/rules"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF53UD-EeahS4UZF2YDOg" source="_WPF54UD-EeahS4UZF2YDOg" target="_WPF54ED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/OperationalTGG/operationalRuleGroups"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF53kD-EeahS4UZF2YDOg" source="_WPF54kD-EeahS4UZF2YDOg" target="_WPF54UD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/operationalTGG"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF530D-EeahS4UZF2YDOg" name="__thisRule" incomingLinks="_WPF53ED-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/OperationalRule"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF54ED-EeahS4UZF2YDOg" name="__ruleGroup" outgoingLinks="_WPF53ED-EeahS4UZF2YDOg" incomingLinks="_WPF53UD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/OperationalRuleGroup"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF54UD-EeahS4UZF2YDOg" name="__opTgg" outgoingLinks="_WPF53UD-EeahS4UZF2YDOg" incomingLinks="_WPF53kD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/OperationalTGG"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF54kD-EeahS4UZF2YDOg" name="__tggEngine" outgoingLinks="_WPF53kD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WPF540D-EeahS4UZF2YDOg" outgoingEdges="_WPF5v0D-EeahS4UZF2YDOg _WPF5wED-EeahS4UZF2YDOg" incomingEdges="_WPF5vUD-EeahS4UZF2YDOg" name="check pattern and constraints">
+    <storyPattern uuid="_WPF55ED-EeahS4UZF2YDOg" name="check pattern and constraints">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF55UD-EeahS4UZF2YDOg" source="_WPF59UD-EeahS4UZF2YDOg" target="_WPF59kD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterialLinks"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF55kD-EeahS4UZF2YDOg" source="_WPF590D-EeahS4UZF2YDOg" target="_WPF5-ED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page/object"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF550D-EeahS4UZF2YDOg" source="_WPF5_ED-EeahS4UZF2YDOg" target="_WPF590D-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/rightNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF56ED-EeahS4UZF2YDOg" source="_WPF5-UD-EeahS4UZF2YDOg" target="_WPF5-ED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/rightNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF56UD-EeahS4UZF2YDOg" source="_WPF5-UD-EeahS4UZF2YDOg" target="_WPF59kD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/leftNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF56kD-EeahS4UZF2YDOg" source="_WPF5_ED-EeahS4UZF2YDOg" target="_WPF59UD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/leftNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:MapEntryLink" uuid="_WPF560D-EeahS4UZF2YDOg" source="_WPF59ED-EeahS4UZF2YDOg" target="_WPF59UD-EeahS4UZF2YDOg" valueTarget="_WPF5_ED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/coveredLeftElements"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:MapEntryLink" uuid="_WPF57ED-EeahS4UZF2YDOg" source="_WPF59ED-EeahS4UZF2YDOg" target="_WPF59kD-EeahS4UZF2YDOg" valueTarget="_WPF5-UD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/coveredLeftElements"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:MapEntryLink" uuid="_WPF57UD-EeahS4UZF2YDOg" source="_WPF59ED-EeahS4UZF2YDOg" target="_WPF5-ED-EeahS4UZF2YDOg" valueTarget="_WPF5-UD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/coveredRightElements"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:MapEntryLink" uuid="_WPF57kD-EeahS4UZF2YDOg" source="_WPF59ED-EeahS4UZF2YDOg" target="_WPF590D-EeahS4UZF2YDOg" valueTarget="_WPF5_ED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/coveredRightElements"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:MapEntryLink" uuid="_WPF570D-EeahS4UZF2YDOg" source="_WPF59ED-EeahS4UZF2YDOg" target="_WPF5-UD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/tggNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:MapEntryLink" uuid="_WPF58ED-EeahS4UZF2YDOg" source="_WPF580D-EeahS4UZF2YDOg" target="_WPF5-UD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/OperationalMapping/createdTGGNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF58UD-EeahS4UZF2YDOg" source="_WPF5-UD-EeahS4UZF2YDOg" target="_WPF580D-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/createdBy"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF58kD-EeahS4UZF2YDOg" source="_WPF5_ED-EeahS4UZF2YDOg" target="_WPF5-UD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/next"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF580D-EeahS4UZF2YDOg" name="__thisRule" outgoingLinks="_WPF58ED-EeahS4UZF2YDOg" incomingLinks="_WPF58UD-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/OperationalRule"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF59ED-EeahS4UZF2YDOg" name="__tggEngine" outgoingLinks="_WPF560D-EeahS4UZF2YDOg _WPF57ED-EeahS4UZF2YDOg _WPF57UD-EeahS4UZF2YDOg _WPF57kD-EeahS4UZF2YDOg _WPF570D-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF59UD-EeahS4UZF2YDOg" name="productionschema" outgoingLinks="_WPF55UD-EeahS4UZF2YDOg" incomingLinks="_WPF56kD-EeahS4UZF2YDOg _WPF560D-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF59kD-EeahS4UZF2YDOg" name="link" incomingLinks="_WPF55UD-EeahS4UZF2YDOg _WPF56UD-EeahS4UZF2YDOg _WPF57ED-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//MaterialLink"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF590D-EeahS4UZF2YDOg" name="page" outgoingLinks="_WPF55kD-EeahS4UZF2YDOg" incomingLinks="_WPF550D-EeahS4UZF2YDOg _WPF57kD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Page"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF5-ED-EeahS4UZF2YDOg" name="place" incomingLinks="_WPF55kD-EeahS4UZF2YDOg _WPF56ED-EeahS4UZF2YDOg _WPF57UD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF5-UD-EeahS4UZF2YDOg" name="corrMaterialLink" outgoingLinks="_WPF56ED-EeahS4UZF2YDOg _WPF56UD-EeahS4UZF2YDOg _WPF58UD-EeahS4UZF2YDOg" incomingLinks="_WPF570D-EeahS4UZF2YDOg _WPF58ED-EeahS4UZF2YDOg _WPF58kD-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema2petrinet/1.0#//CorrMaterialLink"/>
+        <assignmentExpression xsi:type="mlexpressions.mlcallactions:CallActionExpression" uuid="_WPF5-kD-EeahS4UZF2YDOg">
+          <callActions xsi:type="mlexpressions.mlcallactions:VariableReferenceAction" uuid="_WPF5-0D-EeahS4UZF2YDOg" name="__inputTggNode">
+            <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode"/>
+          </callActions>
+        </assignmentExpression>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF5_ED-EeahS4UZF2YDOg" name="axiom" outgoingLinks="_WPF550D-EeahS4UZF2YDOg _WPF56kD-EeahS4UZF2YDOg _WPF58kD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema2petrinet/1.0#//CorrAxiom"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:ExpressionActivityNode" uuid="_WPF5_UD-EeahS4UZF2YDOg" outgoingEdges="_WPF5wUD-EeahS4UZF2YDOg" incomingEdges="_WPF5v0D-EeahS4UZF2YDOg" name="evaluate rule variables">
+    <expressions xsi:type="mlexpressions.mlcallactions:CallActionExpression" uuid="_WPF5_kD-EeahS4UZF2YDOg">
+      <callActions xsi:type="mlexpressions.mlcallactions:NullValueAction" uuid="_WPF5_0D-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </callActions>
+    </expressions>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WPF6AED-EeahS4UZF2YDOg" outgoingEdges="_WPF5wkD-EeahS4UZF2YDOg _WPF5w0D-EeahS4UZF2YDOg" incomingEdges="_WPF5wUD-EeahS4UZF2YDOg" name="check attribute values">
+    <storyPattern uuid="_WPF6AUD-EeahS4UZF2YDOg" name="check attribute values">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6AkD-EeahS4UZF2YDOg" name="__thisRule" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/OperationalRule"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WPF6A0D-EeahS4UZF2YDOg" outgoingEdges="_WPF5xED-EeahS4UZF2YDOg _WPF5xUD-EeahS4UZF2YDOg" incomingEdges="_WPF5w0D-EeahS4UZF2YDOg" name="synchronize attribute values">
+    <storyPattern uuid="_WPF6BED-EeahS4UZF2YDOg" name="synchronize attribute values">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6BUD-EeahS4UZF2YDOg" name="__thisRule" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/OperationalAxiom"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:DecisionMergeNode" uuid="_WPF6BkD-EeahS4UZF2YDOg" outgoingEdges="_WPF5xkD-EeahS4UZF2YDOg _WPF5yUD-EeahS4UZF2YDOg" incomingEdges="_WPF5xED-EeahS4UZF2YDOg"/>
+  <nodes xsi:type="mlsdm:ExpressionActivityNode" uuid="_WPF6B0D-EeahS4UZF2YDOg" outgoingEdges="_WPF5ykD-EeahS4UZF2YDOg" incomingEdges="_WPF5xkD-EeahS4UZF2YDOg" name="evaluate rule variables (opposite direction)">
+    <expressions xsi:type="mlexpressions.mlcallactions:CallActionExpression" uuid="_WPF6CED-EeahS4UZF2YDOg">
+      <callActions xsi:type="mlexpressions.mlcallactions:NullValueAction" uuid="_WPF6CUD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </callActions>
+    </expressions>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WPF6CkD-EeahS4UZF2YDOg" outgoingEdges="_WPF5y0D-EeahS4UZF2YDOg _WPF5zED-EeahS4UZF2YDOg" incomingEdges="_WPF5ykD-EeahS4UZF2YDOg" name="check attribute formulae">
+    <storyPattern uuid="_WPF6C0D-EeahS4UZF2YDOg" name="check attribute formulae">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6DED-EeahS4UZF2YDOg" name="__tggEngine" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:DecisionMergeNode" uuid="_WPF6DUD-EeahS4UZF2YDOg" outgoingEdges="_WPF5zUD-EeahS4UZF2YDOg" incomingEdges="_WPF5s0D-EeahS4UZF2YDOg _WPF5uUD-EeahS4UZF2YDOg _WPF5yUD-EeahS4UZF2YDOg _WPF5y0D-EeahS4UZF2YDOg"/>
+  <nodes xsi:type="mlsdm:ExpressionActivityNode" uuid="_WPF6DkD-EeahS4UZF2YDOg" outgoingEdges="_WPF5zkD-EeahS4UZF2YDOg" incomingEdges="_WPF5zUD-EeahS4UZF2YDOg" name="add all next TGGNodes to synchronization queue">
+    <expressions xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6D0D-EeahS4UZF2YDOg" expressionString="__tggEngine.backwardTransformationQueue.add(__inputTggNode.next, true)" expressionLanguageID="OCL"/>
+  </nodes>
+  <nodes xsi:type="mlsdm:DecisionMergeNode" uuid="_WPF6EED-EeahS4UZF2YDOg" outgoingEdges="_WPF5sUD-EeahS4UZF2YDOg _WPF5z0D-EeahS4UZF2YDOg" incomingEdges="_WPF5wED-EeahS4UZF2YDOg"/>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WPF6EUD-EeahS4UZF2YDOg" outgoingEdges="_WPF50UD-EeahS4UZF2YDOg _WPF50kD-EeahS4UZF2YDOg" incomingEdges="_WPF5z0D-EeahS4UZF2YDOg" name="mark __inputTggNode as deleted">
+    <storyPattern uuid="_WPF6EkD-EeahS4UZF2YDOg" name="mark __inputTggNode as deleted">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF6E0D-EeahS4UZF2YDOg" modifier="CREATE" source="_WPF6FED-EeahS4UZF2YDOg" target="_WPF6FUD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/deletedTGGNodes"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6FED-EeahS4UZF2YDOg" name="__tggEngine" outgoingLinks="_WPF6E0D-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6FUD-EeahS4UZF2YDOg" name="__inputTggNode" incomingLinks="_WPF6E0D-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:ExpressionActivityNode" uuid="_WPF6FkD-EeahS4UZF2YDOg" outgoingEdges="_WPF5skD-EeahS4UZF2YDOg" incomingEdges="_WPF5sUD-EeahS4UZF2YDOg" name="try repair by rule r4">
+    <expressions xsi:type="mlexpressions.mlcallactions:CallActionExpression" uuid="_WPF6F0D-EeahS4UZF2YDOg">
+      <callActions xsi:type="mlexpressions.mlcallactions:VariableDeclarationAction" uuid="_WPF6GED-EeahS4UZF2YDOg" name="__repairResult">
+        <type xsi:type="ecore:EEnum" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/ErrorCodeEnum"/>
+        <valueExpression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6GUD-EeahS4UZF2YDOg" expressionString="__thisRule.repairBackward(__inputTggNode, __checkAttributeFormulae)" expressionLanguageID="OCL"/>
+      </callActions>
+    </expressions>
+  </nodes>
+  <nodes xsi:type="mlsdm:DecisionMergeNode" uuid="_WPF6GkD-EeahS4UZF2YDOg" outgoingEdges="_WPF5s0D-EeahS4UZF2YDOg _WPF5tUD-EeahS4UZF2YDOg _WPF5tkD-EeahS4UZF2YDOg" incomingEdges="_WPF5skD-EeahS4UZF2YDOg"/>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6G0D-EeahS4UZF2YDOg" incomingEdges="_WPF5tUD-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6HED-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions.mlcallactions:CallActionExpression" uuid="_WPF6HUD-EeahS4UZF2YDOg">
+        <callActions xsi:type="mlexpressions.mlcallactions:VariableReferenceAction" uuid="_WPF6HkD-EeahS4UZF2YDOg" name="__repairResult">
+          <type xsi:type="ecore:EEnum" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/ErrorCodeEnum"/>
+        </callActions>
+      </expression>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ExpressionActivityNode" uuid="_WPF6H0D-EeahS4UZF2YDOg" outgoingEdges="_WPF5uED-EeahS4UZF2YDOg" incomingEdges="_WPF5tkD-EeahS4UZF2YDOg" name="try repair by rule r3">
+    <expressions xsi:type="mlexpressions.mlcallactions:CallActionExpression" uuid="_WPF6IED-EeahS4UZF2YDOg">
+      <callActions xsi:type="mlexpressions.mlcallactions:VariableDeclarationAction" uuid="_WPF6IUD-EeahS4UZF2YDOg" name="__repairResult">
+        <type xsi:type="ecore:EEnum" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/ErrorCodeEnum"/>
+        <valueExpression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6IkD-EeahS4UZF2YDOg" expressionString="__tggEngine.operationalTGG.getOperationalMappingGroup('productionSchema2petrinetDisjunctiveNode').getOperationalMapping('r3').oclAsType(mote2::operationalTGG::OperationalRule).repairBackward(__inputTggNode, __checkAttributeFormulae)" expressionLanguageID="OCL"/>
+      </callActions>
+    </expressions>
+  </nodes>
+  <nodes xsi:type="mlsdm:DecisionMergeNode" uuid="_WPF6I0D-EeahS4UZF2YDOg" outgoingEdges="_WPF5uUD-EeahS4UZF2YDOg _WPF5u0D-EeahS4UZF2YDOg _WPF500D-EeahS4UZF2YDOg" incomingEdges="_WPF5uED-EeahS4UZF2YDOg"/>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6JED-EeahS4UZF2YDOg" incomingEdges="_WPF5u0D-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6JUD-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions.mlcallactions:CallActionExpression" uuid="_WPF6JkD-EeahS4UZF2YDOg">
+        <callActions xsi:type="mlexpressions.mlcallactions:VariableReferenceAction" uuid="_WPF6J0D-EeahS4UZF2YDOg" name="__repairResult">
+          <type xsi:type="ecore:EEnum" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/ErrorCodeEnum"/>
+        </callActions>
+      </expression>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WPF6KED-EeahS4UZF2YDOg" outgoingEdges="_WPF51UD-EeahS4UZF2YDOg" incomingEdges="_WPF500D-EeahS4UZF2YDOg" name="delete source correspondence links" semantics="FOR_EACH_FRESH_MATCH">
+    <storyPattern uuid="_WPF6KUD-EeahS4UZF2YDOg" name="delete source correspondence links">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF6KkD-EeahS4UZF2YDOg" modifier="DESTROY" source="_WPF6L0D-EeahS4UZF2YDOg" target="_WPF6MED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/leftNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:MapEntryLink" uuid="_WPF6K0D-EeahS4UZF2YDOg" modifier="DESTROY" source="_WPF6LkD-EeahS4UZF2YDOg" target="_WPF6MED-EeahS4UZF2YDOg" valueTarget="_WPF6L0D-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/coveredLeftElements"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:MapEntryLink" uuid="_WPF6LED-EeahS4UZF2YDOg" modifier="CREATE" source="_WPF6LkD-EeahS4UZF2YDOg" target="_WPF6MED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/uncoveredLeftElements"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF6LUD-EeahS4UZF2YDOg" modifier="CREATE" source="_WPF6LkD-EeahS4UZF2YDOg" target="_WPF6MED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/deletedElements"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6LkD-EeahS4UZF2YDOg" name="__tggEngine" outgoingLinks="_WPF6K0D-EeahS4UZF2YDOg _WPF6LED-EeahS4UZF2YDOg _WPF6LUD-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6L0D-EeahS4UZF2YDOg" name="__inputTggNode" outgoingLinks="_WPF6KkD-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6MED-EeahS4UZF2YDOg" name="__object" incomingLinks="_WPF6KkD-EeahS4UZF2YDOg _WPF6K0D-EeahS4UZF2YDOg _WPF6LED-EeahS4UZF2YDOg _WPF6LUD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WPF6MUD-EeahS4UZF2YDOg" outgoingEdges="_WPF51kD-EeahS4UZF2YDOg" incomingEdges="_WPF51UD-EeahS4UZF2YDOg" name="delete target correspondence links" semantics="FOR_EACH_FRESH_MATCH">
+    <storyPattern uuid="_WPF6MkD-EeahS4UZF2YDOg" name="delete target correspondence links">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF6M0D-EeahS4UZF2YDOg" modifier="DESTROY" source="_WPF6N0D-EeahS4UZF2YDOg" target="_WPF6OED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/rightNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:MapEntryLink" uuid="_WPF6NED-EeahS4UZF2YDOg" modifier="DESTROY" source="_WPF6NkD-EeahS4UZF2YDOg" target="_WPF6OED-EeahS4UZF2YDOg" valueTarget="_WPF6N0D-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/coveredRightElements"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:MapEntryLink" uuid="_WPF6NUD-EeahS4UZF2YDOg" modifier="CREATE" source="_WPF6NkD-EeahS4UZF2YDOg" target="_WPF6OED-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/uncoveredRightElements"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6NkD-EeahS4UZF2YDOg" name="__tggEngine" outgoingLinks="_WPF6NED-EeahS4UZF2YDOg _WPF6NUD-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6N0D-EeahS4UZF2YDOg" name="__inputTggNode" outgoingLinks="_WPF6M0D-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6OED-EeahS4UZF2YDOg" name="__object" incomingLinks="_WPF6M0D-EeahS4UZF2YDOg _WPF6NED-EeahS4UZF2YDOg _WPF6NUD-EeahS4UZF2YDOg">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_WPF6OUD-EeahS4UZF2YDOg" outgoingEdges="_WPF510D-EeahS4UZF2YDOg _WPF52ED-EeahS4UZF2YDOg" incomingEdges="_WPF51kD-EeahS4UZF2YDOg" name="mark __inputTggNode as deleted">
+    <storyPattern uuid="_WPF6OkD-EeahS4UZF2YDOg" name="mark __inputTggNode as deleted">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_WPF6O0D-EeahS4UZF2YDOg" modifier="CREATE" source="_WPF6PED-EeahS4UZF2YDOg" target="_WPF6PUD-EeahS4UZF2YDOg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine/deletedTGGNodes"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6PED-EeahS4UZF2YDOg" name="__tggEngine" outgoingLinks="_WPF6O0D-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGEngine"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_WPF6PUD-EeahS4UZF2YDOg" name="__inputTggNode" incomingLinks="_WPF6O0D-EeahS4UZF2YDOg" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6PkD-EeahS4UZF2YDOg" incomingEdges="_WPF5vkD-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6P0D-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6QED-EeahS4UZF2YDOg" expressionString="mote2::operationalTGG::ErrorCodeEnum::INTERNAL_ERROR" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6QUD-EeahS4UZF2YDOg" incomingEdges="_WPF5wkD-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6QkD-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6Q0D-EeahS4UZF2YDOg" expressionString="mote2::operationalTGG::ErrorCodeEnum::OK" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6RED-EeahS4UZF2YDOg" incomingEdges="_WPF5xUD-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6RUD-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6RkD-EeahS4UZF2YDOg" expressionString="mote2::operationalTGG::ErrorCodeEnum::INTERNAL_ERROR" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6R0D-EeahS4UZF2YDOg" incomingEdges="_WPF5zED-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6SED-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6SUD-EeahS4UZF2YDOg" expressionString="mote2::operationalTGG::ErrorCodeEnum::ATTRIBUTE_FORMULA_VIOLATED" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6SkD-EeahS4UZF2YDOg" incomingEdges="_WPF5zkD-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6S0D-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6TED-EeahS4UZF2YDOg" expressionString="mote2::operationalTGG::ErrorCodeEnum::OK" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6TUD-EeahS4UZF2YDOg" incomingEdges="_WPF50UD-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6TkD-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6T0D-EeahS4UZF2YDOg" expressionString="mote2::operationalTGG::ErrorCodeEnum::OK" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6UED-EeahS4UZF2YDOg" incomingEdges="_WPF50kD-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6UUD-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6UkD-EeahS4UZF2YDOg" expressionString="mote2::operationalTGG::ErrorCodeEnum::INTERNAL_ERROR" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6U0D-EeahS4UZF2YDOg" incomingEdges="_WPF510D-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6VED-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6VUD-EeahS4UZF2YDOg" expressionString="mote2::operationalTGG::ErrorCodeEnum::OK" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_WPF6VkD-EeahS4UZF2YDOg" incomingEdges="_WPF52ED-EeahS4UZF2YDOg">
+    <outputParameterValues uuid="_WPF6V0D-EeahS4UZF2YDOg" parameter="_WPF6XED-EeahS4UZF2YDOg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_WPF6WED-EeahS4UZF2YDOg" expressionString="mote2::operationalTGG::ErrorCodeEnum::INTERNAL_ERROR" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <parameters uuid="_WPF6WUD-EeahS4UZF2YDOg" name="__thisRule">
+    <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/OperationalRule"/>
+  </parameters>
+  <parameters uuid="_WPF6WkD-EeahS4UZF2YDOg" name="__inputTggNode">
+    <type xsi:type="ecore:EClass" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode"/>
+  </parameters>
+  <parameters uuid="_WPF6W0D-EeahS4UZF2YDOg" name="__checkAttributeFormulae">
+    <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </parameters>
+  <parameters uuid="_WPF6XED-EeahS4UZF2YDOg" name="__errorCode" direction="OUT">
+    <type xsi:type="ecore:EEnum" href="http://www.mdelab.de/mltgg/mote2/1.0#//operationalTGG/ErrorCodeEnum"/>
+  </parameters>
+</mlsdm:Activity>
