@@ -30,7 +30,7 @@ public interface FactorySpecification extends IdentifiableElement {
 	 * The list contents are of type {@link factory.Factory}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned Factories</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Owned Factories</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -46,7 +46,7 @@ public interface FactorySpecification extends IdentifiableElement {
 	 * The list contents are of type {@link factory.Employee}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned Employees</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Owned Employees</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -62,7 +62,7 @@ public interface FactorySpecification extends IdentifiableElement {
 	 * The list contents are of type {@link factory.Machine}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned Machines</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Owned Machines</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -78,7 +78,7 @@ public interface FactorySpecification extends IdentifiableElement {
 	 * The list contents are of type {@link factory.Product}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned Products</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Owned Products</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
