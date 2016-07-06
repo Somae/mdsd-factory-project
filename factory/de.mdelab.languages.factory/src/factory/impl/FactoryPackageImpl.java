@@ -185,7 +185,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactorySpecification_OwnedMachines() {
+	public EReference getFactorySpecification_OwnedProductParts() {
 		return (EReference)factorySpecificationEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -194,7 +194,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactorySpecification_OwnedProductParts() {
+	public EReference getFactorySpecification_OwnedProducts() {
 		return (EReference)factorySpecificationEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -203,17 +203,8 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactorySpecification_OwnedProducts() {
-		return (EReference)factorySpecificationEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getFactorySpecification_BusinessTypeName() {
-		return (EAttribute)factorySpecificationEClass.getEStructuralFeatures().get(5);
+		return (EAttribute)factorySpecificationEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -322,6 +313,15 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 */
 	public EReference getFactory_CreatedProductParts() {
 		return (EReference)factoryEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFactory_OwnedMachines() {
+		return (EReference)factoryEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -544,7 +544,6 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		factorySpecificationEClass = createEClass(FACTORY_SPECIFICATION);
 		createEReference(factorySpecificationEClass, FACTORY_SPECIFICATION__OWNED_FACTORIES);
 		createEReference(factorySpecificationEClass, FACTORY_SPECIFICATION__OWNED_EMPLOYEES);
-		createEReference(factorySpecificationEClass, FACTORY_SPECIFICATION__OWNED_MACHINES);
 		createEReference(factorySpecificationEClass, FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS);
 		createEReference(factorySpecificationEClass, FACTORY_SPECIFICATION__OWNED_PRODUCTS);
 		createEAttribute(factorySpecificationEClass, FACTORY_SPECIFICATION__BUSINESS_TYPE_NAME);
@@ -561,6 +560,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		createEReference(factoryEClass, FACTORY__EMPLOYEES);
 		createEReference(factoryEClass, FACTORY__MACHINES);
 		createEReference(factoryEClass, FACTORY__CREATED_PRODUCT_PARTS);
+		createEReference(factoryEClass, FACTORY__OWNED_MACHINES);
 
 		machineEClass = createEClass(MACHINE);
 		createEAttribute(machineEClass, MACHINE__X);
@@ -633,7 +633,6 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		initEClass(factorySpecificationEClass, FactorySpecification.class, "FactorySpecification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFactorySpecification_OwnedFactories(), this.getFactory(), null, "ownedFactories", null, 0, -1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFactorySpecification_OwnedEmployees(), this.getEmployee(), null, "ownedEmployees", null, 0, -1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getFactorySpecification_OwnedMachines(), this.getMachine(), null, "ownedMachines", null, 0, -1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFactorySpecification_OwnedProductParts(), this.getProductPart(), null, "ownedProductParts", null, 0, -1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFactorySpecification_OwnedProducts(), this.getProduct(), null, "ownedProducts", null, 0, -1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactorySpecification_BusinessTypeName(), ecorePackage.getEString(), "businessTypeName", null, 0, 1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -650,6 +649,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		initEReference(getFactory_Employees(), this.getEmployee(), null, "employees", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFactory_Machines(), this.getMachine(), null, "machines", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFactory_CreatedProductParts(), this.getProductPart(), null, "createdProductParts", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFactory_OwnedMachines(), this.getMachine(), null, "ownedMachines", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(machineEClass, Machine.class, "Machine", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMachine_X(), ecorePackage.getEInt(), "x", null, 0, 1, Machine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

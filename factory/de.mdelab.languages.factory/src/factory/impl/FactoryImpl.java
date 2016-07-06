@@ -11,13 +11,17 @@ import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,6 +42,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  *   <li>{@link factory.impl.FactoryImpl#getEmployees <em>Employees</em>}</li>
  *   <li>{@link factory.impl.FactoryImpl#getMachines <em>Machines</em>}</li>
  *   <li>{@link factory.impl.FactoryImpl#getCreatedProductParts <em>Created Product Parts</em>}</li>
+ *   <li>{@link factory.impl.FactoryImpl#getOwnedMachines <em>Owned Machines</em>}</li>
  * </ul>
  *
  * @generated
@@ -232,6 +237,16 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	 * @ordered
 	 */
 	protected EList<ProductPart> createdProductParts;
+
+	/**
+	 * The cached value of the '{@link #getOwnedMachines() <em>Owned Machines</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOwnedMachines()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Machine> ownedMachines;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -461,6 +476,32 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Machine> getOwnedMachines() {
+		if (ownedMachines == null) {
+			ownedMachines = new EObjectContainmentEList<Machine>(Machine.class, this, FactoryPackage.FACTORY__OWNED_MACHINES);
+		}
+		return ownedMachines;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case FactoryPackage.FACTORY__OWNED_MACHINES:
+				return ((InternalEList<?>)getOwnedMachines()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -486,6 +527,8 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 				return getMachines();
 			case FactoryPackage.FACTORY__CREATED_PRODUCT_PARTS:
 				return getCreatedProductParts();
+			case FactoryPackage.FACTORY__OWNED_MACHINES:
+				return getOwnedMachines();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -535,6 +578,10 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 				getCreatedProductParts().clear();
 				getCreatedProductParts().addAll((Collection<? extends ProductPart>)newValue);
 				return;
+			case FactoryPackage.FACTORY__OWNED_MACHINES:
+				getOwnedMachines().clear();
+				getOwnedMachines().addAll((Collection<? extends Machine>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -580,6 +627,9 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 			case FactoryPackage.FACTORY__CREATED_PRODUCT_PARTS:
 				getCreatedProductParts().clear();
 				return;
+			case FactoryPackage.FACTORY__OWNED_MACHINES:
+				getOwnedMachines().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -614,6 +664,8 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 				return machines != null && !machines.isEmpty();
 			case FactoryPackage.FACTORY__CREATED_PRODUCT_PARTS:
 				return createdProductParts != null && !createdProductParts.isEmpty();
+			case FactoryPackage.FACTORY__OWNED_MACHINES:
+				return ownedMachines != null && !ownedMachines.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

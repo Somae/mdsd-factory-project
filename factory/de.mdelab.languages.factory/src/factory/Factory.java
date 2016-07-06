@@ -24,6 +24,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link factory.Factory#getEmployees <em>Employees</em>}</li>
  *   <li>{@link factory.Factory#getMachines <em>Machines</em>}</li>
  *   <li>{@link factory.Factory#getCreatedProductParts <em>Created Product Parts</em>}</li>
+ *   <li>{@link factory.Factory#getOwnedMachines <em>Owned Machines</em>}</li>
  * </ul>
  *
  * @see factory.FactoryPackage#getFactory()
@@ -286,5 +287,21 @@ public interface Factory extends IdentifiableElement {
 	 * @generated
 	 */
 	EList<ProductPart> getCreatedProductParts();
+
+	/**
+	 * Returns the value of the '<em><b>Owned Machines</b></em>' containment reference list.
+	 * The list contents are of type {@link factory.Machine}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Owned Machines</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Owned Machines</em>' containment reference list.
+	 * @see factory.FactoryPackage#getFactory_OwnedMachines()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Machine> getOwnedMachines();
 
 } // Factory

@@ -6,7 +6,6 @@ import factory.Employee;
 import factory.Factory;
 import factory.FactoryPackage;
 import factory.FactorySpecification;
-import factory.Machine;
 import factory.Product;
 
 import factory.ProductPart;
@@ -35,7 +34,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link factory.impl.FactorySpecificationImpl#getOwnedFactories <em>Owned Factories</em>}</li>
  *   <li>{@link factory.impl.FactorySpecificationImpl#getOwnedEmployees <em>Owned Employees</em>}</li>
- *   <li>{@link factory.impl.FactorySpecificationImpl#getOwnedMachines <em>Owned Machines</em>}</li>
  *   <li>{@link factory.impl.FactorySpecificationImpl#getOwnedProductParts <em>Owned Product Parts</em>}</li>
  *   <li>{@link factory.impl.FactorySpecificationImpl#getOwnedProducts <em>Owned Products</em>}</li>
  *   <li>{@link factory.impl.FactorySpecificationImpl#getBusinessTypeName <em>Business Type Name</em>}</li>
@@ -63,16 +61,6 @@ public class FactorySpecificationImpl extends IdentifiableElementImpl implements
 	 * @ordered
 	 */
 	protected EList<Employee> ownedEmployees;
-
-	/**
-	 * The cached value of the '{@link #getOwnedMachines() <em>Owned Machines</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getOwnedMachines()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Machine> ownedMachines;
 
 	/**
 	 * The cached value of the '{@link #getOwnedProductParts() <em>Owned Product Parts</em>}' containment reference list.
@@ -162,18 +150,6 @@ public class FactorySpecificationImpl extends IdentifiableElementImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Machine> getOwnedMachines() {
-		if (ownedMachines == null) {
-			ownedMachines = new EObjectContainmentEList<Machine>(Machine.class, this, FactoryPackage.FACTORY_SPECIFICATION__OWNED_MACHINES);
-		}
-		return ownedMachines;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<ProductPart> getOwnedProductParts() {
 		if (ownedProductParts == null) {
 			ownedProductParts = new EObjectContainmentEList<ProductPart>(ProductPart.class, this, FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS);
@@ -226,8 +202,6 @@ public class FactorySpecificationImpl extends IdentifiableElementImpl implements
 				return ((InternalEList<?>)getOwnedFactories()).basicRemove(otherEnd, msgs);
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_EMPLOYEES:
 				return ((InternalEList<?>)getOwnedEmployees()).basicRemove(otherEnd, msgs);
-			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_MACHINES:
-				return ((InternalEList<?>)getOwnedMachines()).basicRemove(otherEnd, msgs);
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS:
 				return ((InternalEList<?>)getOwnedProductParts()).basicRemove(otherEnd, msgs);
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCTS:
@@ -248,8 +222,6 @@ public class FactorySpecificationImpl extends IdentifiableElementImpl implements
 				return getOwnedFactories();
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_EMPLOYEES:
 				return getOwnedEmployees();
-			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_MACHINES:
-				return getOwnedMachines();
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS:
 				return getOwnedProductParts();
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCTS:
@@ -276,10 +248,6 @@ public class FactorySpecificationImpl extends IdentifiableElementImpl implements
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_EMPLOYEES:
 				getOwnedEmployees().clear();
 				getOwnedEmployees().addAll((Collection<? extends Employee>)newValue);
-				return;
-			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_MACHINES:
-				getOwnedMachines().clear();
-				getOwnedMachines().addAll((Collection<? extends Machine>)newValue);
 				return;
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS:
 				getOwnedProductParts().clear();
@@ -310,9 +278,6 @@ public class FactorySpecificationImpl extends IdentifiableElementImpl implements
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_EMPLOYEES:
 				getOwnedEmployees().clear();
 				return;
-			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_MACHINES:
-				getOwnedMachines().clear();
-				return;
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS:
 				getOwnedProductParts().clear();
 				return;
@@ -338,8 +303,6 @@ public class FactorySpecificationImpl extends IdentifiableElementImpl implements
 				return ownedFactories != null && !ownedFactories.isEmpty();
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_EMPLOYEES:
 				return ownedEmployees != null && !ownedEmployees.isEmpty();
-			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_MACHINES:
-				return ownedMachines != null && !ownedMachines.isEmpty();
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS:
 				return ownedProductParts != null && !ownedProductParts.isEmpty();
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCTS:

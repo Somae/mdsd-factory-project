@@ -149,22 +149,13 @@ public interface FactoryPackage extends EPackage {
 	int FACTORY_SPECIFICATION__OWNED_EMPLOYEES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Owned Machines</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FACTORY_SPECIFICATION__OWNED_MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
-
-	/**
 	 * The feature id for the '<em><b>Owned Product Parts</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
+	int FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Owned Products</b></em>' containment reference list.
@@ -173,7 +164,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY_SPECIFICATION__OWNED_PRODUCTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 4;
+	int FACTORY_SPECIFICATION__OWNED_PRODUCTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Business Type Name</b></em>' attribute.
@@ -182,7 +173,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY_SPECIFICATION__BUSINESS_TYPE_NAME = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 5;
+	int FACTORY_SPECIFICATION__BUSINESS_TYPE_NAME = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of structural features of the '<em>Specification</em>' class.
@@ -191,7 +182,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY_SPECIFICATION_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 6;
+	int FACTORY_SPECIFICATION_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Specification</em>' class.
@@ -330,13 +321,22 @@ public interface FactoryPackage extends EPackage {
 	int FACTORY__CREATED_PRODUCT_PARTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 10;
 
 	/**
+	 * The feature id for the '<em><b>Owned Machines</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTORY__OWNED_MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 11;
+
+	/**
 	 * The number of structural features of the '<em>Factory</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 11;
+	int FACTORY_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of operations of the '<em>Factory</em>' class.
@@ -729,17 +729,6 @@ public interface FactoryPackage extends EPackage {
 	EReference getFactorySpecification_OwnedEmployees();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link factory.FactorySpecification#getOwnedMachines <em>Owned Machines</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Owned Machines</em>'.
-	 * @see factory.FactorySpecification#getOwnedMachines()
-	 * @see #getFactorySpecification()
-	 * @generated
-	 */
-	EReference getFactorySpecification_OwnedMachines();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link factory.FactorySpecification#getOwnedProductParts <em>Owned Product Parts</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -902,6 +891,17 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getFactory_CreatedProductParts();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link factory.Factory#getOwnedMachines <em>Owned Machines</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Owned Machines</em>'.
+	 * @see factory.Factory#getOwnedMachines()
+	 * @see #getFactory()
+	 * @generated
+	 */
+	EReference getFactory_OwnedMachines();
 
 	/**
 	 * Returns the meta object for class '{@link factory.Machine <em>Machine</em>}'.
@@ -1178,14 +1178,6 @@ public interface FactoryPackage extends EPackage {
 		EReference FACTORY_SPECIFICATION__OWNED_EMPLOYEES = eINSTANCE.getFactorySpecification_OwnedEmployees();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned Machines</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FACTORY_SPECIFICATION__OWNED_MACHINES = eINSTANCE.getFactorySpecification_OwnedMachines();
-
-		/**
 		 * The meta object literal for the '<em><b>Owned Product Parts</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1306,6 +1298,14 @@ public interface FactoryPackage extends EPackage {
 		 * @generated
 		 */
 		EReference FACTORY__CREATED_PRODUCT_PARTS = eINSTANCE.getFactory_CreatedProductParts();
+
+		/**
+		 * The meta object literal for the '<em><b>Owned Machines</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACTORY__OWNED_MACHINES = eINSTANCE.getFactory_OwnedMachines();
 
 		/**
 		 * The meta object literal for the '{@link factory.impl.MachineImpl <em>Machine</em>}' class.

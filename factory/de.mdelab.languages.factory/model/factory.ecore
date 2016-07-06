@@ -6,8 +6,6 @@
         eType="#//Factory" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedEmployees" upperBound="-1"
         eType="#//Employee" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMachines" upperBound="-1"
-        eType="#//Machine" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedProductParts" upperBound="-1"
         eType="#//ProductPart" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedProducts" upperBound="-1"
@@ -29,6 +27,8 @@
         eType="#//Machine"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="createdProductParts" upperBound="-1"
         eType="#//ProductPart"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMachines" upperBound="-1"
+        eType="#//Machine" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Machine" eSuperTypes="#//IdentifiableElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="x" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
