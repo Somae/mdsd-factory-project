@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link factory.FactorySpecification#getOwnedFactories <em>Owned Factories</em>}</li>
  *   <li>{@link factory.FactorySpecification#getOwnedEmployees <em>Owned Employees</em>}</li>
  *   <li>{@link factory.FactorySpecification#getOwnedMachines <em>Owned Machines</em>}</li>
+ *   <li>{@link factory.FactorySpecification#getOwnedProductParts <em>Owned Product Parts</em>}</li>
  *   <li>{@link factory.FactorySpecification#getOwnedProducts <em>Owned Products</em>}</li>
  *   <li>{@link factory.FactorySpecification#getBusinessTypeName <em>Business Type Name</em>}</li>
  * </ul>
@@ -72,6 +73,22 @@ public interface FactorySpecification extends IdentifiableElement {
 	 * @generated
 	 */
 	EList<Machine> getOwnedMachines();
+
+	/**
+	 * Returns the value of the '<em><b>Owned Product Parts</b></em>' containment reference list.
+	 * The list contents are of type {@link factory.ProductPart}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Owned Product Parts</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Owned Product Parts</em>' containment reference list.
+	 * @see factory.FactoryPackage#getFactorySpecification_OwnedProductParts()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<ProductPart> getOwnedProductParts();
 
 	/**
 	 * Returns the value of the '<em><b>Owned Products</b></em>' containment reference list.

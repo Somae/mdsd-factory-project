@@ -3,9 +3,8 @@
 package factory.provider;
 
 
-import factory.FactoryFactory;
 import factory.FactoryPackage;
-import factory.Product;
+import factory.ProductPart;
 
 import java.util.Collection;
 import java.util.List;
@@ -20,20 +19,22 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
+import productionschema.ProductionschemaFactory;
+
 /**
- * This is the item provider adapter for a {@link factory.Product} object.
+ * This is the item provider adapter for a {@link factory.ProductPart} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class ProductItemProvider extends IdentifiableElementItemProvider {
+public class ProductPartItemProvider extends IdentifiableElementItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProductItemProvider(AdapterFactory adapterFactory) {
+	public ProductPartItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -48,55 +49,10 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addProductionStartYearPropertyDescriptor(object);
-			addProductionEndYearPropertyDescriptor(object);
 			addImagePathPropertyDescriptor(object);
+			addSupportedProductVersionsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Production Start Year feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addProductionStartYearPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Product_productionStartYear_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Product_productionStartYear_feature", "_UI_Product_type"),
-				 FactoryPackage.Literals.PRODUCT__PRODUCTION_START_YEAR,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Production End Year feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addProductionEndYearPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Product_productionEndYear_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Product_productionEndYear_feature", "_UI_Product_type"),
-				 FactoryPackage.Literals.PRODUCT__PRODUCTION_END_YEAR,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -110,13 +66,35 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Product_imagePath_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Product_imagePath_feature", "_UI_Product_type"),
-				 FactoryPackage.Literals.PRODUCT__IMAGE_PATH,
+				 getString("_UI_ProductPart_imagePath_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ProductPart_imagePath_feature", "_UI_ProductPart_type"),
+				 FactoryPackage.Literals.PRODUCT_PART__IMAGE_PATH,
 				 true,
 				 false,
 				 false,
 				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Supported Product Versions feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addSupportedProductVersionsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ProductPart_supportedProductVersions_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ProductPart_supportedProductVersions_feature", "_UI_ProductPart_type"),
+				 FactoryPackage.Literals.PRODUCT_PART__SUPPORTED_PRODUCT_VERSIONS,
+				 true,
+				 false,
+				 true,
+				 null,
 				 null,
 				 null));
 	}
@@ -133,7 +111,7 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FactoryPackage.Literals.PRODUCT__OWNED_PRODUCT_VERSIONS);
+			childrenFeatures.add(FactoryPackage.Literals.PRODUCT_PART__CONSTRUCTION_PROCESS);
 		}
 		return childrenFeatures;
 	}
@@ -152,14 +130,14 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 	}
 
 	/**
-	 * This returns Product.gif.
+	 * This returns ProductPart.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Product"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/ProductPart"));
 	}
 
 	/**
@@ -170,8 +148,8 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		Product product = (Product)object;
-		return getString("_UI_Product_type") + " " + product.getId();
+		ProductPart productPart = (ProductPart)object;
+		return getString("_UI_ProductPart_type") + " " + productPart.getId();
 	}
 	
 
@@ -186,13 +164,11 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Product.class)) {
-			case FactoryPackage.PRODUCT__PRODUCTION_START_YEAR:
-			case FactoryPackage.PRODUCT__PRODUCTION_END_YEAR:
-			case FactoryPackage.PRODUCT__IMAGE_PATH:
+		switch (notification.getFeatureID(ProductPart.class)) {
+			case FactoryPackage.PRODUCT_PART__IMAGE_PATH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case FactoryPackage.PRODUCT__OWNED_PRODUCT_VERSIONS:
+			case FactoryPackage.PRODUCT_PART__CONSTRUCTION_PROCESS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -212,8 +188,8 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FactoryPackage.Literals.PRODUCT__OWNED_PRODUCT_VERSIONS,
-				 FactoryFactory.eINSTANCE.createProductVersion()));
+				(FactoryPackage.Literals.PRODUCT_PART__CONSTRUCTION_PROCESS,
+				 ProductionschemaFactory.eINSTANCE.createProductionSchema()));
 	}
 
 }

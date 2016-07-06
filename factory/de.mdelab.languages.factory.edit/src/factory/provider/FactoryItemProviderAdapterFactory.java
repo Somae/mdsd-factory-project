@@ -187,6 +187,52 @@ public class FactoryItemProviderAdapterFactory extends FactoryAdapterFactory imp
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link factory.ProductPart} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ProductPartItemProvider productPartItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link factory.ProductPart}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createProductPartAdapter() {
+		if (productPartItemProvider == null) {
+			productPartItemProvider = new ProductPartItemProvider(this);
+		}
+
+		return productPartItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link factory.ProductVersion} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ProductVersionItemProvider productVersionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link factory.ProductVersion}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createProductVersionAdapter() {
+		if (productVersionItemProvider == null) {
+			productVersionItemProvider = new ProductVersionItemProvider(this);
+		}
+
+		return productVersionItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -290,6 +336,8 @@ public class FactoryItemProviderAdapterFactory extends FactoryAdapterFactory imp
 		if (machineItemProvider != null) machineItemProvider.dispose();
 		if (employeeItemProvider != null) employeeItemProvider.dispose();
 		if (productItemProvider != null) productItemProvider.dispose();
+		if (productPartItemProvider != null) productPartItemProvider.dispose();
+		if (productVersionItemProvider != null) productVersionItemProvider.dispose();
 	}
 
 }

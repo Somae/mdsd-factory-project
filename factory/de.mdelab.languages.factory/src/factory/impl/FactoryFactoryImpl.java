@@ -61,6 +61,8 @@ public class FactoryFactoryImpl extends EFactoryImpl implements FactoryFactory {
 			case FactoryPackage.MACHINE: return createMachine();
 			case FactoryPackage.EMPLOYEE: return createEmployee();
 			case FactoryPackage.PRODUCT: return createProduct();
+			case FactoryPackage.PRODUCT_PART: return createProductPart();
+			case FactoryPackage.PRODUCT_VERSION: return createProductVersion();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -114,6 +116,26 @@ public class FactoryFactoryImpl extends EFactoryImpl implements FactoryFactory {
 	public Product createProduct() {
 		ProductImpl product = new ProductImpl();
 		return product;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProductPart createProductPart() {
+		ProductPartImpl productPart = new ProductPartImpl();
+		return productPart;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProductVersion createProductVersion() {
+		ProductVersionImpl productVersion = new ProductVersionImpl();
+		return productVersion;
 	}
 
 	/**

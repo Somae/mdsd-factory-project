@@ -95,13 +95,22 @@ public interface ProductionschemaPackage extends EPackage {
 	int PRODUCTION_SCHEMA__OWNED_MATERIALS = 2;
 
 	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_SCHEMA__DESCRIPTION = 3;
+
+	/**
 	 * The number of structural features of the '<em>Production Schema</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTION_SCHEMA_FEATURE_COUNT = 3;
+	int PRODUCTION_SCHEMA_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Production Schema</em>' class.
@@ -541,6 +550,17 @@ public interface ProductionschemaPackage extends EPackage {
 	EReference getProductionSchema_OwnedMaterials();
 
 	/**
+	 * Returns the meta object for the attribute '{@link productionschema.ProductionSchema#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see productionschema.ProductionSchema#getDescription()
+	 * @see #getProductionSchema()
+	 * @generated
+	 */
+	EAttribute getProductionSchema_Description();
+
+	/**
 	 * Returns the meta object for class '{@link productionschema.ConjunctiveNode <em>Conjunctive Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -743,6 +763,14 @@ public interface ProductionschemaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PRODUCTION_SCHEMA__OWNED_MATERIALS = eINSTANCE.getProductionSchema_OwnedMaterials();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCTION_SCHEMA__DESCRIPTION = eINSTANCE.getProductionSchema_Description();
 
 		/**
 		 * The meta object literal for the '{@link productionschema.impl.ConjunctiveNodeImpl <em>Conjunctive Node</em>}' class.
