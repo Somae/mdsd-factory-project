@@ -69,6 +69,7 @@ public class ProductionschemaSwitch<T> extends Switch<T> {
 			case ProductionschemaPackage.PRODUCTION_SCHEMA: {
 				ProductionSchema productionSchema = (ProductionSchema)theEObject;
 				T result = caseProductionSchema(productionSchema);
+				if (result == null) result = caseIdentifiableElement(productionSchema);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

@@ -11,18 +11,11 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="DisjunctiveNode" labelDirectEdit="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" domainClass="productionschema.DisjunctiveNode">
+        <nodeMappings name="DisjunctiveNode" labelDirectEdit="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedLinkableNodes" domainClass="productionschema.DisjunctiveNode">
           <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="feature:label" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="Link" labelDirectEdit="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" domainClass="Link">
-          <style xsi:type="style:DotDescription" showIcon="false" labelExpression="aql:if (self.associatedMaterial = null) then self.label else self.associatedMaterial.label endif " sizeComputationExpression="1" resizeKind="NSEW">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="MaterialNode" labelDirectEdit="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedMaterials" domainClass="productionschema.Material">
@@ -32,7 +25,7 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="outgoingEdge" sourceMapping="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='ConjunctiveNode'] //@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='DisjunctiveNode']" targetMapping="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='Link']" targetFinderExpression="feature:outgoingLinks">
+        <edgeMappings name="materialEdge" sourceMapping="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@edgeMappings[name='link']" targetMapping="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='MaterialNode']" targetFinderExpression="feature:associatedMaterial">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -40,15 +33,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="incomingEdge" sourceMapping="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='Link']" targetMapping="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='ConjunctiveNode'] //@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='DisjunctiveNode']" targetFinderExpression="feature:destinationNode">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="materialEdge" sourceMapping="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='Link']" targetMapping="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='MaterialNode']" targetFinderExpression="feature:associatedMaterial">
+        <edgeMappings name="link" sourceMapping="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='ConjunctiveNode'] //@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='DisjunctiveNode']" targetMapping="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='ConjunctiveNode'] //@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='DisjunctiveNode']" targetFinderExpression="feature:destinationNode" sourceFinderExpression="feature:sourceNode" domainClass="productionschema.Link" useDomainElement="true">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -93,7 +78,7 @@
             </ownedTools>
           </subSections>
           <subSections name="edgeCreation" label="Edge Creation">
-            <ownedTools xsi:type="tool:EdgeCreationDescription" name="connectNodes" precondition="aql:not(preTarget.oclIsTypeOf(productionschema::Link))" edgeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@edgeMappings[name='incomingEdge'] //@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@edgeMappings[name='outgoingEdge']" connectionStartPrecondition="aql:not(preSource.oclIsTypeOf(productionschema::Link))">
+            <ownedTools xsi:type="tool:EdgeCreationDescription" name="connectNodes" edgeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@edgeMappings[name='link']">
               <sourceVariable name="source"/>
               <targetVariable name="target"/>
               <sourceViewVariable name="sourceView"/>

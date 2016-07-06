@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productionschema:ProductionSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:productionschema="http://www.mdelab.de/languages/productionschema">
+  <ownedLinkableNodes xsi:type="productionschema:DisjunctiveNode" label="Produce Rubber" outgoingLinks="//@ownedLinks.0 //@ownedLinks.1"/>
+  <ownedLinkableNodes xsi:type="productionschema:ConjunctiveNode" label="Produce Black Tire" incomingLinks="//@ownedLinks.0" outgoingLinks="//@ownedLinks.2"/>
+  <ownedLinkableNodes xsi:type="productionschema:ConjunctiveNode" label="Produce Grey Tire" incomingLinks="//@ownedLinks.1" outgoingLinks="//@ownedLinks.3"/>
+  <ownedLinkableNodes xsi:type="productionschema:ConjunctiveNode" label="Produce Rim" outgoingLinks="//@ownedLinks.5"/>
+  <ownedLinkableNodes xsi:type="productionschema:DisjunctiveNode" incomingLinks="//@ownedLinks.2 //@ownedLinks.3" outgoingLinks="//@ownedLinks.4"/>
+  <ownedLinkableNodes xsi:type="productionschema:ConjunctiveNode" label="Assemble Wheel" incomingLinks="//@ownedLinks.4 //@ownedLinks.5"/>
+  <ownedLinks sourceNode="//@ownedLinkableNodes.0" destinationNode="//@ownedLinkableNodes.1" associatedMaterial="//@ownedMaterials.0"/>
+  <ownedLinks sourceNode="//@ownedLinkableNodes.0" destinationNode="//@ownedLinkableNodes.2" associatedMaterial="//@ownedMaterials.1"/>
+  <ownedLinks sourceNode="//@ownedLinkableNodes.1" destinationNode="//@ownedLinkableNodes.4" associatedMaterial="//@ownedMaterials.3"/>
+  <ownedLinks sourceNode="//@ownedLinkableNodes.2" destinationNode="//@ownedLinkableNodes.4" associatedMaterial="//@ownedMaterials.2"/>
+  <ownedLinks sourceNode="//@ownedLinkableNodes.4" destinationNode="//@ownedLinkableNodes.5" associatedMaterial="//@ownedMaterials.4"/>
+  <ownedLinks sourceNode="//@ownedLinkableNodes.3" destinationNode="//@ownedLinkableNodes.5" associatedMaterial="//@ownedMaterials.5"/>
+  <ownedMaterials label="Black Rubber"/>
+  <ownedMaterials label="Grey Rubber"/>
+  <ownedMaterials label="Grey Tire"/>
+  <ownedMaterials label="Black Tire"/>
+  <ownedMaterials label="Tire"/>
+  <ownedMaterials label="Rim"/>
+</productionschema:ProductionSchema>

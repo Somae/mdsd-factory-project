@@ -13,8 +13,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -40,7 +38,7 @@ import productionschema.ProductionschemaPackage;
  *
  * @generated
  */
-public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implements ProductionSchema {
+public class ProductionSchemaImpl extends IdentifiableElementImpl implements ProductionSchema {
 	/**
 	 * The cached value of the '{@link #getOwnedLinkableNodes() <em>Owned Linkable Nodes</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

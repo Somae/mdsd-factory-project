@@ -68,60 +68,6 @@ public interface ProductionschemaPackage extends EPackage {
 	int PRODUCTION_SCHEMA = 0;
 
 	/**
-	 * The feature id for the '<em><b>Owned Linkable Nodes</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES = 0;
-
-	/**
-	 * The feature id for the '<em><b>Owned Links</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA__OWNED_LINKS = 1;
-
-	/**
-	 * The feature id for the '<em><b>Owned Materials</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA__OWNED_MATERIALS = 2;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA__DESCRIPTION = 3;
-
-	/**
-	 * The number of structural features of the '<em>Production Schema</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA_FEATURE_COUNT = 4;
-
-	/**
-	 * The number of operations of the '<em>Production Schema</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCTION_SCHEMA_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link productionschema.impl.IdentifiableElementImpl <em>Identifiable Element</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -166,6 +112,78 @@ public interface ProductionschemaPackage extends EPackage {
 	 * @ordered
 	 */
 	int IDENTIFIABLE_ELEMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_SCHEMA__ID = IDENTIFIABLE_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_SCHEMA__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
+
+	/**
+	 * The feature id for the '<em><b>Owned Linkable Nodes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Owned Links</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_SCHEMA__OWNED_LINKS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Owned Materials</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_SCHEMA__OWNED_MATERIALS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_SCHEMA__DESCRIPTION = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of structural features of the '<em>Production Schema</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_SCHEMA_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of operations of the '<em>Production Schema</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_SCHEMA_OPERATION_COUNT = IDENTIFIABLE_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link productionschema.impl.LinkableNodeImpl <em>Linkable Node</em>}' class.

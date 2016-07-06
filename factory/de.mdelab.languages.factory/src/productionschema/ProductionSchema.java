@@ -4,8 +4,6 @@ package productionschema;
 
 import org.eclipse.emf.common.util.EList;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Production Schema</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ProductionSchema extends EObject {
+public interface ProductionSchema extends IdentifiableElement {
 	/**
 	 * Returns the value of the '<em><b>Owned Linkable Nodes</b></em>' containment reference list.
 	 * The list contents are of type {@link productionschema.LinkableNode}.

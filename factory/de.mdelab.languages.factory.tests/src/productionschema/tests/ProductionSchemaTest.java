@@ -2,8 +2,6 @@
  */
 package productionschema.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import productionschema.ProductionSchema;
@@ -15,15 +13,7 @@ import productionschema.ProductionschemaFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ProductionSchemaTest extends TestCase {
-
-	/**
-	 * The fixture for this Production Schema test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ProductionSchema fixture = null;
+public class ProductionSchemaTest extends IdentifiableElementTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -45,23 +35,14 @@ public class ProductionSchemaTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Production Schema test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(ProductionSchema fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Production Schema test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected ProductionSchema getFixture() {
-		return fixture;
+		return (ProductionSchema)fixture;
 	}
 
 	/**

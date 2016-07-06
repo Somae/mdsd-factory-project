@@ -400,6 +400,7 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		productionSchemaEClass.getESuperTypes().add(this.getIdentifiableElement());
 		conjunctiveNodeEClass.getESuperTypes().add(this.getLinkableNode());
 		disjunctiveNodeEClass.getESuperTypes().add(this.getLinkableNode());
 		linkEClass.getESuperTypes().add(this.getIdentifiableElement());
