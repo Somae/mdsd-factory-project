@@ -157,7 +157,6 @@ import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 import factory.provider.FactoryItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
-
 import productionschema.provider.ProductionschemaItemProviderAdapterFactory;
 
 

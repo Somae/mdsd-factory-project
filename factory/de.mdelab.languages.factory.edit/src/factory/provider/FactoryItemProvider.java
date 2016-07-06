@@ -18,6 +18,7 @@ import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+import productionschema.ProductionschemaFactory;
 
 /**
  * This is the item provider adapter for a {@link factory.Factory} object.
@@ -316,6 +317,7 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(FactoryPackage.Literals.FACTORY__OWNED_PRODUCTION_SCHEMATA);
 			childrenFeatures.add(FactoryPackage.Literals.FACTORY__OWNED_MACHINES);
 		}
 		return childrenFeatures;
@@ -380,6 +382,7 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 			case FactoryPackage.FACTORY__WIDTH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
+			case FactoryPackage.FACTORY__OWNED_PRODUCTION_SCHEMATA:
 			case FactoryPackage.FACTORY__OWNED_MACHINES:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -397,6 +400,11 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FactoryPackage.Literals.FACTORY__OWNED_PRODUCTION_SCHEMATA,
+				 ProductionschemaFactory.eINSTANCE.createProductionSchema()));
 
 		newChildDescriptors.add
 			(createChildParameter

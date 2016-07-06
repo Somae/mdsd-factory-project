@@ -13,15 +13,15 @@ import factory.Product;
 
 import factory.ProductPart;
 import factory.ProductVersion;
+import factory.util.FactoryValidator;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
+import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
 import productionschema.ProductionschemaPackage;
-
 import productionschema.impl.ProductionschemaPackageImpl;
 
 /**
@@ -144,6 +144,15 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		theFactoryPackage.initializePackageContents();
 		theProductionschemaPackage.initializePackageContents();
 
+		// Register package validator
+		EValidator.Registry.INSTANCE.put
+			(theFactoryPackage, 
+			 new EValidator.Descriptor() {
+				 public EValidator getEValidator() {
+					 return FactoryValidator.INSTANCE;
+				 }
+			 });
+
 		// Mark meta-data to indicate it can't be changed
 		theFactoryPackage.freeze();
 
@@ -221,8 +230,8 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Description() {
-		return (EAttribute)factoryEClass.getEStructuralFeatures().get(0);
+	public EReference getFactory_OwnedProductionSchemata() {
+		return (EReference)factoryEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -230,7 +239,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_StreetNumber() {
+	public EAttribute getFactory_Description() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -239,7 +248,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Street() {
+	public EAttribute getFactory_StreetNumber() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -248,7 +257,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_City() {
+	public EAttribute getFactory_Street() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -257,7 +266,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_PostalCode() {
+	public EAttribute getFactory_City() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -266,7 +275,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Country() {
+	public EAttribute getFactory_PostalCode() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -275,7 +284,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Length() {
+	public EAttribute getFactory_Country() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -284,7 +293,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Width() {
+	public EAttribute getFactory_Length() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -293,8 +302,8 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactory_Employees() {
-		return (EReference)factoryEClass.getEStructuralFeatures().get(8);
+	public EAttribute getFactory_Width() {
+		return (EAttribute)factoryEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -302,7 +311,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactory_Machines() {
+	public EReference getFactory_Employees() {
 		return (EReference)factoryEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -311,7 +320,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactory_CreatedProductParts() {
+	public EReference getFactory_Machines() {
 		return (EReference)factoryEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -320,8 +329,17 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactory_OwnedMachines() {
+	public EReference getFactory_CreatedProductParts() {
 		return (EReference)factoryEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFactory_OwnedMachines() {
+		return (EReference)factoryEClass.getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -428,17 +446,8 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getProductPart_ConstructionProcess() {
-		return (EReference)productPartEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getProductPart_ImagePath() {
-		return (EAttribute)productPartEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)productPartEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -447,6 +456,15 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * @generated
 	 */
 	public EReference getProductPart_SupportedProductVersions() {
+		return (EReference)productPartEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductPart_ConstructionProcesses() {
 		return (EReference)productPartEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -549,6 +567,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		createEAttribute(factorySpecificationEClass, FACTORY_SPECIFICATION__BUSINESS_TYPE_NAME);
 
 		factoryEClass = createEClass(FACTORY);
+		createEReference(factoryEClass, FACTORY__OWNED_PRODUCTION_SCHEMATA);
 		createEAttribute(factoryEClass, FACTORY__DESCRIPTION);
 		createEAttribute(factoryEClass, FACTORY__STREET_NUMBER);
 		createEAttribute(factoryEClass, FACTORY__STREET);
@@ -576,9 +595,9 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		createEReference(productEClass, PRODUCT__OWNED_PRODUCT_VERSIONS);
 
 		productPartEClass = createEClass(PRODUCT_PART);
-		createEReference(productPartEClass, PRODUCT_PART__CONSTRUCTION_PROCESS);
 		createEAttribute(productPartEClass, PRODUCT_PART__IMAGE_PATH);
 		createEReference(productPartEClass, PRODUCT_PART__SUPPORTED_PRODUCT_VERSIONS);
+		createEReference(productPartEClass, PRODUCT_PART__CONSTRUCTION_PROCESSES);
 
 		identifiableElementEClass = createEClass(IDENTIFIABLE_ELEMENT);
 		createEAttribute(identifiableElementEClass, IDENTIFIABLE_ELEMENT__ID);
@@ -638,6 +657,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		initEAttribute(getFactorySpecification_BusinessTypeName(), ecorePackage.getEString(), "businessTypeName", null, 0, 1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(factoryEClass, Factory.class, "Factory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFactory_OwnedProductionSchemata(), theProductionschemaPackage.getProductionSchema(), null, "ownedProductionSchemata", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_Description(), ecorePackage.getEString(), "description", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_StreetNumber(), ecorePackage.getEString(), "streetNumber", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_Street(), ecorePackage.getEString(), "street", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -665,9 +685,9 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		initEReference(getProduct_OwnedProductVersions(), this.getProductVersion(), null, "ownedProductVersions", null, 0, -1, Product.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productPartEClass, ProductPart.class, "ProductPart", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductPart_ConstructionProcess(), theProductionschemaPackage.getProductionSchema(), null, "constructionProcess", null, 0, 1, ProductPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPart_ImagePath(), ecorePackage.getEString(), "imagePath", null, 0, 1, ProductPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductPart_SupportedProductVersions(), this.getProductVersion(), null, "supportedProductVersions", null, 0, -1, ProductPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductPart_ConstructionProcesses(), theProductionschemaPackage.getProductionSchema(), null, "constructionProcesses", null, 0, -1, ProductPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(identifiableElementEClass, IdentifiableElement.class, "IdentifiableElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIdentifiableElement_Id(), ecorePackage.getEInt(), "id", null, 1, 1, IdentifiableElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -680,6 +700,71 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// http://www.eclipse.org/OCL/Import
+		createImportAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore
+		createEcoreAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot
+		createPivotAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/OCL/Import</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createImportAnnotations() {
+		String source = "http://www.eclipse.org/OCL/Import";	
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+			 "ecore", "http://www.eclipse.org/emf/2002/Ecore",
+			 "productionschema", "../../de.mdelab.languages.productionschema/model/productionschema.ecore#/"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createEcoreAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore";	
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+			 "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			 "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
+		   });	
+		addAnnotation
+		  (factoryEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "factoryContainsAllPS"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createPivotAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot";	
+		addAnnotation
+		  (factoryEClass, 
+		   source, 
+		   new String[] {
+			 "factoryContainsAllPS", "createdProductParts->forAll(p|p.constructionProcesses->exists(ps | ownedProductionSchemata->includes(ps)))"
+		   });
 	}
 
 } //FactoryPackageImpl
