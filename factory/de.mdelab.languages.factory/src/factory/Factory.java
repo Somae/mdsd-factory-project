@@ -13,12 +13,18 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link factory.Factory#getAddress <em>Address</em>}</li>
+ *   <li>{@link factory.Factory#getDescription <em>Description</em>}</li>
+ *   <li>{@link factory.Factory#getStreetNumber <em>Street Number</em>}</li>
+ *   <li>{@link factory.Factory#getStreet <em>Street</em>}</li>
+ *   <li>{@link factory.Factory#getCity <em>City</em>}</li>
+ *   <li>{@link factory.Factory#getPostalCode <em>Postal Code</em>}</li>
+ *   <li>{@link factory.Factory#getCountry <em>Country</em>}</li>
  *   <li>{@link factory.Factory#getLength <em>Length</em>}</li>
  *   <li>{@link factory.Factory#getWidth <em>Width</em>}</li>
  *   <li>{@link factory.Factory#getEmployees <em>Employees</em>}</li>
  *   <li>{@link factory.Factory#getMachines <em>Machines</em>}</li>
- *   <li>{@link factory.Factory#getCreatedProducts <em>Created Products</em>}</li>
+ *   <li>{@link factory.Factory#getCreatedProductParts <em>Created Product Parts</em>}</li>
+ *   <li>{@link factory.Factory#getOwnedMachines <em>Owned Machines</em>}</li>
  * </ul>
  *
  * @see factory.FactoryPackage#getFactory()
@@ -27,30 +33,160 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface Factory extends IdentifiableElement {
 	/**
-	 * Returns the value of the '<em><b>Address</b></em>' attribute.
+	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Address</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Address</em>' attribute.
-	 * @see #setAddress(String)
-	 * @see factory.FactoryPackage#getFactory_Address()
+	 * @return the value of the '<em>Description</em>' attribute.
+	 * @see #setDescription(String)
+	 * @see factory.FactoryPackage#getFactory_Description()
 	 * @model
 	 * @generated
 	 */
-	String getAddress();
+	String getDescription();
 
 	/**
-	 * Sets the value of the '{@link factory.Factory#getAddress <em>Address</em>}' attribute.
+	 * Sets the value of the '{@link factory.Factory#getDescription <em>Description</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Address</em>' attribute.
-	 * @see #getAddress()
+	 * @param value the new value of the '<em>Description</em>' attribute.
+	 * @see #getDescription()
 	 * @generated
 	 */
-	void setAddress(String value);
+	void setDescription(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Street Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Street Number</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Street Number</em>' attribute.
+	 * @see #setStreetNumber(String)
+	 * @see factory.FactoryPackage#getFactory_StreetNumber()
+	 * @model
+	 * @generated
+	 */
+	String getStreetNumber();
+
+	/**
+	 * Sets the value of the '{@link factory.Factory#getStreetNumber <em>Street Number</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Street Number</em>' attribute.
+	 * @see #getStreetNumber()
+	 * @generated
+	 */
+	void setStreetNumber(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Street</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Street</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Street</em>' attribute.
+	 * @see #setStreet(String)
+	 * @see factory.FactoryPackage#getFactory_Street()
+	 * @model
+	 * @generated
+	 */
+	String getStreet();
+
+	/**
+	 * Sets the value of the '{@link factory.Factory#getStreet <em>Street</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Street</em>' attribute.
+	 * @see #getStreet()
+	 * @generated
+	 */
+	void setStreet(String value);
+
+	/**
+	 * Returns the value of the '<em><b>City</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>City</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>City</em>' attribute.
+	 * @see #setCity(String)
+	 * @see factory.FactoryPackage#getFactory_City()
+	 * @model
+	 * @generated
+	 */
+	String getCity();
+
+	/**
+	 * Sets the value of the '{@link factory.Factory#getCity <em>City</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>City</em>' attribute.
+	 * @see #getCity()
+	 * @generated
+	 */
+	void setCity(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Postal Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Postal Code</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Postal Code</em>' attribute.
+	 * @see #setPostalCode(int)
+	 * @see factory.FactoryPackage#getFactory_PostalCode()
+	 * @model
+	 * @generated
+	 */
+	int getPostalCode();
+
+	/**
+	 * Sets the value of the '{@link factory.Factory#getPostalCode <em>Postal Code</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Postal Code</em>' attribute.
+	 * @see #getPostalCode()
+	 * @generated
+	 */
+	void setPostalCode(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Country</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Country</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Country</em>' attribute.
+	 * @see #setCountry(String)
+	 * @see factory.FactoryPackage#getFactory_Country()
+	 * @model
+	 * @generated
+	 */
+	String getCountry();
+
+	/**
+	 * Sets the value of the '{@link factory.Factory#getCountry <em>Country</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Country</em>' attribute.
+	 * @see #getCountry()
+	 * @generated
+	 */
+	void setCountry(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Length</b></em>' attribute.
@@ -137,19 +273,35 @@ public interface Factory extends IdentifiableElement {
 	EList<Machine> getMachines();
 
 	/**
-	 * Returns the value of the '<em><b>Created Products</b></em>' reference list.
-	 * The list contents are of type {@link factory.Product}.
+	 * Returns the value of the '<em><b>Created Product Parts</b></em>' reference list.
+	 * The list contents are of type {@link factory.ProductPart}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Created Products</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Created Product Parts</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Created Products</em>' reference list.
-	 * @see factory.FactoryPackage#getFactory_CreatedProducts()
+	 * @return the value of the '<em>Created Product Parts</em>' reference list.
+	 * @see factory.FactoryPackage#getFactory_CreatedProductParts()
 	 * @model
 	 * @generated
 	 */
-	EList<Product> getCreatedProducts();
+	EList<ProductPart> getCreatedProductParts();
+
+	/**
+	 * Returns the value of the '<em><b>Owned Machines</b></em>' containment reference list.
+	 * The list contents are of type {@link factory.Machine}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Owned Machines</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Owned Machines</em>' containment reference list.
+	 * @see factory.FactoryPackage#getFactory_OwnedMachines()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Machine> getOwnedMachines();
 
 } // Factory

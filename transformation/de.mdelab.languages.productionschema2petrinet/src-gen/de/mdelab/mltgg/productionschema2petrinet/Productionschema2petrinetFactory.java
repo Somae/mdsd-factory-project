@@ -68,6 +68,15 @@ public interface Productionschema2petrinetFactory extends EFactory {
 	CorrEdge createCorrEdge();
 
 	/**
+	 * Returns a new object of class '<em>Corr Material</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Corr Material</em>'.
+	 * @generated
+	 */
+	CorrMaterial createCorrMaterial();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

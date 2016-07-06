@@ -11,6 +11,8 @@ import factory.IdentifiableElement;
 import factory.Machine;
 import factory.Product;
 
+import factory.ProductPart;
+import factory.ProductVersion;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -69,7 +71,21 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass productPartEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass identifiableElementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass productVersionEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -169,7 +185,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactorySpecification_OwnedMachines() {
+	public EReference getFactorySpecification_OwnedProductParts() {
 		return (EReference)factorySpecificationEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -205,7 +221,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Address() {
+	public EAttribute getFactory_Description() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -214,7 +230,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Length() {
+	public EAttribute getFactory_StreetNumber() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -223,7 +239,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Width() {
+	public EAttribute getFactory_Street() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -232,8 +248,53 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getFactory_City() {
+		return (EAttribute)factoryEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFactory_PostalCode() {
+		return (EAttribute)factoryEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFactory_Country() {
+		return (EAttribute)factoryEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFactory_Length() {
+		return (EAttribute)factoryEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFactory_Width() {
+		return (EAttribute)factoryEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getFactory_Employees() {
-		return (EReference)factoryEClass.getEStructuralFeatures().get(3);
+		return (EReference)factoryEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -242,7 +303,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * @generated
 	 */
 	public EReference getFactory_Machines() {
-		return (EReference)factoryEClass.getEStructuralFeatures().get(4);
+		return (EReference)factoryEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -250,8 +311,17 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactory_CreatedProducts() {
-		return (EReference)factoryEClass.getEStructuralFeatures().get(5);
+	public EReference getFactory_CreatedProductParts() {
+		return (EReference)factoryEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFactory_OwnedMachines() {
+		return (EReference)factoryEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -313,8 +383,71 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getProduct_ConstructionProcess() {
-		return (EReference)productEClass.getEStructuralFeatures().get(0);
+	public EAttribute getProduct_ProductionStartYear() {
+		return (EAttribute)productEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProduct_ProductionEndYear() {
+		return (EAttribute)productEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProduct_ImagePath() {
+		return (EAttribute)productEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProduct_OwnedProductVersions() {
+		return (EReference)productEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProductPart() {
+		return productPartEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductPart_ConstructionProcess() {
+		return (EReference)productPartEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductPart_ImagePath() {
+		return (EAttribute)productPartEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductPart_SupportedProductVersions() {
+		return (EReference)productPartEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -349,6 +482,42 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getProductVersion() {
+		return productVersionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductVersion_Description() {
+		return (EAttribute)productVersionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductVersion_VersionStartYear() {
+		return (EAttribute)productVersionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductVersion_VersionEndYear() {
+		return (EAttribute)productVersionEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public FactoryFactory getFactoryFactory() {
 		return (FactoryFactory)getEFactoryInstance();
 	}
@@ -375,17 +544,23 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		factorySpecificationEClass = createEClass(FACTORY_SPECIFICATION);
 		createEReference(factorySpecificationEClass, FACTORY_SPECIFICATION__OWNED_FACTORIES);
 		createEReference(factorySpecificationEClass, FACTORY_SPECIFICATION__OWNED_EMPLOYEES);
-		createEReference(factorySpecificationEClass, FACTORY_SPECIFICATION__OWNED_MACHINES);
+		createEReference(factorySpecificationEClass, FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS);
 		createEReference(factorySpecificationEClass, FACTORY_SPECIFICATION__OWNED_PRODUCTS);
 		createEAttribute(factorySpecificationEClass, FACTORY_SPECIFICATION__BUSINESS_TYPE_NAME);
 
 		factoryEClass = createEClass(FACTORY);
-		createEAttribute(factoryEClass, FACTORY__ADDRESS);
+		createEAttribute(factoryEClass, FACTORY__DESCRIPTION);
+		createEAttribute(factoryEClass, FACTORY__STREET_NUMBER);
+		createEAttribute(factoryEClass, FACTORY__STREET);
+		createEAttribute(factoryEClass, FACTORY__CITY);
+		createEAttribute(factoryEClass, FACTORY__POSTAL_CODE);
+		createEAttribute(factoryEClass, FACTORY__COUNTRY);
 		createEAttribute(factoryEClass, FACTORY__LENGTH);
 		createEAttribute(factoryEClass, FACTORY__WIDTH);
 		createEReference(factoryEClass, FACTORY__EMPLOYEES);
 		createEReference(factoryEClass, FACTORY__MACHINES);
-		createEReference(factoryEClass, FACTORY__CREATED_PRODUCTS);
+		createEReference(factoryEClass, FACTORY__CREATED_PRODUCT_PARTS);
+		createEReference(factoryEClass, FACTORY__OWNED_MACHINES);
 
 		machineEClass = createEClass(MACHINE);
 		createEAttribute(machineEClass, MACHINE__X);
@@ -395,11 +570,24 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		employeeEClass = createEClass(EMPLOYEE);
 
 		productEClass = createEClass(PRODUCT);
-		createEReference(productEClass, PRODUCT__CONSTRUCTION_PROCESS);
+		createEAttribute(productEClass, PRODUCT__PRODUCTION_START_YEAR);
+		createEAttribute(productEClass, PRODUCT__PRODUCTION_END_YEAR);
+		createEAttribute(productEClass, PRODUCT__IMAGE_PATH);
+		createEReference(productEClass, PRODUCT__OWNED_PRODUCT_VERSIONS);
+
+		productPartEClass = createEClass(PRODUCT_PART);
+		createEReference(productPartEClass, PRODUCT_PART__CONSTRUCTION_PROCESS);
+		createEAttribute(productPartEClass, PRODUCT_PART__IMAGE_PATH);
+		createEReference(productPartEClass, PRODUCT_PART__SUPPORTED_PRODUCT_VERSIONS);
 
 		identifiableElementEClass = createEClass(IDENTIFIABLE_ELEMENT);
 		createEAttribute(identifiableElementEClass, IDENTIFIABLE_ELEMENT__ID);
 		createEAttribute(identifiableElementEClass, IDENTIFIABLE_ELEMENT__LABEL);
+
+		productVersionEClass = createEClass(PRODUCT_VERSION);
+		createEAttribute(productVersionEClass, PRODUCT_VERSION__DESCRIPTION);
+		createEAttribute(productVersionEClass, PRODUCT_VERSION__VERSION_START_YEAR);
+		createEAttribute(productVersionEClass, PRODUCT_VERSION__VERSION_END_YEAR);
 	}
 
 	/**
@@ -438,22 +626,30 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		machineEClass.getESuperTypes().add(this.getIdentifiableElement());
 		employeeEClass.getESuperTypes().add(this.getIdentifiableElement());
 		productEClass.getESuperTypes().add(this.getIdentifiableElement());
+		productPartEClass.getESuperTypes().add(this.getIdentifiableElement());
+		productVersionEClass.getESuperTypes().add(this.getIdentifiableElement());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(factorySpecificationEClass, FactorySpecification.class, "FactorySpecification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFactorySpecification_OwnedFactories(), this.getFactory(), null, "ownedFactories", null, 0, -1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFactorySpecification_OwnedEmployees(), this.getEmployee(), null, "ownedEmployees", null, 0, -1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getFactorySpecification_OwnedMachines(), this.getMachine(), null, "ownedMachines", null, 0, -1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFactorySpecification_OwnedProductParts(), this.getProductPart(), null, "ownedProductParts", null, 0, -1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFactorySpecification_OwnedProducts(), this.getProduct(), null, "ownedProducts", null, 0, -1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactorySpecification_BusinessTypeName(), ecorePackage.getEString(), "businessTypeName", null, 0, 1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(factoryEClass, Factory.class, "Factory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getFactory_Address(), ecorePackage.getEString(), "address", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFactory_Description(), ecorePackage.getEString(), "description", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFactory_StreetNumber(), ecorePackage.getEString(), "streetNumber", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFactory_Street(), ecorePackage.getEString(), "street", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFactory_City(), ecorePackage.getEString(), "city", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFactory_PostalCode(), ecorePackage.getEInt(), "postalCode", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFactory_Country(), ecorePackage.getEString(), "country", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_Length(), ecorePackage.getEInt(), "length", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_Width(), ecorePackage.getEInt(), "width", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFactory_Employees(), this.getEmployee(), null, "employees", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFactory_Machines(), this.getMachine(), null, "machines", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getFactory_CreatedProducts(), this.getProduct(), null, "createdProducts", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFactory_CreatedProductParts(), this.getProductPart(), null, "createdProductParts", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFactory_OwnedMachines(), this.getMachine(), null, "ownedMachines", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(machineEClass, Machine.class, "Machine", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMachine_X(), ecorePackage.getEInt(), "x", null, 0, 1, Machine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -463,11 +659,24 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		initEClass(employeeEClass, Employee.class, "Employee", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(productEClass, Product.class, "Product", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProduct_ConstructionProcess(), theProductionschemaPackage.getProductionSchema(), null, "constructionProcess", null, 0, 1, Product.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProduct_ProductionStartYear(), ecorePackage.getEInt(), "productionStartYear", null, 0, 1, Product.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProduct_ProductionEndYear(), ecorePackage.getEInt(), "productionEndYear", null, 0, 1, Product.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProduct_ImagePath(), ecorePackage.getEString(), "imagePath", null, 0, 1, Product.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProduct_OwnedProductVersions(), this.getProductVersion(), null, "ownedProductVersions", null, 0, -1, Product.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(productPartEClass, ProductPart.class, "ProductPart", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getProductPart_ConstructionProcess(), theProductionschemaPackage.getProductionSchema(), null, "constructionProcess", null, 0, 1, ProductPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductPart_ImagePath(), ecorePackage.getEString(), "imagePath", null, 0, 1, ProductPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductPart_SupportedProductVersions(), this.getProductVersion(), null, "supportedProductVersions", null, 0, -1, ProductPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(identifiableElementEClass, IdentifiableElement.class, "IdentifiableElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIdentifiableElement_Id(), ecorePackage.getEInt(), "id", null, 1, 1, IdentifiableElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIdentifiableElement_Label(), ecorePackage.getEString(), "label", null, 0, 1, IdentifiableElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(productVersionEClass, ProductVersion.class, "ProductVersion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getProductVersion_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductVersion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductVersion_VersionStartYear(), ecorePackage.getEInt(), "versionStartYear", null, 0, 1, ProductVersion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductVersion_VersionEndYear(), ecorePackage.getEInt(), "versionEndYear", null, 0, 1, ProductVersion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -78,6 +78,13 @@ public class Productionschema2petrinetPackageImpl extends EPackageImpl implement
 	private EClass corrEdgeEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass corrMaterialEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -212,6 +219,19 @@ public class Productionschema2petrinetPackageImpl extends EPackageImpl implement
 					.getEClassifiers().get(4);
 		}
 		return corrEdgeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCorrMaterial() {
+		if (corrMaterialEClass == null) {
+			corrMaterialEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(Productionschema2petrinetPackage.eNS_URI).getEClassifiers().get(5);
+		}
+		return corrMaterialEClass;
 	}
 
 	/**

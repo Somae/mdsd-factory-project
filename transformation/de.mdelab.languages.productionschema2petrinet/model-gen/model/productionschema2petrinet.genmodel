@@ -15,16 +15,18 @@
     <genClasses ecoreClass="productionschema2petrinet.ecore#//CorrDisjunctiveNode"/>
     <genClasses ecoreClass="productionschema2petrinet.ecore#//CorrMaterialLink"/>
     <genClasses ecoreClass="productionschema2petrinet.ecore#//CorrEdge"/>
+    <genClasses ecoreClass="productionschema2petrinet.ecore#//CorrMaterial"/>
     <nestedGenPackages prefix="Generated" disposableProviderFactory="true" loadInitialization="true"
         literalsInterface="false" ecorePackage="productionschema2petrinet.ecore#//generated">
       <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetOperationalTGG"/>
       <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetAxiom"/>
-      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNode"/>
-      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetLink"/>
-      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn"/>
       <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn"/>
-      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode"/>
       <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut"/>
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetLink"/>
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode"/>
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial"/>
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNode"/>
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn"/>
       <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut"/>
       <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetAxiom_r1">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -80,84 +82,404 @@
           <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetAxiom_r1/synchronizeBackward/checkAttributeFormulae"/>
         </genOperations>
       </genClasses>
-      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6">
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/addElementActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/addElementActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/moveElementActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/moveElementActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/changeAttributeActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/changeAttributeActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformForwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformForwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformMappingActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformMappingActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformBackwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformBackwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckForwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckForwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckMappingActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckMappingActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckBackwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckBackwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeForwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeForwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeBackwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeBackwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairForwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairForwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairBackwardActivity"/>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/addElement">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/addElement/parameters"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairBackwardActivity"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/addElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/addElement/parameters"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/changeAttributeValues">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/changeAttributeValues/correspondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/changeAttributeValues/ruleParameters"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/changeAttributeValues">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/changeAttributeValues/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/changeAttributeValues/ruleParameters"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/moveElement">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/moveElement/correspondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/moveElement/oldPreviousCorrespondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/moveElement/newPreviousCorrespondenceNode"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/moveElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/moveElement/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/moveElement/oldPreviousCorrespondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/moveElement/newPreviousCorrespondenceNode"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformForward/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformForward/considerAllLhsCorrNodes"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformForward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformForward/considerAllLhsCorrNodes"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformMapping">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformMapping/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformMapping/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformMapping/considerAllLhsCorrNodes"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformMapping/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformMapping/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformMapping/considerAllLhsCorrNodes"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformBackward/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformBackward/considerAllLhsCorrNodes"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformBackward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformBackward/considerAllLhsCorrNodes"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckForward/inputTggNode"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckForward/inputTggNode"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckMapping">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckMapping/inputTggNode"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckMapping/inputTggNode"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckBackward/inputTggNode"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckBackward/inputTggNode"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeForward/checkAttributeFormulae"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeForward/checkAttributeFormulae"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeBackward/checkAttributeFormulae"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeBackward/checkAttributeFormulae"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairForward/checkAttributeFormulae"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairForward/checkAttributeFormulae"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairBackward/checkAttributeFormulae"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairBackward/checkAttributeFormulae"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/addElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/moveElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/changeAttributeActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/conflictCheckForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/conflictCheckMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/conflictCheckBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/synchronizeForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/synchronizeBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/repairForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/repairBackwardActivity"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/addElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/addElement/parameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/changeAttributeValues">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/changeAttributeValues/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/changeAttributeValues/ruleParameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/moveElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/moveElement/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/moveElement/oldPreviousCorrespondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/moveElement/newPreviousCorrespondenceNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformForward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformForward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformMapping/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformMapping/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformMapping/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformBackward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/transformBackward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/conflictCheckForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/conflictCheckForward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/conflictCheckMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/conflictCheckMapping/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/conflictCheckBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/conflictCheckBackward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/synchronizeForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/synchronizeForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/synchronizeForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/synchronizeBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/synchronizeBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/synchronizeBackward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/repairForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/repairForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/repairForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/repairBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/repairBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetMaterial_r9/repairBackward/checkAttributeFormulae"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/addElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/moveElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/changeAttributeActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairBackwardActivity"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/addElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/addElement/parameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/changeAttributeValues">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/changeAttributeValues/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/changeAttributeValues/ruleParameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/moveElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/moveElement/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/moveElement/oldPreviousCorrespondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/moveElement/newPreviousCorrespondenceNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformForward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformForward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformMapping/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformMapping/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformMapping/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformBackward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformBackward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckForward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckMapping/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckBackward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeBackward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairBackward/checkAttributeFormulae"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/addElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/moveElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/changeAttributeActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairBackwardActivity"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/addElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/addElement/parameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/changeAttributeValues">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/changeAttributeValues/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/changeAttributeValues/ruleParameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/moveElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/moveElement/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/moveElement/oldPreviousCorrespondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/moveElement/newPreviousCorrespondenceNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformForward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformForward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformMapping/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformMapping/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformMapping/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformBackward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformBackward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckForward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckMapping/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckBackward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeBackward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairBackward/checkAttributeFormulae"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/addElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/moveElementActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/changeAttributeActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckMappingActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeBackwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairForwardActivity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairBackwardActivity"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/addElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/addElement/parameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/changeAttributeValues">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/changeAttributeValues/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/changeAttributeValues/ruleParameters"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/moveElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/moveElement/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/moveElement/oldPreviousCorrespondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/moveElement/newPreviousCorrespondenceNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformForward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformForward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformMapping/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformMapping/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformMapping/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformBackward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformBackward/considerAllLhsCorrNodes"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckForward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckMapping/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckBackward/inputTggNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeBackward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairForward/checkAttributeFormulae"/>
+        </genOperations>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairBackward/checkAttributeFormulae"/>
         </genOperations>
       </genClasses>
       <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNode_r2">
@@ -320,324 +642,84 @@
           <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetLink_r4/repairBackward/checkAttributeFormulae"/>
         </genOperations>
       </genClasses>
-      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5">
+      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/addElementActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/addElementActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/moveElementActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/moveElementActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/changeAttributeActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/changeAttributeActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformForwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformForwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformMappingActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformMappingActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformBackwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformBackwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckForwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckForwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckMappingActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckMappingActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckBackwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckBackwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeForwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeForwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeBackwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeBackwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairForwardActivity"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairForwardActivity"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairBackwardActivity"/>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/addElement">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/addElement/parameters"/>
+            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairBackwardActivity"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/addElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/addElement/parameters"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/changeAttributeValues">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/changeAttributeValues/correspondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/changeAttributeValues/ruleParameters"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/changeAttributeValues">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/changeAttributeValues/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/changeAttributeValues/ruleParameters"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/moveElement">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/moveElement/correspondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/moveElement/oldPreviousCorrespondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/moveElement/newPreviousCorrespondenceNode"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/moveElement">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/moveElement/correspondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/moveElement/oldPreviousCorrespondenceNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/moveElement/newPreviousCorrespondenceNode"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformForward/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformForward/considerAllLhsCorrNodes"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformForward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformForward/considerAllLhsCorrNodes"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformMapping">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformMapping/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformMapping/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformMapping/considerAllLhsCorrNodes"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformMapping/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformMapping/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformMapping/considerAllLhsCorrNodes"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformBackward/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/transformBackward/considerAllLhsCorrNodes"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformBackward/checkAttributeFormulae"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/transformBackward/considerAllLhsCorrNodes"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckForward/inputTggNode"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckForward/inputTggNode"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckMapping">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckMapping/inputTggNode"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckMapping">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckMapping/inputTggNode"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/conflictCheckBackward/inputTggNode"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/conflictCheckBackward/inputTggNode"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeForward/checkAttributeFormulae"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeForward/checkAttributeFormulae"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/synchronizeBackward/checkAttributeFormulae"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/synchronizeBackward/checkAttributeFormulae"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairForward/checkAttributeFormulae"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairForward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairForward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairForward/checkAttributeFormulae"/>
         </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeIn_r5/repairBackward/checkAttributeFormulae"/>
-        </genOperations>
-      </genClasses>
-      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8">
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/addElementActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/moveElementActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/changeAttributeActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformMappingActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformBackwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckMappingActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckBackwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeBackwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairBackwardActivity"/>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/addElement">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/addElement/parameters"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/changeAttributeValues">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/changeAttributeValues/correspondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/changeAttributeValues/ruleParameters"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/moveElement">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/moveElement/correspondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/moveElement/oldPreviousCorrespondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/moveElement/newPreviousCorrespondenceNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformForward/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformForward/considerAllLhsCorrNodes"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformMapping">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformMapping/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformMapping/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformMapping/considerAllLhsCorrNodes"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformBackward/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/transformBackward/considerAllLhsCorrNodes"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckForward/inputTggNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckMapping">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckMapping/inputTggNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/conflictCheckBackward/inputTggNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeForward/checkAttributeFormulae"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/synchronizeBackward/checkAttributeFormulae"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairForward/checkAttributeFormulae"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeOut_r8/repairBackward/checkAttributeFormulae"/>
-        </genOperations>
-      </genClasses>
-      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3">
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/addElementActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/moveElementActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/changeAttributeActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformMappingActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformBackwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckMappingActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckBackwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeBackwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairBackwardActivity"/>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/addElement">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/addElement/parameters"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/changeAttributeValues">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/changeAttributeValues/correspondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/changeAttributeValues/ruleParameters"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/moveElement">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/moveElement/correspondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/moveElement/oldPreviousCorrespondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/moveElement/newPreviousCorrespondenceNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformForward/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformForward/considerAllLhsCorrNodes"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformMapping">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformMapping/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformMapping/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformMapping/considerAllLhsCorrNodes"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformBackward/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/transformBackward/considerAllLhsCorrNodes"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckForward/inputTggNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckMapping">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckMapping/inputTggNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/conflictCheckBackward/inputTggNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeForward/checkAttributeFormulae"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/synchronizeBackward/checkAttributeFormulae"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairForward/checkAttributeFormulae"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionSchema2petrinetDisjunctiveNode_r3/repairBackward/checkAttributeFormulae"/>
-        </genOperations>
-      </genClasses>
-      <genClasses ecoreClass="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7">
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/addElementActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/moveElementActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/changeAttributeActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformMappingActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformBackwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckMappingActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckBackwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeBackwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairForwardActivity"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairBackwardActivity"/>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/addElement">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/addElement/parameters"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/changeAttributeValues">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/changeAttributeValues/correspondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/changeAttributeValues/ruleParameters"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/moveElement">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/moveElement/correspondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/moveElement/oldPreviousCorrespondenceNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/moveElement/newPreviousCorrespondenceNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformForward/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformForward/considerAllLhsCorrNodes"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformMapping">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformMapping/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformMapping/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformMapping/considerAllLhsCorrNodes"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformBackward/checkAttributeFormulae"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/transformBackward/considerAllLhsCorrNodes"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckForward/inputTggNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckMapping">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckMapping/inputTggNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/conflictCheckBackward/inputTggNode"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeForward/checkAttributeFormulae"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/synchronizeBackward/checkAttributeFormulae"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairForward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairForward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairForward/checkAttributeFormulae"/>
-        </genOperations>
-        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairBackward">
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairBackward/inputTggNode"/>
-          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetDisjunctiveNodeIn_r7/repairBackward/checkAttributeFormulae"/>
+        <genOperations ecoreOperation="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairBackward">
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairBackward/inputTggNode"/>
+          <genParameters ecoreParameter="productionschema2petrinet.ecore#//generated/productionschema2petrinetConjunctiveNodeOut_r6/repairBackward/checkAttributeFormulae"/>
         </genOperations>
       </genClasses>
     </nestedGenPackages>

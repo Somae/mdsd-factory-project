@@ -468,6 +468,88 @@ public interface Productionschema2petrinetPackage extends EPackage {
 	int CORR_EDGE_OPERATION_COUNT = Mote2Package.TGG_NODE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link de.mdelab.mltgg.productionschema2petrinet.impl.CorrMaterialImpl <em>Corr Material</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.mdelab.mltgg.productionschema2petrinet.impl.CorrMaterialImpl
+	 * @see de.mdelab.mltgg.productionschema2petrinet.impl.Productionschema2petrinetPackageImpl#getCorrMaterial()
+	 * @generated
+	 */
+	int CORR_MATERIAL = 5;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORR_MATERIAL__ANNOTATIONS = Mote2Package.TGG_NODE__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Next</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORR_MATERIAL__NEXT = Mote2Package.TGG_NODE__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>Previous</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORR_MATERIAL__PREVIOUS = Mote2Package.TGG_NODE__PREVIOUS;
+
+	/**
+	 * The feature id for the '<em><b>Left Nodes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORR_MATERIAL__LEFT_NODES = Mote2Package.TGG_NODE__LEFT_NODES;
+
+	/**
+	 * The feature id for the '<em><b>Right Nodes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORR_MATERIAL__RIGHT_NODES = Mote2Package.TGG_NODE__RIGHT_NODES;
+
+	/**
+	 * The feature id for the '<em><b>Created By</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORR_MATERIAL__CREATED_BY = Mote2Package.TGG_NODE__CREATED_BY;
+
+	/**
+	 * The number of structural features of the '<em>Corr Material</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORR_MATERIAL_FEATURE_COUNT = Mote2Package.TGG_NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Corr Material</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORR_MATERIAL_OPERATION_COUNT = Mote2Package.TGG_NODE_OPERATION_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.CorrAxiom <em>Corr Axiom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -516,6 +598,16 @@ public interface Productionschema2petrinetPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getCorrEdge();
+
+	/**
+	 * Returns the meta object for class '{@link de.mdelab.mltgg.productionschema2petrinet.CorrMaterial <em>Corr Material</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Corr Material</em>'.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.CorrMaterial
+	 * @generated
+	 */
+	EClass getCorrMaterial();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -589,6 +681,16 @@ public interface Productionschema2petrinetPackage extends EPackage {
 		 * @generated
 		 */
 		EClass CORR_EDGE = eINSTANCE.getCorrEdge();
+
+		/**
+		 * The meta object literal for the '{@link de.mdelab.mltgg.productionschema2petrinet.impl.CorrMaterialImpl <em>Corr Material</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.mdelab.mltgg.productionschema2petrinet.impl.CorrMaterialImpl
+		 * @see de.mdelab.mltgg.productionschema2petrinet.impl.Productionschema2petrinetPackageImpl#getCorrMaterial()
+		 * @generated
+		 */
+		EClass CORR_MATERIAL = eINSTANCE.getCorrMaterial();
 
 	}
 

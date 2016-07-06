@@ -4,6 +4,7 @@ package productionschema.impl;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -11,6 +12,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -33,6 +35,7 @@ import productionschema.ProductionschemaPackage;
  *   <li>{@link productionschema.impl.ProductionSchemaImpl#getOwnedLinkableNodes <em>Owned Linkable Nodes</em>}</li>
  *   <li>{@link productionschema.impl.ProductionSchemaImpl#getOwnedLinks <em>Owned Links</em>}</li>
  *   <li>{@link productionschema.impl.ProductionSchemaImpl#getOwnedMaterials <em>Owned Materials</em>}</li>
+ *   <li>{@link productionschema.impl.ProductionSchemaImpl#getDescription <em>Description</em>}</li>
  * </ul>
  *
  * @generated
@@ -67,6 +70,26 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 	 * @ordered
 	 */
 	protected EList<Material> ownedMaterials;
+
+	/**
+	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DESCRIPTION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected String description = DESCRIPTION_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -128,6 +151,27 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getDescription() {
+		return description;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDescription(String newDescription) {
+		String oldDescription = description;
+		description = newDescription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.PRODUCTION_SCHEMA__DESCRIPTION, oldDescription, description));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -155,6 +199,8 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 				return getOwnedLinks();
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIALS:
 				return getOwnedMaterials();
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__DESCRIPTION:
+				return getDescription();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -180,6 +226,9 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 				getOwnedMaterials().clear();
 				getOwnedMaterials().addAll((Collection<? extends Material>)newValue);
 				return;
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__DESCRIPTION:
+				setDescription((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -201,6 +250,9 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIALS:
 				getOwnedMaterials().clear();
 				return;
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__DESCRIPTION:
+				setDescription(DESCRIPTION_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -219,8 +271,26 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 				return ownedLinks != null && !ownedLinks.isEmpty();
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_MATERIALS:
 				return ownedMaterials != null && !ownedMaterials.isEmpty();
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__DESCRIPTION:
+				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (description: ");
+		result.append(description);
+		result.append(')');
+		return result.toString();
 	}
 
 } //ProductionSchemaImpl

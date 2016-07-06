@@ -64,7 +64,7 @@ public interface FactoryPackage extends EPackage {
 	 * @see factory.impl.FactoryPackageImpl#getIdentifiableElement()
 	 * @generated
 	 */
-	int IDENTIFIABLE_ELEMENT = 5;
+	int IDENTIFIABLE_ELEMENT = 6;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -149,13 +149,13 @@ public interface FactoryPackage extends EPackage {
 	int FACTORY_SPECIFICATION__OWNED_EMPLOYEES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Owned Machines</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Owned Product Parts</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY_SPECIFICATION__OWNED_MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+	int FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Owned Products</b></em>' containment reference list.
@@ -222,13 +222,58 @@ public interface FactoryPackage extends EPackage {
 	int FACTORY__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
 
 	/**
-	 * The feature id for the '<em><b>Address</b></em>' attribute.
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__ADDRESS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+	int FACTORY__DESCRIPTION = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Street Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTORY__STREET_NUMBER = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Street</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTORY__STREET = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>City</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTORY__CITY = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Postal Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTORY__POSTAL_CODE = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Country</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTORY__COUNTRY = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Length</b></em>' attribute.
@@ -237,7 +282,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__LENGTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+	int FACTORY__LENGTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -246,7 +291,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__WIDTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+	int FACTORY__WIDTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Employees</b></em>' reference list.
@@ -255,7 +300,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__EMPLOYEES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
+	int FACTORY__EMPLOYEES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Machines</b></em>' reference list.
@@ -264,16 +309,25 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 4;
+	int FACTORY__MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Created Products</b></em>' reference list.
+	 * The feature id for the '<em><b>Created Product Parts</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__CREATED_PRODUCTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 5;
+	int FACTORY__CREATED_PRODUCT_PARTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>Owned Machines</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTORY__OWNED_MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Factory</em>' class.
@@ -282,7 +336,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 6;
+	int FACTORY_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of operations of the '<em>Factory</em>' class.
@@ -441,13 +495,40 @@ public interface FactoryPackage extends EPackage {
 	int PRODUCT__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
 
 	/**
-	 * The feature id for the '<em><b>Construction Process</b></em>' containment reference.
+	 * The feature id for the '<em><b>Production Start Year</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__CONSTRUCTION_PROCESS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+	int PRODUCT__PRODUCTION_START_YEAR = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Production End Year</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT__PRODUCTION_END_YEAR = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Image Path</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT__IMAGE_PATH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Owned Product Versions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT__OWNED_PRODUCT_VERSIONS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Product</em>' class.
@@ -456,7 +537,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+	int PRODUCT_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>Product</em>' class.
@@ -466,6 +547,153 @@ public interface FactoryPackage extends EPackage {
 	 * @ordered
 	 */
 	int PRODUCT_OPERATION_COUNT = IDENTIFIABLE_ELEMENT_OPERATION_COUNT + 0;
+
+
+	/**
+	 * The meta object id for the '{@link factory.impl.ProductPartImpl <em>Product Part</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see factory.impl.ProductPartImpl
+	 * @see factory.impl.FactoryPackageImpl#getProductPart()
+	 * @generated
+	 */
+	int PRODUCT_PART = 5;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_PART__ID = IDENTIFIABLE_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_PART__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
+
+	/**
+	 * The feature id for the '<em><b>Construction Process</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_PART__CONSTRUCTION_PROCESS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Image Path</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_PART__IMAGE_PATH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Supported Product Versions</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_PART__SUPPORTED_PRODUCT_VERSIONS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Product Part</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_PART_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Product Part</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_PART_OPERATION_COUNT = IDENTIFIABLE_ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link factory.impl.ProductVersionImpl <em>Product Version</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see factory.impl.ProductVersionImpl
+	 * @see factory.impl.FactoryPackageImpl#getProductVersion()
+	 * @generated
+	 */
+	int PRODUCT_VERSION = 7;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_VERSION__ID = IDENTIFIABLE_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_VERSION__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_VERSION__DESCRIPTION = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Version Start Year</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_VERSION__VERSION_START_YEAR = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Version End Year</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_VERSION__VERSION_END_YEAR = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Product Version</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_VERSION_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Product Version</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_VERSION_OPERATION_COUNT = IDENTIFIABLE_ELEMENT_OPERATION_COUNT + 0;
 
 
 	/**
@@ -501,15 +729,15 @@ public interface FactoryPackage extends EPackage {
 	EReference getFactorySpecification_OwnedEmployees();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link factory.FactorySpecification#getOwnedMachines <em>Owned Machines</em>}'.
+	 * Returns the meta object for the containment reference list '{@link factory.FactorySpecification#getOwnedProductParts <em>Owned Product Parts</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Owned Machines</em>'.
-	 * @see factory.FactorySpecification#getOwnedMachines()
+	 * @return the meta object for the containment reference list '<em>Owned Product Parts</em>'.
+	 * @see factory.FactorySpecification#getOwnedProductParts()
 	 * @see #getFactorySpecification()
 	 * @generated
 	 */
-	EReference getFactorySpecification_OwnedMachines();
+	EReference getFactorySpecification_OwnedProductParts();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link factory.FactorySpecification#getOwnedProducts <em>Owned Products</em>}'.
@@ -544,15 +772,70 @@ public interface FactoryPackage extends EPackage {
 	EClass getFactory();
 
 	/**
-	 * Returns the meta object for the attribute '{@link factory.Factory#getAddress <em>Address</em>}'.
+	 * Returns the meta object for the attribute '{@link factory.Factory#getDescription <em>Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Address</em>'.
-	 * @see factory.Factory#getAddress()
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see factory.Factory#getDescription()
 	 * @see #getFactory()
 	 * @generated
 	 */
-	EAttribute getFactory_Address();
+	EAttribute getFactory_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.Factory#getStreetNumber <em>Street Number</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Street Number</em>'.
+	 * @see factory.Factory#getStreetNumber()
+	 * @see #getFactory()
+	 * @generated
+	 */
+	EAttribute getFactory_StreetNumber();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.Factory#getStreet <em>Street</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Street</em>'.
+	 * @see factory.Factory#getStreet()
+	 * @see #getFactory()
+	 * @generated
+	 */
+	EAttribute getFactory_Street();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.Factory#getCity <em>City</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>City</em>'.
+	 * @see factory.Factory#getCity()
+	 * @see #getFactory()
+	 * @generated
+	 */
+	EAttribute getFactory_City();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.Factory#getPostalCode <em>Postal Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Postal Code</em>'.
+	 * @see factory.Factory#getPostalCode()
+	 * @see #getFactory()
+	 * @generated
+	 */
+	EAttribute getFactory_PostalCode();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.Factory#getCountry <em>Country</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Country</em>'.
+	 * @see factory.Factory#getCountry()
+	 * @see #getFactory()
+	 * @generated
+	 */
+	EAttribute getFactory_Country();
 
 	/**
 	 * Returns the meta object for the attribute '{@link factory.Factory#getLength <em>Length</em>}'.
@@ -599,15 +882,26 @@ public interface FactoryPackage extends EPackage {
 	EReference getFactory_Machines();
 
 	/**
-	 * Returns the meta object for the reference list '{@link factory.Factory#getCreatedProducts <em>Created Products</em>}'.
+	 * Returns the meta object for the reference list '{@link factory.Factory#getCreatedProductParts <em>Created Product Parts</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Created Products</em>'.
-	 * @see factory.Factory#getCreatedProducts()
+	 * @return the meta object for the reference list '<em>Created Product Parts</em>'.
+	 * @see factory.Factory#getCreatedProductParts()
 	 * @see #getFactory()
 	 * @generated
 	 */
-	EReference getFactory_CreatedProducts();
+	EReference getFactory_CreatedProductParts();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link factory.Factory#getOwnedMachines <em>Owned Machines</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Owned Machines</em>'.
+	 * @see factory.Factory#getOwnedMachines()
+	 * @see #getFactory()
+	 * @generated
+	 */
+	EReference getFactory_OwnedMachines();
 
 	/**
 	 * Returns the meta object for class '{@link factory.Machine <em>Machine</em>}'.
@@ -673,15 +967,91 @@ public interface FactoryPackage extends EPackage {
 	EClass getProduct();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link factory.Product#getConstructionProcess <em>Construction Process</em>}'.
+	 * Returns the meta object for the attribute '{@link factory.Product#getProductionStartYear <em>Production Start Year</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Construction Process</em>'.
-	 * @see factory.Product#getConstructionProcess()
+	 * @return the meta object for the attribute '<em>Production Start Year</em>'.
+	 * @see factory.Product#getProductionStartYear()
 	 * @see #getProduct()
 	 * @generated
 	 */
-	EReference getProduct_ConstructionProcess();
+	EAttribute getProduct_ProductionStartYear();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.Product#getProductionEndYear <em>Production End Year</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Production End Year</em>'.
+	 * @see factory.Product#getProductionEndYear()
+	 * @see #getProduct()
+	 * @generated
+	 */
+	EAttribute getProduct_ProductionEndYear();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.Product#getImagePath <em>Image Path</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Image Path</em>'.
+	 * @see factory.Product#getImagePath()
+	 * @see #getProduct()
+	 * @generated
+	 */
+	EAttribute getProduct_ImagePath();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link factory.Product#getOwnedProductVersions <em>Owned Product Versions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Owned Product Versions</em>'.
+	 * @see factory.Product#getOwnedProductVersions()
+	 * @see #getProduct()
+	 * @generated
+	 */
+	EReference getProduct_OwnedProductVersions();
+
+	/**
+	 * Returns the meta object for class '{@link factory.ProductPart <em>Product Part</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Product Part</em>'.
+	 * @see factory.ProductPart
+	 * @generated
+	 */
+	EClass getProductPart();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link factory.ProductPart#getConstructionProcess <em>Construction Process</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Construction Process</em>'.
+	 * @see factory.ProductPart#getConstructionProcess()
+	 * @see #getProductPart()
+	 * @generated
+	 */
+	EReference getProductPart_ConstructionProcess();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.ProductPart#getImagePath <em>Image Path</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Image Path</em>'.
+	 * @see factory.ProductPart#getImagePath()
+	 * @see #getProductPart()
+	 * @generated
+	 */
+	EAttribute getProductPart_ImagePath();
+
+	/**
+	 * Returns the meta object for the reference list '{@link factory.ProductPart#getSupportedProductVersions <em>Supported Product Versions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Supported Product Versions</em>'.
+	 * @see factory.ProductPart#getSupportedProductVersions()
+	 * @see #getProductPart()
+	 * @generated
+	 */
+	EReference getProductPart_SupportedProductVersions();
 
 	/**
 	 * Returns the meta object for class '{@link factory.IdentifiableElement <em>Identifiable Element</em>}'.
@@ -714,6 +1084,49 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getIdentifiableElement_Label();
+
+	/**
+	 * Returns the meta object for class '{@link factory.ProductVersion <em>Product Version</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Product Version</em>'.
+	 * @see factory.ProductVersion
+	 * @generated
+	 */
+	EClass getProductVersion();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.ProductVersion#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see factory.ProductVersion#getDescription()
+	 * @see #getProductVersion()
+	 * @generated
+	 */
+	EAttribute getProductVersion_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.ProductVersion#getVersionStartYear <em>Version Start Year</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version Start Year</em>'.
+	 * @see factory.ProductVersion#getVersionStartYear()
+	 * @see #getProductVersion()
+	 * @generated
+	 */
+	EAttribute getProductVersion_VersionStartYear();
+
+	/**
+	 * Returns the meta object for the attribute '{@link factory.ProductVersion#getVersionEndYear <em>Version End Year</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version End Year</em>'.
+	 * @see factory.ProductVersion#getVersionEndYear()
+	 * @see #getProductVersion()
+	 * @generated
+	 */
+	EAttribute getProductVersion_VersionEndYear();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -765,12 +1178,12 @@ public interface FactoryPackage extends EPackage {
 		EReference FACTORY_SPECIFICATION__OWNED_EMPLOYEES = eINSTANCE.getFactorySpecification_OwnedEmployees();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned Machines</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Owned Product Parts</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACTORY_SPECIFICATION__OWNED_MACHINES = eINSTANCE.getFactorySpecification_OwnedMachines();
+		EReference FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS = eINSTANCE.getFactorySpecification_OwnedProductParts();
 
 		/**
 		 * The meta object literal for the '<em><b>Owned Products</b></em>' containment reference list feature.
@@ -799,12 +1212,52 @@ public interface FactoryPackage extends EPackage {
 		EClass FACTORY = eINSTANCE.getFactory();
 
 		/**
-		 * The meta object literal for the '<em><b>Address</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute FACTORY__ADDRESS = eINSTANCE.getFactory_Address();
+		EAttribute FACTORY__DESCRIPTION = eINSTANCE.getFactory_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Street Number</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FACTORY__STREET_NUMBER = eINSTANCE.getFactory_StreetNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Street</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FACTORY__STREET = eINSTANCE.getFactory_Street();
+
+		/**
+		 * The meta object literal for the '<em><b>City</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FACTORY__CITY = eINSTANCE.getFactory_City();
+
+		/**
+		 * The meta object literal for the '<em><b>Postal Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FACTORY__POSTAL_CODE = eINSTANCE.getFactory_PostalCode();
+
+		/**
+		 * The meta object literal for the '<em><b>Country</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FACTORY__COUNTRY = eINSTANCE.getFactory_Country();
 
 		/**
 		 * The meta object literal for the '<em><b>Length</b></em>' attribute feature.
@@ -839,12 +1292,20 @@ public interface FactoryPackage extends EPackage {
 		EReference FACTORY__MACHINES = eINSTANCE.getFactory_Machines();
 
 		/**
-		 * The meta object literal for the '<em><b>Created Products</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Created Product Parts</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACTORY__CREATED_PRODUCTS = eINSTANCE.getFactory_CreatedProducts();
+		EReference FACTORY__CREATED_PRODUCT_PARTS = eINSTANCE.getFactory_CreatedProductParts();
+
+		/**
+		 * The meta object literal for the '<em><b>Owned Machines</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACTORY__OWNED_MACHINES = eINSTANCE.getFactory_OwnedMachines();
 
 		/**
 		 * The meta object literal for the '{@link factory.impl.MachineImpl <em>Machine</em>}' class.
@@ -901,12 +1362,70 @@ public interface FactoryPackage extends EPackage {
 		EClass PRODUCT = eINSTANCE.getProduct();
 
 		/**
+		 * The meta object literal for the '<em><b>Production Start Year</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT__PRODUCTION_START_YEAR = eINSTANCE.getProduct_ProductionStartYear();
+
+		/**
+		 * The meta object literal for the '<em><b>Production End Year</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT__PRODUCTION_END_YEAR = eINSTANCE.getProduct_ProductionEndYear();
+
+		/**
+		 * The meta object literal for the '<em><b>Image Path</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT__IMAGE_PATH = eINSTANCE.getProduct_ImagePath();
+
+		/**
+		 * The meta object literal for the '<em><b>Owned Product Versions</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT__OWNED_PRODUCT_VERSIONS = eINSTANCE.getProduct_OwnedProductVersions();
+
+		/**
+		 * The meta object literal for the '{@link factory.impl.ProductPartImpl <em>Product Part</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see factory.impl.ProductPartImpl
+		 * @see factory.impl.FactoryPackageImpl#getProductPart()
+		 * @generated
+		 */
+		EClass PRODUCT_PART = eINSTANCE.getProductPart();
+
+		/**
 		 * The meta object literal for the '<em><b>Construction Process</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT__CONSTRUCTION_PROCESS = eINSTANCE.getProduct_ConstructionProcess();
+		EReference PRODUCT_PART__CONSTRUCTION_PROCESS = eINSTANCE.getProductPart_ConstructionProcess();
+
+		/**
+		 * The meta object literal for the '<em><b>Image Path</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT_PART__IMAGE_PATH = eINSTANCE.getProductPart_ImagePath();
+
+		/**
+		 * The meta object literal for the '<em><b>Supported Product Versions</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_PART__SUPPORTED_PRODUCT_VERSIONS = eINSTANCE.getProductPart_SupportedProductVersions();
 
 		/**
 		 * The meta object literal for the '{@link factory.impl.IdentifiableElementImpl <em>Identifiable Element</em>}' class.
@@ -933,6 +1452,40 @@ public interface FactoryPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute IDENTIFIABLE_ELEMENT__LABEL = eINSTANCE.getIdentifiableElement_Label();
+
+		/**
+		 * The meta object literal for the '{@link factory.impl.ProductVersionImpl <em>Product Version</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see factory.impl.ProductVersionImpl
+		 * @see factory.impl.FactoryPackageImpl#getProductVersion()
+		 * @generated
+		 */
+		EClass PRODUCT_VERSION = eINSTANCE.getProductVersion();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT_VERSION__DESCRIPTION = eINSTANCE.getProductVersion_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Version Start Year</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT_VERSION__VERSION_START_YEAR = eINSTANCE.getProductVersion_VersionStartYear();
+
+		/**
+		 * The meta object literal for the '<em><b>Version End Year</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT_VERSION__VERSION_END_YEAR = eINSTANCE.getProductVersion_VersionEndYear();
 
 	}
 

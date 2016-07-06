@@ -66,6 +66,8 @@ public class Productionschema2petrinetFactoryImpl extends EFactoryImpl implement
 			return createCorrMaterialLink();
 		case Productionschema2petrinetPackage.CORR_EDGE:
 			return createCorrEdge();
+		case Productionschema2petrinetPackage.CORR_MATERIAL:
+			return createCorrMaterial();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -119,6 +121,16 @@ public class Productionschema2petrinetFactoryImpl extends EFactoryImpl implement
 	public CorrEdge createCorrEdge() {
 		CorrEdgeImpl corrEdge = new CorrEdgeImpl();
 		return corrEdge;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CorrMaterial createCorrMaterial() {
+		CorrMaterialImpl corrMaterial = new CorrMaterialImpl();
+		return corrMaterial;
 	}
 
 	/**

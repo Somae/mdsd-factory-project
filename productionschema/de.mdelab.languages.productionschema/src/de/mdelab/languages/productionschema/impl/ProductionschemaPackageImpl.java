@@ -178,6 +178,15 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getProductionSchema_Description() {
+		return (EAttribute)productionSchemaEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getConjunctiveNode() {
 		return conjunctiveNodeEClass;
 	}
@@ -331,6 +340,7 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 		createEReference(productionSchemaEClass, PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES);
 		createEReference(productionSchemaEClass, PRODUCTION_SCHEMA__OWNED_LINKS);
 		createEReference(productionSchemaEClass, PRODUCTION_SCHEMA__OWNED_MATERIALS);
+		createEAttribute(productionSchemaEClass, PRODUCTION_SCHEMA__DESCRIPTION);
 
 		conjunctiveNodeEClass = createEClass(CONJUNCTIVE_NODE);
 
@@ -392,6 +402,7 @@ public class ProductionschemaPackageImpl extends EPackageImpl implements Product
 		initEReference(getProductionSchema_OwnedLinkableNodes(), this.getLinkableNode(), null, "ownedLinkableNodes", null, 0, -1, ProductionSchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductionSchema_OwnedLinks(), this.getLink(), null, "ownedLinks", null, 0, -1, ProductionSchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductionSchema_OwnedMaterials(), this.getMaterial(), null, "ownedMaterials", null, 0, -1, ProductionSchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductionSchema_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductionSchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(conjunctiveNodeEClass, ConjunctiveNode.class, "ConjunctiveNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

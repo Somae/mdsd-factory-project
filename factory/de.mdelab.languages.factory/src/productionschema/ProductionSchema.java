@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link productionschema.ProductionSchema#getOwnedLinkableNodes <em>Owned Linkable Nodes</em>}</li>
  *   <li>{@link productionschema.ProductionSchema#getOwnedLinks <em>Owned Links</em>}</li>
  *   <li>{@link productionschema.ProductionSchema#getOwnedMaterials <em>Owned Materials</em>}</li>
+ *   <li>{@link productionschema.ProductionSchema#getDescription <em>Description</em>}</li>
  * </ul>
  *
  * @see productionschema.ProductionschemaPackage#getProductionSchema()
@@ -72,5 +73,31 @@ public interface ProductionSchema extends EObject {
 	 * @generated
 	 */
 	EList<Material> getOwnedMaterials();
+
+	/**
+	 * Returns the value of the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Description</em>' attribute.
+	 * @see #setDescription(String)
+	 * @see productionschema.ProductionschemaPackage#getProductionSchema_Description()
+	 * @model
+	 * @generated
+	 */
+	String getDescription();
+
+	/**
+	 * Sets the value of the '{@link productionschema.ProductionSchema#getDescription <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Description</em>' attribute.
+	 * @see #getDescription()
+	 * @generated
+	 */
+	void setDescription(String value);
 
 } // ProductionSchema

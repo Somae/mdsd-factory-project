@@ -67,6 +67,24 @@ public interface FactoryFactory extends EFactory {
 	Product createProduct();
 
 	/**
+	 * Returns a new object of class '<em>Product Part</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Product Part</em>'.
+	 * @generated
+	 */
+	ProductPart createProductPart();
+
+	/**
+	 * Returns a new object of class '<em>Product Version</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Product Version</em>'.
+	 * @generated
+	 */
+	ProductVersion createProductVersion();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

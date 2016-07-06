@@ -3,6 +3,7 @@
 package factory.provider;
 
 
+import factory.FactoryFactory;
 import factory.FactoryPackage;
 import factory.Product;
 
@@ -14,10 +15,10 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EStructuralFeature;
 
+import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-
-import productionschema.ProductionschemaFactory;
 
 /**
  * This is the item provider adapter for a {@link factory.Product} object.
@@ -47,8 +48,77 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addProductionStartYearPropertyDescriptor(object);
+			addProductionEndYearPropertyDescriptor(object);
+			addImagePathPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Production Start Year feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addProductionStartYearPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Product_productionStartYear_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Product_productionStartYear_feature", "_UI_Product_type"),
+				 FactoryPackage.Literals.PRODUCT__PRODUCTION_START_YEAR,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Production End Year feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addProductionEndYearPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Product_productionEndYear_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Product_productionEndYear_feature", "_UI_Product_type"),
+				 FactoryPackage.Literals.PRODUCT__PRODUCTION_END_YEAR,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Image Path feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addImagePathPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Product_imagePath_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Product_imagePath_feature", "_UI_Product_type"),
+				 FactoryPackage.Literals.PRODUCT__IMAGE_PATH,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -63,7 +133,7 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FactoryPackage.Literals.PRODUCT__CONSTRUCTION_PROCESS);
+			childrenFeatures.add(FactoryPackage.Literals.PRODUCT__OWNED_PRODUCT_VERSIONS);
 		}
 		return childrenFeatures;
 	}
@@ -117,7 +187,12 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Product.class)) {
-			case FactoryPackage.PRODUCT__CONSTRUCTION_PROCESS:
+			case FactoryPackage.PRODUCT__PRODUCTION_START_YEAR:
+			case FactoryPackage.PRODUCT__PRODUCTION_END_YEAR:
+			case FactoryPackage.PRODUCT__IMAGE_PATH:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+			case FactoryPackage.PRODUCT__OWNED_PRODUCT_VERSIONS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -137,8 +212,8 @@ public class ProductItemProvider extends IdentifiableElementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FactoryPackage.Literals.PRODUCT__CONSTRUCTION_PROCESS,
-				 ProductionschemaFactory.eINSTANCE.createProductionSchema()));
+				(FactoryPackage.Literals.PRODUCT__OWNED_PRODUCT_VERSIONS,
+				 FactoryFactory.eINSTANCE.createProductVersion()));
 	}
 
 }

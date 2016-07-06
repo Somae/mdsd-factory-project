@@ -101,9 +101,23 @@ public class FactorySwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case FactoryPackage.PRODUCT_PART: {
+				ProductPart productPart = (ProductPart)theEObject;
+				T result = caseProductPart(productPart);
+				if (result == null) result = caseIdentifiableElement(productPart);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case FactoryPackage.IDENTIFIABLE_ELEMENT: {
 				IdentifiableElement identifiableElement = (IdentifiableElement)theEObject;
 				T result = caseIdentifiableElement(identifiableElement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FactoryPackage.PRODUCT_VERSION: {
+				ProductVersion productVersion = (ProductVersion)theEObject;
+				T result = caseProductVersion(productVersion);
+				if (result == null) result = caseIdentifiableElement(productVersion);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -187,6 +201,21 @@ public class FactorySwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Product Part</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Product Part</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProductPart(ProductPart object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Identifiable Element</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -198,6 +227,21 @@ public class FactorySwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseIdentifiableElement(IdentifiableElement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Product Version</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Product Version</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProductVersion(ProductVersion object) {
 		return null;
 	}
 

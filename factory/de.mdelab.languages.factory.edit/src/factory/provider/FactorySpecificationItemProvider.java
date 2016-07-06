@@ -89,7 +89,7 @@ public class FactorySpecificationItemProvider extends IdentifiableElementItemPro
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(FactoryPackage.Literals.FACTORY_SPECIFICATION__OWNED_FACTORIES);
 			childrenFeatures.add(FactoryPackage.Literals.FACTORY_SPECIFICATION__OWNED_EMPLOYEES);
-			childrenFeatures.add(FactoryPackage.Literals.FACTORY_SPECIFICATION__OWNED_MACHINES);
+			childrenFeatures.add(FactoryPackage.Literals.FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS);
 			childrenFeatures.add(FactoryPackage.Literals.FACTORY_SPECIFICATION__OWNED_PRODUCTS);
 		}
 		return childrenFeatures;
@@ -149,7 +149,7 @@ public class FactorySpecificationItemProvider extends IdentifiableElementItemPro
 				return;
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_FACTORIES:
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_EMPLOYEES:
-			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_MACHINES:
+			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS:
 			case FactoryPackage.FACTORY_SPECIFICATION__OWNED_PRODUCTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -180,8 +180,8 @@ public class FactorySpecificationItemProvider extends IdentifiableElementItemPro
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FactoryPackage.Literals.FACTORY_SPECIFICATION__OWNED_MACHINES,
-				 FactoryFactory.eINSTANCE.createMachine()));
+				(FactoryPackage.Literals.FACTORY_SPECIFICATION__OWNED_PRODUCT_PARTS,
+				 FactoryFactory.eINSTANCE.createProductPart()));
 
 		newChildDescriptors.add
 			(createChildParameter
