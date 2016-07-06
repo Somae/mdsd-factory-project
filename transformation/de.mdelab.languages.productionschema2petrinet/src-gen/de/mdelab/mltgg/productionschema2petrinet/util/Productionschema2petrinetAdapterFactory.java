@@ -96,6 +96,11 @@ public class Productionschema2petrinetAdapterFactory extends AdapterFactoryImpl 
 		}
 
 		@Override
+		public Adapter caseCorrMaterial(CorrMaterial object) {
+			return createCorrMaterialAdapter();
+		}
+
+		@Override
 		public Adapter caseMLAnnotatedElement(MLAnnotatedElement object) {
 			return createMLAnnotatedElementAdapter();
 		}
@@ -191,6 +196,20 @@ public class Productionschema2petrinetAdapterFactory extends AdapterFactoryImpl 
 	 * @generated
 	 */
 	public Adapter createCorrEdgeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.productionschema2petrinet.CorrMaterial <em>Corr Material</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.mdelab.mltgg.productionschema2petrinet.CorrMaterial
+	 * @generated
+	 */
+	public Adapter createCorrMaterialAdapter() {
 		return null;
 	}
 

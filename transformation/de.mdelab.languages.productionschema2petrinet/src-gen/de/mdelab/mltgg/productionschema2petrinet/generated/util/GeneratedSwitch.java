@@ -98,13 +98,24 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE: {
-			productionschema2petrinetConjunctiveNode productionschema2petrinetConjunctiveNode = (productionschema2petrinetConjunctiveNode) theEObject;
-			T result = caseproductionschema2petrinetConjunctiveNode(productionschema2petrinetConjunctiveNode);
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN: {
+			productionschema2petrinetConjunctiveNodeIn productionschema2petrinetConjunctiveNodeIn = (productionschema2petrinetConjunctiveNodeIn) theEObject;
+			T result = caseproductionschema2petrinetConjunctiveNodeIn(productionschema2petrinetConjunctiveNodeIn);
 			if (result == null)
-				result = caseOperationalRuleGroup(productionschema2petrinetConjunctiveNode);
+				result = caseOperationalRuleGroup(productionschema2petrinetConjunctiveNodeIn);
 			if (result == null)
-				result = caseOperationalMappingGroup(productionschema2petrinetConjunctiveNode);
+				result = caseOperationalMappingGroup(productionschema2petrinetConjunctiveNodeIn);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT: {
+			productionschema2petrinetConjunctiveNodeOut productionschema2petrinetConjunctiveNodeOut = (productionschema2petrinetConjunctiveNodeOut) theEObject;
+			T result = caseproductionschema2petrinetConjunctiveNodeOut(productionschema2petrinetConjunctiveNodeOut);
+			if (result == null)
+				result = caseOperationalRuleGroup(productionschema2petrinetConjunctiveNodeOut);
+			if (result == null)
+				result = caseOperationalMappingGroup(productionschema2petrinetConjunctiveNodeOut);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -120,28 +131,6 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN: {
-			productionschema2petrinetDisjunctiveNodeIn productionschema2petrinetDisjunctiveNodeIn = (productionschema2petrinetDisjunctiveNodeIn) theEObject;
-			T result = caseproductionschema2petrinetDisjunctiveNodeIn(productionschema2petrinetDisjunctiveNodeIn);
-			if (result == null)
-				result = caseOperationalRuleGroup(productionschema2petrinetDisjunctiveNodeIn);
-			if (result == null)
-				result = caseOperationalMappingGroup(productionschema2petrinetDisjunctiveNodeIn);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN: {
-			productionschema2petrinetConjunctiveNodeIn productionschema2petrinetConjunctiveNodeIn = (productionschema2petrinetConjunctiveNodeIn) theEObject;
-			T result = caseproductionschema2petrinetConjunctiveNodeIn(productionschema2petrinetConjunctiveNodeIn);
-			if (result == null)
-				result = caseOperationalRuleGroup(productionschema2petrinetConjunctiveNodeIn);
-			if (result == null)
-				result = caseOperationalMappingGroup(productionschema2petrinetConjunctiveNodeIn);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case GeneratedPackage.PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE: {
 			productionSchema2petrinetDisjunctiveNode productionSchema2petrinetDisjunctiveNode = (productionSchema2petrinetDisjunctiveNode) theEObject;
 			T result = caseproductionSchema2petrinetDisjunctiveNode(productionSchema2petrinetDisjunctiveNode);
@@ -153,13 +142,35 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT: {
-			productionschema2petrinetConjunctiveNodeOut productionschema2petrinetConjunctiveNodeOut = (productionschema2petrinetConjunctiveNodeOut) theEObject;
-			T result = caseproductionschema2petrinetConjunctiveNodeOut(productionschema2petrinetConjunctiveNodeOut);
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_MATERIAL: {
+			productionschema2petrinetMaterial productionschema2petrinetMaterial = (productionschema2petrinetMaterial) theEObject;
+			T result = caseproductionschema2petrinetMaterial(productionschema2petrinetMaterial);
 			if (result == null)
-				result = caseOperationalRuleGroup(productionschema2petrinetConjunctiveNodeOut);
+				result = caseOperationalRuleGroup(productionschema2petrinetMaterial);
 			if (result == null)
-				result = caseOperationalMappingGroup(productionschema2petrinetConjunctiveNodeOut);
+				result = caseOperationalMappingGroup(productionschema2petrinetMaterial);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE: {
+			productionschema2petrinetConjunctiveNode productionschema2petrinetConjunctiveNode = (productionschema2petrinetConjunctiveNode) theEObject;
+			T result = caseproductionschema2petrinetConjunctiveNode(productionschema2petrinetConjunctiveNode);
+			if (result == null)
+				result = caseOperationalRuleGroup(productionschema2petrinetConjunctiveNode);
+			if (result == null)
+				result = caseOperationalMappingGroup(productionschema2petrinetConjunctiveNode);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN: {
+			productionschema2petrinetDisjunctiveNodeIn productionschema2petrinetDisjunctiveNodeIn = (productionschema2petrinetDisjunctiveNodeIn) theEObject;
+			T result = caseproductionschema2petrinetDisjunctiveNodeIn(productionschema2petrinetDisjunctiveNodeIn);
+			if (result == null)
+				result = caseOperationalRuleGroup(productionschema2petrinetDisjunctiveNodeIn);
+			if (result == null)
+				result = caseOperationalMappingGroup(productionschema2petrinetDisjunctiveNodeIn);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -186,14 +197,58 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT_R6: {
-			productionschema2petrinetConjunctiveNodeOut_r6 productionschema2petrinetConjunctiveNodeOut_r6 = (productionschema2petrinetConjunctiveNodeOut_r6) theEObject;
-			T result = caseproductionschema2petrinetConjunctiveNodeOut_r6(
-					productionschema2petrinetConjunctiveNodeOut_r6);
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT_R8: {
+			productionschema2petrinetDisjunctiveNodeOut_r8 productionschema2petrinetDisjunctiveNodeOut_r8 = (productionschema2petrinetDisjunctiveNodeOut_r8) theEObject;
+			T result = caseproductionschema2petrinetDisjunctiveNodeOut_r8(
+					productionschema2petrinetDisjunctiveNodeOut_r8);
 			if (result == null)
-				result = caseOperationalRule(productionschema2petrinetConjunctiveNodeOut_r6);
+				result = caseOperationalRule(productionschema2petrinetDisjunctiveNodeOut_r8);
 			if (result == null)
-				result = caseOperationalMapping(productionschema2petrinetConjunctiveNodeOut_r6);
+				result = caseOperationalMapping(productionschema2petrinetDisjunctiveNodeOut_r8);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_MATERIAL_R9: {
+			productionschema2petrinetMaterial_r9 productionschema2petrinetMaterial_r9 = (productionschema2petrinetMaterial_r9) theEObject;
+			T result = caseproductionschema2petrinetMaterial_r9(productionschema2petrinetMaterial_r9);
+			if (result == null)
+				result = caseOperationalRule(productionschema2petrinetMaterial_r9);
+			if (result == null)
+				result = caseOperationalMapping(productionschema2petrinetMaterial_r9);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7: {
+			productionschema2petrinetDisjunctiveNodeIn_r7 productionschema2petrinetDisjunctiveNodeIn_r7 = (productionschema2petrinetDisjunctiveNodeIn_r7) theEObject;
+			T result = caseproductionschema2petrinetDisjunctiveNodeIn_r7(productionschema2petrinetDisjunctiveNodeIn_r7);
+			if (result == null)
+				result = caseOperationalRule(productionschema2petrinetDisjunctiveNodeIn_r7);
+			if (result == null)
+				result = caseOperationalMapping(productionschema2petrinetDisjunctiveNodeIn_r7);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3: {
+			productionSchema2petrinetDisjunctiveNode_r3 productionSchema2petrinetDisjunctiveNode_r3 = (productionSchema2petrinetDisjunctiveNode_r3) theEObject;
+			T result = caseproductionSchema2petrinetDisjunctiveNode_r3(productionSchema2petrinetDisjunctiveNode_r3);
+			if (result == null)
+				result = caseOperationalRule(productionSchema2petrinetDisjunctiveNode_r3);
+			if (result == null)
+				result = caseOperationalMapping(productionSchema2petrinetDisjunctiveNode_r3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5: {
+			productionschema2petrinetConjunctiveNodeIn_r5 productionschema2petrinetConjunctiveNodeIn_r5 = (productionschema2petrinetConjunctiveNodeIn_r5) theEObject;
+			T result = caseproductionschema2petrinetConjunctiveNodeIn_r5(productionschema2petrinetConjunctiveNodeIn_r5);
+			if (result == null)
+				result = caseOperationalRule(productionschema2petrinetConjunctiveNodeIn_r5);
+			if (result == null)
+				result = caseOperationalMapping(productionschema2petrinetConjunctiveNodeIn_r5);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -220,47 +275,14 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_IN_R5: {
-			productionschema2petrinetConjunctiveNodeIn_r5 productionschema2petrinetConjunctiveNodeIn_r5 = (productionschema2petrinetConjunctiveNodeIn_r5) theEObject;
-			T result = caseproductionschema2petrinetConjunctiveNodeIn_r5(productionschema2petrinetConjunctiveNodeIn_r5);
+		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_CONJUNCTIVE_NODE_OUT_R6: {
+			productionschema2petrinetConjunctiveNodeOut_r6 productionschema2petrinetConjunctiveNodeOut_r6 = (productionschema2petrinetConjunctiveNodeOut_r6) theEObject;
+			T result = caseproductionschema2petrinetConjunctiveNodeOut_r6(
+					productionschema2petrinetConjunctiveNodeOut_r6);
 			if (result == null)
-				result = caseOperationalRule(productionschema2petrinetConjunctiveNodeIn_r5);
+				result = caseOperationalRule(productionschema2petrinetConjunctiveNodeOut_r6);
 			if (result == null)
-				result = caseOperationalMapping(productionschema2petrinetConjunctiveNodeIn_r5);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_OUT_R8: {
-			productionschema2petrinetDisjunctiveNodeOut_r8 productionschema2petrinetDisjunctiveNodeOut_r8 = (productionschema2petrinetDisjunctiveNodeOut_r8) theEObject;
-			T result = caseproductionschema2petrinetDisjunctiveNodeOut_r8(
-					productionschema2petrinetDisjunctiveNodeOut_r8);
-			if (result == null)
-				result = caseOperationalRule(productionschema2petrinetDisjunctiveNodeOut_r8);
-			if (result == null)
-				result = caseOperationalMapping(productionschema2petrinetDisjunctiveNodeOut_r8);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case GeneratedPackage.PRODUCTION_SCHEMA2PETRINET_DISJUNCTIVE_NODE_R3: {
-			productionSchema2petrinetDisjunctiveNode_r3 productionSchema2petrinetDisjunctiveNode_r3 = (productionSchema2petrinetDisjunctiveNode_r3) theEObject;
-			T result = caseproductionSchema2petrinetDisjunctiveNode_r3(productionSchema2petrinetDisjunctiveNode_r3);
-			if (result == null)
-				result = caseOperationalRule(productionSchema2petrinetDisjunctiveNode_r3);
-			if (result == null)
-				result = caseOperationalMapping(productionSchema2petrinetDisjunctiveNode_r3);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case GeneratedPackage.PRODUCTIONSCHEMA2PETRINET_DISJUNCTIVE_NODE_IN_R7: {
-			productionschema2petrinetDisjunctiveNodeIn_r7 productionschema2petrinetDisjunctiveNodeIn_r7 = (productionschema2petrinetDisjunctiveNodeIn_r7) theEObject;
-			T result = caseproductionschema2petrinetDisjunctiveNodeIn_r7(productionschema2petrinetDisjunctiveNodeIn_r7);
-			if (result == null)
-				result = caseOperationalRule(productionschema2petrinetDisjunctiveNodeIn_r7);
-			if (result == null)
-				result = caseOperationalMapping(productionschema2petrinetDisjunctiveNodeIn_r7);
+				result = caseOperationalMapping(productionschema2petrinetConjunctiveNodeOut_r6);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -301,17 +323,32 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node In</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node In</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseproductionschema2petrinetConjunctiveNode(productionschema2petrinetConjunctiveNode object) {
+	public T caseproductionschema2petrinetConjunctiveNodeIn(productionschema2petrinetConjunctiveNodeIn object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node Out</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node Out</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseproductionschema2petrinetConjunctiveNodeOut(productionschema2petrinetConjunctiveNodeOut object) {
 		return null;
 	}
 
@@ -331,36 +368,6 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node In</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node In</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseproductionschema2petrinetDisjunctiveNodeIn(productionschema2petrinetDisjunctiveNodeIn object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node In</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node In</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseproductionschema2petrinetConjunctiveNodeIn(productionschema2petrinetConjunctiveNodeIn object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>production Schema2petrinet Disjunctive Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -376,17 +383,47 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node Out</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Material</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node Out</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Material</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseproductionschema2petrinetConjunctiveNodeOut(productionschema2petrinetConjunctiveNodeOut object) {
+	public T caseproductionschema2petrinetMaterial(productionschema2petrinetMaterial object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseproductionschema2petrinetConjunctiveNode(productionschema2petrinetConjunctiveNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node In</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node In</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseproductionschema2petrinetDisjunctiveNodeIn(productionschema2petrinetDisjunctiveNodeIn object) {
 		return null;
 	}
 
@@ -421,17 +458,77 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node Out r6</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node Out r8</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node Out r6</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node Out r8</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseproductionschema2petrinetConjunctiveNodeOut_r6(productionschema2petrinetConjunctiveNodeOut_r6 object) {
+	public T caseproductionschema2petrinetDisjunctiveNodeOut_r8(productionschema2petrinetDisjunctiveNodeOut_r8 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Material r9</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Material r9</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseproductionschema2petrinetMaterial_r9(productionschema2petrinetMaterial_r9 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node In r7</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node In r7</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseproductionschema2petrinetDisjunctiveNodeIn_r7(productionschema2petrinetDisjunctiveNodeIn_r7 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>production Schema2petrinet Disjunctive Node r3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>production Schema2petrinet Disjunctive Node r3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseproductionSchema2petrinetDisjunctiveNode_r3(productionSchema2petrinetDisjunctiveNode_r3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node In r5</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node In r5</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseproductionschema2petrinetConjunctiveNodeIn_r5(productionschema2petrinetConjunctiveNodeIn_r5 object) {
 		return null;
 	}
 
@@ -466,62 +563,17 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node In r5</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node Out r6</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node In r5</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Conjunctive Node Out r6</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseproductionschema2petrinetConjunctiveNodeIn_r5(productionschema2petrinetConjunctiveNodeIn_r5 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node Out r8</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node Out r8</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseproductionschema2petrinetDisjunctiveNodeOut_r8(productionschema2petrinetDisjunctiveNodeOut_r8 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>production Schema2petrinet Disjunctive Node r3</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>production Schema2petrinet Disjunctive Node r3</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseproductionSchema2petrinetDisjunctiveNode_r3(productionSchema2petrinetDisjunctiveNode_r3 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node In r7</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>productionschema2petrinet Disjunctive Node In r7</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseproductionschema2petrinetDisjunctiveNodeIn_r7(productionschema2petrinetDisjunctiveNodeIn_r7 object) {
+	public T caseproductionschema2petrinetConjunctiveNodeOut_r6(productionschema2petrinetConjunctiveNodeOut_r6 object) {
 		return null;
 	}
 

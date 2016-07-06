@@ -215,8 +215,8 @@
         </modelObjects>
         <modelObjects uuid="_SpQZQEDvEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_2Ieq8EDvEeahS4UZF2YDOg" name="link" incomingLinks="_WTeoQEDvEeahS4UZF2YDOg">
           <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//Link"/>
-          <attributeAssignments uuid="_cFdTUEECEeahS4UZF2YDOg">
-            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_kdn4IUECEeahS4UZF2YDOg" expressionString="nameVariable" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_87tgMkEZEeaFa9p7py_cQw">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_-nZl8UEZEeaFa9p7py_cQw" expressionString="nameVariable" expressionLanguageID="OCL"/>
             <feature xsi:type="ecore:EAttribute" href="http://www.mdelab.de/languages/productionschema#//IdentifiableElement/label"/>
           </attributeAssignments>
         </modelObjects>
@@ -233,8 +233,8 @@
         </modelObjects>
         <modelObjects uuid="_Q-tBUEECEeahS4UZF2YDOg" modifier="CREATE" incomingCorrespondenceLink="_V3CCMEECEeahS4UZF2YDOg" name="name" incomingLinks="_TaNacEECEeahS4UZF2YDOg">
           <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name"/>
-          <attributeAssignments uuid="_Ymi8cEECEeahS4UZF2YDOg">
-            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_nnnu8UECEeahS4UZF2YDOg" expressionString="nameVariable" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_BBVRwkEaEeaFa9p7py_cQw">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_B42IkUEaEeaFa9p7py_cQw" expressionString="nameVariable" expressionLanguageID="OCL"/>
             <feature xsi:type="ecore:EAttribute" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name/text"/>
           </attributeAssignments>
         </modelObjects>
@@ -261,10 +261,10 @@
         <correspondenceLinks uuid="_VelF8EECEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_TaNacEECEeahS4UZF2YDOg"/>
         <correspondenceLinks uuid="_V3CCMEECEeahS4UZF2YDOg" modifier="CREATE" source="_nze7UEDvEeahS4UZF2YDOg" target="_Q-tBUEECEeahS4UZF2YDOg"/>
       </correspondenceDomain>
-      <ruleParameters uuid="_r7k3dUECEeahS4UZF2YDOg" name="nameVariable">
+      <ruleParameters uuid="_epISgEEZEeaFa9p7py_cQw" name="nameVariable">
         <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_tlKEYUECEeahS4UZF2YDOg" expressionString="link.label" expressionLanguageID="OCL"/>
-        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_41YJgkEEEeahS4UZF2YDOg" expressionString="name.text" expressionLanguageID="OCL"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_j49NYUEZEeaFa9p7py_cQw" expressionString="link.label" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_wUW-IkEZEeaFa9p7py_cQw" expressionString="name.text" expressionLanguageID="OCL"/>
       </ruleParameters>
     </rules>
   </ruleGroups>
@@ -690,6 +690,74 @@
         <correspondenceLinks uuid="_P_2wQED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_1NQQcED9EeahS4UZF2YDOg"/>
         <correspondenceLinks uuid="_RfYCQED-EeahS4UZF2YDOg" modifier="CREATE" source="_8P6QUED8EeahS4UZF2YDOg" target="_4geUsED9EeahS4UZF2YDOg"/>
       </correspondenceDomain>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_KKLR8UNREearetiNBbbTIA" name="productionschema2petrinetMaterial" ruleGroupID="productionschema2petrinetMaterial">
+    <rules uuid="_O6mUAUNREearetiNBbbTIA" name="r9" leftInputElements="_KeuuoDubEeaFv70xSAP0wg" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r9">
+      <leftModelDomain uuid="_TLuyAUNREearetiNBbbTIA">
+        <modelObjects uuid="_hH4j0ENREearetiNBbbTIA" incomingCorrespondenceLink="__JG7wENREearetiNBbbTIA" name="productionschema" outgoingLinks="_rhvTkENREearetiNBbbTIA _sKf8sENREearetiNBbbTIA">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema"/>
+        </modelObjects>
+        <modelObjects uuid="_lH1yQENREearetiNBbbTIA" incomingCorrespondenceLink="_AzL38ENSEearetiNBbbTIA" name="link" outgoingLinks="_smmp4ENREearetiNBbbTIA" incomingLinks="_rhvTkENREearetiNBbbTIA">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//Link"/>
+        </modelObjects>
+        <modelObjects uuid="_oooYcENREearetiNBbbTIA" modifier="CREATE" incomingCorrespondenceLink="_B_wYwENSEearetiNBbbTIA" name="material" incomingLinks="_sKf8sENREearetiNBbbTIA _smmp4ENREearetiNBbbTIA">
+          <type xsi:type="ecore:EClass" href="http://www.mdelab.de/languages/productionschema#//Material"/>
+          <attributeAssignments uuid="_KbSaoENSEearetiNBbbTIA">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_rB6HgUNSEearetiNBbbTIA" expressionString="nameVariable" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.mdelab.de/languages/productionschema#//IdentifiableElement/label"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_rhvTkENREearetiNBbbTIA" incomingCorrespondenceLink="_ARoDAENSEearetiNBbbTIA" source="_hH4j0ENREearetiNBbbTIA" target="_lH1yQENREearetiNBbbTIA">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedLinks"/>
+        </modelLinks>
+        <modelLinks uuid="_sKf8sENREearetiNBbbTIA" modifier="CREATE" incomingCorrespondenceLink="_CgegMENSEearetiNBbbTIA" source="_hH4j0ENREearetiNBbbTIA" target="_oooYcENREearetiNBbbTIA">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//ProductionSchema/ownedMaterials"/>
+        </modelLinks>
+        <modelLinks uuid="_smmp4ENREearetiNBbbTIA" modifier="CREATE" incomingCorrespondenceLink="_BdRWwENSEearetiNBbbTIA" source="_lH1yQENREearetiNBbbTIA" target="_oooYcENREearetiNBbbTIA">
+          <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/languages/productionschema#//Link/associatedMaterial"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_UH6tckNREearetiNBbbTIA">
+        <modelObjects uuid="_GtiWgENSEearetiNBbbTIA" incomingCorrespondenceLink="_ItYHUENSEearetiNBbbTIA" name="place" outgoingLinks="_hJYjMENSEearetiNBbbTIA">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Place"/>
+        </modelObjects>
+        <modelObjects uuid="_fIPx4ENSEearetiNBbbTIA" modifier="CREATE" incomingCorrespondenceLink="_abpDYENTEearetiNBbbTIA" name="name" incomingLinks="_hJYjMENSEearetiNBbbTIA">
+          <type xsi:type="ecore:EClass" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name"/>
+          <attributeAssignments uuid="_gc0_MENSEearetiNBbbTIA">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_vXJpcUNSEearetiNBbbTIA" expressionString="nameVariable" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Name/text"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_hJYjMENSEearetiNBbbTIA" modifier="CREATE" incomingCorrespondenceLink="_h4K70ENSEearetiNBbbTIA" source="_GtiWgENSEearetiNBbbTIA" target="_fIPx4ENSEearetiNBbbTIA">
+          <feature xsi:type="ecore:EReference" href="http://org.pnml.tools/epnk/pnmlcoremodel#//Object/name"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_TrBWE0NREearetiNBbbTIA">
+        <correspondenceNodes uuid="_4F1tUENREearetiNBbbTIA" name="axiom" outgoingLinks="__JG7wENREearetiNBbbTIA">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_5OvPEENREearetiNBbbTIA" name="corrLink" outgoingLinks="_ARoDAENSEearetiNBbbTIA _AzL38ENSEearetiNBbbTIA _ItYHUENSEearetiNBbbTIA _h4K70ENSEearetiNBbbTIA">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrMaterialLink"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_76_Z8ENREearetiNBbbTIA" modifier="CREATE" name="corrMaterial" outgoingLinks="_BdRWwENSEearetiNBbbTIA _B_wYwENSEearetiNBbbTIA _CgegMENSEearetiNBbbTIA _abpDYENTEearetiNBbbTIA">
+          <type xsi:type="ecore:EClass" href="productionschema2petrinet.ecore#//CorrMaterial"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="__JG7wENREearetiNBbbTIA" source="_4F1tUENREearetiNBbbTIA" target="_hH4j0ENREearetiNBbbTIA"/>
+        <correspondenceLinks uuid="_ARoDAENSEearetiNBbbTIA" source="_5OvPEENREearetiNBbbTIA" target="_rhvTkENREearetiNBbbTIA"/>
+        <correspondenceLinks uuid="_AzL38ENSEearetiNBbbTIA" source="_5OvPEENREearetiNBbbTIA" target="_lH1yQENREearetiNBbbTIA"/>
+        <correspondenceLinks uuid="_BdRWwENSEearetiNBbbTIA" modifier="CREATE" source="_76_Z8ENREearetiNBbbTIA" target="_smmp4ENREearetiNBbbTIA"/>
+        <correspondenceLinks uuid="_B_wYwENSEearetiNBbbTIA" modifier="CREATE" source="_76_Z8ENREearetiNBbbTIA" target="_oooYcENREearetiNBbbTIA"/>
+        <correspondenceLinks uuid="_CgegMENSEearetiNBbbTIA" modifier="CREATE" source="_76_Z8ENREearetiNBbbTIA" target="_sKf8sENREearetiNBbbTIA"/>
+        <correspondenceLinks uuid="_ItYHUENSEearetiNBbbTIA" source="_5OvPEENREearetiNBbbTIA" target="_GtiWgENSEearetiNBbbTIA"/>
+        <correspondenceLinks uuid="_h4K70ENSEearetiNBbbTIA" modifier="CREATE" source="_5OvPEENREearetiNBbbTIA" target="_hJYjMENSEearetiNBbbTIA"/>
+        <correspondenceLinks uuid="_abpDYENTEearetiNBbbTIA" modifier="CREATE" source="_76_Z8ENREearetiNBbbTIA" target="_fIPx4ENSEearetiNBbbTIA"/>
+      </correspondenceDomain>
+      <ruleParameters uuid="_MQhd9ENSEearetiNBbbTIA" name="nameVariable">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_ONT6wUNSEearetiNBbbTIA" expressionString="material.label" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_lmqm0kNSEearetiNBbbTIA" expressionString="name.text" expressionLanguageID="OCL"/>
+      </ruleParameters>
     </rules>
   </ruleGroups>
 </mltgg:TGG>

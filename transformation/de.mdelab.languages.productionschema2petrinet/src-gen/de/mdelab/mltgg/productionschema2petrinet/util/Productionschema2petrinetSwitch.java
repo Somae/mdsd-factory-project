@@ -125,6 +125,17 @@ public class Productionschema2petrinetSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case Productionschema2petrinetPackage.CORR_MATERIAL: {
+			CorrMaterial corrMaterial = (CorrMaterial) theEObject;
+			T result = caseCorrMaterial(corrMaterial);
+			if (result == null)
+				result = caseTGGNode(corrMaterial);
+			if (result == null)
+				result = caseMLAnnotatedElement(corrMaterial);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -202,6 +213,21 @@ public class Productionschema2petrinetSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCorrEdge(CorrEdge object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Corr Material</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Corr Material</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCorrMaterial(CorrMaterial object) {
 		return null;
 	}
 
