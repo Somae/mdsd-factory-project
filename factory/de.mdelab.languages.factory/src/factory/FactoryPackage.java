@@ -21,6 +21,8 @@ import org.eclipse.emf.ecore.EReference;
  * <!-- end-user-doc -->
  * @see factory.FactoryFactory
  * @model kind="package"
+ *        annotation="http://www.eclipse.org/OCL/Import ecore='http://www.eclipse.org/emf/2002/Ecore' productionschema='../../de.mdelab.languages.productionschema/model/productionschema.ecore#/'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore invocationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' settingDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' validationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot'"
  * @generated
  */
 public interface FactoryPackage extends EPackage {
@@ -222,13 +224,22 @@ public interface FactoryPackage extends EPackage {
 	int FACTORY__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
 
 	/**
+	 * The feature id for the '<em><b>Owned Production Schemata</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTORY__OWNED_PRODUCTION_SCHEMATA = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__DESCRIPTION = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+	int FACTORY__DESCRIPTION = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Street Number</b></em>' attribute.
@@ -237,7 +248,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__STREET_NUMBER = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+	int FACTORY__STREET_NUMBER = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Street</b></em>' attribute.
@@ -246,7 +257,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__STREET = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+	int FACTORY__STREET = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>City</b></em>' attribute.
@@ -255,7 +266,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__CITY = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
+	int FACTORY__CITY = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Postal Code</b></em>' attribute.
@@ -264,7 +275,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__POSTAL_CODE = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 4;
+	int FACTORY__POSTAL_CODE = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Country</b></em>' attribute.
@@ -273,7 +284,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__COUNTRY = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 5;
+	int FACTORY__COUNTRY = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Length</b></em>' attribute.
@@ -282,7 +293,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__LENGTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 6;
+	int FACTORY__LENGTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -291,7 +302,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__WIDTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 7;
+	int FACTORY__WIDTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Employees</b></em>' reference list.
@@ -300,7 +311,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__EMPLOYEES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 8;
+	int FACTORY__EMPLOYEES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Machines</b></em>' reference list.
@@ -309,7 +320,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 9;
+	int FACTORY__MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Created Product Parts</b></em>' reference list.
@@ -318,7 +329,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__CREATED_PRODUCT_PARTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 10;
+	int FACTORY__CREATED_PRODUCT_PARTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Owned Machines</b></em>' containment reference list.
@@ -327,7 +338,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__OWNED_MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 11;
+	int FACTORY__OWNED_MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Factory</em>' class.
@@ -336,7 +347,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 12;
+	int FACTORY_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of operations of the '<em>Factory</em>' class.
@@ -578,22 +589,13 @@ public interface FactoryPackage extends EPackage {
 	int PRODUCT_PART__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
 
 	/**
-	 * The feature id for the '<em><b>Construction Process</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_PART__CONSTRUCTION_PROCESS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Image Path</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PART__IMAGE_PATH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+	int PRODUCT_PART__IMAGE_PATH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Supported Product Versions</b></em>' reference list.
@@ -602,7 +604,16 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PART__SUPPORTED_PRODUCT_VERSIONS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+	int PRODUCT_PART__SUPPORTED_PRODUCT_VERSIONS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Construction Processes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_PART__CONSTRUCTION_PROCESSES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Product Part</em>' class.
@@ -770,6 +781,17 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFactory();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link factory.Factory#getOwnedProductionSchemata <em>Owned Production Schemata</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Owned Production Schemata</em>'.
+	 * @see factory.Factory#getOwnedProductionSchemata()
+	 * @see #getFactory()
+	 * @generated
+	 */
+	EReference getFactory_OwnedProductionSchemata();
 
 	/**
 	 * Returns the meta object for the attribute '{@link factory.Factory#getDescription <em>Description</em>}'.
@@ -1021,17 +1043,6 @@ public interface FactoryPackage extends EPackage {
 	EClass getProductPart();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link factory.ProductPart#getConstructionProcess <em>Construction Process</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Construction Process</em>'.
-	 * @see factory.ProductPart#getConstructionProcess()
-	 * @see #getProductPart()
-	 * @generated
-	 */
-	EReference getProductPart_ConstructionProcess();
-
-	/**
 	 * Returns the meta object for the attribute '{@link factory.ProductPart#getImagePath <em>Image Path</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1052,6 +1063,17 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProductPart_SupportedProductVersions();
+
+	/**
+	 * Returns the meta object for the reference list '{@link factory.ProductPart#getConstructionProcesses <em>Construction Processes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Construction Processes</em>'.
+	 * @see factory.ProductPart#getConstructionProcesses()
+	 * @see #getProductPart()
+	 * @generated
+	 */
+	EReference getProductPart_ConstructionProcesses();
 
 	/**
 	 * Returns the meta object for class '{@link factory.IdentifiableElement <em>Identifiable Element</em>}'.
@@ -1210,6 +1232,14 @@ public interface FactoryPackage extends EPackage {
 		 * @generated
 		 */
 		EClass FACTORY = eINSTANCE.getFactory();
+
+		/**
+		 * The meta object literal for the '<em><b>Owned Production Schemata</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACTORY__OWNED_PRODUCTION_SCHEMATA = eINSTANCE.getFactory_OwnedProductionSchemata();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -1404,14 +1434,6 @@ public interface FactoryPackage extends EPackage {
 		EClass PRODUCT_PART = eINSTANCE.getProductPart();
 
 		/**
-		 * The meta object literal for the '<em><b>Construction Process</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PRODUCT_PART__CONSTRUCTION_PROCESS = eINSTANCE.getProductPart_ConstructionProcess();
-
-		/**
 		 * The meta object literal for the '<em><b>Image Path</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1426,6 +1448,14 @@ public interface FactoryPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PRODUCT_PART__SUPPORTED_PRODUCT_VERSIONS = eINSTANCE.getProductPart_SupportedProductVersions();
+
+		/**
+		 * The meta object literal for the '<em><b>Construction Processes</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_PART__CONSTRUCTION_PROCESSES = eINSTANCE.getProductPart_ConstructionProcesses();
 
 		/**
 		 * The meta object literal for the '{@link factory.impl.IdentifiableElementImpl <em>Identifiable Element</em>}' class.

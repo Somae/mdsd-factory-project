@@ -3,19 +3,12 @@
   <ownedViewpoints name="factory" modelFileExtension="factory">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="factoryspecification" domainClass="FactorySpecification" enablePopupBars="true">
       <metamodel href="http://www.example.org/factory#/"/>
-      <defaultLayer name="Default">
+      <defaultLayer name="toplayer">
         <nodeMappings name="EmployeeNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedEmployees" domainClass="factory.Employee">
           <style xsi:type="style:DotDescription" labelExpression="feature:label" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="ProductNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedProducts" domainClass="factory.Product">
-          <style xsi:type="style:LozengeNodeDescription" labelExpression="feature:label" resizeKind="NSEW">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="ProductPartNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedProductParts" domainClass="factory.ProductPart">
@@ -41,9 +34,32 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
+        <edgeMappings name="supportsEdge" sourceMapping="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@nodeMappings[name='ProductPartNode']" targetMapping="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@containerMappings[name='ProductNode']/@subNodeMappings[name='ProductVersionNode']" targetFinderExpression="feature:supportedProductVersions">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
         <containerMappings name="FactoryNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedFactories" domainClass="factory.Factory">
           <subNodeMappings name="MachineNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedMachines" domainClass="factory.Machine">
-            <style xsi:type="style:SquareDescription" labelExpression="feature:label" labelPosition="node" resizeKind="NSEW">
+            <style xsi:type="style:SquareDescription" labelExpression="feature:label" tooltipExpression="aql:self.eContainer()" sizeComputationExpression="aql:self. size" labelPosition="node">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="feature:label" widthComputationExpression="aql:self.width-15" heightComputationExpression="aql:self.length-30" backgroundStyle="Liquid">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="ProductNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" domainClass="factory.Product">
+          <subNodeMappings name="ProductVersionNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedProductVersions" domainClass="factory.ProductVersion">
+            <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:label" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -52,8 +68,8 @@
           <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="feature:label" backgroundStyle="Liquid">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
           </style>
         </containerMappings>
         <toolSections>
@@ -63,15 +79,6 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="factory.Employee" referenceName="ownedEmployees"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="createProduct" nodeMappings="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@nodeMappings[name='ProductNode']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="factory.Product" referenceName="ownedProducts"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -102,10 +109,61 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createProduct" containerMappings="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@containerMappings[name='ProductNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="factory.Product" referenceName="ownedProducts"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
           <ownedTools xsi:type="tool:DirectEditLabel" name="editLabel">
             <mask mask="{0}"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:SetValue" featureName="label" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createProductVersion" nodeMappings="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@containerMappings[name='ProductNode']/@subNodeMappings[name='ProductVersionNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="factory.ProductVersion" referenceName="ownedProductVersions"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="createEmploysEdge" edgeMappings="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@edgeMappings[name='employsEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="employees" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="createProducesEdge" edgeMappings="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@edgeMappings[name='producesEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="createdProductParts" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="createSupportsEdge" edgeMappings="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@edgeMappings[name='supportsEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="supportedProductVersions" valueExpression="var:target"/>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
         </toolSections>

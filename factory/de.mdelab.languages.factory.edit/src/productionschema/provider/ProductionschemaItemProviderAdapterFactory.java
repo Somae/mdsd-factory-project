@@ -13,6 +13,7 @@ import org.eclipse.emf.edit.provider.ChangeNotifier;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.ComposedAdapterFactory;
 import org.eclipse.emf.edit.provider.IChangeNotifier;
+import org.eclipse.emf.edit.provider.IDisposable;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
@@ -31,7 +32,7 @@ import productionschema.util.ProductionschemaAdapterFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ProductionschemaItemProviderAdapterFactory extends ProductionschemaAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier {
+public class ProductionschemaItemProviderAdapterFactory extends ProductionschemaAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
 	 * This keeps track of the root adapter factory that delegates to this adapter factory.
 	 * <!-- begin-user-doc -->
@@ -275,6 +276,20 @@ public class ProductionschemaItemProviderAdapterFactory extends Productionschema
 		if (parentAdapterFactory != null) {
 			parentAdapterFactory.fireNotifyChanged(notification);
 		}
+	}
+
+	/**
+	 * This disposes all of the item providers created by this factory. 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void dispose() {
+		if (productionSchemaItemProvider != null) productionSchemaItemProvider.dispose();
+		if (conjunctiveNodeItemProvider != null) conjunctiveNodeItemProvider.dispose();
+		if (disjunctiveNodeItemProvider != null) disjunctiveNodeItemProvider.dispose();
+		if (linkItemProvider != null) linkItemProvider.dispose();
+		if (materialItemProvider != null) materialItemProvider.dispose();
 	}
 
 }

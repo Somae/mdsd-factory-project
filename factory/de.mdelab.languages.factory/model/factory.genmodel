@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
-    modelDirectory="/de.mdelab.languages.factory/src" modelPluginID="de.mdelab.languages.factory"
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.mdelab.languages.factory/src" modelPluginID="de.mdelab.languages.factory"
     modelName="Factory" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     operationReflection="true" importOrganizing="true">
   <foreignModel>factory.ecore</foreignModel>
-  <genPackages prefix="Factory" disposableProviderFactory="true" ecorePackage="factory.ecore#/"/>
+  <genPackages prefix="Factory" disposableProviderFactory="true" ecorePackage="factory.ecore#/">
+    <genClasses ecoreClass="factory.ecore#//FactorySpecification">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference factory.ecore#//FactorySpecification/ownedFactories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference factory.ecore#//FactorySpecification/ownedEmployees"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference factory.ecore#//FactorySpecification/ownedProductParts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference factory.ecore#//FactorySpecification/ownedProducts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//FactorySpecification/businessTypeName"/>
+    </genClasses>
+    <genClasses ecoreClass="factory.ecore#//Factory">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference factory.ecore#//Factory/ownedProductionSchemata"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/streetNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/street"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/postalCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/length"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Factory/width"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference factory.ecore#//Factory/employees"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference factory.ecore#//Factory/machines"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference factory.ecore#//Factory/createdProductParts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference factory.ecore#//Factory/ownedMachines"/>
+    </genClasses>
+    <genClasses ecoreClass="factory.ecore#//Machine">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Machine/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Machine/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Machine/size"/>
+    </genClasses>
+    <genClasses ecoreClass="factory.ecore#//Employee"/>
+    <genClasses ecoreClass="factory.ecore#//Product">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Product/productionStartYear"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Product/productionEndYear"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//Product/imagePath"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference factory.ecore#//Product/ownedProductVersions"/>
+    </genClasses>
+    <genClasses ecoreClass="factory.ecore#//ProductPart">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//ProductPart/imagePath"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference factory.ecore#//ProductPart/supportedProductVersions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference factory.ecore#//ProductPart/constructionProcesses"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="factory.ecore#//IdentifiableElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//IdentifiableElement/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//IdentifiableElement/label"/>
+    </genClasses>
+    <genClasses ecoreClass="factory.ecore#//ProductVersion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//ProductVersion/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//ProductVersion/versionStartYear"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute factory.ecore#//ProductVersion/versionEndYear"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Productionschema" disposableProviderFactory="true" ecorePackage="productionschema.ecore#/">
+    <genClasses ecoreClass="productionschema.ecore#//ProductionSchema">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference productionschema.ecore#//ProductionSchema/ownedLinkableNodes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference productionschema.ecore#//ProductionSchema/ownedLinks"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference productionschema.ecore#//ProductionSchema/ownedMaterials"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute productionschema.ecore#//ProductionSchema/description"/>
+    </genClasses>
+    <genClasses ecoreClass="productionschema.ecore#//ConjunctiveNode"/>
+    <genClasses ecoreClass="productionschema.ecore#//DisjunctiveNode"/>
+    <genClasses ecoreClass="productionschema.ecore#//Link">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference productionschema.ecore#//Link/sourceNode"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference productionschema.ecore#//Link/destinationNode"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference productionschema.ecore#//Link/associatedMaterial"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="productionschema.ecore#//LinkableNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference productionschema.ecore#//LinkableNode/incomingLinks"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference productionschema.ecore#//LinkableNode/outgoingLinks"/>
+      <genOperations ecoreOperation="productionschema.ecore#//LinkableNode/degree">
+        <genParameters ecoreParameter="productionschema.ecore#//LinkableNode/degree/isInDegree"/>
+        <genParameters ecoreParameter="productionschema.ecore#//LinkableNode/degree/isOutDegree"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="productionschema.ecore#//IdentifiableElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute productionschema.ecore#//IdentifiableElement/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute productionschema.ecore#//IdentifiableElement/label"/>
+    </genClasses>
+    <genClasses ecoreClass="productionschema.ecore#//Material"/>
+  </genPackages>
 </genmodel:GenModel>

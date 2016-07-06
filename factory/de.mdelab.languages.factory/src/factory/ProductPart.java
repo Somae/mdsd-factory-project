@@ -3,7 +3,6 @@
 package factory;
 
 import org.eclipse.emf.common.util.EList;
-
 import productionschema.ProductionSchema;
 
 /**
@@ -15,9 +14,9 @@ import productionschema.ProductionSchema;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link factory.ProductPart#getConstructionProcess <em>Construction Process</em>}</li>
  *   <li>{@link factory.ProductPart#getImagePath <em>Image Path</em>}</li>
  *   <li>{@link factory.ProductPart#getSupportedProductVersions <em>Supported Product Versions</em>}</li>
+ *   <li>{@link factory.ProductPart#getConstructionProcesses <em>Construction Processes</em>}</li>
  * </ul>
  *
  * @see factory.FactoryPackage#getProductPart()
@@ -25,32 +24,6 @@ import productionschema.ProductionSchema;
  * @generated
  */
 public interface ProductPart extends IdentifiableElement {
-	/**
-	 * Returns the value of the '<em><b>Construction Process</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Construction Process</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Construction Process</em>' containment reference.
-	 * @see #setConstructionProcess(ProductionSchema)
-	 * @see factory.FactoryPackage#getProductPart_ConstructionProcess()
-	 * @model containment="true"
-	 * @generated
-	 */
-	ProductionSchema getConstructionProcess();
-
-	/**
-	 * Sets the value of the '{@link factory.ProductPart#getConstructionProcess <em>Construction Process</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Construction Process</em>' containment reference.
-	 * @see #getConstructionProcess()
-	 * @generated
-	 */
-	void setConstructionProcess(ProductionSchema value);
-
 	/**
 	 * Returns the value of the '<em><b>Image Path</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -92,5 +65,21 @@ public interface ProductPart extends IdentifiableElement {
 	 * @generated
 	 */
 	EList<ProductVersion> getSupportedProductVersions();
+
+	/**
+	 * Returns the value of the '<em><b>Construction Processes</b></em>' reference list.
+	 * The list contents are of type {@link productionschema.ProductionSchema}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Construction Processes</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Construction Processes</em>' reference list.
+	 * @see factory.FactoryPackage#getProductPart_ConstructionProcesses()
+	 * @model
+	 * @generated
+	 */
+	EList<ProductionSchema> getConstructionProcesses();
 
 } // ProductPart
