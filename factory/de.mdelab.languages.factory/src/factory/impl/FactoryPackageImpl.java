@@ -230,7 +230,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_StreetNumber() {
+	public EAttribute getFactory_Description() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -239,7 +239,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Street() {
+	public EAttribute getFactory_StreetNumber() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -248,7 +248,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_City() {
+	public EAttribute getFactory_Street() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -257,7 +257,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_PostalCode() {
+	public EAttribute getFactory_City() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -266,7 +266,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Country() {
+	public EAttribute getFactory_PostalCode() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -275,7 +275,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Length() {
+	public EAttribute getFactory_Country() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -284,7 +284,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFactory_Width() {
+	public EAttribute getFactory_Length() {
 		return (EAttribute)factoryEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -293,8 +293,8 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactory_Employees() {
-		return (EReference)factoryEClass.getEStructuralFeatures().get(7);
+	public EAttribute getFactory_Width() {
+		return (EAttribute)factoryEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -302,7 +302,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactory_Machines() {
+	public EReference getFactory_Employees() {
 		return (EReference)factoryEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -311,8 +311,17 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactory_CreatedProductParts() {
+	public EReference getFactory_Machines() {
 		return (EReference)factoryEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFactory_CreatedProductParts() {
+		return (EReference)factoryEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -541,6 +550,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		createEAttribute(factorySpecificationEClass, FACTORY_SPECIFICATION__BUSINESS_TYPE_NAME);
 
 		factoryEClass = createEClass(FACTORY);
+		createEAttribute(factoryEClass, FACTORY__DESCRIPTION);
 		createEAttribute(factoryEClass, FACTORY__STREET_NUMBER);
 		createEAttribute(factoryEClass, FACTORY__STREET);
 		createEAttribute(factoryEClass, FACTORY__CITY);
@@ -629,6 +639,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		initEAttribute(getFactorySpecification_BusinessTypeName(), ecorePackage.getEString(), "businessTypeName", null, 0, 1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(factoryEClass, Factory.class, "Factory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getFactory_Description(), ecorePackage.getEString(), "description", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_StreetNumber(), ecorePackage.getEString(), "streetNumber", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_Street(), ecorePackage.getEString(), "street", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_City(), ecorePackage.getEString(), "city", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

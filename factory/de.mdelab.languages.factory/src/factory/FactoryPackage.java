@@ -231,13 +231,22 @@ public interface FactoryPackage extends EPackage {
 	int FACTORY__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
 
 	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTORY__DESCRIPTION = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Street Number</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__STREET_NUMBER = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+	int FACTORY__STREET_NUMBER = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Street</b></em>' attribute.
@@ -246,7 +255,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__STREET = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 1;
+	int FACTORY__STREET = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>City</b></em>' attribute.
@@ -255,7 +264,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__CITY = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 2;
+	int FACTORY__CITY = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Postal Code</b></em>' attribute.
@@ -264,7 +273,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__POSTAL_CODE = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 3;
+	int FACTORY__POSTAL_CODE = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Country</b></em>' attribute.
@@ -273,7 +282,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__COUNTRY = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 4;
+	int FACTORY__COUNTRY = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Length</b></em>' attribute.
@@ -282,7 +291,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__LENGTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 5;
+	int FACTORY__LENGTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -291,7 +300,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__WIDTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 6;
+	int FACTORY__WIDTH = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Employees</b></em>' reference list.
@@ -300,7 +309,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__EMPLOYEES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 7;
+	int FACTORY__EMPLOYEES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Machines</b></em>' reference list.
@@ -309,7 +318,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 8;
+	int FACTORY__MACHINES = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Created Product Parts</b></em>' reference list.
@@ -318,7 +327,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__CREATED_PRODUCT_PARTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 9;
+	int FACTORY__CREATED_PRODUCT_PARTS = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Factory</em>' class.
@@ -327,7 +336,7 @@ public interface FactoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 10;
+	int FACTORY_FEATURE_COUNT = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of operations of the '<em>Factory</em>' class.
@@ -774,6 +783,17 @@ public interface FactoryPackage extends EPackage {
 	EClass getFactory();
 
 	/**
+	 * Returns the meta object for the attribute '{@link factory.Factory#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see factory.Factory#getDescription()
+	 * @see #getFactory()
+	 * @generated
+	 */
+	EAttribute getFactory_Description();
+
+	/**
 	 * Returns the meta object for the attribute '{@link factory.Factory#getStreetNumber <em>Street Number</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1198,6 +1218,14 @@ public interface FactoryPackage extends EPackage {
 		 * @generated
 		 */
 		EClass FACTORY = eINSTANCE.getFactory();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FACTORY__DESCRIPTION = eINSTANCE.getFactory_Description();
 
 		/**
 		 * The meta object literal for the '<em><b>Street Number</b></em>' attribute feature.

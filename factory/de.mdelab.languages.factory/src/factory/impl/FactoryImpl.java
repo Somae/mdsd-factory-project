@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link factory.impl.FactoryImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link factory.impl.FactoryImpl#getStreetNumber <em>Street Number</em>}</li>
  *   <li>{@link factory.impl.FactoryImpl#getStreet <em>Street</em>}</li>
  *   <li>{@link factory.impl.FactoryImpl#getCity <em>City</em>}</li>
@@ -42,6 +43,26 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * @generated
  */
 public class FactoryImpl extends IdentifiableElementImpl implements Factory {
+	/**
+	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DESCRIPTION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected String description = DESCRIPTION_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getStreetNumber() <em>Street Number</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -236,6 +257,27 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getDescription() {
+		return description;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDescription(String newDescription) {
+		String oldDescription = description;
+		description = newDescription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FactoryPackage.FACTORY__DESCRIPTION, oldDescription, description));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String getStreetNumber() {
 		return streetNumber;
 	}
@@ -422,6 +464,8 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case FactoryPackage.FACTORY__DESCRIPTION:
+				return getDescription();
 			case FactoryPackage.FACTORY__STREET_NUMBER:
 				return getStreetNumber();
 			case FactoryPackage.FACTORY__STREET:
@@ -455,6 +499,9 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case FactoryPackage.FACTORY__DESCRIPTION:
+				setDescription((String)newValue);
+				return;
 			case FactoryPackage.FACTORY__STREET_NUMBER:
 				setStreetNumber((String)newValue);
 				return;
@@ -500,6 +547,9 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case FactoryPackage.FACTORY__DESCRIPTION:
+				setDescription(DESCRIPTION_EDEFAULT);
+				return;
 			case FactoryPackage.FACTORY__STREET_NUMBER:
 				setStreetNumber(STREET_NUMBER_EDEFAULT);
 				return;
@@ -542,6 +592,8 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case FactoryPackage.FACTORY__DESCRIPTION:
+				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case FactoryPackage.FACTORY__STREET_NUMBER:
 				return STREET_NUMBER_EDEFAULT == null ? streetNumber != null : !STREET_NUMBER_EDEFAULT.equals(streetNumber);
 			case FactoryPackage.FACTORY__STREET:
@@ -576,7 +628,9 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (streetNumber: ");
+		result.append(" (description: ");
+		result.append(description);
+		result.append(", streetNumber: ");
 		result.append(streetNumber);
 		result.append(", street: ");
 		result.append(street);

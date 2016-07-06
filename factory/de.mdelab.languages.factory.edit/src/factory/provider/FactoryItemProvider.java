@@ -45,6 +45,7 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addDescriptionPropertyDescriptor(object);
 			addStreetNumberPropertyDescriptor(object);
 			addStreetPropertyDescriptor(object);
 			addCityPropertyDescriptor(object);
@@ -57,6 +58,28 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 			addCreatedProductPartsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Description feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDescriptionPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Factory_description_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Factory_description_feature", "_UI_Factory_type"),
+				 FactoryPackage.Literals.FACTORY__DESCRIPTION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -315,6 +338,7 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Factory.class)) {
+			case FactoryPackage.FACTORY__DESCRIPTION:
 			case FactoryPackage.FACTORY__STREET_NUMBER:
 			case FactoryPackage.FACTORY__STREET:
 			case FactoryPackage.FACTORY__CITY:

@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link factory.Factory#getDescription <em>Description</em>}</li>
  *   <li>{@link factory.Factory#getStreetNumber <em>Street Number</em>}</li>
  *   <li>{@link factory.Factory#getStreet <em>Street</em>}</li>
  *   <li>{@link factory.Factory#getCity <em>City</em>}</li>
@@ -30,6 +31,32 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface Factory extends IdentifiableElement {
+	/**
+	 * Returns the value of the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Description</em>' attribute.
+	 * @see #setDescription(String)
+	 * @see factory.FactoryPackage#getFactory_Description()
+	 * @model
+	 * @generated
+	 */
+	String getDescription();
+
+	/**
+	 * Sets the value of the '{@link factory.Factory#getDescription <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Description</em>' attribute.
+	 * @see #getDescription()
+	 * @generated
+	 */
+	void setDescription(String value);
+
 	/**
 	 * Returns the value of the '<em><b>Street Number</b></em>' attribute.
 	 * <!-- begin-user-doc -->
