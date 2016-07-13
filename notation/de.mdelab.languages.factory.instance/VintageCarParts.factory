@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <factory:FactorySpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:factory="http://www.example.org/factory" label="Vintage Car Parts" businessTypeName="Car Part Factories">
-  <ownedFactories id="1" label="Fuzzy Wheels Berlin" length="30" width="30" employees="3 4 5 6" createdProductParts="13 14"/>
-  <ownedFactories id="2" label="Safe Brake Parts" employees="6 8 9 10 11 12" createdProductParts="15 16"/>
+  <ownedFactories id="1" label="Fuzzy Wheels Berlin" description="Fuzzy Wheels Berlin produces wheels for the Volvo Amazon and Trabant 601 series." length="30" width="30" employees="3 4 5 6" createdProductParts="13 14"/>
+  <ownedFactories id="2" label="Safe Brake Parts" description="Safe Break Parts produces parts for braking systems of the Volvo Amazon series." employees="6 8 9 10 11 12" createdProductParts="15 16"/>
   <ownedEmployees id="3" label="Brand, Mark"/>
   <ownedEmployees id="4" label="Hänsel, Kerstin"/>
   <ownedEmployees id="5" label="John, Johnson"/>
@@ -11,7 +11,7 @@
   <ownedEmployees id="10" label="Peel, Masha"/>
   <ownedEmployees id="11" label="Shield, John"/>
   <ownedEmployees id="12" label="Twain, Mark"/>
-  <ownedProductParts id="13" label="Trabant 601 Wheel" supportedProductVersions="//@ownedProducts.0/@ownedProductVersions.0 //@ownedProducts.0/@ownedProductVersions.1 //@ownedProducts.0/@ownedProductVersions.2 //@ownedProducts.0/@ownedProductVersions.3 //@ownedProducts.0/@ownedProductVersions.4 //@ownedProducts.0/@ownedProductVersions.5">
+  <ownedProductParts id="13" label="Trabant 601 Wheel" supportedProductVersions="//@ownedProducts.0/@ownedProductVersions.0 //@ownedProducts.0/@ownedProductVersions.1 //@ownedProducts.0/@ownedProductVersions.2 //@ownedProducts.0/@ownedProductVersions.3 //@ownedProducts.0/@ownedProductVersions.4 //@ownedProducts.0/@ownedProductVersions.5 //@ownedProducts.0/@ownedProductVersions.6">
     <constructionProcesses href="../de.mdelab.languages.productionschema.instance/Trabant_601_Wheel_Production.productionschema#4"/>
   </ownedProductParts>
   <ownedProductParts id="14" label="Volvo Amazon Wheel" supportedProductVersions="//@ownedProducts.1/@ownedProductVersions.0 //@ownedProducts.1/@ownedProductVersions.1 //@ownedProducts.1/@ownedProductVersions.2">
@@ -23,17 +23,18 @@
   <ownedProductParts id="16" label="Volvo Amazon Brake Disk" supportedProductVersions="//@ownedProducts.1/@ownedProductVersions.0 //@ownedProducts.1/@ownedProductVersions.1">
     <constructionProcesses href="../de.mdelab.languages.productionschema.instance/Brake_Disc_Production.productionschema#3"/>
   </ownedProductParts>
-  <ownedProducts label="Trabant 601">
-    <ownedProductVersions label="Kübel" description="(added in 1966)"/>
-    <ownedProductVersions label="S" description="(Sonderwunsch - Special Edition) "/>
-    <ownedProductVersions label="Standart" description="(as Limousine and Universal)"/>
-    <ownedProductVersions label="Hycomat" description="(P601 H, 1965–1990)"/>
-    <ownedProductVersions label="TRAMP" description="(added in 1978) "/>
-    <ownedProductVersions label="800 RS" description="(rally version, 1986–1988)"/>
+  <ownedProducts label="Trabant 601" productionStartYear="1963" productionEndYear="1990">
+    <ownedProductVersions label="601 Kübel" description="added in 1966"/>
+    <ownedProductVersions label="601 S" description="Sonderwunsch - Special Edition"/>
+    <ownedProductVersions label="601 Standard" description="as Limousine and Universal"/>
+    <ownedProductVersions label="Trabant 601 Hycomat" description="P601 H, 1965–1990"/>
+    <ownedProductVersions label="Trabant 601 TRAMP" description="added in 1978"/>
+    <ownedProductVersions label="Trabant 800 RS" description="rally version, 1986–1988"/>
+    <ownedProductVersions label="601 DeLuxe"/>
   </ownedProducts>
-  <ownedProducts label="Volvo Amazon">
-    <ownedProductVersions label="121" description="(66 HP Engine)"/>
-    <ownedProductVersions label="122" description="(85 HP Engine)"/>
-    <ownedProductVersions label="123" description="(115 HP Engine)"/>
+  <ownedProducts label="Volvo Amazon" productionStartYear="1956" productionEndYear="1970">
+    <ownedProductVersions label="121" description="66 HP Engine"/>
+    <ownedProductVersions label="122" description="85 HP Engine"/>
+    <ownedProductVersions label="123" description="115 HP Engine"/>
   </ownedProducts>
 </factory:FactorySpecification>
