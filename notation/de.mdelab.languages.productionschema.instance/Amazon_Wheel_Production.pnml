@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pnml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="null http://org.pnml.tools/epnk/pnmlcoremodel" xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net>
+    <page>
+      <transition>
+        <name>
+          <text>Produce Black Tire</text>
+        </name>
+      </transition>
+      <transition>
+        <name>
+          <text>Produce Grey Tire</text>
+        </name>
+      </transition>
+      <transition>
+        <name>
+          <text>Produce Rim</text>
+        </name>
+      </transition>
+      <transition>
+        <name>
+          <text>Assemble Wheel</text>
+        </name>
+      </transition>
+      <place/>
+      <arc source="//@net.0/@page.0/@object.8" target="//@net.0/@page.0/@object.6"/>
+      <place/>
+      <arc source="//@net.0/@page.0/@object.4" target="//@net.0/@page.0/@object.8"/>
+      <transition>
+        <name>
+          <text>Produce Rubber</text>
+        </name>
+      </transition>
+      <arc source="//@net.0/@page.0/@object.13" target="//@net.0/@page.0/@object.11"/>
+      <arc source="//@net.0/@page.0/@object.12" target="//@net.0/@page.0/@object.13"/>
+      <place/>
+      <place/>
+      <transition>
+        <name/>
+      </transition>
+      <place>
+        <name>
+          <text>Black Rubber</text>
+        </name>
+      </place>
+      <place>
+        <name>
+          <text>Grey Rubber</text>
+        </name>
+      </place>
+      <place>
+        <name>
+          <text>Black Tire</text>
+        </name>
+      </place>
+      <place>
+        <name>
+          <text>Grey Tire</text>
+        </name>
+      </place>
+      <place>
+        <name>
+          <text>Tire</text>
+        </name>
+      </place>
+      <place>
+        <name>
+          <text>Rim</text>
+        </name>
+      </place>
+      <arc source="//@net.0/@page.0/@object.14" target="//@net.0/@page.0/@object.0"/>
+      <arc source="//@net.0/@page.0/@object.15" target="//@net.0/@page.0/@object.1"/>
+      <arc source="//@net.0/@page.0/@object.18" target="//@net.0/@page.0/@object.3"/>
+      <arc source="//@net.0/@page.0/@object.19" target="//@net.0/@page.0/@object.3"/>
+      <arc source="//@net.0/@page.0/@object.0" target="//@net.0/@page.0/@object.16"/>
+      <arc source="//@net.0/@page.0/@object.1" target="//@net.0/@page.0/@object.17"/>
+      <arc source="//@net.0/@page.0/@object.2" target="//@net.0/@page.0/@object.19"/>
+      <transition/>
+      <arc source="//@net.0/@page.0/@object.27" target="//@net.0/@page.0/@object.12"/>
+      <arc source="//@net.0/@page.0/@object.16" target="//@net.0/@page.0/@object.27"/>
+      <arc source="//@net.0/@page.0/@object.31" target="//@net.0/@page.0/@object.12"/>
+      <transition/>
+      <arc source="//@net.0/@page.0/@object.17" target="//@net.0/@page.0/@object.31"/>
+      <arc source="//@net.0/@page.0/@object.34" target="//@net.0/@page.0/@object.14"/>
+      <transition/>
+      <arc source="//@net.0/@page.0/@object.6" target="//@net.0/@page.0/@object.34"/>
+      <arc source="//@net.0/@page.0/@object.6" target="//@net.0/@page.0/@object.37"/>
+      <transition/>
+      <arc source="//@net.0/@page.0/@object.37" target="//@net.0/@page.0/@object.15"/>
+      <arc source="//@net.0/@page.0/@object.41" target="//@net.0/@page.0/@object.18"/>
+      <arc source="//@net.0/@page.0/@object.11" target="//@net.0/@page.0/@object.41"/>
+      <transition/>
+    </page>
+  </net>
+</pnml>
