@@ -18,7 +18,6 @@ import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import productionschema.ProductionschemaFactory;
 
 /**
  * This is the item provider adapter for a {@link factory.Factory} object.
@@ -48,6 +47,7 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addProductionSchemataPropertyDescriptor(object);
 			addDescriptionPropertyDescriptor(object);
 			addStreetNumberPropertyDescriptor(object);
 			addStreetPropertyDescriptor(object);
@@ -61,6 +61,28 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 			addCreatedProductPartsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Production Schemata feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addProductionSchemataPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Factory_productionSchemata_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Factory_productionSchemata_feature", "_UI_Factory_type"),
+				 FactoryPackage.Literals.FACTORY__PRODUCTION_SCHEMATA,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -317,7 +339,6 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FactoryPackage.Literals.FACTORY__OWNED_PRODUCTION_SCHEMATA);
 			childrenFeatures.add(FactoryPackage.Literals.FACTORY__OWNED_MACHINES);
 		}
 		return childrenFeatures;
@@ -382,7 +403,6 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 			case FactoryPackage.FACTORY__WIDTH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case FactoryPackage.FACTORY__OWNED_PRODUCTION_SCHEMATA:
 			case FactoryPackage.FACTORY__OWNED_MACHINES:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -400,11 +420,6 @@ public class FactoryItemProvider extends IdentifiableElementItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FactoryPackage.Literals.FACTORY__OWNED_PRODUCTION_SCHEMATA,
-				 ProductionschemaFactory.eINSTANCE.createProductionSchema()));
 
 		newChildDescriptors.add
 			(createChildParameter

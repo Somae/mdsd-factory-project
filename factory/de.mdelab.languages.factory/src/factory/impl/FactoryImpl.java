@@ -32,7 +32,7 @@ import productionschema.ProductionSchema;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link factory.impl.FactoryImpl#getOwnedProductionSchemata <em>Owned Production Schemata</em>}</li>
+ *   <li>{@link factory.impl.FactoryImpl#getProductionSchemata <em>Production Schemata</em>}</li>
  *   <li>{@link factory.impl.FactoryImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link factory.impl.FactoryImpl#getStreetNumber <em>Street Number</em>}</li>
  *   <li>{@link factory.impl.FactoryImpl#getStreet <em>Street</em>}</li>
@@ -51,14 +51,14 @@ import productionschema.ProductionSchema;
  */
 public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	/**
-	 * The cached value of the '{@link #getOwnedProductionSchemata() <em>Owned Production Schemata</em>}' containment reference list.
+	 * The cached value of the '{@link #getProductionSchemata() <em>Production Schemata</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOwnedProductionSchemata()
+	 * @see #getProductionSchemata()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<ProductionSchema> ownedProductionSchemata;
+	protected EList<ProductionSchema> productionSchemata;
 
 	/**
 	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
@@ -284,11 +284,11 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProductionSchema> getOwnedProductionSchemata() {
-		if (ownedProductionSchemata == null) {
-			ownedProductionSchemata = new EObjectContainmentEList<ProductionSchema>(ProductionSchema.class, this, FactoryPackage.FACTORY__OWNED_PRODUCTION_SCHEMATA);
+	public EList<ProductionSchema> getProductionSchemata() {
+		if (productionSchemata == null) {
+			productionSchemata = new EObjectResolvingEList<ProductionSchema>(ProductionSchema.class, this, FactoryPackage.FACTORY__PRODUCTION_SCHEMATA);
 		}
-		return ownedProductionSchemata;
+		return productionSchemata;
 	}
 
 	/**
@@ -515,8 +515,6 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FactoryPackage.FACTORY__OWNED_PRODUCTION_SCHEMATA:
-				return ((InternalEList<?>)getOwnedProductionSchemata()).basicRemove(otherEnd, msgs);
 			case FactoryPackage.FACTORY__OWNED_MACHINES:
 				return ((InternalEList<?>)getOwnedMachines()).basicRemove(otherEnd, msgs);
 		}
@@ -531,8 +529,8 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FactoryPackage.FACTORY__OWNED_PRODUCTION_SCHEMATA:
-				return getOwnedProductionSchemata();
+			case FactoryPackage.FACTORY__PRODUCTION_SCHEMATA:
+				return getProductionSchemata();
 			case FactoryPackage.FACTORY__DESCRIPTION:
 				return getDescription();
 			case FactoryPackage.FACTORY__STREET_NUMBER:
@@ -570,9 +568,9 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FactoryPackage.FACTORY__OWNED_PRODUCTION_SCHEMATA:
-				getOwnedProductionSchemata().clear();
-				getOwnedProductionSchemata().addAll((Collection<? extends ProductionSchema>)newValue);
+			case FactoryPackage.FACTORY__PRODUCTION_SCHEMATA:
+				getProductionSchemata().clear();
+				getProductionSchemata().addAll((Collection<? extends ProductionSchema>)newValue);
 				return;
 			case FactoryPackage.FACTORY__DESCRIPTION:
 				setDescription((String)newValue);
@@ -626,8 +624,8 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FactoryPackage.FACTORY__OWNED_PRODUCTION_SCHEMATA:
-				getOwnedProductionSchemata().clear();
+			case FactoryPackage.FACTORY__PRODUCTION_SCHEMATA:
+				getProductionSchemata().clear();
 				return;
 			case FactoryPackage.FACTORY__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
@@ -677,8 +675,8 @@ public class FactoryImpl extends IdentifiableElementImpl implements Factory {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FactoryPackage.FACTORY__OWNED_PRODUCTION_SCHEMATA:
-				return ownedProductionSchemata != null && !ownedProductionSchemata.isEmpty();
+			case FactoryPackage.FACTORY__PRODUCTION_SCHEMATA:
+				return productionSchemata != null && !productionSchemata.isEmpty();
 			case FactoryPackage.FACTORY__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case FactoryPackage.FACTORY__STREET_NUMBER:

@@ -224,13 +224,13 @@ public interface FactoryPackage extends EPackage {
 	int FACTORY__LABEL = IDENTIFIABLE_ELEMENT__LABEL;
 
 	/**
-	 * The feature id for the '<em><b>Owned Production Schemata</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Production Schemata</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACTORY__OWNED_PRODUCTION_SCHEMATA = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
+	int FACTORY__PRODUCTION_SCHEMATA = IDENTIFIABLE_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -783,15 +783,15 @@ public interface FactoryPackage extends EPackage {
 	EClass getFactory();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link factory.Factory#getOwnedProductionSchemata <em>Owned Production Schemata</em>}'.
+	 * Returns the meta object for the reference list '{@link factory.Factory#getProductionSchemata <em>Production Schemata</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Owned Production Schemata</em>'.
-	 * @see factory.Factory#getOwnedProductionSchemata()
+	 * @return the meta object for the reference list '<em>Production Schemata</em>'.
+	 * @see factory.Factory#getProductionSchemata()
 	 * @see #getFactory()
 	 * @generated
 	 */
-	EReference getFactory_OwnedProductionSchemata();
+	EReference getFactory_ProductionSchemata();
 
 	/**
 	 * Returns the meta object for the attribute '{@link factory.Factory#getDescription <em>Description</em>}'.
@@ -1234,12 +1234,12 @@ public interface FactoryPackage extends EPackage {
 		EClass FACTORY = eINSTANCE.getFactory();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned Production Schemata</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Production Schemata</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACTORY__OWNED_PRODUCTION_SCHEMATA = eINSTANCE.getFactory_OwnedProductionSchemata();
+		EReference FACTORY__PRODUCTION_SCHEMATA = eINSTANCE.getFactory_ProductionSchemata();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.

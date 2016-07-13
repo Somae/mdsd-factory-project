@@ -14,7 +14,7 @@ import productionschema.ProductionSchema;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link factory.Factory#getOwnedProductionSchemata <em>Owned Production Schemata</em>}</li>
+ *   <li>{@link factory.Factory#getProductionSchemata <em>Production Schemata</em>}</li>
  *   <li>{@link factory.Factory#getDescription <em>Description</em>}</li>
  *   <li>{@link factory.Factory#getStreetNumber <em>Street Number</em>}</li>
  *   <li>{@link factory.Factory#getStreet <em>Street</em>}</li>
@@ -36,20 +36,20 @@ import productionschema.ProductionSchema;
  */
 public interface Factory extends IdentifiableElement {
 	/**
-	 * Returns the value of the '<em><b>Owned Production Schemata</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Production Schemata</b></em>' reference list.
 	 * The list contents are of type {@link productionschema.ProductionSchema}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned Production Schemata</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Production Schemata</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owned Production Schemata</em>' containment reference list.
-	 * @see factory.FactoryPackage#getFactory_OwnedProductionSchemata()
-	 * @model containment="true"
+	 * @return the value of the '<em>Production Schemata</em>' reference list.
+	 * @see factory.FactoryPackage#getFactory_ProductionSchemata()
+	 * @model
 	 * @generated
 	 */
-	EList<ProductionSchema> getOwnedProductionSchemata();
+	EList<ProductionSchema> getProductionSchemata();
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
