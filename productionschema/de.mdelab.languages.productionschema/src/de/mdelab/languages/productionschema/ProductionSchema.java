@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link de.mdelab.languages.productionschema.ProductionSchema#getOwnedLinks <em>Owned Links</em>}</li>
  *   <li>{@link de.mdelab.languages.productionschema.ProductionSchema#getOwnedMaterials <em>Owned Materials</em>}</li>
  *   <li>{@link de.mdelab.languages.productionschema.ProductionSchema#getDescription <em>Description</em>}</li>
+ *   <li>{@link de.mdelab.languages.productionschema.ProductionSchema#getLabel <em>Label</em>}</li>
  * </ul>
  *
  * @see de.mdelab.languages.productionschema.ProductionschemaPackage#getProductionSchema()
@@ -99,5 +100,31 @@ public interface ProductionSchema extends EObject {
 	 * @generated
 	 */
 	void setDescription(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Label</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Label</em>' attribute.
+	 * @see #setLabel(String)
+	 * @see de.mdelab.languages.productionschema.ProductionschemaPackage#getProductionSchema_Label()
+	 * @model
+	 * @generated
+	 */
+	String getLabel();
+
+	/**
+	 * Sets the value of the '{@link de.mdelab.languages.productionschema.ProductionSchema#getLabel <em>Label</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Label</em>' attribute.
+	 * @see #getLabel()
+	 * @generated
+	 */
+	void setLabel(String value);
 
 } // ProductionSchema
