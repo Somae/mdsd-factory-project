@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productionschema:ProductionSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:productionschema="http://www.mdelab.de/languages/productionschema" id="3" label="Brake Disc Production" description="">
+  <ownedLinkableNodes xsi:type="productionschema:ConjunctiveNode" label="Assemble Disc" incomingLinks="//@ownedLinks.1 //@ownedLinks.2 //@ownedLinks.3" outgoingLinks="//@ownedLinks.0"/>
+  <ownedLinkableNodes xsi:type="productionschema:ConjunctiveNode" label="Build Upper Disc" outgoingLinks="//@ownedLinks.2"/>
+  <ownedLinkableNodes xsi:type="productionschema:ConjunctiveNode" label="Buy Brake Liquid" outgoingLinks="//@ownedLinks.1"/>
+  <ownedLinkableNodes xsi:type="productionschema:ConjunctiveNode" label="Build Lower Disc" outgoingLinks="//@ownedLinks.3"/>
+  <ownedLinks sourceNode="//@ownedLinkableNodes.0"/>
+  <ownedLinks sourceNode="//@ownedLinkableNodes.2" destinationNode="//@ownedLinkableNodes.0" associatedMaterial="//@ownedMaterials.2"/>
+  <ownedLinks sourceNode="//@ownedLinkableNodes.1" destinationNode="//@ownedLinkableNodes.0" associatedMaterial="//@ownedMaterials.1"/>
+  <ownedLinks sourceNode="//@ownedLinkableNodes.3" destinationNode="//@ownedLinkableNodes.0" associatedMaterial="//@ownedMaterials.0"/>
+  <ownedMaterials label="Lower Disc Plate"/>
+  <ownedMaterials label="Upper Disc Plate"/>
+  <ownedMaterials label="Brake Liquid"/>
+</productionschema:ProductionSchema>

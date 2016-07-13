@@ -6,17 +6,15 @@
       <metamodel href="http://www.mdelab.de/languages/productionschema#/"/>
       <defaultLayer name="layer_1">
         <nodeMappings name="EmployeeNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedEmployees" createElements="false" domainClass="factory.Employee">
-          <style xsi:type="style:DotDescription" labelExpression="feature:label" resizeKind="NSEW">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:label" sizeComputationExpression="0.5" resizeKind="NSEW" workspacePath="/de.mdelab.languages.factory.design/resource/person.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="ProductPartNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedProductParts" createElements="false" domainClass="factory.ProductPart">
-          <style xsi:type="style:DotDescription" showIcon="false" labelExpression="feature:label" resizeKind="NSEW">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:label" sizeComputationExpression="0.5" resizeKind="NSEW" workspacePath="/de.mdelab.languages.factory.design/resource/productPart.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </nodeMappings>
         <edgeMappings name="employsEdge" createElements="false" sourceMapping="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@containerMappings[name='FactoryNode']" targetMapping="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@nodeMappings[name='EmployeeNode']" targetFinderExpression="feature:employees">
@@ -44,11 +42,10 @@
           </style>
         </edgeMappings>
         <containerMappings name="FactoryNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedFactories" createElements="false" domainClass="factory.Factory">
-          <subNodeMappings name="MachineNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedMachines" domainClass="factory.Machine">
-            <style xsi:type="style:SquareDescription" labelExpression="feature:label" tooltipExpression="aql:self.eContainer()" sizeComputationExpression="aql:self. size" labelPosition="node">
+          <subNodeMappings name="MachineNode" labelDirectEdit="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:ownedMachines" createElements="false" domainClass="factory.Machine">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:label" resizeKind="NSEW" workspacePath="de.mdelab.languages.factory.design/resource/machine.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             </style>
           </subNodeMappings>
           <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="feature:label" widthComputationExpression="aql:self.width-15" heightComputationExpression="aql:self.length-30" backgroundStyle="Liquid">
