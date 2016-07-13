@@ -104,13 +104,22 @@ public interface ProductionschemaPackage extends EPackage {
 	int PRODUCTION_SCHEMA__DESCRIPTION = 3;
 
 	/**
+	 * The feature id for the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTION_SCHEMA__LABEL = 4;
+
+	/**
 	 * The number of structural features of the '<em>Production Schema</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCTION_SCHEMA_FEATURE_COUNT = 4;
+	int PRODUCTION_SCHEMA_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Production Schema</em>' class.
@@ -561,6 +570,17 @@ public interface ProductionschemaPackage extends EPackage {
 	EAttribute getProductionSchema_Description();
 
 	/**
+	 * Returns the meta object for the attribute '{@link de.mdelab.languages.productionschema.ProductionSchema#getLabel <em>Label</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Label</em>'.
+	 * @see de.mdelab.languages.productionschema.ProductionSchema#getLabel()
+	 * @see #getProductionSchema()
+	 * @generated
+	 */
+	EAttribute getProductionSchema_Label();
+
+	/**
 	 * Returns the meta object for class '{@link de.mdelab.languages.productionschema.ConjunctiveNode <em>Conjunctive Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -771,6 +791,14 @@ public interface ProductionschemaPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PRODUCTION_SCHEMA__DESCRIPTION = eINSTANCE.getProductionSchema_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Label</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCTION_SCHEMA__LABEL = eINSTANCE.getProductionSchema_Label();
 
 		/**
 		 * The meta object literal for the '{@link de.mdelab.languages.productionschema.impl.ConjunctiveNodeImpl <em>Conjunctive Node</em>}' class.

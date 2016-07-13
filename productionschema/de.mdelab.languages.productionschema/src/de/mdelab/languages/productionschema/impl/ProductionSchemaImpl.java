@@ -36,6 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link de.mdelab.languages.productionschema.impl.ProductionSchemaImpl#getOwnedLinks <em>Owned Links</em>}</li>
  *   <li>{@link de.mdelab.languages.productionschema.impl.ProductionSchemaImpl#getOwnedMaterials <em>Owned Materials</em>}</li>
  *   <li>{@link de.mdelab.languages.productionschema.impl.ProductionSchemaImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link de.mdelab.languages.productionschema.impl.ProductionSchemaImpl#getLabel <em>Label</em>}</li>
  * </ul>
  *
  * @generated
@@ -90,6 +91,26 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 	 * @ordered
 	 */
 	protected String description = DESCRIPTION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLabel()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String LABEL_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getLabel() <em>Label</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLabel()
+	 * @generated
+	 * @ordered
+	 */
+	protected String label = LABEL_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,6 +193,27 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getLabel() {
+		return label;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setLabel(String newLabel) {
+		String oldLabel = label;
+		label = newLabel;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ProductionschemaPackage.PRODUCTION_SCHEMA__LABEL, oldLabel, label));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -201,6 +243,8 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 				return getOwnedMaterials();
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__DESCRIPTION:
 				return getDescription();
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__LABEL:
+				return getLabel();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -229,6 +273,9 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__LABEL:
+				setLabel((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -253,6 +300,9 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__LABEL:
+				setLabel(LABEL_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -273,6 +323,8 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 				return ownedMaterials != null && !ownedMaterials.isEmpty();
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__LABEL:
+				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -289,6 +341,8 @@ public class ProductionSchemaImpl extends MinimalEObjectImpl.Container implement
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (description: ");
 		result.append(description);
+		result.append(", label: ");
+		result.append(label);
 		result.append(')');
 		return result.toString();
 	}

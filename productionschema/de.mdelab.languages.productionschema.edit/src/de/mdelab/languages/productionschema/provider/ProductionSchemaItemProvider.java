@@ -64,6 +64,7 @@ public class ProductionSchemaItemProvider
 			super.getPropertyDescriptors(object);
 
 			addDescriptionPropertyDescriptor(object);
+			addLabelPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -82,6 +83,28 @@ public class ProductionSchemaItemProvider
 				 getString("_UI_ProductionSchema_description_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ProductionSchema_description_feature", "_UI_ProductionSchema_type"),
 				 ProductionschemaPackage.Literals.PRODUCTION_SCHEMA__DESCRIPTION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Label feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addLabelPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ProductionSchema_label_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ProductionSchema_label_feature", "_UI_ProductionSchema_type"),
+				 ProductionschemaPackage.Literals.PRODUCTION_SCHEMA__LABEL,
 				 true,
 				 false,
 				 false,
@@ -161,6 +184,7 @@ public class ProductionSchemaItemProvider
 
 		switch (notification.getFeatureID(ProductionSchema.class)) {
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__DESCRIPTION:
+			case ProductionschemaPackage.PRODUCTION_SCHEMA__LABEL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case ProductionschemaPackage.PRODUCTION_SCHEMA__OWNED_LINKABLE_NODES:
