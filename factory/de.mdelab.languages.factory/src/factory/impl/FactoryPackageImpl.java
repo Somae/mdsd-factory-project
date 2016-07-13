@@ -230,7 +230,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFactory_OwnedProductionSchemata() {
+	public EReference getFactory_ProductionSchemata() {
 		return (EReference)factoryEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -567,7 +567,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		createEAttribute(factorySpecificationEClass, FACTORY_SPECIFICATION__BUSINESS_TYPE_NAME);
 
 		factoryEClass = createEClass(FACTORY);
-		createEReference(factoryEClass, FACTORY__OWNED_PRODUCTION_SCHEMATA);
+		createEReference(factoryEClass, FACTORY__PRODUCTION_SCHEMATA);
 		createEAttribute(factoryEClass, FACTORY__DESCRIPTION);
 		createEAttribute(factoryEClass, FACTORY__STREET_NUMBER);
 		createEAttribute(factoryEClass, FACTORY__STREET);
@@ -657,7 +657,7 @@ public class FactoryPackageImpl extends EPackageImpl implements FactoryPackage {
 		initEAttribute(getFactorySpecification_BusinessTypeName(), ecorePackage.getEString(), "businessTypeName", null, 0, 1, FactorySpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(factoryEClass, Factory.class, "Factory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFactory_OwnedProductionSchemata(), theProductionschemaPackage.getProductionSchema(), null, "ownedProductionSchemata", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFactory_ProductionSchemata(), theProductionschemaPackage.getProductionSchema(), null, "productionSchemata", null, 0, -1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_Description(), ecorePackage.getEString(), "description", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_StreetNumber(), ecorePackage.getEString(), "streetNumber", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFactory_Street(), ecorePackage.getEString(), "street", null, 0, 1, Factory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
