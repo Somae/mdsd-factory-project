@@ -41,18 +41,20 @@ class [anEClass.name/]([for (superClass: EClass | anEClass.eSuperTypes) separato
 [/template]
 
 [template public generateAttribute(attr : EAttribute)]
-self.[if (attr.changeable)][attr.name/][else][attr.name.toUpper()/][/if] = None
+self.[if (attr.changeable)][pythonize(attr.name)/][else][attr.name.toUpper()/][/if] = [if (attr.defaultValueLiteral.oclIsUndefined())]None[else][if(attr.eType = ecore::EString)]"[attr.defaultValueLiteral/]"[else][attr.defaultValueLiteral/][/if][/if]
 [/template]
 
 [template public generateReference(ref : EReference)]
-self.[ref.name/] = [if (ref.many)]['[]'/][else]None[/if]
+self.[pythonize(ref.name)/] = [if (ref.many)]['[]'/][else]None[/if]
 [/template]
 
 [template public generateOperation(op : EOperation)]
-def [op.name/](self[for (param: EParameter | op.eParameters)],[param.name/][/for]):
+def [pythonize(op.name)/](self[for (param: EParameter | op.eParameters)],[pythonize(param.name)/][/for]):
 	#[protected (op.name)]
 	pass
 	#[/protected]
 [/template]
 
 [query public eClasses(anEPackage : EPackage) : OrderedSet(EClass) = anEPackage.eClassifiers->filter(ecore::EClass)/]
+
+[query public pythonize(string : EString) : EString = invoke('de.mdelab.languages.codegen.Pythonizer', 'pythonizeName(java.lang.String)', Sequence{string})/]
