@@ -41,71 +41,69 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <toolSections>
+        <toolSections name="node creation" label="node creation">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createConjunctiveNode" nodeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='ConjunctiveNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="productionschema.ConjunctiveNode" referenceName="ownedLinkableNodes"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createDisjunctiveNode" nodeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='DisjunctiveNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="productionschema.DisjunctiveNode" referenceName="ownedLinkableNodes"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createMaterial" nodeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='MaterialNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="productionschema.Material" referenceName="ownedMaterials"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
           <ownedTools xsi:type="tool:DirectEditLabel" name="editLabel">
             <mask mask="{0}"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:SetValue" featureName="label" valueExpression="var:0"/>
             </initialOperation>
           </ownedTools>
-          <subSections name="nodeCreation" label="Node Creation">
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="createConjunctiveNode" nodeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='ConjunctiveNode']">
-              <variable name="container"/>
-              <viewVariable name="containerView"/>
-              <initialOperation>
-                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="productionschema.ConjunctiveNode" referenceName="ownedLinkableNodes"/>
-                </firstModelOperations>
-              </initialOperation>
-            </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="createDisjunctiveNode" nodeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='DisjunctiveNode']">
-              <variable name="container"/>
-              <viewVariable name="containerView"/>
-              <initialOperation>
-                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="productionschema.DisjunctiveNode" referenceName="ownedLinkableNodes"/>
-                </firstModelOperations>
-              </initialOperation>
-            </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="createMaterial" nodeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@nodeMappings[name='MaterialNode']">
-              <variable name="container"/>
-              <viewVariable name="containerView"/>
-              <initialOperation>
-                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="productionschema.Material" referenceName="ownedMaterials"/>
-                </firstModelOperations>
-              </initialOperation>
-            </ownedTools>
-          </subSections>
-          <subSections name="edgeCreation" label="Edge Creation">
-            <ownedTools xsi:type="tool:EdgeCreationDescription" name="connectNodes" edgeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@edgeMappings[name='link']">
-              <sourceVariable name="source"/>
-              <targetVariable name="target"/>
-              <sourceViewVariable name="sourceView"/>
-              <targetViewVariable name="targetView"/>
-              <initialOperation>
-                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer()">
-                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="productionschema.Link" referenceName="ownedLinks" variableName="link">
-                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="sourceNode" valueExpression="var:source"/>
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="destinationNode" valueExpression="var:target"/>
-                    </subModelOperations>
+        </toolSections>
+        <toolSections name="edge creation" label="edge creation">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="connectNodes" edgeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@edgeMappings[name='link']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="productionschema.Link" referenceName="ownedLinks" variableName="link">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="sourceNode" valueExpression="var:source"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="destinationNode" valueExpression="var:target"/>
                   </subModelOperations>
-                </firstModelOperations>
-              </initialOperation>
-            </ownedTools>
-            <ownedTools xsi:type="tool:EdgeCreationDescription" name="connectMaterial" edgeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@edgeMappings[name='materialEdge']">
-              <sourceVariable name="source"/>
-              <targetVariable name="target"/>
-              <sourceViewVariable name="sourceView"/>
-              <targetViewVariable name="targetView"/>
-              <initialOperation>
-                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="associatedMaterial" valueExpression="var:target"/>
-                </firstModelOperations>
-              </initialOperation>
-            </ownedTools>
-          </subSections>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="connectMaterial" edgeMappings="//@ownedViewpoints[name='productionschema']/@ownedRepresentations[name='productionschema']/@defaultLayer/@edgeMappings[name='materialEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="associatedMaterial" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>

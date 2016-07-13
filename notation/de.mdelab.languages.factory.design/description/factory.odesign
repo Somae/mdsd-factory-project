@@ -73,7 +73,13 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
           </style>
         </containerMappings>
-        <toolSections name="creation tools">
+        <toolSections name="node creation">
+          <ownedTools xsi:type="tool:DirectEditLabel" name="editLabel">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="label" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
           <ownedTools xsi:type="tool:NodeCreationDescription" name="createEmployee" nodeMappings="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@nodeMappings[name='EmployeeNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
@@ -119,12 +125,6 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:DirectEditLabel" name="editLabel">
-            <mask mask="{0}"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:SetValue" featureName="label" valueExpression="var:0"/>
-            </initialOperation>
-          </ownedTools>
           <ownedTools xsi:type="tool:NodeCreationDescription" name="createProductVersion" nodeMappings="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@containerMappings[name='ProductNode']/@subNodeMappings[name='ProductVersionNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
@@ -134,6 +134,8 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
+        </toolSections>
+        <toolSections name="edge creation">
           <ownedTools xsi:type="tool:EdgeCreationDescription" name="createEmploysEdge" edgeMappings="//@ownedViewpoints[name='factory']/@ownedRepresentations[name='factoryspecification']/@defaultLayer/@edgeMappings[name='employsEdge']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
