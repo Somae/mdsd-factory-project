@@ -12,7 +12,6 @@
 [template public generatePackage(anEPackage : EPackage, packages : Set(EPackage))]
 [file (anEPackage.name.concat('/__init__.py'), false, 'UTF-8')]
 [for (eClass : EClass | eClasses(anEPackage))]
-from [eClass.name/] import [eClass.name/]
 [generateClass(eClass, anEPackage.name)/]
 [/for]
 [/file]
@@ -21,9 +20,15 @@ from [eClass.name/] import [eClass.name/]
 [/template]
 
 [template public generateClass(anEClass : EClass, packageName : String)]
-[file (packageName.concat('/').concat(anEClass.name).concat('.py'), false, 'Cp1252')]
+[file (packageName.concat('/').concat(anEClass.name).concat('.py'), false, 'UTF-8')]
+[for (superC: EClass | anEClass.eSuperTypes) separator(',')]
+from [packageName.concat('.'.concat(superC.name))/] import [superC.name/]
+[/for]
 class [anEClass.name/]([for (superClass: EClass | anEClass.eSuperTypes) separator(',')][superClass.name/][/for]):
 	def __init__(self):
+	[for (superC: EClass | anEClass.eSuperTypes) separator(',')]
+		super([anEClass.name/],self).__init__()
+	[/for]
 	[if (anEClass.eAttributes -> notEmpty() or anEClass.eReferences -> notEmpty())]
 	[for (attr: EAttribute | anEClass.eAttributes)]
 		[generateAttribute(attr)/]
@@ -37,6 +42,7 @@ class [anEClass.name/]([for (superClass: EClass | anEClass.eSuperTypes) separato
 	[for (op: EOperation | anEClass.eOperations)]
 	[generateOperation(op)/]
 	[/for]
+
 [/file]
 [/template]
 
