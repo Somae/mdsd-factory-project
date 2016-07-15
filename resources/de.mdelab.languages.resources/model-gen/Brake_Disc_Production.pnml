@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pnml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="null http://org.pnml.tools/epnk/pnmlcoremodel" xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net>
+    <page>
+      <transition>
+        <name>
+          <text>Assemble Disc</text>
+        </name>
+      </transition>
+      <transition>
+        <name>
+          <text>Build Upper Disc</text>
+        </name>
+      </transition>
+      <transition>
+        <name>
+          <text>Buy Brake Liquid</text>
+        </name>
+      </transition>
+      <transition>
+        <name>
+          <text>Build Lower Disc</text>
+        </name>
+      </transition>
+      <place>
+        <name/>
+      </place>
+      <place>
+        <name>
+          <text>Brake Liquid</text>
+        </name>
+      </place>
+      <place>
+        <name>
+          <text>Upper Disc Plate</text>
+        </name>
+      </place>
+      <place>
+        <name>
+          <text>Lower Disc Plate</text>
+        </name>
+      </place>
+      <arc source="//@net.0/@page.0/@object.5" target="//@net.0/@page.0/@object.0"/>
+      <arc source="//@net.0/@page.0/@object.6" target="//@net.0/@page.0/@object.0"/>
+      <arc source="//@net.0/@page.0/@object.7" target="//@net.0/@page.0/@object.0"/>
+      <arc source="//@net.0/@page.0/@object.0" target="//@net.0/@page.0/@object.4"/>
+      <arc source="//@net.0/@page.0/@object.1" target="//@net.0/@page.0/@object.6"/>
+      <arc source="//@net.0/@page.0/@object.2" target="//@net.0/@page.0/@object.5"/>
+      <arc source="//@net.0/@page.0/@object.3" target="//@net.0/@page.0/@object.7"/>
+    </page>
+  </net>
+</pnml>

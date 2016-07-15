@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pnml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="null http://org.pnml.tools/epnk/pnmlcoremodel" xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net>
+    <page>
+      <transition>
+        <name>
+          <text>Read Book</text>
+        </name>
+      </transition>
+      <transition>
+        <name>
+          <text>Read Wikipedia Article</text>
+        </name>
+      </transition>
+      <transition>
+        <name>
+          <text>Produce Caliper</text>
+        </name>
+      </transition>
+      <transition>
+        <name>
+          <text>profit</text>
+        </name>
+      </transition>
+      <place/>
+      <place/>
+      <transition>
+        <name>
+          <text>Look up what a Caliper is</text>
+        </name>
+      </transition>
+      <arc source="//@net.0/@page.0/@object.4" target="//@net.0/@page.0/@object.6"/>
+      <arc source="//@net.0/@page.0/@object.6" target="//@net.0/@page.0/@object.5"/>
+      <place/>
+      <place/>
+      <transition>
+        <name/>
+      </transition>
+      <arc source="//@net.0/@page.0/@object.11" target="//@net.0/@page.0/@object.9"/>
+      <arc source="//@net.0/@page.0/@object.10" target="//@net.0/@page.0/@object.11"/>
+      <place>
+        <name>
+          <text>Wikipedia Article</text>
+        </name>
+      </place>
+      <place>
+        <name>
+          <text>Book</text>
+        </name>
+      </place>
+      <place>
+        <name/>
+      </place>
+      <place>
+        <name/>
+      </place>
+      <place>
+        <name/>
+      </place>
+      <place>
+        <name>
+          <text>Caliper</text>
+        </name>
+      </place>
+      <arc source="//@net.0/@page.0/@object.15" target="//@net.0/@page.0/@object.0"/>
+      <arc source="//@net.0/@page.0/@object.14" target="//@net.0/@page.0/@object.1"/>
+      <arc source="//@net.0/@page.0/@object.18" target="//@net.0/@page.0/@object.2"/>
+      <arc source="//@net.0/@page.0/@object.19" target="//@net.0/@page.0/@object.3"/>
+      <arc source="//@net.0/@page.0/@object.1" target="//@net.0/@page.0/@object.16"/>
+      <arc source="//@net.0/@page.0/@object.0" target="//@net.0/@page.0/@object.17"/>
+      <arc source="//@net.0/@page.0/@object.2" target="//@net.0/@page.0/@object.19"/>
+      <arc source="//@net.0/@page.0/@object.16" target="//@net.0/@page.0/@object.29"/>
+      <arc source="//@net.0/@page.0/@object.29" target="//@net.0/@page.0/@object.10"/>
+      <transition/>
+      <arc source="//@net.0/@page.0/@object.31" target="//@net.0/@page.0/@object.10"/>
+      <transition/>
+      <arc source="//@net.0/@page.0/@object.17" target="//@net.0/@page.0/@object.31"/>
+      <arc source="//@net.0/@page.0/@object.35" target="//@net.0/@page.0/@object.14"/>
+      <arc source="//@net.0/@page.0/@object.5" target="//@net.0/@page.0/@object.35"/>
+      <transition/>
+      <arc source="//@net.0/@page.0/@object.5" target="//@net.0/@page.0/@object.37"/>
+      <transition/>
+      <arc source="//@net.0/@page.0/@object.37" target="//@net.0/@page.0/@object.15"/>
+      <arc source="//@net.0/@page.0/@object.9" target="//@net.0/@page.0/@object.41"/>
+      <arc source="//@net.0/@page.0/@object.41" target="//@net.0/@page.0/@object.18"/>
+      <transition/>
+    </page>
+  </net>
+</pnml>
